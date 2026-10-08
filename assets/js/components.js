@@ -146,7 +146,7 @@ export function rankOf(id) {
 export function fishingHtml() {
   const prizes = S.juego?.pesca || [];
   if (!prizes.length) return '';
-  return `<div class="md"><div class="table-wrap"><table><thead><tr><th>Premio</th><th>Rareza</th><th>Pesca buena</th><th>Pesca perfecta</th><th>La Pescadería paga 1 DinoCoin por</th></tr></thead><tbody>${prizes.map((p) => `<tr><td><span class="cost-item">${itemHtml({ id: p.id }, { size: 26, count: false })} ${escapeHtml(stripCodes(itemName(resolveRef({ id: p.id })?.item || { material: 'barrier' })))}</span></td><td><span class="rarity rarity--${slugify(p.rareza)}">${escapeHtml(p.rareza)}</span></td><td>${escapeHtml(p.buena)}</td><td>${escapeHtml(p.perfecta)}</td><td>${p.cambio}</td></tr>`).join('')}</tbody></table></div></div>`;
+  return `<div class="md"><div class="table-wrap"><table><thead><tr><th>Premio</th><th>Rareza</th><th>Pesca buena</th><th>Pesca perfecta</th><th>Pescadería</th></tr></thead><tbody>${prizes.map((p) => `<tr><td><span class="cost-item">${itemHtml({ id: p.id }, { size: 26, count: false })} ${escapeHtml(stripCodes(itemName(resolveRef({ id: p.id })?.item || { material: 'barrier' })))}</span></td><td><span class="rarity rarity--${slugify(p.rareza)}">${escapeHtml(p.rareza)}</span></td><td>${escapeHtml(p.buena)}</td><td>${escapeHtml(p.perfecta)}</td><td><b>${p.cambio}</b> = 1 DinoCoin</td></tr>`).join('')}</tbody></table></div></div>`;
 }
 
 // ------------------------------------------------------------------ calendario

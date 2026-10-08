@@ -34,12 +34,12 @@ function syncLine() {
   </div>`;
 }
 
-function card(m, act, i) {
+function card(m, act) {
   const open = isOpen(m, act);
   const locked = !open && !showLocked();
   const done = liveReady() ? completedBy(m.n) : 0;
   const job = m.tipo === 'trabajo' ? jobOf(m) : '';
-  return `<button class="mcard mcard--${m.tipo}${open ? '' : ' is-locked'} reveal" style="--i:${i % 8}" type="button" data-mission="${m.n}">
+  return `<button class="mcard mcard--${m.tipo}${open ? '' : ' is-locked'} reveal" type="button" data-mission="${m.n}">
     <span class="mcard__top">
       <span class="mcard__tag">${escapeHtml(missionTag(m))}</span>
       ${open ? `<span class="mcard__diff mcard__diff--${m.dificultad}">${escapeHtml(DIF[m.dificultad])}</span>` : `<span class="mcard__lock">${icon('lock')}</span>`}
@@ -91,7 +91,7 @@ function sectionHtml(tipo, act) {
       <div><h2 class="msec__title"><span class="msec__dot"></span>${escapeHtml(label)}</h2><p>${escapeHtml(info)}</p></div>
       <span class="msec__count"><b>${opened}</b>/${all.length} abiertas</span>
     </header>
-    ${list.length ? `<div class="mgrid">${list.map((m, i) => card(m, act, i)).join('')}</div>` : `<p class="msec__empty">Ninguna misión de esta sección coincide con el filtro.</p>`}
+    ${list.length ? `<div class="mgrid">${list.map((m) => card(m, act)).join('')}</div>` : `<p class="msec__empty">Ninguna misión de esta sección coincide con el filtro.</p>`}
   </section>`;
 }
 
@@ -132,7 +132,7 @@ function refreshList(el) {
   const box = el.querySelector('#m-list');
   if (!box) return;
   box.innerHTML = listHtml();
-  box.querySelectorAll('.reveal').forEach((r) => r.classList.add('in'));
+  box.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal'));
 }
 
 export function update(el, kind) {

@@ -408,8 +408,8 @@ def main():
         if previo.get(key):
             juego[key] = previo[key]
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(juego, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    Path(out_path.parent.parent / "tools" / "texturas.txt").write_text("\n".join(sorted(usados)) + "\n", encoding="utf-8")
+    out_path.write_text(json.dumps(juego, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+    Path(out_path.parent.parent / "tools" / "texturas.txt").write_text("\n".join(sorted(usados)) + "\n", encoding="utf-8", newline="\n")
     print(f"items={len(items)} misiones={len(misiones)} recetas={len(recetas)} materiales={len(usados)}")
 
 

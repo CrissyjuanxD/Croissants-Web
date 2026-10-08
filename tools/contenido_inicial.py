@@ -29,8 +29,8 @@ Croissants Segunda Edición es el SMP público de Crosszy: un SMP donde cada dí
 2. **Abre el menú principal** con [[cmd:/menu]]: desde ahí entras a tus Misiones, Trabajos, Habilidades, Protecciones y Homes.
 3. **Haz las misiones 1, 2 y 3**: son fáciles a propósito, para que todos tengan DinoCoins desde el primer día. Mira cuáles están abiertas en [Misiones](#misiones).
 4. **Visita las tiendas** con [[cmd:/tiendas]]: te teletransporta a las tiendas del spawn. Revisa qué se puede **comprar** y qué se puede **vender** para gastar o conseguir DinoCoins. Los precios **van cambiando conforme pasan los días**.
-5. **Cómprate un [[item:monedero]]** en el Mercado de la tienda por 5 DinoCoins. Las DinoCoins solo se guardan dentro del monedero.
-6. **Pasa por la Biblioteca**: el [[item:misiones]] y el [[item:libro_habilidades]] cuestan 1 DinoCoin cada uno.
+5. **Cómprate un [[item:monedero]]** en el Mercado de la tienda (al principio cuesta 5 DinoCoins). Las DinoCoins solo se guardan dentro del monedero.
+6. **Pasa por la Biblioteca**: el [[item:misiones]] y el [[item:libro_habilidades]] al principio cuestan 1 DinoCoin cada uno.
 7. **Guarda tu base** con [[cmd:/sethome casa]] y protégela con [[cmd:/proteccion]].
 8. **Elige un trabajo** con [[cmd:/trabajos]] para ganar DinoCoins mientras juegas.
 
@@ -107,7 +107,7 @@ Las [[item:dinocoins]] son la moneda oficial del servidor. Todo lo que haces te 
 ## El monedero
 
 - Las DinoCoins y las [[item:dinofichas]] **solo se pueden guardar dentro de un [[item:monedero]]**: los cofres y las mochilas no las aceptan.
-- El monedero tiene 18 espacios y se compra en el Mercado por 5 DinoCoins.
+- El monedero tiene 18 espacios y se compra en el Mercado (al principio cuesta 5 DinoCoins).
 - Tu saldo (el que ves en el scoreboard y en [Jugadores](#jugadores)) son las monedas que tienes **dentro de tus monederos**.
 - Para comprar en la tienda o subir habilidades, **lleva las DinoCoins en el inventario**.
 
@@ -135,11 +135,11 @@ Las [[item:dinocoins]] son la moneda oficial del servidor. Todo lo que haces te 
 
 ## Cuánto junta cada jugador
 
-| Jugador | Por día | Si juegas 100 días |
+| Jugador | Por día | En un mes (30 días) |
 | --- | --- | --- |
-| Casual: 1 h, la mitad de las misiones | ~13 | ~1.300 |
-| Activo: 2 a 3 h, casi todas las misiones | ~30 | ~3.000 |
-| Farmeador: llega a todos los topes | ~44 | ~4.400 |
+| Casual: 1 h, la mitad de las misiones | ~13 | ~390 |
+| Activo: 2 a 3 h, casi todas las misiones | ~30 | ~900 |
+| Farmeador: llega a todos los topes | ~44 | ~1.320 |
 
 > [!info] Todo lo que se puede repetir tiene un tope diario, así nadie farmea la economía.
 """),
@@ -203,13 +203,13 @@ Las habilidades son mejoras permanentes que compras con DinoCoins, experiencia y
 
 ## Cómo se desbloquean
 
-1. Compra el [[item:libro_habilidades]] en la Biblioteca (1 DinoCoin).
+1. Compra el [[item:libro_habilidades]] en la Biblioteca (al principio cuesta 1 DinoCoin).
 2. Dale clic derecho: el libro se gasta y tu árbol queda desbloqueado en [[cmd:/menu]] → Habilidades.
 3. Sube cada habilidad nivel por nivel (hay que tener el anterior).
 
 [[habilidades]]
 
-> [!tip] Cada habilidad completa cuesta 150 DinoCoins en total. Con unas 3.000 DinoCoins en la temporada, un jugador activo completa las tres.
+> [!tip] Cada habilidad completa cuesta 150 DinoCoins en total y las tres, 450. Un jugador activo junta unas 30 DinoCoins por día, así que las completa en pocas semanas.
 """),
     seccion("homes", "Homes, spawn y viajes", "home",
             "Guarda hasta 10 casas y muévete rápido por el mapa.", """
@@ -799,7 +799,7 @@ ANUNCIOS = {
 
 ## Cómo entrar
 
-Toca **IP del servidor** arriba a la derecha para copiar la IP de Java o Bedrock, y descarga el [Viciont Studios Launcher](#launcher) para jugar con el modpack y las texturas.
+Lo más fácil es el [Viciont Studios Launcher](#launcher): abres la instancia de Croissants y entras directo al servidor, sin escribir la IP y con el modpack y las texturas listos. Si juegas sin el launcher, toca **IP del servidor** arriba a la derecha para copiar la IP de Java o Bedrock.
 
 > [!tip] Empieza por la [guía de primeros pasos](#guia/primeros-pasos): en 5 minutos sabes todo lo que tienes que hacer el primer día.
 
@@ -814,7 +814,7 @@ def write(path, data, force):
     if path.exists() and not force:
         print(f"{path.name} ya existe (usa --forzar para pisarlo)")
         return
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     print(f"escrito {path.relative_to(ROOT)}")
 
 

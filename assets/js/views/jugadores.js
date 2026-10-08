@@ -44,7 +44,7 @@ function summaryHtml(list) {
     { label: 'Horas jugadas en total', value: Math.round(horas), icon: 'clock' },
     { label: 'Misiones completadas', value: mis, icon: 'scroll' },
   ];
-  return `<div class="ptiles">${tiles.map((t, i) => `<div class="ptile reveal" style="--i:${i}"><span class="ptile__icon">${icon(t.icon)}</span><span class="ptile__num" data-count-to="${t.value}">${fmt(t.value)}</span><span class="ptile__label">${t.live ? '<span class="live-dot"></span>' : ''}${t.label}</span></div>`).join('')}</div>`;
+  return `<div class="ptiles">${tiles.map((t) => `<div class="ptile reveal"><span class="ptile__icon">${icon(t.icon)}</span><span class="ptile__num" data-count-to="${t.value}">${fmt(t.value)}</span><span class="ptile__label">${t.live ? '<span class="live-dot"></span>' : ''}${t.label}</span></div>`).join('')}</div>`;
 }
 
 function leaderboard(list, key, labelFn, iconName, titleText) {
@@ -52,10 +52,10 @@ function leaderboard(list, key, labelFn, iconName, titleText) {
   return `<div class="board reveal"><p class="board__title">${icon(iconName)} ${titleText}</p>${top.length ? `<ol class="board__list">${top.map((p, i) => `<li><a href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores"><span class="board__pos board__pos--${i + 1}">${i + 1}</span><img src="${head(p, 32)}" alt="" width="32" height="32" loading="lazy"><span class="board__name">${escapeHtml(p.nombre)}</span><b>${labelFn(p)}</b></a></li>`).join('')}</ol>` : '<p class="board__empty">Todavía no hay datos.</p>'}</div>`;
 }
 
-function cardHtml(p, i) {
+function cardHtml(p) {
   const job = p.trabajo?.activo;
   const lvl = job ? p.trabajo?.niveles?.[job]?.nivel ?? 0 : 0;
-  return `<a class="pcard reveal${p.online ? ' is-online' : ''}" style="--i:${i % 8}" href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores" data-tilt>
+  return `<a class="pcard reveal${p.online ? ' is-online' : ''}" href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores" data-tilt>
     <span class="pcard__head"><img src="${head(p, 72)}" alt="" width="72" height="72" loading="lazy" decoding="async">${p.online ? '<span class="pcard__dot" title="Conectado"></span>' : ''}</span>
     <span class="pcard__body">
       <span class="pcard__name">${escapeHtml(p.nombre)}${p.bedrock ? ' <span class="tag tag--xs">Bedrock</span>' : ''}</span>
@@ -208,8 +208,8 @@ function profileView(name) {
     </section>
     <div class="profile-grid">
       <section class="panel reveal"><h2 class="panel__title">${icon('scroll')} Misiones</h2>${missionsMap(p)}</section>
-      <section class="panel reveal" style="--i:1"><h2 class="panel__title">${icon('pickaxe')} Trabajos</h2>${jobsBlock(p)}<h2 class="panel__title panel__title--mt">${icon('star')} Habilidades</h2>${skillsBlock(p)}</section>
-      <section class="panel reveal" style="--i:2"><h2 class="panel__title">${icon('signal')} Estadísticas</h2>
+      <section class="panel reveal"><h2 class="panel__title">${icon('pickaxe')} Trabajos</h2>${jobsBlock(p)}<h2 class="panel__title panel__title--mt">${icon('star')} Habilidades</h2>${skillsBlock(p)}</section>
+      <section class="panel reveal"><h2 class="panel__title">${icon('signal')} Estadísticas</h2>
         <ul class="pstats">${STAT_LABELS.filter(([k]) => stats[k] != null || (k === 'homes' && p.homes != null)).map(([k, label, ic, f]) => `<li><span>${icon(ic)} ${label}</span><b>${f(k === 'homes' ? p.homes : stats[k])}</b></li>`).join('') || '<li class="muted">Sin estadísticas todavía.</li>'}</ul>
       </section>
     </div>
@@ -240,7 +240,7 @@ export function update(el, kind, parts) {
   } else {
     el.innerHTML = listView();
   }
-  el.querySelectorAll('.reveal').forEach((r) => r.classList.add('in'));
+  el.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal'));
   window.scrollTo({ top: y });
 }
 
@@ -249,7 +249,7 @@ document.addEventListener('input', (e) => {
   if (!q) return;
   ui.q = q.value;
   const grid = q.closest('.view')?.querySelector('#p-grid');
-  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.add('in')); }
+  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
 });
 
 document.addEventListener('click', (e) => {
@@ -259,7 +259,7 @@ document.addEventListener('click', (e) => {
   const view = f.closest('.view');
   view.querySelectorAll('[data-pf]').forEach((b) => b.classList.toggle('is-active', b === f));
   const grid = view.querySelector('#p-grid');
-  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.add('in')); }
+  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
 });
 
 document.addEventListener('change', (e) => {
@@ -267,5 +267,5 @@ document.addEventListener('change', (e) => {
   if (!o) return;
   ui.orden = o.value;
   const grid = o.closest('.view')?.querySelector('#p-grid');
-  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.add('in')); }
+  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
 });

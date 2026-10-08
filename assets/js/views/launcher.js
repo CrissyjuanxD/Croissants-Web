@@ -52,14 +52,14 @@ export function render(el) {
         ${l.pasos.length ? `<ol class="launcher__steps">${l.pasos.map((p, i) => `<li><span>${i + 1}</span><div class="md">${md(p, mdCtx())}</div></li>`).join('')}</ol>` : ''}
         <p class="launcher__alt">${icon('info')}<span>¿Prefieres tu propio launcher? Puedes entrar con cualquier Minecraft Java ${escapeHtml(g.versionJava || '')} o desde Bedrock con la <button class="link-btn" type="button" data-open-ip>IP del servidor</button>, pero sin el modpack ni las texturas.</span></p>
       </div>
-      <div class="launcher__shots reveal" style="--i:1">
+      <div class="launcher__shots reveal">
         <img src="assets/img/launcher-inicio.webp" alt="Viciont Studios Launcher: pantalla de inicio" loading="lazy" decoding="async" width="1600" height="1000">
         <img src="assets/img/launcher-instancia.webp" alt="Viciont Studios Launcher: la instancia de un servidor" loading="lazy" decoding="async" width="1600" height="1000">
       </div>
     </div>
     ${l.beneficios.length ? `<section class="section">
       <header class="section-head reveal"><p class="kicker"><span class="kicker__num">${icon('sparkle')}</span> por qué usarlo</p><h2 class="section-title"><span class="gusty">La mejor forma de jugar Croissants</span></h2></header>
-      <div class="features">${l.beneficios.map((b, i) => `<div class="feature feature--static reveal" style="--i:${i % 3}"><span class="feature__icon">${icon(b.icono)}</span><strong>${escapeHtml(b.titulo)}</strong><span>${escapeHtml(b.texto)}</span></div>`).join('')}</div>
+      <div class="features">${l.beneficios.map((b) => `<div class="feature feature--static reveal"><span class="feature__icon">${icon(b.icono)}</span><strong>${escapeHtml(b.titulo)}</strong><span>${escapeHtml(b.texto)}</span></div>`).join('')}</div>
     </section>` : ''}
   </div>`;
   loadRelease(el);

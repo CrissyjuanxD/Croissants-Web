@@ -39,9 +39,9 @@ function tabsHtml(current) {
 function cardsWithDetail(list, current, kind, extra = () => '') {
   if (!list.length) return emptyHTML('Todavía no hay nada en esta sección.');
   const sel = list.find((x) => x.id === current) || list[0];
-  return `<div class="bigcards">${list.map((x, i) => {
+  return `<div class="bigcards">${list.map((x) => {
     const img = safeImage(x.imagen);
-    return `<a class="bigcard${x.id === sel.id ? ' is-active' : ''} reveal" style="--i:${i % 4};--c:${escapeHtml(x.color || '#9d7bff')}" href="#jugabilidad/${kind}/${escapeHtml(x.id)}" data-route="jugabilidad" data-tilt>
+    return `<a class="bigcard${x.id === sel.id ? ' is-active' : ''} reveal" style="--c:${escapeHtml(x.color || '#9d7bff')}" href="#jugabilidad/${kind}/${escapeHtml(x.id)}" data-route="jugabilidad" data-tilt>
       <span class="bigcard__media">${img ? `<img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">` : (x.bloque ? itemHtml({ vanilla: true, material: x.bloque, n: 1 }, { size: 56, tip: false }) : x.huevo ? itemHtml({ vanilla: true, material: x.huevo, n: 1 }, { size: 56, tip: false }) : `<span class="bigcard__icon">${icon(x.icono)}</span>`)}</span>
       <span class="bigcard__body"><span class="bigcard__meta">${x.dia ? `<span class="tag">${icon('calendar')} Día ${x.dia}</span>` : ''}${extra(x)}</span><strong>${escapeHtml(x.titulo)}</strong><span>${escapeHtml(x.resumen)}</span></span>
     </a>`;
@@ -176,7 +176,7 @@ export function update(el, kind, parts) {
   const tab = body?.dataset.tab;
   if (tab && tab !== 'items') {
     body.innerHTML = bodyHtml(tab, parts || []);
-    body.querySelectorAll('.reveal').forEach((r) => r.classList.add('in'));
+    body.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal'));
   }
 }
 
@@ -214,14 +214,14 @@ document.addEventListener('click', (e) => {
   if (ce) {
     ui.crafteoEtapa = ce.dataset.cetapa;
     const body = ce.closest('.tabbody');
-    if (body) { body.innerHTML = crafteosHtml(); body.querySelectorAll('.reveal').forEach((r) => r.classList.add('in')); }
+    if (body) { body.innerHTML = crafteosHtml(); body.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
     return;
   }
   const ic = e.target.closest?.('[data-icat]');
   if (ic) {
     ui.itemCat = ic.dataset.icat;
     const body = ic.closest('.tabbody');
-    if (body) { body.innerHTML = itemsHtml(); body.querySelectorAll('.reveal').forEach((r) => r.classList.add('in')); }
+    if (body) { body.innerHTML = itemsHtml(); body.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
     return;
   }
   const item = e.target.closest?.('[data-item]');

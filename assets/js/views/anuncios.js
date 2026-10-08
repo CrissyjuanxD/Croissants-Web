@@ -27,10 +27,10 @@ function readTime(text) {
   return Math.max(1, Math.round(words / 200));
 }
 
-function cardHtml(a, i, big = false) {
+function cardHtml(a, big = false) {
   const c = cats()[a.categoria] || { nombre: a.categoria, color: '#9d7bff' };
   const img = safeImage(a.portada);
-  return `<a class="ncard${big ? ' ncard--big' : ''} reveal" style="--i:${i % 6};--c:${escapeHtml(c.color)}" href="#anuncios/${escapeHtml(a.id)}" data-route="anuncios" data-tilt>
+  return `<a class="ncard${big ? ' ncard--big' : ''} reveal" style="--c:${escapeHtml(c.color)}" href="#anuncios/${escapeHtml(a.id)}" data-route="anuncios" data-tilt>
     <span class="ncard__media">${img ? `<img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">` : `<span class="ncard__ph">${icon('megaphone')}</span>`}</span>
     <span class="ncard__body">
       <span class="ncard__meta"><span class="cat-chip">${escapeHtml(c.nombre)}</span>${a.fijado ? `<span class="tag">${icon('star')} Fijado</span>` : ''}<time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha))}</time></span>
@@ -52,8 +52,8 @@ function listHtml() {
       <button class="chip-btn${!ui.cat ? ' is-active' : ''}" type="button" data-ncat="">Todos <small>${all.length}</small></button>
       ${used.map((k) => `<button class="chip-btn${ui.cat === k ? ' is-active' : ''}" type="button" data-ncat="${escapeHtml(k)}" style="--c:${escapeHtml(C[k]?.color || '#9d7bff')}">${escapeHtml(C[k]?.nombre || k)} <small>${all.filter((a) => a.categoria === k).length}</small></button>`).join('')}
     </div>
-    ${first ? cardHtml(first, 0, true) : emptyHTML('No hay anuncios en esta categoría.')}
-    ${rest.length ? `<div class="ngrid">${rest.map((a, i) => cardHtml(a, i + 1)).join('')}</div>` : ''}`;
+    ${first ? cardHtml(first, true) : emptyHTML('No hay anuncios en esta categoría.')}
+    ${rest.length ? `<div class="ngrid">${rest.map((a) => cardHtml(a)).join('')}</div>` : ''}`;
 }
 
 function articleHtml(a) {
@@ -101,7 +101,7 @@ document.addEventListener('click', async (e) => {
   if (c) {
     ui.cat = c.dataset.ncat;
     const box = c.closest('#n-list');
-    if (box) { box.innerHTML = listHtml(); box.querySelectorAll('.reveal').forEach((r) => r.classList.add('in')); }
+    if (box) { box.innerHTML = listHtml(); box.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
     return;
   }
   const s = e.target.closest?.('[data-share]');

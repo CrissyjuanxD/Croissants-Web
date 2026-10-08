@@ -72,19 +72,40 @@ export function countUp(el, to, { duration = 1100, format = (n) => String(n) } =
 }
 
 let io = null;
+const REVEAL_MS = 800;
+
+// Lo que entra a la vez aparece en orden de lectura: fila por fila y, en cada fila, de izquierda a derecha
+function readingOrder(a, b) {
+  const ra = a.boundingClientRect;
+  const rb = b.boundingClientRect;
+  return Math.abs(ra.top - rb.top) > 12 ? ra.top - rb.top : ra.left - rb.left;
+}
+
+// Cuando termina de aparecer pierde la clase y vuelve a usar sus propias transiciones (hover, inclinación)
+function settle(el, delay) {
+  setTimeout(() => {
+    el.classList.remove('reveal', 'in');
+    el.style.removeProperty('--rd');
+  }, REVEAL_MS + delay + 60);
+}
+
 export function observeReveals(scope = document, { instant = false } = {}) {
   const els = [...scope.querySelectorAll('.reveal:not(.in)')];
   if (instant || reducedMotion() || !('IntersectionObserver' in window)) {
-    els.forEach((el) => el.classList.add('in'));
+    els.forEach((el) => { io?.unobserve(el); el.classList.remove('reveal'); });
     return;
   }
   io ??= new IntersectionObserver((entries) => {
-    for (const en of entries) {
-      if (!en.isIntersecting) continue;
-      en.target.classList.add('in');
-      io.unobserve(en.target);
-      en.target.dispatchEvent(new CustomEvent('reveal'));
-    }
+    const shown = entries.filter((en) => en.isIntersecting).sort(readingOrder);
+    const step = Math.min(70, 600 / Math.max(1, shown.length));
+    shown.forEach((en, n) => {
+      const el = en.target;
+      const delay = Math.round(n * step);
+      io.unobserve(el);
+      el.style.setProperty('--rd', `${delay}ms`);
+      el.classList.add('in');
+      settle(el, delay);
+    });
   }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
   els.forEach((el) => io.observe(el));
 }
@@ -157,6 +178,39 @@ export function bootScreen() {
       }, wait);
     },
   };
+}
+
+// Tablas y cofres que no entran a lo ancho: el borde por donde sigue el contenido se desvanece,
+// así se nota que se puede deslizar
+const HSCROLL = '.table-wrap, .mreward__chest, .recipe-card .mc-panel';
+
+function scrollHint(el) {
+  const max = el.scrollWidth - el.clientWidth;
+  el.classList.toggle('hs-left', max > 2 && el.scrollLeft > 2);
+  el.classList.toggle('hs-right', max > 2 && el.scrollLeft < max - 2);
+}
+
+export function watchScrollHints(root = document.body) {
+  const ro = 'ResizeObserver' in window ? new ResizeObserver((entries) => {
+    for (const en of entries) {
+      if (en.target.isConnected) scrollHint(en.target);
+      else ro.unobserve(en.target);
+    }
+  }) : null;
+  const watch = (node) => {
+    const els = node.matches?.(HSCROLL) ? [node] : [...(node.querySelectorAll?.(HSCROLL) || [])];
+    for (const el of els) {
+      if (ro) ro.observe(el);
+      else scrollHint(el);
+    }
+  };
+  watch(root);
+  new MutationObserver((ms) => {
+    for (const m of ms) for (const n of m.addedNodes) if (n.nodeType === 1) watch(n);
+  }).observe(root, { childList: true, subtree: true });
+  document.addEventListener('scroll', (e) => {
+    if (e.target instanceof Element && e.target.matches(HSCROLL)) scrollHint(e.target);
+  }, { capture: true, passive: true });
 }
 
 export function cursorGlow() {

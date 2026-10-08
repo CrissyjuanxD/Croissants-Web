@@ -34,6 +34,7 @@ const photos = startPhotos($('#bg-photos'), []);
 fx.startGusts();
 fx.bindTilt(document);
 fx.cursorGlow();
+fx.watchScrollHints();
 bindTooltips(document);
 bindChrome();
 $('#year').textContent = String(new Date().getFullYear());

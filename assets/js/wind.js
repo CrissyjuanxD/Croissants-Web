@@ -214,10 +214,13 @@ export function startPhotos(host, photos, { every = 13000 } = {}) {
     next.style.setProperty('--dx', `${dx}%`);
     next.style.setProperty('--dy', `${dy}%`);
     next.style.backgroundImage = `url("${src.replace(/"/g, '%22')}")`;
-    next.classList.remove('is-on');
+    // La que entra empieza su acercamiento desde cero (está invisible); la que sale lo sigue mientras se desvanece
+    next.classList.remove('is-on', 'is-moving');
     void next.offsetWidth;
-    next.classList.add('is-on');
-    layers[front].classList.remove('is-on');
+    next.classList.add('is-on', 'is-moving');
+    const out = layers[front];
+    out.classList.remove('is-on');
+    setTimeout(() => { if (!out.classList.contains('is-on')) out.classList.remove('is-moving'); }, 3000);
     front = 1 - front;
     host.classList.add('is-ready');
   }

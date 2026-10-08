@@ -4,7 +4,7 @@ const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]):not([t
 
 export function createModal(root = document.getElementById('modal')) {
   const dialog = root.querySelector('.modal__dialog');
-  const content = root.querySelector('.modal__content');
+  let content = root.querySelector('.modal__content');
   let lastFocus = null;
   let onCloseCb = null;
   let locked = false;
@@ -13,6 +13,10 @@ export function createModal(root = document.getElementById('modal')) {
   function open(html, { size = '', label = '', onClose = null, lock = false } = {}) {
     clearTimeout(closeTimer);
     if (root.hidden) lastFocus = document.activeElement;
+    // Un contenedor nuevo en cada apertura: los listeners que puso la ventana anterior no se quedan pegados
+    const fresh = content.cloneNode(false);
+    content.replaceWith(fresh);
+    content = fresh;
     content.innerHTML = html;
     dialog.className = `modal__dialog${size ? ` modal__dialog--${size}` : ''}`;
     if (content.querySelector('#modal-title')) {
@@ -75,7 +79,7 @@ export function createModal(root = document.getElementById('modal')) {
     close,
     get isOpen() { return !root.hidden; },
     setLocked(v) { locked = v; root.classList.toggle('is-locked', v); },
-    content,
+    get content() { return content; },
   };
 }
 

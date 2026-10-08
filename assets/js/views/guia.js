@@ -30,9 +30,9 @@ function navHtml(current) {
 function galleryHtml(s) {
   const imgs = s.imagenes.filter((im) => im.src || im.titulo);
   if (!imgs.length) return '';
-  return `<div class="gallery">${imgs.map((im, i) => {
+  return `<div class="gallery">${imgs.map((im) => {
     const src = safeImage(im.src);
-    return `<figure class="shot reveal" style="--i:${i % 3}">
+    return `<figure class="shot reveal">
       ${src ? `<button class="shot__btn" type="button" data-zoom="${escapeHtml(src)}" data-zoom-title="${escapeHtml(im.titulo)}" aria-label="Ampliar ${escapeHtml(im.titulo || 'imagen')}"><img src="${escapeHtml(src)}" alt="${escapeHtml(im.titulo)}" loading="lazy" decoding="async"><span class="shot__zoom">${icon('eye')}</span></button>`
         : `<div class="shot__ph">${icon('image')}<span>Imagen pendiente</span><small>Se sube desde el panel de administración</small></div>`}
       ${im.titulo || im.texto ? `<figcaption><strong>${escapeHtml(im.titulo)}</strong>${im.texto ? `<span>${escapeHtml(im.texto)}</span>` : ''}</figcaption>` : ''}
@@ -50,12 +50,20 @@ export function render(el, parts, ctx) {
   const next = list[idx + 1];
   const toc = headings(s.contenido);
   const keepNav = ctx.prev && !ctx.changing;
+  const navScroll = keepNav ? el.querySelector('.guide-nav')?.scrollTop || 0 : 0;
   el.innerHTML = `<div class="container">
     ${pageHead({ crumbs: ['guía', s.titulo.toLowerCase()], title: 'Guía del servidor', intro: g.intro })}
     <div class="guide">
       <aside class="guide-side">
-        <label class="guide-search"><span class="sr-only">Buscar en la guía</span>${icon('search')}<input class="input" type="search" placeholder="Buscar en la guía…" value="${escapeHtml(filter)}" data-guide-search></label>
-        <nav class="guide-nav" aria-label="Secciones de la guía">${navHtml(s)}</nav>
+        <button class="guide-picker" type="button" aria-expanded="false" aria-controls="guide-panel" data-guide-picker>
+          <span class="guide-picker__icon">${icon(s.icono)}</span>
+          <span class="guide-picker__text"><small>Sección ${idx + 1} de ${list.length}</small><strong>${escapeHtml(s.titulo)}</strong></span>
+          <span class="guide-picker__all">${icon('menu')} Ver todas ${icon('down')}</span>
+        </button>
+        <div class="guide-panel" id="guide-panel">
+          <label class="guide-search"><span class="sr-only">Buscar en la guía</span>${icon('search')}<input class="input" type="search" placeholder="Buscar en la guía…" value="${escapeHtml(filter)}" data-guide-search></label>
+          <nav class="guide-nav" aria-label="Secciones de la guía">${navHtml(s)}</nav>
+        </div>
       </aside>
       <article class="guide-body" id="guia-contenido">
         <header class="guide-body__head reveal">
@@ -73,6 +81,7 @@ export function render(el, parts, ctx) {
       </article>
     </div>
   </div>`;
+  showActive(el.querySelector('.guide-nav'), navScroll);
   if (keepNav && ctx.prev?.[0] !== parts[0]) {
     const body = el.querySelector('#guia-contenido');
     body?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -83,16 +92,47 @@ export function render(el, parts, ctx) {
 
 export function update() {}
 
+// La lista lateral conserva su scroll al cambiar de sección y siempre deja ver la sección abierta
+function showActive(nav, scroll = 0) {
+  if (!nav) return;
+  nav.scrollTop = scroll;
+  const a = nav.querySelector('.is-active');
+  if (!a || !nav.clientHeight) return;
+  const top = a.getBoundingClientRect().top - nav.getBoundingClientRect().top;
+  if (top < 0 || top + a.offsetHeight > nav.clientHeight) nav.scrollTop += top - (nav.clientHeight - a.offsetHeight) / 2;
+}
+
+// En pantallas chicas las secciones se eligen desde un desplegable en vez de una fila que hay que deslizar
+function setPicker(side, open) {
+  side.classList.toggle('is-open', open);
+  side.querySelector('[data-guide-picker]')?.setAttribute('aria-expanded', String(open));
+  if (open) showActive(side.querySelector('.guide-nav'));
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  const side = document.querySelector('.guide-side.is-open');
+  if (!side) return;
+  setPicker(side, false);
+  side.querySelector('[data-guide-picker]')?.focus();
+});
+
 document.addEventListener('input', (e) => {
   const input = e.target.closest?.('[data-guide-search]');
   if (!input) return;
   filter = input.value;
-  const nav = input.closest('.guide-side')?.querySelector('.guide-nav');
+  const nav = input.closest('.guide-panel')?.querySelector('.guide-nav');
   const current = section(S.route.parts[0]);
   if (nav && current) nav.innerHTML = navHtml(current);
 });
 
 document.addEventListener('click', (e) => {
+  const picker = e.target.closest?.('[data-guide-picker]');
+  if (picker) {
+    const side = picker.closest('.guide-side');
+    setPicker(side, !side.classList.contains('is-open'));
+    return;
+  }
   const t = e.target.closest?.('[data-toc]');
   if (t) {
     e.preventDefault();
