@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 3,
-  "updatedAt": "2026-10-08T10:36:55.048Z",
+  "version": 4,
+  "updatedAt": "2026-10-08T10:40:03.895Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -225,7 +225,7 @@
       "texto": "Misiones, Trabajos, Habilidades, Protecciones y Homes."
      },
      {
-      "src": "",
+      "src": "assets/uploads/guia-menu-muzen18lv73.webp",
       "titulo": "Menú de misiones",
       "texto": "Las tres secciones con los colores de cada tipo."
      },
@@ -235,7 +235,7 @@
       "texto": "Los 6 trabajos y la guía."
      },
      {
-      "src": "",
+      "src": "assets/uploads/guia-menu-muzenalaqh6.webp",
       "titulo": "Árbol de habilidades",
       "texto": "Vitalidad, Resistencia y Agilidad, 8 niveles cada una."
      },
