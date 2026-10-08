@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 2,
-  "updatedAt": "2026-10-08T10:20:55.078Z",
+  "version": 3,
+  "updatedAt": "2026-10-08T10:36:55.048Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -220,7 +220,7 @@
     "contenido": "Con [[cmd:/menu]] abres el menú principal. Cada zona del dibujo abre un menú distinto: haz clic en cualquier parte de la zona.\n\n[[menu]]\n\n## Misiones\n\nAbre el menú de misiones (también con [[cmd:/misiones]] o con el [[item:misiones]]). Va en tres secciones, cada una desde una página nueva: las **100 misiones**, las **40 extras** y las **60 de trabajo**. Cada tipo tiene sus colores: morado y rosa para las normales, celeste para las extras y café dorado para las de trabajo. Pasa el cursor sobre una misión para ver su progreso.\n\n## Trabajos\n\nAbre el menú de los 6 trabajos (también con [[cmd:/trabajos]]). Ahí eliges trabajo, ves tu nivel y lo que te falta, y abres la guía de trabajos.\n\n## Habilidades\n\nAbre tu árbol de habilidades. Para que funcione tienes que gastar una vez el [[item:libro_habilidades]] (clic derecho): se gasta con una animación y desde ese momento el árbol queda en [[cmd:/menu]].\n\n## Protecciones\n\nAbre [[cmd:/proteccion]], donde proteges tu base.\n\n## Homes\n\nAbre [[cmd:/home list]] con tus hasta 10 casas guardadas.",
     "imagenes": [
      {
-      "src": "",
+      "src": "assets/uploads/guia-menu-muzej3momy0.webp",
       "titulo": "Menú principal (/menu)",
       "texto": "Misiones, Trabajos, Habilidades, Protecciones y Homes."
      },
