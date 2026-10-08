@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://crissyjuanxd.github.io/Croissants-Web/sitemap.xml

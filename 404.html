@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Página perdida en el viento · Croissants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Pixelify+Sans:wght@600;700&display=swap">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100vh; min-height: 100dvh;
+      display: grid; place-items: center; padding: 24px 16px; overflow: hidden;
+      background:
+        radial-gradient(60vmax 60vmax at 25% 15%, rgba(124, 92, 255, 0.35), transparent 60%),
+        radial-gradient(50vmax 50vmax at 85% 90%, rgba(108, 157, 255, 0.28), transparent 60%),
+        #080723;
+      color: #f6f4ff; font-family: 'Nunito', system-ui, sans-serif; text-align: center;
+    }
+    body::before, body::after {
+      content: ''; position: fixed; inset: -20%; pointer-events: none;
+      background: radial-gradient(40% 20% at 30% 40%, rgba(220, 230, 255, 0.07), transparent 70%), radial-gradient(35% 18% at 70% 60%, rgba(220, 210, 255, 0.06), transparent 70%);
+      filter: blur(20px); animation: drift 22s linear infinite;
+    }
+    body::after { animation-duration: 34s; animation-direction: reverse; opacity: 0.7; }
+    @keyframes drift { to { transform: translateX(12%); } }
+    main { position: relative; z-index: 1; display: grid; justify-items: center; gap: 14px; max-width: 520px; }
+    img { width: min(320px, 80vw); height: auto; filter: drop-shadow(0 0 22px rgba(124, 92, 255, 0.6)); }
+    .code { font: 700 clamp(5.5rem, 26vw, 9rem)/0.9 'Pixelify Sans', system-ui, sans-serif; background: linear-gradient(100deg, #8b6bff, #7a9dff 52%, #9fd3ff); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 30px rgba(124, 92, 255, 0.5)); }
+    p { color: #d0d3f6; }
+    a { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; padding: 12px 22px; border-radius: 14px; background: linear-gradient(100deg, #6d4dff, #5f86ff 55%, #7cc4ff); color: #fff; font-weight: 800; text-decoration: none; box-shadow: 0 12px 30px -12px rgba(108, 140, 255, 0.85); }
+    @media (prefers-reduced-motion: reduce) { body::before, body::after { animation: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <img id="logo" alt="Croissants Segunda Edición" width="760" height="205">
+    <h1 class="code">404</h1>
+    <p>El viento se llevó esta página. Puede que se haya movido o que la dirección esté mal escrita.</p>
+    <a id="home" href="./">Volver a Croissants</a>
+  </main>
+  <script>
+    // En GitHub Pages la web vive en /Croissants-Web/; en Cloudflare Pages, en la raíz del dominio
+    (function () {
+      var base = /github\.io$/i.test(location.hostname) ? '/' + (location.pathname.split('/')[1] || '') + '/' : '/';
+      document.getElementById('logo').src = base + 'assets/img/logo-segunda-760.png';
+      document.getElementById('home').href = base;
+    })();
+  </script>
+</body>
+</html>

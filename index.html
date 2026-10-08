@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Croissants Segunda Edición · El SMP de Crosszy · Viciont Studios</title>
+  <meta name="description" content="Croissants Segunda Edición: el SMP público de Crosszy para Java y Bedrock. Misiones diarias, DinoCoins, trabajos, habilidades, la Warden Cave, el End y el Rey Ender. Un proyecto de Viciont Studios.">
+  <meta name="author" content="CrissyjuanxD · Viciont Studios">
+  <meta name="theme-color" content="#0c0a2b">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://api.mcstatus.io https://api.mcsrvstat.us https://ntfy.sh; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Croissants Segunda Edición">
+  <meta property="og:title" content="Croissants Segunda Edición · El SMP de Crosszy">
+  <meta property="og:description" content="Misiones diarias, DinoCoins, trabajos, la Warden Cave, el End y el Rey Ender. Java y Bedrock. Un proyecto de Viciont Studios.">
+  <meta property="og:url" content="https://crissyjuanxd.github.io/Croissants-Web/">
+  <meta property="og:image" content="https://crissyjuanxd.github.io/Croissants-Web/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Croissants Segunda Edición">
+  <meta name="twitter:description" content="El SMP público de Crosszy · Java y Bedrock · Viciont Studios">
+  <meta name="twitter:image" content="https://crissyjuanxd.github.io/Croissants-Web/assets/img/og-image.png">
+  <link rel="canonical" href="https://crissyjuanxd.github.io/Croissants-Web/">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Nunito:wght@500;600;700;800;900&family=Pixelify+Sans:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="assets/img/logo-segunda.png" as="image">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div class="bg" id="bg-photos" aria-hidden="true"></div>
+  <div class="bg-shade" aria-hidden="true"></div>
+  <canvas id="bg-wind" class="bg-wind" aria-hidden="true"></canvas>
+  <div class="fx-layer" aria-hidden="true">
+    <div class="fx-cloud fx-cloud--1"></div>
+    <div class="fx-cloud fx-cloud--2"></div>
+    <div class="fx-cloud fx-cloud--3"></div>
+    <div class="fx-vignette"></div>
+  </div>
+
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot__clouds"><span></span><span></span><span></span><span></span></div>
+    <div class="boot__inner">
+      <img class="boot__logo" src="assets/img/logo-segunda-760.png" alt="" width="760" height="205">
+      <p class="boot__text">Cargando el mundo<span class="boot__dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <div class="boot__bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="preview-bar" id="preview-bar" hidden>
+    <i data-icon="eye"></i>
+    <span id="preview-text">Vista previa en vivo · estos cambios aún no están publicados</span>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="brand" href="#inicio" data-route="inicio" aria-label="Croissants, ir al inicio">
+        <img class="brand__logo" src="assets/img/logo-croissants-960.png" alt="Croissants" width="960" height="137">
+        <span class="brand__ed" data-bind="general.edicion">Segunda Edición</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio" data-route="inicio"><span>Inicio</span></a></li>
+          <li><a class="nav__link" href="#guia" data-route="guia"><span>Guía</span></a></li>
+          <li><a class="nav__link" href="#misiones" data-route="misiones"><span>Misiones</span></a></li>
+          <li><a class="nav__link" href="#jugabilidad" data-route="jugabilidad"><span>Jugabilidad</span></a></li>
+          <li><a class="nav__link" href="#jugadores" data-route="jugadores"><span>Jugadores</span></a></li>
+          <li><a class="nav__link" href="#anuncios" data-route="anuncios"><span>Anuncios</span><span class="nav__badge" id="nav-news" hidden></span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <div class="header__socials" id="header-socials"></div>
+        <a class="nav-launcher" href="#launcher" data-route="launcher" title="Descargar Viciont Studios Launcher"><i data-icon="download"></i><span>Launcher</span></a>
+        <button class="ip-btn" type="button" data-open-ip aria-haspopup="dialog">
+          <span class="ip-btn__icon"><i data-icon="server"></i></span>
+          <span class="ip-btn__text"><strong>IP del servidor</strong><small id="ip-btn-status"><span class="live-dot is-wait"></span><span>Conectando…</span></small></span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+          <span class="menu-toggle__bars"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Menú móvil">
+      <a class="mobile-menu__link" href="#inicio" data-route="inicio"><small>01</small><span>Inicio</span></a>
+      <a class="mobile-menu__link" href="#guia" data-route="guia"><small>02</small><span>Guía</span></a>
+      <a class="mobile-menu__link" href="#misiones" data-route="misiones"><small>03</small><span>Misiones</span></a>
+      <a class="mobile-menu__link" href="#jugabilidad" data-route="jugabilidad"><small>04</small><span>Jugabilidad</span></a>
+      <a class="mobile-menu__link" href="#jugadores" data-route="jugadores"><small>05</small><span>Jugadores</span></a>
+      <a class="mobile-menu__link" href="#anuncios" data-route="anuncios"><small>06</small><span>Anuncios</span></a>
+      <a class="mobile-menu__link mobile-menu__link--accent" href="#launcher" data-route="launcher"><small>07</small><span>Launcher</span><i data-icon="download"></i></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <button class="btn btn--primary btn--block" type="button" data-open-ip><i data-icon="server"></i> IP del servidor</button>
+      <div class="mobile-menu__socials" id="mobile-socials"></div>
+    </div>
+  </div>
+
+  <main id="main" class="main" tabindex="-1">
+    <section class="view" data-view="inicio" aria-label="Inicio"></section>
+    <section class="view page" data-view="guia" aria-label="Guía del servidor"></section>
+    <section class="view page" data-view="misiones" aria-label="Misiones"></section>
+    <section class="view page" data-view="jugabilidad" aria-label="Cambios y Jugabilidad"></section>
+    <section class="view page" data-view="jugadores" aria-label="Jugadores"></section>
+    <section class="view page" data-view="anuncios" aria-label="Anuncios"></section>
+    <section class="view page" data-view="launcher" aria-label="Launcher"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wordmark" aria-hidden="true">CROISSANTS</div>
+    <div class="container">
+      <a class="viciont-band reveal" id="viciont-band" href="https://viciontstudios.pages.dev/" target="_blank" rel="noopener noreferrer">
+        <img class="viciont-band__emblem" src="assets/img/viciont-emblem-160.webp" alt="" width="160" height="140">
+        <span class="viciont-band__text">
+          <small>Un proyecto de</small>
+          <strong>VICIONT STUDIOS</strong>
+          <span>Servidores, eventos, plugins y mods de Minecraft. Conoce el estudio que hace posible Croissants.</span>
+        </span>
+        <span class="viciont-band__go">Visitar el estudio <i data-icon="external"></i></span>
+      </a>
+    </div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/img/logo-croissants-960.png" alt="Croissants" width="960" height="137">
+        <p class="footer__desc" data-bind="footer.descripcion"></p>
+        <div class="footer__socials" id="footer-socials"></div>
+      </div>
+      <nav class="footer__col" aria-label="Secciones">
+        <p class="footer__title">Secciones</p>
+        <ul>
+          <li><a href="#inicio" data-route="inicio">Inicio</a></li>
+          <li><a href="#guia" data-route="guia">Guía del servidor</a></li>
+          <li><a href="#misiones" data-route="misiones">Misiones</a></li>
+          <li><a href="#jugabilidad" data-route="jugabilidad">Cambios y Jugabilidad</a></li>
+          <li><a href="#jugadores" data-route="jugadores">Jugadores</a></li>
+          <li><a href="#anuncios" data-route="anuncios">Anuncios</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__title">Servidor</p>
+        <ul>
+          <li><button class="footer__link" type="button" data-copy-ip="java">Java: <span id="footer-ip-java" class="mono">—</span></button></li>
+          <li><button class="footer__link" type="button" data-copy-ip="bedrock">Bedrock: <span id="footer-ip-bedrock" class="mono">—</span></button></li>
+          <li><a href="#launcher" data-route="launcher">Descargar el launcher</a></li>
+          <li class="footer__muted" id="footer-host"></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__title">Viciont Studios</p>
+        <ul id="footer-viciont"></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> <span data-bind="general.nombre">Croissants</span> · Viciont Studios.</p>
+      <p class="footer__credit">Página creada por <strong class="credit" id="footer-credit">CrissyjuanxD</strong></p>
+      <p class="footer__legal" data-bind="footer.legal">No afiliado a Mojang Studios ni a Microsoft.</p>
+      <button class="to-top" type="button" id="to-top" aria-label="Volver arriba"><i data-icon="arrowUp"></i></button>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" tabindex="-1">
+      <button class="modal__close" type="button" data-close aria-label="Cerrar"><i data-icon="close"></i></button>
+      <div class="modal__content"></div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="transition-fx" id="transition-fx" aria-hidden="true"></div>
+
+  <noscript>
+    <div class="noscript">
+      <p>Activa JavaScript para ver la web de Croissants.</p>
+    </div>
+  </noscript>
+</body>
+</html>
