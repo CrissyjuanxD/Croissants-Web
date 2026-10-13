@@ -58,6 +58,8 @@ Todo el contenido vive en [`data/`](data) y se edita desde **`/admin/`**:
 - **Acceso seguro:** se entra con un token de GitHub con permiso de escritura en este repositorio. La web es estática y GitHub autoriza cada cambio.
 - **Borrador y vista en vivo:** los cambios se guardan como borrador en tu navegador y se ven en la web en tiempo real (al lado del panel o en otra pestaña) antes de publicarlos.
 - **Publicar:** crea un commit con los textos y las imágenes optimizadas (`assets/uploads/`). La web se actualiza en 1-2 minutos y las páginas abiertas se recargan solas.
+- **Guía a la medida del plugin:** las secciones se crean, ocultan o borran, y los bloques que no salen del plugin también se editan: los rangos (con la imagen de su unicode), los premios de la pesca, las zonas de `/menu` y la nota de los trabajos.
+- **Mobs:** los del plugin que no se usan en el servidor se ocultan con un clic, y se pueden añadir mobs que solo existen en la web.
 - **Historial:** cada publicación queda guardada y se puede volver a cualquier versión.
 
 ## Estructura

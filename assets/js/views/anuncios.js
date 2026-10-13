@@ -30,10 +30,10 @@ function readTime(text) {
 function cardHtml(a, big = false) {
   const c = cats()[a.categoria] || { nombre: a.categoria, color: '#9d7bff' };
   const img = safeImage(a.portada);
-  return `<a class="ncard${big ? ' ncard--big' : ''} reveal" style="--c:${escapeHtml(c.color)}" href="#anuncios/${escapeHtml(a.id)}" data-route="anuncios" data-tilt>
+  return `<a class="ncard${big ? ' ncard--big' : ''}" style="--c:${escapeHtml(c.color)}" href="#anuncios/${escapeHtml(a.id)}" data-route="anuncios" data-tilt>
     <span class="ncard__media">${img ? `<img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">` : `<span class="ncard__ph">${icon('megaphone')}</span>`}</span>
     <span class="ncard__body">
-      <span class="ncard__meta"><span class="cat-chip">${escapeHtml(c.nombre)}</span>${a.fijado ? `<span class="tag">${icon('star')} Fijado</span>` : ''}<time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha))}</time></span>
+      <span class="ncard__meta"><span class="cat-chip">${escapeHtml(c.nombre)}</span>${a.fijado ? `<span class="tag">${icon('pin')} Fijado</span>` : ''}<time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha))}</time></span>
       <strong class="ncard__title">${escapeHtml(a.titulo)}</strong>
       <span class="ncard__text">${escapeHtml(a.resumen || plainText(a.contenido, big ? 260 : 150))}</span>
       <span class="ncard__more">Leer anuncio ${icon('arrowRight')}</span>
@@ -48,7 +48,7 @@ function listHtml() {
   const C = cats();
   if (!all.length) return emptyHTML('Todavía no hay anuncios. ¡Vuelve pronto!', 'megaphone');
   const [first, ...rest] = shown;
-  return `<div class="filters reveal">
+  return `<div class="filters">
       <button class="chip-btn${!ui.cat ? ' is-active' : ''}" type="button" data-ncat="">Todos <small>${all.length}</small></button>
       ${used.map((k) => `<button class="chip-btn${ui.cat === k ? ' is-active' : ''}" type="button" data-ncat="${escapeHtml(k)}" style="--c:${escapeHtml(C[k]?.color || '#9d7bff')}">${escapeHtml(C[k]?.nombre || k)} <small>${all.filter((a) => a.categoria === k).length}</small></button>`).join('')}
     </div>
@@ -66,14 +66,14 @@ function articleHtml(a) {
   return `<div class="container container--narrow">
     <p class="crumbs crumbs--back"><a href="#anuncios" data-route="anuncios">${icon('arrowLeft')} Todos los anuncios</a></p>
     <article class="article" style="--c:${escapeHtml(c.color)}">
-      <header class="article__head reveal">
+      <header class="article__head">
         <div class="article__meta"><span class="cat-chip">${escapeHtml(c.nombre)}</span><time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }))}</time><span>· ${readTime(a.contenido)} min de lectura</span></div>
-        <h1 class="article__title"><span class="gusty" data-breeze>${escapeHtml(a.titulo)}</span></h1>
+        <h1 class="article__title"><span class="grad-text">${escapeHtml(a.titulo)}</span></h1>
         ${a.resumen ? `<p class="article__lead">${escapeHtml(a.resumen)}</p>` : ''}
         <div class="article__by">${a.autor ? `<img src="https://mc-heads.net/avatar/${encodeURIComponent(a.autor)}/40" alt="" width="40" height="40"><span>Publicado por <b>${escapeHtml(a.autor)}</b></span>` : ''}<button class="btn btn--sm btn--ghost" type="button" data-share="${escapeHtml(a.id)}">${icon('link')} Copiar enlace</button></div>
       </header>
-      ${img ? `<figure class="article__cover reveal"><img src="${escapeHtml(img)}" alt="" decoding="async"></figure>` : ''}
-      <div class="md article__md reveal">${md(a.contenido, mdCtx())}</div>
+      ${img ? `<figure class="article__cover"><img src="${escapeHtml(img)}" alt="" decoding="async"></figure>` : ''}
+      <div class="md article__md">${md(a.contenido, mdCtx())}</div>
     </article>
     <nav class="pager" aria-label="Más anuncios">
       ${older ? `<a class="pager__link pager__link--prev" href="#anuncios/${escapeHtml(older.id)}" data-route="anuncios"><small>${icon('arrowLeft')} Anterior</small><strong>${escapeHtml(older.titulo)}</strong></a>` : '<span></span>'}
@@ -101,7 +101,7 @@ document.addEventListener('click', async (e) => {
   if (c) {
     ui.cat = c.dataset.ncat;
     const box = c.closest('#n-list');
-    if (box) { box.innerHTML = listHtml(); box.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
+    if (box) { box.innerHTML = listHtml(); }
     return;
   }
   const s = e.target.closest?.('[data-share]');

@@ -39,7 +39,7 @@ export function render(el) {
   el.innerHTML = `<div class="container">
     ${pageHead({ crumbs: ['launcher'], title: l.titulo || 'Viciont Studios Launcher', intro: l.texto, icon: 'download' })}
     <div class="launcher">
-      <div class="launcher__card reveal">
+      <div class="launcher__card">
         <div class="launcher__app">
           <img class="launcher__icon" src="assets/img/viciont-launcher.png" alt="" width="96" height="96">
           <div><p class="launcher__name">Viciont Studios Launcher</p><p class="launcher__meta" id="launcher-meta"><span>Última versión</span></p></div>
@@ -52,14 +52,14 @@ export function render(el) {
         ${l.pasos.length ? `<ol class="launcher__steps">${l.pasos.map((p, i) => `<li><span>${i + 1}</span><div class="md">${md(p, mdCtx())}</div></li>`).join('')}</ol>` : ''}
         <p class="launcher__alt">${icon('info')}<span>¿Prefieres tu propio launcher? Puedes entrar con cualquier Minecraft Java ${escapeHtml(g.versionJava || '')} o desde Bedrock con la <button class="link-btn" type="button" data-open-ip>IP del servidor</button>, pero sin el modpack ni las texturas.</span></p>
       </div>
-      <div class="launcher__shots reveal">
+      <div class="launcher__shots">
         <img src="assets/img/launcher-inicio.webp" alt="Viciont Studios Launcher: pantalla de inicio" loading="lazy" decoding="async" width="1600" height="1000">
         <img src="assets/img/launcher-instancia.webp" alt="Viciont Studios Launcher: la instancia de un servidor" loading="lazy" decoding="async" width="1600" height="1000">
       </div>
     </div>
     ${l.beneficios.length ? `<section class="section">
-      <header class="section-head reveal"><p class="kicker"><span class="kicker__num">${icon('sparkle')}</span> por qué usarlo</p><h2 class="section-title"><span class="gusty">La mejor forma de jugar Croissants</span></h2></header>
-      <div class="features">${l.beneficios.map((b) => `<div class="feature feature--static reveal"><span class="feature__icon">${icon(b.icono)}</span><strong>${escapeHtml(b.titulo)}</strong><span>${escapeHtml(b.texto)}</span></div>`).join('')}</div>
+      <header class="section-head"><p class="kicker"><span class="kicker__num">${icon('verified')}</span> por qué usarlo</p><h2 class="section-title"><span class="grad-text">La mejor forma de jugar Croissants</span></h2></header>
+      <div class="features">${l.beneficios.map((b) => `<div class="feature feature--static"><span class="feature__icon">${icon(b.icono)}</span><strong>${escapeHtml(b.titulo)}</strong><span>${escapeHtml(b.texto)}</span></div>`).join('')}</div>
     </section>` : ''}
   </div>`;
   loadRelease(el);

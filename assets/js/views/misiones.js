@@ -6,7 +6,7 @@ import { chestHtml, rewardChest, itemHtml } from '../mc.js';
 const TABS = [
   { id: 'todas', label: 'Todas', icon: 'grid' },
   { id: 'normal', label: 'Misiones', icon: 'scroll' },
-  { id: 'extra', label: 'Misiones Extra', icon: 'sparkle' },
+  { id: 'extra', label: 'Misiones Extra', icon: 'gift' },
   { id: 'trabajo', label: 'Misiones de Trabajo', icon: 'pickaxe' },
 ];
 const JOBS = { 141: 'Guerrero', 151: 'Minería', 161: 'Leñador', 171: 'Constructor', 181: 'Granjero', 191: 'Pescador' };
@@ -39,7 +39,7 @@ function card(m, act) {
   const locked = !open && !showLocked();
   const done = liveReady() ? completedBy(m.n) : 0;
   const job = m.tipo === 'trabajo' ? jobOf(m) : '';
-  return `<button class="mcard mcard--${m.tipo}${open ? '' : ' is-locked'} reveal" type="button" data-mission="${m.n}">
+  return `<button class="mcard mcard--${m.tipo}${open ? '' : ' is-locked'}" type="button" data-mission="${m.n}">
     <span class="mcard__top">
       <span class="mcard__tag">${escapeHtml(missionTag(m))}</span>
       ${open ? `<span class="mcard__diff mcard__diff--${m.dificultad}">${escapeHtml(DIF[m.dificultad])}</span>` : `<span class="mcard__lock">${icon('lock')}</span>`}
@@ -87,7 +87,7 @@ function sectionHtml(tipo, act) {
     trabajo: 'Siempre activas: piden llegar a los niveles 10, 20… 100 de cada trabajo. Dan ficha para la Estatua de Recompensas.',
   }[tipo];
   return `<section class="msec msec--${tipo}" id="sec-${tipo}">
-    <header class="msec__head reveal">
+    <header class="msec__head">
       <div><h2 class="msec__title"><span class="msec__dot"></span>${escapeHtml(label)}</h2><p>${escapeHtml(info)}</p></div>
       <span class="msec__count"><b>${opened}</b>/${all.length} abiertas</span>
     </header>
@@ -105,7 +105,7 @@ export function render(el, parts, ctx) {
   const intro = S.sitio.misiones.intro;
   el.innerHTML = `<div class="container">
     ${pageHead({ crumbs: ['misiones'], title: 'Misiones', intro, extra: `<div id="m-sync">${syncLine()}</div>` })}
-    <div class="mtoolbar reveal">
+    <div class="mtoolbar">
       <div class="seg" role="tablist" aria-label="Tipo de misión">${TABS.map((t) => `<button class="seg__btn${ui.tab === t.id ? ' is-active' : ''}" type="button" role="tab" aria-selected="${ui.tab === t.id}" data-mtab="${t.id}">${icon(t.icon)}<span>${t.label}</span></button>`).join('')}</div>
       <div class="mtoolbar__filters">
         <label class="search">${icon('search')}<input class="input" type="search" placeholder="Buscar por nombre o número…" value="${escapeHtml(ui.q)}" data-mq></label>
@@ -121,7 +121,7 @@ export function render(el, parts, ctx) {
       </div>
     </div>
     <div id="m-list">${listHtml()}</div>
-    ${S.sitio.misiones.notas ? `<aside class="mnotes md reveal">${md(S.sitio.misiones.notas, mdCtx())}</aside>` : ''}
+    ${S.sitio.misiones.notas ? `<aside class="mnotes md">${md(S.sitio.misiones.notas, mdCtx())}</aside>` : ''}
   </div>`;
   const n = Number(parts[0]);
   if (n && mission(n)) openMission(ctx.modal, n);
@@ -132,7 +132,6 @@ function refreshList(el) {
   const box = el.querySelector('#m-list');
   if (!box) return;
   box.innerHTML = listHtml();
-  box.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal'));
 }
 
 export function update(el, kind) {

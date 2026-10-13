@@ -298,11 +298,12 @@ async function saveDraft() {
   });
 }
 
+// Primero se marca el cambio (así los datos del juego se recalculan) y después se vuelve a dibujar
 function refresh(docs = []) {
-  renderTabs();
-  renderWorkspace();
   for (const d of docs) castDocs.add(d);
   changed(docs[0]);
+  renderTabs();
+  renderWorkspace();
 }
 
 function updateStatus() {
@@ -480,6 +481,18 @@ async function undoEditor() {
 
 async function deleteFromEditor() {
   const e = S.edit;
+  // Los mobs que se agregaron en el panel se pueden borrar; los del plugin solo se ocultan
+  if (e?.kind === 'mob') {
+    const idx = (S.draft.juego.mobs || []).findIndex((x) => x.id === e.id);
+    const m = S.draft.juego.mobs?.[idx];
+    if (!m?.soloWeb) return;
+    const ok = await confirmDialog(modal, { title: `¿Eliminar “${m.nombre}”?`, text: 'Se quita del borrador. Si te equivocas, puedes descartar los cambios antes de publicar.', ok: 'Eliminar', danger: true });
+    if (!ok) return;
+    S.draft.juego.mobs.splice(idx, 1);
+    closeEditor();
+    changed('juego');
+    return;
+  }
   if (!e?.list) return;
   const L = LISTS[e.list];
   const item = listArr(e.list)[e.index];
@@ -927,6 +940,25 @@ function bindApp() {
       case 'mision-edit': openKindEditor('mision', Number(b.dataset.n)); break;
       case 'item-edit': openKindEditor('item', b.dataset.id); break;
       case 'mob-edit': openKindEditor('mob', b.dataset.id); break;
+      case 'mob-toggle': {
+        const entry = ensureEntry('mob', b.dataset.id);
+        const m = entry && getAt(entry.path);
+        if (!m) break;
+        m.oculto = !m.oculto;
+        refresh(['juego']);
+        break;
+      }
+      case 'mob-add': {
+        const mobs = (S.draft.juego.mobs ||= []);
+        const taken = new Set(game().mobs.map((x) => x.id));
+        let n = 1;
+        while (taken.has(`mob-web-${n}`)) n++;
+        const id = `mob-web-${n}`;
+        mobs.push({ id, nombre: 'Nuevo mob', soloWeb: true, color: '#c4b5fd', etapa: 'uno', vida: '', donde: '', texto: '', huevo: '', imagen: '', oculto: false });
+        changed('juego');
+        openKindEditor('mob', id);
+        break;
+      }
       case 'receta-edit': openKindEditor('receta', b.dataset.id); break;
       case 'filter-tipo': S.filters.tipo = b.dataset.v; renderWorkspace(); break;
       case 'sub-items': S.sub.items = b.dataset.v; S.filters = { q: '', cat: '', tipo: 'todas' }; renderWorkspace(); updateDock(); break;

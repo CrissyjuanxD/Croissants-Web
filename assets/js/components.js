@@ -1,6 +1,6 @@
 // Piezas que se repiten en varias secciones y los componentes que se pueden poner dentro de los textos
 // con atajos: [[item:id x16]], [[mision:12]], [[cmd:/menu]], [[receta:id]], [[trabajos]]...
-import { escapeHtml, icon, md, safeImage, safeUrl, fmt, slugify, visible } from './core.js';
+import { escapeHtml, icon, md, safeImage, safeUrl, fmt, slugify, visible, parseSlots, NOTA_TRABAJOS } from './core.js';
 import { itemHtml, itemChipHtml, recipeHtml, legacyHtml, resolveRef, itemName, itemLabel, stripCodes } from './mc.js';
 import { S, currentDay, stageActive, mission, missionTag, activeMissions, mobsList } from './store.js';
 
@@ -10,7 +10,7 @@ export const TIPO = { normal: 'Misión', extra: 'Misión extra', trabajo: 'Misi�
 export function pageHead({ crumbs = [], title, intro = '', extra = '', icon: ic = '' }) {
   return `<header class="page-head">
     <p class="crumbs">${['croissants', ...crumbs].map((c, i) => `<span${i === crumbs.length ? ' class="is-last"' : ''}>${escapeHtml(c)}</span>`).join('<i>/</i>')}</p>
-    <h1 class="page-title">${ic ? `<span class="page-title__icon">${icon(ic)}</span>` : ''}<span class="gusty" data-breeze>${escapeHtml(title)}</span></h1>
+    <h1 class="page-title">${ic ? `<span class="page-title__icon">${icon(ic)}</span>` : ''}<span class="grad-text">${escapeHtml(title)}</span></h1>
     ${intro ? `<div class="page-intro md">${md(intro, mdCtx())}</div>` : ''}
     ${extra}
   </header>`;
@@ -106,8 +106,14 @@ export function jobsHtml() {
       <ul class="job__xp">${j.fuentes.map((f) => `<li>${escapeHtml(f)}</li>`).join('')}</ul>
     </article>`).join('')}</div>
     <div class="jobs__table md"><div class="table-wrap"><table><thead><tr><th>Nivel</th><th>XP total</th><th>DinoCoins al subir</th></tr></thead><tbody>${milestones.map((m) => `<tr><td>${m.n}</td><td>${fmt(m.xp)}</td><td>${m.coins}${BONUS(m.n) ? ` <small class="muted">(incluye bonus de ${BONUS(m.n)})</small>` : ''}</td></tr>`).join('')}</tbody></table></div>
-    <p class="jobs__note">Un trabajo completo (nivel 100) da unas <b>${fmt(totalCoins)} DinoCoins</b>, más las misiones de trabajo.</p></div>
+    ${notaTrabajos(totalCoins)}</div>
   </div>`;
+}
+
+// La nota de abajo de la tabla se escribe en el panel; {total} se cambia por las DinoCoins de un trabajo completo
+function notaTrabajos(total) {
+  const text = (S.sitio?.guia?.notaTrabajos ?? NOTA_TRABAJOS).replaceAll('{total}', fmt(total));
+  return text.trim() ? `<div class="jobs__note md">${md(text, mdCtx())}</div>` : '';
 }
 
 // ------------------------------------------------------------------ habilidades
@@ -131,9 +137,17 @@ export function ranksHtml() {
   const ranks = (S.juego?.rangos || []).filter((r) => !r.oculto);
   if (!ranks.length) return '';
   return `<div class="ranks">${ranks.map((r) => `<div class="rank" style="--c:${escapeHtml(r.color)}">
-    <span class="rank__tag">${legacyHtml(r.prefijo || r.nombre, { c: r.color })}</span>
+    ${rankBadge(r, 'rank__img', 'rank__tag')}
     <div><strong>${escapeHtml(r.nombre)}</strong><p>${escapeHtml(r.como)}</p></div>
   </div>`).join('')}</div>`;
+}
+
+// El rango como se ve en el juego: la imagen de su unicode (si se subió una) o el prefijo con sus colores
+export function rankBadge(r, imgCls = 'rank-tag__img', textCls = '') {
+  const src = safeImage(r.imagen);
+  if (src) return `<img class="${imgCls}" src="${escapeHtml(src)}" alt="${escapeHtml(r.nombre)}" loading="lazy" decoding="async">`;
+  const text = legacyHtml(r.prefijo || r.nombre, { c: r.color });
+  return textCls ? `<span class="${textCls}">${text}</span>` : text;
 }
 
 export function rankOf(id) {
@@ -163,23 +177,21 @@ export function calendarHtml() {
 
 // ------------------------------------------------------------------ /menu
 
+// Las zonas, sus casillas, colores e íconos y el texto de abajo se editan en el panel (Guía → Bloques)
 export function menuGuiHtml() {
-  const zones = [
-    { n: 'Misiones', c: '#c9a7eb', slots: [1, 2, 3, 10, 11, 12, 19, 20, 21], icon: 'scroll' },
-    { n: 'Trabajos', c: '#c8a27c', slots: [5, 6, 7, 14, 15, 16, 23, 24, 25], icon: 'pickaxe' },
-    { n: 'Habilidades', c: '#9fd3ff', slots: [27, 28, 29, 36, 37, 38, 45, 46, 47], icon: 'star' },
-    { n: 'Homes', c: '#8ff0b8', slots: [39, 40, 41, 48, 49, 50], icon: 'home' },
-    { n: 'Protecciones', c: '#ffd27a', slots: [33, 34, 35, 42, 43, 44, 51, 52, 53], icon: 'shield' },
-  ];
+  const menu = S.sitio?.guia?.menu;
+  if (!menu) return '';
+  const total = menu.filas * 9;
+  const zones = menu.zonas.map((z) => ({ ...z, slots: parseSlots(z.casillas, total) })).filter((z) => z.slots.length);
   const owner = new Map();
   zones.forEach((z) => z.slots.forEach((s) => owner.set(s, z)));
   const cells = [];
-  for (let s = 0; s < 54; s++) {
+  for (let s = 0; s < total; s++) {
     const z = owner.get(s);
     const first = z && z.slots[Math.floor(z.slots.length / 2)] === s;
-    cells.push(`<span class="gui-cell${z ? ' is-zone' : ''}" style="${z ? `--c:${z.c}` : ''}">${first ? `<span class="gui-cell__label">${icon(z.icon)}<b>${z.n}</b></span>` : ''}</span>`);
+    cells.push(`<span class="gui-cell${z ? ' is-zone' : ''}"${z ? ` style="--c:${escapeHtml(z.color)}"` : ''}>${first ? `<span class="gui-cell__label">${icon(z.icono)}<b>${escapeHtml(z.nombre)}</b></span>` : ''}</span>`);
   }
-  return `<figure class="gui-mock"><div class="gui-mock__grid">${cells.join('')}</div><figcaption>Así se reparte el menú de <code>/menu</code>: haz clic en cualquier parte de una zona para abrirla.</figcaption></figure>`;
+  return `<figure class="gui-mock"><div class="gui-mock__grid">${cells.join('')}</div>${menu.texto ? `<figcaption class="md">${md(menu.texto, mdCtx())}</figcaption>` : ''}</figure>`;
 }
 
 // ------------------------------------------------------------------ items por categoría
@@ -205,8 +217,8 @@ export function mobsHtml(etapa) {
 
 export function mobCard(m) {
   const img = imgSrc(m.imagen);
-  const media = img ? `<img class="mob__img" src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">`
-    : m.huevo ? itemHtml({ vanilla: true, material: m.huevo, n: 1 }, { size: 44, tip: false }) : icon('skull');
+  const media = img ? `<img class="mob__img" src="${escapeHtml(img)}" alt="${escapeHtml(m.nombre)}" loading="lazy" decoding="async">`
+    : m.huevo ? itemHtml({ vanilla: true, material: m.huevo, n: 1 }, { size: 64, tip: false }) : icon('skull');
   return `<article class="mob" style="--c:${escapeHtml(m.color)}">
     <div class="mob__media">${media}</div>
     <div class="mob__body">

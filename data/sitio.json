@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": 4,
-  "updatedAt": "2026-10-08T10:40:03.895Z",
+  "updatedAt": "2026-10-13T21:40:10.000Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -76,7 +76,6 @@
   }
  },
  "inicio": {
-  "kicker": "Servidor de Minecraft",
   "titulo": "Todo lo que trae Croissants",
   "texto": "Cada día se abre una **misión nueva**, el mundo se abre por partes y todo lo que haces te da **DinoCoins**. Del Overworld a la **Warden Cave** y del End al **Rey Ender**.",
   "pasos": [
@@ -121,7 +120,7 @@
     "ruta": "guia/trabajos"
    },
    {
-    "icono": "star",
+    "icono": "tree",
     "titulo": "Habilidades",
     "texto": "Vitalidad, Resistencia y Agilidad, 8 niveles cada una.",
     "ruta": "guia/habilidades"
@@ -156,7 +155,7 @@
     "dia": 14,
     "titulo": "Cambio Extra",
     "texto": "Los mobs florales empiezan a salir solos por el Overworld.",
-    "icono": "sparkle"
+    "icono": "bolt"
    },
    {
     "dia": 20,
@@ -192,6 +191,7 @@
   "viciont": "Croissants está hecho por **Viciont Studios**: el plugin con las misiones, los bosses y las dimensiones, el **launcher** con el que juegas y esta web. Un estudio de servidores, eventos, plugins y mods de Minecraft."
  },
  "guia": {
+  "titulo": "Guía del servidor",
   "intro": "Todo lo que necesitas saber para jugar Croissants: desde tu primer día hasta cómo funcionan las misiones, los trabajos y las habilidades.",
   "secciones": [
    {
@@ -282,7 +282,7 @@
    {
     "id": "habilidades",
     "titulo": "Habilidades",
-    "icono": "star",
+    "icono": "tree",
     "resumen": "Vitalidad, Resistencia y Agilidad: 8 niveles cada una.",
     "contenido": "Las habilidades son mejoras permanentes que compras con DinoCoins, experiencia y bloques.\n\n## Cómo se desbloquean\n\n1. Compra el [[item:libro_habilidades]] en la Biblioteca (al principio cuesta 1 DinoCoin).\n2. Dale clic derecho: el libro se gasta y tu árbol queda desbloqueado en [[cmd:/menu]] → Habilidades.\n3. Sube cada habilidad nivel por nivel (hay que tener el anterior).\n\n[[habilidades]]\n\n> [!tip] Cada habilidad completa cuesta 150 DinoCoins en total y las tres, 450. Un jugador activo junta unas 30 DinoCoins por día, así que las completa en pocas semanas.",
     "imagenes": [],
@@ -360,7 +360,44 @@
     "imagenes": [],
     "oculto": false
    }
-  ]
+  ],
+  "menu": {
+   "filas": 6,
+   "texto": "Así se reparte el menú de `/menu`: haz clic en cualquier parte de una zona para abrirla.",
+   "zonas": [
+    {
+     "nombre": "Misiones",
+     "color": "#c9a7eb",
+     "icono": "scroll",
+     "casillas": "1-3, 10-12, 19-21"
+    },
+    {
+     "nombre": "Trabajos",
+     "color": "#c8a27c",
+     "icono": "pickaxe",
+     "casillas": "5-7, 14-16, 23-25"
+    },
+    {
+     "nombre": "Habilidades",
+     "color": "#9fd3ff",
+     "icono": "tree",
+     "casillas": "27-29, 36-38, 45-47"
+    },
+    {
+     "nombre": "Homes",
+     "color": "#8ff0b8",
+     "icono": "home",
+     "casillas": "39-41, 48-50"
+    },
+    {
+     "nombre": "Protecciones",
+     "color": "#ffd27a",
+     "icono": "shield",
+     "casillas": "33-35, 42-44, 51-53"
+    }
+   ]
+  },
+  "notaTrabajos": "Un trabajo completo (nivel 100) da unas **{total} DinoCoins**, más las misiones de trabajo."
  },
  "misiones": {
   "intro": "Las misiones se abren solas cuando el servidor las activa. Toca una para ver qué pide y qué da. Las bloqueadas se revelan el día que se abren.",
@@ -386,7 +423,7 @@
    {
     "id": "extra",
     "titulo": "Cambio Extra",
-    "icono": "sparkle",
+    "icono": "bolt",
     "resumen": "Día 14: el Zombie Floral, la Spider Floral y las Bombitas empiezan a salir solos por el Overworld.",
     "contenido": "\nEl cambio extra va entre el uno y el dos, el **día 14**. Hasta ese día los mobs florales solo salían en las raids; desde ahora salen **solos por el Overworld**.\n\n| Mob | Sale floral |\n| --- | --- |\n| Zombie (adulto) | 25% pasa a **Zombie Floral** |\n| Araña | 25% pasa a **Spider Floral** |\n| Creeper | 20% pasa a **Bombita** |\n\n- Los zombies bebé quedan normales.\n- No pasa en la Warden Cave, que tiene sus propios mobs.\n- Hacen lo mismo que en las raids: la wind charge con veneno y debilidad, la telaraña, la velocidad y la fuerza.\n\nLa [[mision:17]] pide matar 25 Zombies Florales y 25 Spiders Florales: desde este día ya no hace falta esperar una raid.\n",
     "imagenes": [],

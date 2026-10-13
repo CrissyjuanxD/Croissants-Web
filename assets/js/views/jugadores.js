@@ -1,6 +1,6 @@
 import { escapeHtml, icon, md, fmt, fmt1, ago, fmtDate, hours } from '../core.js';
 import { S, players, onlineNames, liveReady, activeMissions, missionTag } from '../store.js';
-import { pageHead, mdCtx, rankOf, emptyHTML } from '../components.js';
+import { pageHead, mdCtx, rankOf, rankBadge, emptyHTML } from '../components.js';
 import { legacyHtml, itemHtml } from '../mc.js';
 import { countUp } from '../fx.js';
 
@@ -18,7 +18,7 @@ const nMisiones = (p) => (Array.isArray(p.misiones) ? p.misiones.length : 0);
 function rankTag(p) {
   const r = rankOf(p.rango);
   if (!r) return '';
-  return `<span class="rank-tag" style="--c:${escapeHtml(r.color)}">${legacyHtml(r.prefijo || r.nombre, { c: r.color })}</span>`;
+  return `<span class="rank-tag${r.imagen ? ' rank-tag--img' : ''}" style="--c:${escapeHtml(r.color)}">${rankBadge(r)}</span>`;
 }
 
 function sortList(list) {
@@ -44,18 +44,18 @@ function summaryHtml(list) {
     { label: 'Horas jugadas en total', value: Math.round(horas), icon: 'clock' },
     { label: 'Misiones completadas', value: mis, icon: 'scroll' },
   ];
-  return `<div class="ptiles">${tiles.map((t) => `<div class="ptile reveal"><span class="ptile__icon">${icon(t.icon)}</span><span class="ptile__num" data-count-to="${t.value}">${fmt(t.value)}</span><span class="ptile__label">${t.live ? '<span class="live-dot"></span>' : ''}${t.label}</span></div>`).join('')}</div>`;
+  return `<div class="ptiles">${tiles.map((t) => `<div class="ptile"><span class="ptile__icon">${icon(t.icon)}</span><span class="ptile__num" data-count-to="${t.value}">${fmt(t.value)}</span><span class="ptile__label">${t.live ? '<span class="live-dot"></span>' : ''}${t.label}</span></div>`).join('')}</div>`;
 }
 
 function leaderboard(list, key, labelFn, iconName, titleText) {
   const top = [...list].sort((a, b) => key(b) - key(a)).filter((p) => key(p) > 0).slice(0, 5);
-  return `<div class="board reveal"><p class="board__title">${icon(iconName)} ${titleText}</p>${top.length ? `<ol class="board__list">${top.map((p, i) => `<li><a href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores"><span class="board__pos board__pos--${i + 1}">${i + 1}</span><img src="${head(p, 32)}" alt="" width="32" height="32" loading="lazy"><span class="board__name">${escapeHtml(p.nombre)}</span><b>${labelFn(p)}</b></a></li>`).join('')}</ol>` : '<p class="board__empty">Todavía no hay datos.</p>'}</div>`;
+  return `<div class="board"><p class="board__title">${icon(iconName)} ${titleText}</p>${top.length ? `<ol class="board__list">${top.map((p, i) => `<li><a href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores"><span class="board__pos board__pos--${i + 1}">${i + 1}</span><img src="${head(p, 32)}" alt="" width="32" height="32" loading="lazy"><span class="board__name">${escapeHtml(p.nombre)}</span><b>${labelFn(p)}</b></a></li>`).join('')}</ol>` : '<p class="board__empty">Todavía no hay datos.</p>'}</div>`;
 }
 
 function cardHtml(p) {
   const job = p.trabajo?.activo;
   const lvl = job ? p.trabajo?.niveles?.[job]?.nivel ?? 0 : 0;
-  return `<a class="pcard reveal${p.online ? ' is-online' : ''}" href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores" data-tilt>
+  return `<a class="pcard${p.online ? ' is-online' : ''}" href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores" data-tilt>
     <span class="pcard__head"><img src="${head(p, 72)}" alt="" width="72" height="72" loading="lazy" decoding="async">${p.online ? '<span class="pcard__dot" title="Conectado"></span>' : ''}</span>
     <span class="pcard__body">
       <span class="pcard__name">${escapeHtml(p.nombre)}${p.bedrock ? ' <span class="tag tag--xs">Bedrock</span>' : ''}</span>
@@ -80,7 +80,7 @@ function gridHtml(list) {
 function onlineOnlyHtml() {
   const names = onlineNames();
   const st = S.status;
-  return `<div class="nodata reveal">
+  return `<div class="nodata">
     <span class="nodata__icon">${icon('server')}</span>
     <h2>Las estadísticas llegan desde el servidor</h2>
     <p>En cuanto el servidor se conecte con la web vas a ver aquí a todos los que jugaron, con sus misiones, DinoCoins, trabajos, habilidades y horas jugadas, actualizado en vivo.</p>
@@ -104,7 +104,7 @@ function listView() {
       ${leaderboard(list, (p) => p.dinocoins || 0, (p) => fmt(p.dinocoins || 0), 'coin', 'Más DinoCoins')}
       ${leaderboard(list, (p) => p.horas || 0, (p) => hours(p.horas), 'clock', 'Más horas jugadas')}
     </div>
-    <div class="ptoolbar reveal">
+    <div class="ptoolbar">
       <label class="search">${icon('search')}<input class="input" type="search" placeholder="Buscar jugador…" value="${escapeHtml(ui.q)}" data-pq></label>
       <div class="seg" role="tablist">
         <button class="seg__btn${ui.filtro === 'todos' ? ' is-active' : ''}" type="button" data-pf="todos">${icon('users')}<span>Todos</span></button>
@@ -189,11 +189,11 @@ function profileView(name) {
   const r = rankOf(p.rango);
   return `<div class="container">
     <p class="crumbs crumbs--back"><a href="#jugadores" data-route="jugadores">${icon('arrowLeft')} Jugadores</a></p>
-    <section class="profile reveal" style="--c:${escapeHtml(r?.color || '#9d7bff')}">
+    <section class="profile" style="--c:${escapeHtml(r?.color || '#9d7bff')}">
       <div class="profile__skin"><img src="${body(p)}" alt="Skin de ${escapeHtml(p.nombre)}" loading="lazy" decoding="async"></div>
       <div class="profile__main">
         <div class="profile__top">
-          <h1 class="profile__name"><span class="gusty">${escapeHtml(p.nombre)}</span></h1>
+          <h1 class="profile__name"><span class="grad-text">${escapeHtml(p.nombre)}</span></h1>
           ${p.online ? '<span class="state state--on"><span class="live-dot"></span>Conectado</span>' : `<span class="state state--off">${icon('clock')} ${p.ultimaVez ? `Visto ${ago(p.ultimaVez)}` : 'Desconectado'}</span>`}
         </div>
         <div class="profile__tags">${rankTag(p)}${p.bedrock ? '<span class="tag">Bedrock</span>' : '<span class="tag">Java</span>'}${p.primeraVez ? `<span class="tag">${icon('calendar')} Desde el ${escapeHtml(fmtDate(p.primeraVez))}</span>` : ''}</div>
@@ -207,9 +207,9 @@ function profileView(name) {
       </div>
     </section>
     <div class="profile-grid">
-      <section class="panel reveal"><h2 class="panel__title">${icon('scroll')} Misiones</h2>${missionsMap(p)}</section>
-      <section class="panel reveal"><h2 class="panel__title">${icon('pickaxe')} Trabajos</h2>${jobsBlock(p)}<h2 class="panel__title panel__title--mt">${icon('star')} Habilidades</h2>${skillsBlock(p)}</section>
-      <section class="panel reveal"><h2 class="panel__title">${icon('signal')} Estadísticas</h2>
+      <section class="panel"><h2 class="panel__title">${icon('scroll')} Misiones</h2>${missionsMap(p)}</section>
+      <section class="panel"><h2 class="panel__title">${icon('pickaxe')} Trabajos</h2>${jobsBlock(p)}<h2 class="panel__title panel__title--mt">${icon('tree')} Habilidades</h2>${skillsBlock(p)}</section>
+      <section class="panel"><h2 class="panel__title">${icon('signal')} Estadísticas</h2>
         <ul class="pstats">${STAT_LABELS.filter(([k]) => stats[k] != null || (k === 'homes' && p.homes != null)).map(([k, label, ic, f]) => `<li><span>${icon(ic)} ${label}</span><b>${f(k === 'homes' ? p.homes : stats[k])}</b></li>`).join('') || '<li class="muted">Sin estadísticas todavía.</li>'}</ul>
       </section>
     </div>
@@ -240,7 +240,6 @@ export function update(el, kind, parts) {
   } else {
     el.innerHTML = listView();
   }
-  el.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal'));
   window.scrollTo({ top: y });
 }
 
@@ -249,7 +248,7 @@ document.addEventListener('input', (e) => {
   if (!q) return;
   ui.q = q.value;
   const grid = q.closest('.view')?.querySelector('#p-grid');
-  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
+  if (grid) { grid.innerHTML = gridHtml(players()); }
 });
 
 document.addEventListener('click', (e) => {
@@ -259,7 +258,7 @@ document.addEventListener('click', (e) => {
   const view = f.closest('.view');
   view.querySelectorAll('[data-pf]').forEach((b) => b.classList.toggle('is-active', b === f));
   const grid = view.querySelector('#p-grid');
-  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
+  if (grid) { grid.innerHTML = gridHtml(players()); }
 });
 
 document.addEventListener('change', (e) => {
@@ -267,5 +266,5 @@ document.addEventListener('change', (e) => {
   if (!o) return;
   ui.orden = o.value;
   const grid = o.closest('.view')?.querySelector('#p-grid');
-  if (grid) { grid.innerHTML = gridHtml(players()); grid.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
+  if (grid) { grid.innerHTML = gridHtml(players()); }
 });

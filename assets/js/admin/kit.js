@@ -98,7 +98,7 @@ export const wsHead = (title, text = '', extra = '') => `<header class="ws-head"
 </header>`;
 
 export const card = (title, ic, body, { extra = '', cls = '', count } = {}) => `<section class="card-panel${cls ? ` ${cls}` : ''}">
-  ${title ? `<div class="list-head"><h2 class="card-panel__title">${icon(ic || 'sparkle')} ${esc(title)}${count != null ? ` <small>${count}</small>` : ''}</h2>${extra}</div>` : ''}
+  ${title ? `<div class="list-head"><h2 class="card-panel__title">${icon(ic || 'layers')} ${esc(title)}${count != null ? ` <small>${count}</small>` : ''}</h2>${extra}</div>` : ''}
   ${body}
 </section>`;
 
@@ -162,7 +162,7 @@ export function fColor(p, label, { hint = '' } = {}) {
 }
 
 export function fIcon(p, label, { hint = '' } = {}) {
-  const v = getAt(p) || 'sparkle';
+  const v = getAt(p) || 'book';
   return `<div class="field">
     ${labelHtml(label)}
     <div class="icon-field">
@@ -211,7 +211,7 @@ export function fImage(p, label, { hint = '', kind = 'cover', name = 'imagen' } 
 const MD_BUTTONS = [
   ['bold', '<b>B</b>', 'Negrita'], ['italic', '<i>I</i>', 'Cursiva'], ['h2', 'T1', 'Título'], ['h3', 'T2', 'Subtítulo'],
   ['ul', icon('menu'), 'Lista'], ['ol', '1.', 'Lista numerada'], ['sep'],
-  ['tip', icon('sparkle'), 'Consejo'], ['warn', icon('alert'), 'Aviso importante'], ['link', icon('link'), 'Enlace'],
+  ['tip', icon('bulb'), 'Consejo'], ['warn', icon('alert'), 'Aviso importante'], ['link', icon('link'), 'Enlace'],
   ['image', icon('image'), 'Subir imagen'], ['table', icon('grid'), 'Tabla'], ['sep'],
   ['item', icon('cube'), 'Item del juego'], ['mision', icon('scroll'), 'Misión'], ['cmd', icon('terminal'), 'Comando'],
   ['bloque', `${icon('layers')}<span>Bloques</span>`, 'Recetas, trabajos, mobs...'], ['sep'],
@@ -253,10 +253,10 @@ export function repeater(p, { title, tpl, add = 'Añadir', render, empty = 'Toda
 
 // Lista de cosas que se editan en su propia página (secciones de la guía, jefes, anuncios...)
 export function rowsHtml(listId, entries, { sortable = true, empty = 'Todavía no hay nada aquí. Pulsa “Añadir”.' } = {}) {
-  if (!entries.length) return `<div class="empty">${icon('sparkle')}<p>${esc(empty)}</p></div>`;
+  if (!entries.length) return `<div class="empty">${icon('info')}<p>${esc(empty)}</p></div>`;
   return `<ul class="rows" data-rows="${listId}">${entries.map((e, k) => `<li class="row${e.hidden ? ' is-hidden' : ''}"${sortable ? ' draggable="true"' : ''} data-list="${listId}" data-index="${e.index}">
     ${sortable ? `<span class="row__handle" title="Arrastra para ordenar">${icon('drag')}</span>` : ''}
-    <span class="row__thumb${e.wide ? ' row__thumb--wide' : ''}"${e.color ? ` style="--c:${esc(e.color)}"` : ''}>${e.thumb || icon('sparkle')}</span>
+    <span class="row__thumb${e.wide ? ' row__thumb--wide' : ''}"${e.color ? ` style="--c:${esc(e.color)}"` : ''}>${e.thumb || icon('file')}</span>
     <div class="row__main">
       <strong class="row__title">${e.titleHtml || esc(e.title)}</strong>
       <span class="row__meta">${(e.meta || []).filter(Boolean).map((m) => `<span>${esc(m)}</span>`).join('')}${(e.flags || []).join('')}</span>

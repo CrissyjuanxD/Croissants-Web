@@ -19,7 +19,7 @@ def seccion(id_, titulo, icono, resumen, contenido, imagenes=None):
 
 
 GUIA = [
-    seccion("primeros-pasos", "Primeros pasos", "sparkle",
+    seccion("primeros-pasos", "Primeros pasos", "sprout",
             "Lo que tienes que hacer el primer día para arrancar bien la temporada.", """
 Croissants Segunda Edición es el SMP público de Crosszy: un SMP donde cada día se abre una misión nueva, el mundo se va abriendo por partes y todo lo que haces te da **DinoCoins**, la moneda del servidor.
 
@@ -197,7 +197,7 @@ En [[cmd:/trabajos]] (o desde [[cmd:/menu]]) eliges uno de los 6 oficios. Cada u
 - [[cmd:/trabajos info]] te dice tu nivel y lo que falta.
 - [[cmd:/trabajos guia]] abre la guía de trabajos en un diálogo.
 """),
-    seccion("habilidades", "Habilidades", "star",
+    seccion("habilidades", "Habilidades", "tree",
             "Vitalidad, Resistencia y Agilidad: 8 niveles cada una.", """
 Las habilidades son mejoras permanentes que compras con DinoCoins, experiencia y bloques.
 
@@ -367,7 +367,7 @@ En su dungeon ([[cmd:/bosstp]]) está el altar del panal: con **Mal Presagio** (
 
 Si caes al vacío del End con un tótem en la mano, el tótem salta y te levita hacia arriba con caída lenta.
 """},
-    {"id": "extra", "clave": "extra", "titulo": "Cambio Extra", "dia": 14, "color": "#f7b8d2", "icono": "sparkle",
+    {"id": "extra", "clave": "extra", "titulo": "Cambio Extra", "dia": 14, "color": "#f7b8d2", "icono": "bolt",
      "resumen": "Día 14: el Zombie Floral, la Spider Floral y las Bombitas empiezan a salir solos por el Overworld.",
      "contenido": """
 El cambio extra va entre el uno y el dos, el **día 14**. Hasta ese día los mobs florales solo salían en las raids; desde ahora salen **solos por el Overworld**.
@@ -673,7 +673,7 @@ Suelta la [[item:enderking_pearl]] y 3.000 de experiencia, más 25 DinoCoins la 
 CALENDARIO = [
     {"dia": 1, "titulo": "Overworld, Nether y el Cambio Uno", "texto": "Mobs florales en las raids, BloodMoon y la tienda abre su primera sección.", "icono": "flag"},
     {"dia": 12, "titulo": "La Abeja Floral", "texto": "La misión 12 pide derrotar a la primera boss.", "icono": "flame"},
-    {"dia": 14, "titulo": "Cambio Extra", "texto": "Los mobs florales empiezan a salir solos por el Overworld.", "icono": "sparkle"},
+    {"dia": 14, "titulo": "Cambio Extra", "texto": "Los mobs florales empiezan a salir solos por el Overworld.", "icono": "bolt"},
     {"dia": 20, "titulo": "Warden Cave", "texto": "Se abre la dimensión de los 4 biomas y la armadura de Warden.", "icono": "portal"},
     {"dia": 25, "titulo": "Ultra Warden", "texto": "El boss de la Warden Cave y la Warden Gun.", "icono": "bolt"},
     {"dia": 35, "titulo": "El End", "texto": "Biomas nuevos, la Celestita y el dragón modificado.", "icono": "moon"},
@@ -714,7 +714,6 @@ SITIO = {
         "live": {"repo": "CrissyjuanxD/Croissants-Live", "rama": "main", "ntfy": NTFY, "estadoApi": "mcstatus"},
     },
     "inicio": {
-        "kicker": "Servidor de Minecraft",
         "titulo": "Todo lo que trae Croissants",
         "texto": "Cada día se abre una **misión nueva**, el mundo se abre por partes y todo lo que haces te da **DinoCoins**. Del Overworld a la **Warden Cave** y del End al **Rey Ender**.",
         "pasos": [
@@ -727,7 +726,7 @@ SITIO = {
             {"icono": "scroll", "titulo": "200 misiones", "texto": "Una por día, 40 extras y 60 de trabajo, con cofres de recompensa.", "ruta": "misiones"},
             {"icono": "coin", "titulo": "DinoCoins", "texto": "La moneda del server: tienda, habilidades y casino.", "ruta": "guia/dinocoins"},
             {"icono": "pickaxe", "titulo": "6 trabajos", "texto": "100 niveles cada uno que pagan al subir.", "ruta": "guia/trabajos"},
-            {"icono": "star", "titulo": "Habilidades", "texto": "Vitalidad, Resistencia y Agilidad, 8 niveles cada una.", "ruta": "guia/habilidades"},
+            {"icono": "tree", "titulo": "Habilidades", "texto": "Vitalidad, Resistencia y Agilidad, 8 niveles cada una.", "ruta": "guia/habilidades"},
             {"icono": "portal", "titulo": "Warden Cave", "texto": "Una dimensión infinita con 4 biomas y la armadura de Warden.", "ruta": "jugabilidad/dimensiones/warden-cave"},
             {"icono": "crown", "titulo": "Bosses", "texto": "La Abeja Floral, el Ultra Warden, el dragón y el Rey Ender.", "ruta": "jugabilidad/jefes"},
         ],
@@ -735,8 +734,21 @@ SITIO = {
         "viciont": "Croissants está hecho por **Viciont Studios**: el plugin con las misiones, los bosses y las dimensiones, el **launcher** con el que juegas y esta web. Un estudio de servidores, eventos, plugins y mods de Minecraft.",
     },
     "guia": {
+        "titulo": "Guía del servidor",
         "intro": "Todo lo que necesitas saber para jugar Croissants: desde tu primer día hasta cómo funcionan las misiones, los trabajos y las habilidades.",
         "secciones": GUIA,
+        "menu": {
+            "filas": 6,
+            "texto": "Así se reparte el menú de `/menu`: haz clic en cualquier parte de una zona para abrirla.",
+            "zonas": [
+                {"nombre": "Misiones", "color": "#c9a7eb", "icono": "scroll", "casillas": "1-3, 10-12, 19-21"},
+                {"nombre": "Trabajos", "color": "#c8a27c", "icono": "pickaxe", "casillas": "5-7, 14-16, 23-25"},
+                {"nombre": "Habilidades", "color": "#9fd3ff", "icono": "tree", "casillas": "27-29, 36-38, 45-47"},
+                {"nombre": "Homes", "color": "#8ff0b8", "icono": "home", "casillas": "39-41, 48-50"},
+                {"nombre": "Protecciones", "color": "#ffd27a", "icono": "shield", "casillas": "33-35, 42-44, 51-53"},
+            ],
+        },
+        "notaTrabajos": "Un trabajo completo (nivel 100) da unas **{total} DinoCoins**, más las misiones de trabajo.",
     },
     "misiones": {
         "intro": "Las misiones se abren solas cuando el servidor las activa. Toca una para ver qué pide y qué da. Las bloqueadas se revelan el día que se abren.",

@@ -110,6 +110,10 @@ const UI = {
   portal: '<rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 7a3 3 0 0 1 0 10M12 17a3 3 0 0 1 0-10"/>',
   crafting: '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.2h17M3.5 14.8h17M9.2 3.5v17M14.8 3.5v17"/>',
   signal: '<path d="M4 20v-3M9 20v-7M14 20v-11M19 20V5"/>',
+  bulb: '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+  sprout: '<path d="M12 21v-9"/><path d="M12 12C12 7.5 8.8 5 4 5c0 4.6 3.2 7 8 7zM12 14c0-3.9 2.9-6 8-6 0 4.2-2.9 6-8 6z"/>',
+  tree: '<path d="M12 21v-7M12 14L6.5 9.5M12 14l5.5-4.5M12 14V8.5"/><rect x="4.5" y="6" width="4" height="4"/><rect x="15.5" y="6" width="4" height="4"/><rect x="10" y="3" width="4" height="4"/>',
+  pin: '<path d="M9 3.5h6l-1 6.5 3.5 3.5h-11L10 10 9 3.5zM12 13.5V21"/>',
 };
 
 export function icon(name, cls = '') {
@@ -121,7 +125,8 @@ export function icon(name, cls = '') {
   return `<svg class="${c}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${body}</svg>`;
 }
 
-export const ICON_NAMES = [...Object.keys(UI), ...Object.keys(BRAND)].sort();
+// 'sparkle' queda solo para el contenido viejo que todavía lo use; no se ofrece al elegir un ícono
+export const ICON_NAMES = [...Object.keys(UI), ...Object.keys(BRAND)].filter((n) => n !== 'sparkle').sort();
 
 export function hydrateIcons(root = document) {
   root.querySelectorAll('[data-icon]').forEach((el) => {
@@ -228,7 +233,7 @@ export function hours(h) {
 
 // ------------------------------------------------------------------ markdown
 
-const CALLOUTS = { info: 'info', tip: 'sparkle', warn: 'alert', nota: 'info', consejo: 'sparkle', ojo: 'alert' };
+const CALLOUTS = { info: 'info', tip: 'bulb', warn: 'alert', nota: 'info', consejo: 'bulb', ojo: 'alert' };
 
 function inline(text, ctx) {
   const codes = [];
@@ -386,12 +391,45 @@ function normImages(v) {
     .filter((im) => im.src || im.titulo);
 }
 
+// El menú de /menu como se ve en la guía: un cofre de 6 filas con zonas de colores
+export const MENU_ZONAS = [
+  { nombre: 'Misiones', color: '#c9a7eb', icono: 'scroll', casillas: '1-3, 10-12, 19-21' },
+  { nombre: 'Trabajos', color: '#c8a27c', icono: 'pickaxe', casillas: '5-7, 14-16, 23-25' },
+  { nombre: 'Habilidades', color: '#9fd3ff', icono: 'tree', casillas: '27-29, 36-38, 45-47' },
+  { nombre: 'Homes', color: '#8ff0b8', icono: 'home', casillas: '39-41, 48-50' },
+  { nombre: 'Protecciones', color: '#ffd27a', icono: 'shield', casillas: '33-35, 42-44, 51-53' },
+];
+export const NOTA_TRABAJOS = 'Un trabajo completo (nivel 100) da unas **{total} DinoCoins**, más las misiones de trabajo.';
+
+// "1-3, 10-12, 19" → [1, 2, 3, 10, 11, 12, 19] (casillas de un cofre, de 0 a 9 × filas - 1)
+export function parseSlots(text, max = 54) {
+  const out = new Set();
+  for (const part of String(text ?? '').split(/[,;\s]+/)) {
+    const m = part.match(/^(\d+)(?:-(\d+))?$/);
+    if (!m) continue;
+    const a = Number(m[1]);
+    const b = m[2] ? Number(m[2]) : a;
+    for (let k = Math.min(a, b); k <= Math.max(a, b) && k < max; k++) out.add(k);
+  }
+  return [...out].sort((x, y) => x - y);
+}
+
+function normMenu(v) {
+  const o = obj(v);
+  const zonas = Array.isArray(o.zonas) ? o.zonas : MENU_ZONAS;
+  return {
+    filas: Math.min(6, Math.max(1, num(o.filas, 6))),
+    texto: str(o.texto, 'Así se reparte el menú de `/menu`: haz clic en cualquier parte de una zona para abrirla.'),
+    zonas: zonas.map((z) => ({ nombre: str(z?.nombre), color: str(z?.color, '#9d7bff'), icono: str(z?.icono, 'grid'), casillas: str(z?.casillas) })),
+  };
+}
+
 function normSection(s, i, prefix = 's') {
   const o = obj(s);
   return {
     id: slugify(str(o.id) || str(o.titulo) || `${prefix}-${i + 1}`),
     titulo: str(o.titulo, 'Sin título'),
-    icono: str(o.icono, 'sparkle'),
+    icono: str(o.icono, 'book'),
     resumen: str(o.resumen),
     contenido: str(o.contenido),
     imagenes: normImages(o.imagenes),
@@ -442,17 +480,19 @@ export function normalizeSitio(raw) {
       },
     },
     inicio: {
-      kicker: str(inicio.kicker),
       titulo: str(inicio.titulo),
       texto: str(inicio.texto),
-      pasos: list(inicio.pasos).map((p) => ({ icono: str(p?.icono, 'sparkle'), titulo: str(p?.titulo), texto: str(p?.texto) })),
-      destacados: list(inicio.destacados).map((d) => ({ icono: str(d?.icono, 'sparkle'), titulo: str(d?.titulo), texto: str(d?.texto), ruta: str(d?.ruta) })),
+      pasos: list(inicio.pasos).map((p) => ({ icono: str(p?.icono, 'flag'), titulo: str(p?.titulo), texto: str(p?.texto) })),
+      destacados: list(inicio.destacados).map((d) => ({ icono: str(d?.icono, 'compass'), titulo: str(d?.titulo), texto: str(d?.texto), ruta: str(d?.ruta) })),
       calendario: list(inicio.calendario).map((d) => ({ dia: num(d?.dia, 1), titulo: str(d?.titulo), texto: str(d?.texto), icono: str(d?.icono, 'flag') })),
       viciont: str(inicio.viciont),
     },
     guia: {
+      titulo: str(c.guia?.titulo, 'Guía del servidor'),
       intro: str(c.guia?.intro),
       secciones: list(c.guia?.secciones).map((s, i) => normSection(s, i, 'guia')),
+      menu: normMenu(c.guia?.menu),
+      notaTrabajos: str(c.guia?.notaTrabajos, NOTA_TRABAJOS),
     },
     misiones: { intro: str(c.misiones?.intro), notas: str(c.misiones?.notas), mostrarBloqueadas: bool(c.misiones?.mostrarBloqueadas) },
     jugabilidad: {
@@ -495,7 +535,7 @@ export function normalizeSitio(raw) {
     launcher: {
       titulo: str(c.launcher?.titulo),
       texto: str(c.launcher?.texto),
-      beneficios: list(c.launcher?.beneficios).map((b) => ({ icono: str(b?.icono, 'sparkle'), titulo: str(b?.titulo), texto: str(b?.texto) })),
+      beneficios: list(c.launcher?.beneficios).map((b) => ({ icono: str(b?.icono, 'check'), titulo: str(b?.titulo), texto: str(b?.texto) })),
       pasos: list(c.launcher?.pasos).map((p) => str(p)).filter(Boolean),
     },
     jugadores: { intro: str(c.jugadores?.intro) },
@@ -559,9 +599,9 @@ export function normalizeJuego(raw) {
     })).sort((a, b) => a.n - b.n),
     recetas: list(c.recetas).map((r, i) => ({ ...obj(r), id: str(r?.id) || `receta-${i + 1}`, etapa: str(r?.etapa), nota: str(r?.nota), oculto: bool(r?.oculto) })),
     trabajos: list(c.trabajos).map((t) => ({ id: str(t?.id), nombre: str(t?.nombre), icono: str(t?.icono), color: str(t?.color, '#c8a27c'), item: str(t?.item, 'iron_pickaxe'), descripcion: str(t?.descripcion), fuentes: list(t?.fuentes).map((f) => str(f)) })),
-    habilidades: list(c.habilidades).map((h) => ({ id: str(h?.id), nombre: str(h?.nombre), icono: str(h?.icono, 'star'), color: str(h?.color, '#9fd3ff'), niveles: list(h?.niveles).map((n) => str(n)) })),
+    habilidades: list(c.habilidades).map((h) => ({ id: str(h?.id), nombre: str(h?.nombre), icono: str(h?.icono, 'tree'), color: str(h?.color, '#9fd3ff'), niveles: list(h?.niveles).map((n) => str(n)) })),
     costosHabilidad: list(c.costosHabilidad).map((k) => ({ xp: num(k?.xp), bloque: str(k?.bloque), cantidad: num(k?.cantidad), nombre: str(k?.nombre), dinocoins: num(k?.dinocoins) })),
-    rangos: list(c.rangos).map((r) => ({ id: str(r?.id), nombre: str(r?.nombre), color: str(r?.color, '#ffffff'), prefijo: str(r?.prefijo), como: str(r?.como), oculto: bool(r?.oculto) })),
+    rangos: list(c.rangos).map((r) => ({ id: str(r?.id), nombre: str(r?.nombre), color: str(r?.color, '#ffffff'), prefijo: str(r?.prefijo), imagen: str(r?.imagen), como: str(r?.como), oculto: bool(r?.oculto) })),
     pesca: list(c.pesca).map((p) => ({ id: str(p?.id), rareza: str(p?.rareza), buena: str(p?.buena), perfecta: str(p?.perfecta), cambio: num(p?.cambio) })),
     mobs: list(c.mobs).map((m, i) => ({
       id: str(m?.id) || slugify(str(m?.nombre) || `mob-${i + 1}`),
@@ -574,6 +614,7 @@ export function normalizeJuego(raw) {
       huevo: str(m?.huevo),
       imagen: str(m?.imagen),
       oculto: bool(m?.oculto),
+      soloWeb: bool(m?.soloWeb),
     })),
     idioma: {
       vanilla: obj(idioma.vanilla), encantamientos: obj(idioma.encantamientos), efectos: obj(idioma.efectos),
@@ -650,7 +691,7 @@ export function mergeCatalog(raw, cat) {
   if (Array.isArray(c.habilidades) && c.habilidades.length) {
     const prev = byKey(base.habilidades, 'id');
     out.habilidades = c.habilidades.map((h) => {
-      const [ic, col] = SKILL_LOOK[h?.id] || ['star', '#9fd3ff'];
+      const [ic, col] = SKILL_LOOK[h?.id] || ['tree', '#9fd3ff'];
       return { icono: ic, color: col, ...obj(h), ...pick(obj(prev.get(h?.id)), ['icono', 'color']) };
     });
   }
@@ -658,6 +699,9 @@ export function mergeCatalog(raw, cat) {
   if (Array.isArray(c.mobs)) {
     const prev = byKey(base.mobs, 'id');
     out.mobs = c.mobs.map((m) => ({ ...obj(m), ...pick(obj(prev.get(m?.id)), ['imagen', 'oculto']) }));
+    // Los mobs que se agregaron desde el panel (no existen en el plugin) se quedan
+    const ids = new Set(out.mobs.map((m) => m?.id));
+    for (const m of list(base.mobs)) if (m?.soloWeb && !ids.has(m.id)) out.mobs.push(m);
   }
   out.meta = { ...obj(base.meta), catalogo: str(c.generado) };
   return out;

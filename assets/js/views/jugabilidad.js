@@ -2,7 +2,6 @@ import { escapeHtml, icon, md, safeImage, visible, fmt } from '../core.js';
 import { S, stageActive, stageKnown, currentDay, mobsList } from '../store.js';
 import { pageHead, mdCtx, recipeCard, mobCard, CATEGORIAS, emptyHTML, liveBadge, missionChip } from '../components.js';
 import { itemHtml, itemName, itemLabel, tooltipHtml, resolveRef, stripCodes, recipeTitle } from '../mc.js';
-import { breeze } from '../fx.js';
 
 const TABS = [
   { id: 'cambios', label: 'Cambios', icon: 'layers' },
@@ -41,19 +40,19 @@ function cardsWithDetail(list, current, kind, extra = () => '') {
   const sel = list.find((x) => x.id === current) || list[0];
   return `<div class="bigcards">${list.map((x) => {
     const img = safeImage(x.imagen);
-    return `<a class="bigcard${x.id === sel.id ? ' is-active' : ''} reveal" style="--c:${escapeHtml(x.color || '#9d7bff')}" href="#jugabilidad/${kind}/${escapeHtml(x.id)}" data-route="jugabilidad" data-tilt>
+    return `<a class="bigcard${x.id === sel.id ? ' is-active' : ''}" style="--c:${escapeHtml(x.color || '#9d7bff')}" href="#jugabilidad/${kind}/${escapeHtml(x.id)}" data-route="jugabilidad" data-tilt>
       <span class="bigcard__media">${img ? `<img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">` : (x.bloque ? itemHtml({ vanilla: true, material: x.bloque, n: 1 }, { size: 56, tip: false }) : x.huevo ? itemHtml({ vanilla: true, material: x.huevo, n: 1 }, { size: 56, tip: false }) : `<span class="bigcard__icon">${icon(x.icono)}</span>`)}</span>
       <span class="bigcard__body"><span class="bigcard__meta">${x.dia ? `<span class="tag">${icon('calendar')} Día ${x.dia}</span>` : ''}${extra(x)}</span><strong>${escapeHtml(x.titulo)}</strong><span>${escapeHtml(x.resumen)}</span></span>
     </a>`;
   }).join('')}</div>
   <article class="detail" id="detalle">
-    <header class="detail__head reveal" style="--c:${escapeHtml(sel.color || '#9d7bff')}">
+    <header class="detail__head" style="--c:${escapeHtml(sel.color || '#9d7bff')}">
       <span class="detail__icon">${icon(sel.icono)}</span>
-      <div><p class="kicker">${escapeHtml(kind === 'cambios' ? 'cambio' : kind === 'jefes' ? 'jefe' : 'dimensión')}${sel.dia ? ` · día ${sel.dia}` : ''}</p><h2 class="detail__title" data-breeze-detail>${escapeHtml(sel.titulo)}</h2></div>
+      <div><p class="kicker">${escapeHtml(kind === 'cambios' ? 'cambio' : kind === 'jefes' ? 'jefe' : 'dimensión')}${sel.dia ? ` · día ${sel.dia}` : ''}</p><h2 class="detail__title">${escapeHtml(sel.titulo)}</h2></div>
       <div class="detail__badges">${extra(sel)}</div>
     </header>
-    ${sel.resumen ? `<p class="detail__lead reveal">${escapeHtml(sel.resumen)}</p>` : ''}
-    <div class="md detail__md reveal">${md(sel.contenido, mdCtx())}</div>
+    ${sel.resumen ? `<p class="detail__lead">${escapeHtml(sel.resumen)}</p>` : ''}
+    <div class="md detail__md">${md(sel.contenido, mdCtx())}</div>
     ${sel.imagenes?.length ? `<div class="gallery">${sel.imagenes.map((im) => { const src = safeImage(im.src); return src ? `<figure class="shot"><button class="shot__btn" type="button" data-zoom="${escapeHtml(src)}" data-zoom-title="${escapeHtml(im.titulo)}"><img src="${escapeHtml(src)}" alt="${escapeHtml(im.titulo)}" loading="lazy"><span class="shot__zoom">${icon('eye')}</span></button>${im.titulo ? `<figcaption><strong>${escapeHtml(im.titulo)}</strong>${im.texto ? `<span>${escapeHtml(im.texto)}</span>` : ''}</figcaption>` : ''}</figure>` : ''; }).join('')}</div>` : ''}
   </article>`;
 }
@@ -84,7 +83,7 @@ function crafteosHtml() {
     if (!groups.has(k)) groups.set(k, []);
     groups.get(k).push(r);
   }
-  return `<div class="filters reveal">
+  return `<div class="filters">
       <button class="chip-btn${!ui.crafteoEtapa ? ' is-active' : ''}" type="button" data-cetapa="">Todas <small>${recetas.length}</small></button>
       ${etapas.map((e) => `<button class="chip-btn${ui.crafteoEtapa === e ? ' is-active' : ''}" type="button" data-cetapa="${escapeHtml(e)}">${escapeHtml(ETAPAS[e] || e || 'Otras')} <small>${recetas.filter((r) => r.etapa === e).length}</small></button>`).join('')}
     </div>
@@ -108,7 +107,7 @@ function itemsHtml() {
     groups.get(k).push(id);
   }
   for (const [k, v] of groups) if (!v.length) groups.delete(k);
-  return `<div class="items-toolbar reveal">
+  return `<div class="items-toolbar">
       <label class="search">${icon('search')}<input class="input" type="search" placeholder="Buscar un item…" value="${escapeHtml(ui.q)}" data-iq></label>
       <div class="filters">
         <button class="chip-btn${!ui.itemCat ? ' is-active' : ''}" type="button" data-icat="">Todos <small>${entries.length}</small></button>
@@ -162,8 +161,6 @@ export function render(el, parts, ctx) {
   const sameTab = ctx.prev && ctx.prev[0] === parts[0];
   if (!ctx.changing && sameTab && ctx.prev[1] !== parts[1]) {
     el.querySelector('#detalle')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    const t = el.querySelector('[data-breeze-detail]');
-    if (t) breeze(t, t.textContent);
   }
 }
 
@@ -176,7 +173,6 @@ export function update(el, kind, parts) {
   const tab = body?.dataset.tab;
   if (tab && tab !== 'items') {
     body.innerHTML = bodyHtml(tab, parts || []);
-    body.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal'));
   }
 }
 
@@ -214,14 +210,14 @@ document.addEventListener('click', (e) => {
   if (ce) {
     ui.crafteoEtapa = ce.dataset.cetapa;
     const body = ce.closest('.tabbody');
-    if (body) { body.innerHTML = crafteosHtml(); body.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
+    if (body) { body.innerHTML = crafteosHtml(); }
     return;
   }
   const ic = e.target.closest?.('[data-icat]');
   if (ic) {
     ui.itemCat = ic.dataset.icat;
     const body = ic.closest('.tabbody');
-    if (body) { body.innerHTML = itemsHtml(); body.querySelectorAll('.reveal').forEach((r) => r.classList.remove('reveal')); }
+    if (body) { body.innerHTML = itemsHtml(); }
     return;
   }
   const item = e.target.closest?.('[data-item]');

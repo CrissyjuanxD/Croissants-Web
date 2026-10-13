@@ -31,7 +31,6 @@ export const modal = createModal();
 const boot = fx.bootScreen();
 const wind = startWind($('#bg-wind'));
 const photos = startPhotos($('#bg-photos'), []);
-fx.startGusts();
 fx.bindTilt(document);
 fx.cursorGlow();
 fx.watchScrollHints();
@@ -211,7 +210,6 @@ function renderChrome() {
   const badge = $('#nav-news');
   badge.hidden = !fresh;
   badge.textContent = String(fresh);
-  fx.observeReveals(document.querySelector('.footer'), { instant: false });
 }
 
 // ------------------------------------------------------------------ rutas
@@ -260,12 +258,6 @@ function route({ initial = false } = {}) {
     v.render(el, next.parts, { changing, initial, prev: sameView ? prev.parts : null, modal });
     wind.setIntensity(next.view === 'inicio' ? 1 : 0.75);
     updateTitle();
-    if (changing) {
-      fx.observeReveals(el, { instant: false });
-      el.querySelectorAll('[data-breeze]').forEach((s) => fx.breeze(s, s.textContent));
-    } else {
-      fx.observeReveals(el, { instant: true });
-    }
     if (changing && !initial) window.scrollTo({ top: 0, behavior: 'instant' });
     closeMenu();
   };
@@ -276,7 +268,6 @@ function route({ initial = false } = {}) {
 function rerender(quiet) {
   const el = viewEl(S.route.view);
   VIEWS[S.route.view]?.render(el, S.route.parts, { changing: false, initial: false, prev: S.route.parts, modal, quiet });
-  fx.observeReveals(el, { instant: true });
   updateTitle();
 }
 

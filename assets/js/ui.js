@@ -89,7 +89,7 @@ export function toast(message, { type = 'info', timeout = 3000 } = {}) {
   const el = document.createElement('div');
   el.className = `toast toast--${type}`;
   el.setAttribute('role', type === 'error' ? 'alert' : 'status');
-  el.innerHTML = `${icon(type === 'error' ? 'alert' : type === 'success' ? 'check' : 'sparkle')}<span></span>`;
+  el.innerHTML = `${icon(type === 'error' ? 'alert' : type === 'success' ? 'check' : 'info')}<span></span>`;
   el.querySelector('span').textContent = message;
   host.appendChild(el);
   requestAnimationFrame(() => el.classList.add('on'));

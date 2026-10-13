@@ -53,7 +53,7 @@ function seasonHtml() {
   const normales = misiones.filter((m) => m.tipo === 'normal' && opened.has(m.n)).length;
   const extras = misiones.filter((m) => m.tipo === 'extra' && opened.has(m.n)).length;
   const trabajo = misiones.filter((m) => m.tipo === 'trabajo').length;
-  return `<div class="season reveal">
+  return `<div class="season">
     <div class="season__head">
       <div>
         <p class="kicker"><span class="kicker__num">${day || '—'}</span> día de la temporada</p>
@@ -80,17 +80,17 @@ function newsHtml() {
   if (!list.length) return '';
   const cats = Object.fromEntries((S.anuncios.categorias || []).map((c) => [c.id, c]));
   return `<section class="container section" id="inicio-anuncios">
-    <header class="section-head reveal"><p class="kicker"><span class="kicker__num">${icon('megaphone')}</span> lo último</p><h2 class="section-title"><span class="gusty">Anuncios</span></h2></header>
+    <header class="section-head"><p class="kicker"><span class="kicker__num">${icon('megaphone')}</span> lo último</p><h2 class="section-title"><span class="grad-text">Anuncios</span></h2></header>
     <div class="news-grid">${list.map((a, i) => {
       const cat = cats[a.categoria] || { nombre: a.categoria, color: '#9d7bff' };
       const img = safeImage(a.portada);
-      return `<a class="news-card reveal" style="--c:${escapeHtml(cat.color)}" href="#anuncios/${escapeHtml(a.id)}" data-route="anuncios" data-tilt>
+      return `<a class="news-card" style="--c:${escapeHtml(cat.color)}" href="#anuncios/${escapeHtml(a.id)}" data-route="anuncios" data-tilt>
         <span class="news-card__media">${img ? `<img src="${escapeHtml(img)}" alt="" loading="lazy" decoding="async">` : `<span class="news-card__ph">${icon('megaphone')}</span>`}</span>
-        <span class="news-card__body"><span class="news-card__meta"><span class="cat-chip">${escapeHtml(cat.nombre)}</span><time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha))}</time>${a.fijado ? `<span class="tag">${icon('star')} Fijado</span>` : ''}</span>
+        <span class="news-card__body"><span class="news-card__meta"><span class="cat-chip">${escapeHtml(cat.nombre)}</span><time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha))}</time>${a.fijado ? `<span class="tag">${icon('pin')} Fijado</span>` : ''}</span>
         <strong class="news-card__title">${escapeHtml(a.titulo)}</strong><span class="news-card__text">${escapeHtml(a.resumen || plainText(a.contenido, 140))}</span></span>
       </a>`;
     }).join('')}</div>
-    <div class="section-more reveal"><a class="btn btn--ghost" href="#anuncios" data-route="anuncios">Ver todos los anuncios ${icon('arrowRight')}</a></div>
+    <div class="section-more"><a class="btn btn--ghost" href="#anuncios" data-route="anuncios">Ver todos los anuncios ${icon('arrowRight')}</a></div>
   </section>`;
 }
 
@@ -103,16 +103,15 @@ export function render(el, parts, ctx) {
   el.innerHTML = `
     <div class="hero">
       <div class="hero__inner">
-        <p class="hero__kicker reveal"><span class="live-dot"></span><span>${escapeHtml(ini.kicker || 'Servidor de Minecraft')}</span></p>
-        <h1 class="hero__logo reveal"><img src="assets/img/logo-segunda.png" alt="${escapeHtml(g.nombre)} ${escapeHtml(g.edicion)}" width="1400" height="378"></h1>
-        <p class="hero__lema reveal">${escapeHtml(g.lema)}</p>
-        <div class="hero__text md reveal">${md(ini.texto || g.descripcion, mdCtx())}</div>
-        <div class="hero__cta reveal">
+        <h1 class="hero__logo"><img src="assets/img/logo-segunda.png" alt="${escapeHtml(g.nombre)} ${escapeHtml(g.edicion)}" width="1400" height="378"></h1>
+        <p class="hero__lema">${escapeHtml(g.lema)}</p>
+        <div class="hero__text md">${md(ini.texto || g.descripcion, mdCtx())}</div>
+        <div class="hero__cta">
           <button class="btn btn--primary btn--lg" type="button" data-open-ip>${icon('server')} Ver IP del servidor</button>
           <button class="btn btn--lg hero__copy" type="button" data-copy-ip="java">${icon('copy')} <span class="mono">${escapeHtml(ipValue('java') || '—')}</span></button>
           <a class="btn btn--lg btn--ghost" href="#launcher" data-route="launcher">${icon('download')} Launcher</a>
         </div>
-        <div class="status-card reveal" id="home-status">${statusHtml()}</div>
+        <div class="status-card" id="home-status">${statusHtml()}</div>
       </div>
       <a class="hero__scroll" href="#inicio-temporada" data-scroll-to="inicio-temporada"><span>Desliza</span>${icon('arrowDown')}</a>
     </div>
@@ -120,34 +119,34 @@ export function render(el, parts, ctx) {
     <div class="container section" id="inicio-temporada">${seasonHtml()}</div>
 
     ${ini.destacados.length ? `<section class="container section">
-      <header class="section-head reveal"><p class="kicker"><span class="kicker__num">${icon('sparkle')}</span> qué te espera</p><h2 class="section-title"><span class="gusty">${escapeHtml(ini.titulo || 'Todo lo que trae Croissants')}</span></h2></header>
-      <div class="features">${ini.destacados.map((d) => `<a class="feature reveal" href="#${escapeHtml(d.ruta || 'guia')}" data-route="${escapeHtml((d.ruta || 'guia').split('/')[0])}" data-tilt>
+      <header class="section-head"><p class="kicker"><span class="kicker__num">${icon('compass')}</span> qué te espera</p><h2 class="section-title"><span class="grad-text">${escapeHtml(ini.titulo || 'Todo lo que trae Croissants')}</span></h2></header>
+      <div class="features">${ini.destacados.map((d) => `<a class="feature" href="#${escapeHtml(d.ruta || 'guia')}" data-route="${escapeHtml((d.ruta || 'guia').split('/')[0])}" data-tilt>
         <span class="feature__icon">${icon(d.icono)}</span><strong>${escapeHtml(d.titulo)}</strong><span>${escapeHtml(d.texto)}</span><span class="feature__go">${icon('arrowRight')}</span>
       </a>`).join('')}</div>
     </section>` : ''}
 
     ${ini.pasos.length ? `<section class="container section">
-      <header class="section-head reveal"><p class="kicker"><span class="kicker__num">${icon('route')}</span> para empezar</p><h2 class="section-title"><span class="gusty">Cómo entrar al servidor</span></h2></header>
-      <ol class="steps-row">${ini.pasos.map((p, i) => `<li class="step-card reveal"><span class="step-card__num">${i + 1}</span><span class="step-card__icon">${icon(p.icono)}</span><strong>${escapeHtml(p.titulo)}</strong><div class="md">${md(p.texto, mdCtx())}</div></li>`).join('')}</ol>
+      <header class="section-head"><p class="kicker"><span class="kicker__num">${icon('route')}</span> para empezar</p><h2 class="section-title"><span class="grad-text">Cómo entrar al servidor</span></h2></header>
+      <ol class="steps-row">${ini.pasos.map((p, i) => `<li class="step-card"><span class="step-card__num">${i + 1}</span><span class="step-card__icon">${icon(p.icono)}</span><strong>${escapeHtml(p.titulo)}</strong><div class="md">${md(p.texto, mdCtx())}</div></li>`).join('')}</ol>
     </section>` : ''}
 
     ${newsHtml()}
 
     ${ini.calendario.length ? `<section class="container section">
-      <header class="section-head reveal"><p class="kicker"><span class="kicker__num">${icon('calendar')}</span> calendario</p><h2 class="section-title"><span class="gusty">El mundo se abre por partes</span></h2></header>
-      <div class="reveal">${calendarHtml()}</div>
+      <header class="section-head"><p class="kicker"><span class="kicker__num">${icon('calendar')}</span> calendario</p><h2 class="section-title"><span class="grad-text">El mundo se abre por partes</span></h2></header>
+      <div>${calendarHtml()}</div>
     </section>` : ''}
 
     <section class="container section">
       <div class="host-viciont">
-        <article class="host-card reveal" data-tilt>
+        <article class="host-card" data-tilt>
           <p class="kicker"><span class="kicker__num">${icon('twitch')}</span> el anfitrión</p>
           <h2 class="host-card__title">El servidor de <span class="grad-text">${escapeHtml(g.anfitrion)}</span></h2>
           <p>Croissants es el SMP público de ${escapeHtml(g.anfitrion)}. Síguelo para enterarte de las activaciones de cambios y los directos dentro del servidor.</p>
           ${twitch ? `<a class="btn btn--primary twitch-btn" href="${escapeHtml(twitch)}" target="_blank" rel="noopener noreferrer">${icon('twitch')} Ver a ${escapeHtml(g.anfitrion)} en Twitch</a>` : ''}
           ${redes ? `<div class="host-card__socials">${redes}</div>` : ''}
         </article>
-        <a class="viciont-card reveal" href="${escapeHtml(safeUrl(g.viciont.url) || '#')}" target="_blank" rel="noopener noreferrer" data-tilt>
+        <a class="viciont-card" href="${escapeHtml(safeUrl(g.viciont.url) || '#')}" target="_blank" rel="noopener noreferrer" data-tilt>
           <img class="viciont-card__emblem" src="assets/img/viciont-emblem.webp" alt="" width="587" height="513" loading="lazy">
           <p class="kicker">un proyecto de</p>
           <h2 class="viciont-card__title">VICIONT <span>STUDIOS</span></h2>
@@ -169,7 +168,7 @@ export function update(el, kind) {
   }
   if (kind === 'estado' || kind === 'sync') {
     const box = el.querySelector('#inicio-temporada');
-    if (box) { box.innerHTML = seasonHtml(); box.querySelector('.reveal')?.classList.remove('reveal'); }
+    if (box) box.innerHTML = seasonHtml();
   }
 }
 

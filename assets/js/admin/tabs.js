@@ -34,16 +34,19 @@ export const LISTS = {
 };
 
 export const TEMPLATES = {
-  paso: () => ({ icono: 'sparkle', titulo: 'Nuevo paso', texto: '' }),
-  destacado: () => ({ icono: 'sparkle', titulo: 'Nuevo destacado', texto: '', ruta: 'guia' }),
+  paso: () => ({ icono: 'flag', titulo: 'Nuevo paso', texto: '' }),
+  destacado: () => ({ icono: 'compass', titulo: 'Nuevo destacado', texto: '', ruta: 'guia' }),
   calendario: () => ({ dia: 1, icono: 'flag', titulo: 'Nuevo día', texto: '' }),
-  beneficio: () => ({ icono: 'sparkle', titulo: 'Nuevo beneficio', texto: '' }),
+  beneficio: () => ({ icono: 'check', titulo: 'Nuevo beneficio', texto: '' }),
   imagen: () => ({ src: '', titulo: '', texto: '' }),
   categoria: () => ({ id: '', nombre: 'Nueva categoría', color: '#9d7bff' }),
-  seccion: () => ({ id: '', titulo: 'Nueva sección', icono: 'sparkle', resumen: '', contenido: '', imagenes: [], oculto: false }),
+  seccion: () => ({ id: '', titulo: 'Nueva sección', icono: 'book', resumen: '', contenido: '', imagenes: [], oculto: false }),
   etapa: () => ({ id: '', clave: '', titulo: 'Nuevo cambio', dia: 1, color: '#9d7bff', icono: 'flag', resumen: '', contenido: '', imagenes: [], imagen: '', oculto: false }),
   dimension: () => ({ id: '', titulo: 'Nueva dimensión', dia: 1, color: '#6c9dff', icono: 'globe', bloque: 'grass_block', resumen: '', contenido: '', imagenes: [], imagen: '', oculto: false }),
   jefe: () => ({ id: '', titulo: 'Nuevo jefe', dia: 1, vida: '', donde: '', estado: 'Disponible', huevo: '', color: '#ff9db4', icono: 'skull', resumen: '', contenido: '', imagenes: [], imagen: '', oculto: false }),
+  rango: () => ({ id: '', nombre: 'Nuevo rango', color: '#ffffff', prefijo: '', imagen: '', como: '', oculto: false }),
+  pesca: () => ({ id: '', rareza: 'Común', buena: '', perfecta: '', cambio: 1 }),
+  zona: () => ({ nombre: 'Nueva zona', color: '#9d7bff', icono: 'grid', casillas: '' }),
   anuncio: () => ({ id: '', titulo: 'Nuevo anuncio', fecha: new Date().toISOString(), categoria: 'actualizacion', portada: '', resumen: '', contenido: '', autor: S.user?.login || '', fijado: false, oculto: false }),
 };
 
@@ -98,7 +101,7 @@ function tabGeneral() {
   const host = S.draft.sitio.general.anfitrion || 'el host';
   const fondos = S.draft.sitio.general.fondos || [];
   return `${wsHead('General', 'Todo lo que cambies se guarda como <b>borrador</b> en este navegador. Nada llega a la web hasta que pulses <b>Publicar</b>.')}
-  ${card('Cómo funciona', 'sparkle', `<div class="guide">
+  ${card('Cómo funciona', 'info', `<div class="guide">
     <div class="guide__step"><b><span class="guide__num">1</span> Edita</b>Cambia textos, imágenes, secciones o anuncios en cualquier pestaña.</div>
     <div class="guide__step"><b><span class="guide__num">2</span> Revisa</b>Abre la <em>Vista en vivo</em> para ver la web con tus cambios mientras escribes.</div>
     <div class="guide__step"><b><span class="guide__num">3</span> Publica</b>Pulsa <em>Publicar</em>: se guarda en GitHub y la web se actualiza en 1-2 minutos para todo el mundo.</div>
@@ -120,7 +123,7 @@ function tabGeneral() {
     </div>`)}
   ${card(`Redes de ${host}`, 'globe', `<p class="card-panel__text">Salen arriba en la barra, en el menú del móvil y en el pie de página. Las vacías no se muestran.</p>
     <div class="grid-2">${Object.entries(SOCIAL_TYPES).map(([k, v]) => fText(`${g}.redes.${k}`, v.label, { type: 'url', placeholder: 'https://…', maxlength: 300 })).join('')}</div>`)}
-  ${card('Viciont Studios', 'star', `<div class="grid-2">
+  ${card('Viciont Studios', 'globe', `<div class="grid-2">
       ${fText(`${g}.viciont.url`, 'Web del estudio', { type: 'url', maxlength: 300 })}
       ${fText(`${g}.viciont.discord`, 'Discord', { type: 'url', maxlength: 300 })}
       ${fText(`${g}.viciont.youtube`, 'YouTube', { type: 'url', maxlength: 300 })}
@@ -150,13 +153,13 @@ function tabInicio() {
   const i = 'sitio:inicio';
   return `${wsHead('Página de inicio', 'La portada: la frase de arriba, los pasos para empezar, lo destacado, el calendario y el texto de Viciont Studios.')}
   <datalist id="rutas">${RUTAS.map((r) => `<option value="${r}">`).join('')}</datalist>
-  ${card('Portada', 'home', `<div class="grid-2">${fText(`${i}.kicker`, 'Etiqueta de arriba', { maxlength: 60, placeholder: 'Servidor de Minecraft' })}${fText(`${i}.titulo`, 'Título de “Qué te espera”', { maxlength: 80 })}</div>
+  ${card('Portada', 'home', `${fText(`${i}.titulo`, 'Título de “Qué te espera”', { maxlength: 80 })}
     ${fMd(`${i}.texto`, 'Texto de la portada', { rows: 4 })}`)}
   ${card('Cómo empezar', 'flag', repeater(`${i}.pasos`, {
     title: (x, k) => `Paso ${k + 1}`, tpl: 'paso', add: 'Añadir paso',
     render: (p) => `<div class="grid-2">${fIcon(`${p}.icono`, 'Ícono')}${fText(`${p}.titulo`, 'Título', { maxlength: 80 })}</div>${fArea(`${p}.texto`, 'Texto', { rows: 2, maxlength: 400 })}`,
   }))}
-  ${card('Destacados', 'star', repeater(`${i}.destacados`, {
+  ${card('Destacados', 'compass', repeater(`${i}.destacados`, {
     title: (x) => x.titulo || 'Destacado', tpl: 'destacado', add: 'Añadir destacado',
     render: (p) => `<div class="grid-3">${fIcon(`${p}.icono`, 'Ícono')}${fText(`${p}.titulo`, 'Título', { maxlength: 60 })}${fText(`${p}.ruta`, 'Lleva a', { list: 'rutas', mono: true, hint: 'Una sección de la web, por ejemplo guia/dinocoins.' })}</div>${fArea(`${p}.texto`, 'Texto', { rows: 2, maxlength: 300 })}`,
   }))}
@@ -164,18 +167,52 @@ function tabInicio() {
     title: (x) => `Día ${x.dia}`, tpl: 'calendario', add: 'Añadir día',
     render: (p) => `<div class="grid-3">${fNum(`${p}.dia`, 'Día', { min: 1 })}${fIcon(`${p}.icono`, 'Ícono')}${fText(`${p}.titulo`, 'Título', { maxlength: 80 })}</div>${fArea(`${p}.texto`, 'Texto', { rows: 2, maxlength: 300 })}`,
   }))}
-  ${card('Viciont Studios', 'sparkle', fMd(`${i}.viciont`, 'Texto del estudio', { rows: 4 }))}`;
+  ${card('Viciont Studios', 'globe', fMd(`${i}.viciont`, 'Texto del estudio', { rows: 4 }))}`;
 }
 
 function tabGuia() {
   const list = S.draft.sitio.guia.secciones;
-  return `${wsHead('Guía', 'Las secciones de la guía: cómo jugar, DinoCoins, misiones, trabajos, habilidades, el menú y sus menús con imágenes. Arrastra las filas para cambiar el orden.')}
-  ${card('', '', fMd('sitio:guia.intro', 'Introducción de la guía', { rows: 3 }))}
+  return `${wsHead('Guía', 'Las secciones de la guía y los bloques que van dentro de ellas. Cuando el plugin cambie, puedes cambiar, ocultar, borrar o crear secciones. Arrastra las filas para cambiar el orden.')}
+  ${card('', '', `${fText('sitio:guia.titulo', 'Título de la página', { maxlength: 60 })}${fMd('sitio:guia.intro', 'Introducción de la guía', { rows: 3 })}`)}
   ${card('Secciones', 'book', rowsHtml('guia', list.map((x, i) => ({
     index: i, title: x.titulo, thumb: icon(x.icono), hidden: x.oculto,
     meta: [`#guia/${x.id}`, x.imagenes.length ? `${x.imagenes.length} ${x.imagenes.length === 1 ? 'imagen' : 'imágenes'}` : '', plainText(x.resumen, 70)],
     flags: x.imagenes.some((im) => !im.src) ? [flag('Falta una imagen')] : [],
-  }))), { count: list.length, extra: addBtn('guia', 'Añadir sección') })}`;
+  }))), { count: list.length, extra: addBtn('guia', 'Añadir sección') })}
+  ${guideBlocks()}`;
+}
+
+// Los bloques que se ponen dentro de las secciones con el botón Bloques. Lo que no sale del plugin se edita aquí
+function guideBlocks() {
+  const filas = S.draft.sitio.guia.menu?.filas || 6;
+  return `<h2 class="ws-sub">Bloques de la guía</h2>
+  <p class="card-panel__text">Se ponen dentro de cualquier sección con el botón <b>Bloques</b> del editor de texto. Los trabajos, las habilidades, las recetas y los mobs salen del plugin; estos se editan aquí.</p>
+  ${card('Rangos · [[rangos]]', 'crown', `<p class="card-panel__text">Si el rango usa un unicode del resource pack, sube su imagen (PNG). Sin imagen se muestra el prefijo en texto con sus colores. El <b>ID</b> tiene que ser el del grupo en el servidor: con él se reconoce el rango de cada jugador.</p>
+    ${repeater('juego:rangos', {
+    title: (x) => x.nombre || 'Rango', tpl: 'rango', add: 'Añadir rango', empty: 'Todavía no hay rangos.',
+    render: (p, x) => `<div class="grid-2">
+        <div>${fText(`${p}.nombre`, 'Nombre', { maxlength: 40 })}${fText(`${p}.id`, 'ID del grupo', { mono: true, maxlength: 40 })}${fColor(`${p}.color`, 'Color')}
+          ${fText(`${p}.prefijo`, 'Prefijo en texto', { mono: true, maxlength: 80, hint: 'Con códigos de color (§6, §l…). Se usa si no hay imagen.' })}</div>
+        <div>${fImage(`${p}.imagen`, 'Imagen del rango', { kind: 'pixel', name: `rango-${x.id || x.nombre || 'rango'}`, hint: 'La imagen del unicode, tal cual sale en el juego.' })}${fCheck(`${p}.oculto`, 'Visible en la guía', { invert: true })}</div>
+      </div>
+      ${fArea(`${p}.como`, 'Cómo se consigue', { rows: 2, maxlength: 300 })}`,
+  })}`)}
+  ${card('Pesca · [[pesca]]', 'fish', `<p class="card-panel__text">Los premios de la pesca. El nombre y la textura salen del item: pon su ID del plugin.</p>
+    ${repeater('juego:pesca', {
+    title: (x) => x.id || 'Premio', tpl: 'pesca', add: 'Añadir premio', empty: 'Todavía no hay premios.',
+    render: (p) => `<div class="grid-3">${fText(`${p}.id`, 'Item', { mono: true, maxlength: 60 })}${fText(`${p}.rareza`, 'Rareza', { maxlength: 30, hint: 'Común, Poco común, Raro, Épico…' })}${fNum(`${p}.cambio`, 'Cuántos = 1 DinoCoin', { min: 0 })}
+      ${fText(`${p}.buena`, 'Pesca buena', { maxlength: 40 })}${fText(`${p}.perfecta`, 'Pesca perfecta', { maxlength: 40 })}</div>`,
+  })}`)}
+  ${card('Menú de /menu · [[menu]]', 'grid', `<p class="card-panel__text">Las zonas del menú dibujadas como un cofre. Las casillas van de 0 a ${filas * 9 - 1}, fila por fila: la primera fila es 0-8, la segunda 9-17…</p>
+    <div class="grid-2">${fNum('sitio:guia.menu.filas', 'Filas del cofre', { min: 1, max: 6 })}<div></div></div>
+    ${fMd('sitio:guia.menu.texto', 'Texto de abajo', { rows: 2 })}
+    ${repeater('sitio:guia.menu.zonas', {
+    title: (x) => x.nombre || 'Zona', tpl: 'zona', add: 'Añadir zona',
+    render: (p) => `<div class="grid-3">${fText(`${p}.nombre`, 'Nombre', { maxlength: 30 })}${fIcon(`${p}.icono`, 'Ícono')}${fColor(`${p}.color`, 'Color')}</div>
+      ${fText(`${p}.casillas`, 'Casillas', { mono: true, maxlength: 200, placeholder: '1-3, 10-12, 19-21' })}`,
+  })}`)}
+  ${card('Trabajos · [[trabajos]]', 'pickaxe', `<p class="card-panel__text">Los trabajos y sus niveles salen del plugin. Aquí va la nota de abajo de la tabla.</p>
+    ${fMd('sitio:guia.notaTrabajos', 'Nota', { rows: 2, hint: '<b>{total}</b> se cambia por las DinoCoins que da un trabajo completo.' })}`)}`;
 }
 
 function tabJugabilidad() {
@@ -252,7 +289,7 @@ function tabMisiones() {
     const tag = m.tipo === 'extra' ? `Extra #${m.padre}` : `#${m.n}`;
     const raw = (S.draft.juego.misiones || []).find((x) => x.n === m.n) || {};
     return `<li class="row${m.oculto ? ' is-hidden' : ''}">
-      <span class="row__thumb" style="--c:var(--m-${m.tipo})">${icon(m.tipo === 'trabajo' ? 'pickaxe' : m.tipo === 'extra' ? 'star' : 'scroll')}</span>
+      <span class="row__thumb" style="--c:var(--m-${m.tipo})">${icon(m.tipo === 'trabajo' ? 'pickaxe' : m.tipo === 'extra' ? 'gift' : 'scroll')}</span>
       <div class="row__main"><strong class="row__title">${esc(tag)} · ${esc(m.nombre)}</strong>
         <span class="row__meta"><span>${esc(TIPO[m.tipo])}</span><span>${esc(DIF[m.dificultad])}</span><span>${m.dinocoins} DinoCoins</span>${m.dia ? `<span>Día ${m.dia}</span>` : ''}${raw.nota ? flag('Con nota', 'new') : ''}${raw.imagen ? flag('Con imagen', 'new') : ''}${m.oculto ? flag('Oculta') : ''}</span></div>
       <div class="row__actions"><button class="btn btn--sm" type="button" data-act="mision-edit" data-n="${m.n}">${icon('edit')}<span>Notas e imagen</span></button></div>
@@ -280,10 +317,15 @@ function tabItems() {
       <span class="icard-a__meta"><span>${esc(id)}</span>${it.textura ? '<span>· textura propia</span>' : ''}${it.oculto ? '<span>· oculto</span>' : ''}</span></span>
     </button>`).join('')}</div>`;
   } else if (sub === 'mobs') {
-    body = `<ul class="rows">${g.mobs.map((m) => `<li class="row${m.oculto ? ' is-hidden' : ''}">
-      <span class="row__thumb" style="--c:${esc(m.color)}">${m.imagen ? `<img src="${esc(imgSrc(m.imagen))}" alt="">` : m.huevo ? itemHtml({ vanilla: true, material: m.huevo, n: 1 }, { size: 34, tip: false }) : icon('skull')}</span>
-      <div class="row__main"><strong class="row__title">${esc(m.nombre)}</strong><span class="row__meta"><span>${esc(m.id)}</span><span>Cambio ${esc(m.etapa || '—')}</span>${m.vida ? `<span>${esc(m.vida)} de vida</span>` : ''}${m.imagen ? flag('Con imagen', 'new') : ''}${m.oculto ? flag('Oculto') : ''}</span></div>
-      <div class="row__actions"><button class="btn btn--sm" type="button" data-act="mob-edit" data-id="${esc(m.id)}">${icon('edit')}<span>Imagen</span></button></div>
+    body = `<div class="toolbar-a"><p class="muted">Los ocultos no salen en la web (por ejemplo, mobs del plugin que no se usan en este servidor). Los que añadas aquí existen solo en la web.</p>
+      <button class="btn btn--sm btn--primary" type="button" data-act="mob-add">${icon('plus')} Añadir mob</button></div>
+    <ul class="rows">${g.mobs.map((m) => `<li class="row${m.oculto ? ' is-hidden' : ''}">
+      <span class="row__thumb row__thumb--wide" style="--c:${esc(m.color)}">${m.imagen ? `<img src="${esc(imgSrc(m.imagen))}" alt="">` : m.huevo ? itemHtml({ vanilla: true, material: m.huevo, n: 1 }, { size: 34, tip: false }) : icon('skull')}</span>
+      <div class="row__main"><strong class="row__title">${esc(m.nombre)}</strong><span class="row__meta"><span>${esc(m.id)}</span><span>Cambio ${esc(m.etapa || '—')}</span>${m.vida ? `<span>${esc(m.vida)} de vida</span>` : ''}${m.soloWeb ? flag('Solo en la web', 'new') : ''}${m.imagen ? flag('Con imagen', 'new') : ''}${m.oculto ? flag('Oculto') : ''}</span></div>
+      <div class="row__actions">
+        <button class="btn btn--sm btn--icon btn--ghost" type="button" data-act="mob-toggle" data-id="${esc(m.id)}" title="${m.oculto ? 'Mostrar en la web' : 'Ocultar de la web'}" aria-label="${m.oculto ? 'Mostrar en la web' : 'Ocultar de la web'}">${icon(m.oculto ? 'eyeOff' : 'eye')}</button>
+        <button class="btn btn--sm" type="button" data-act="mob-edit" data-id="${esc(m.id)}">${icon('edit')}<span>Editar</span></button>
+      </div>
     </li>`).join('')}</ul>`;
   } else {
     body = `<ul class="rows">${g.recetas.map((r) => {
@@ -485,16 +527,30 @@ function edMision(e) {
   </div>`;
 }
 
+const ETAPAS_MOB = [['uno', 'Cambio Uno'], ['extra', 'Cambio Extra'], ['dos', 'Cambio Dos'], ['tres', 'Cambio Tres'], ['', 'Otros']];
+
 function edMob(e) {
   const g = game();
   const m = g.mobs.find((x) => x.id === e.id);
   if (!m) return `${edHead('Mob', 'No existe', { canDelete: false, route: false, undo: false })}`;
   const idx = (S.draft.juego.mobs || []).findIndex((x) => x.id === e.id);
   const base = `juego:mobs.${idx}`;
+  const imagen = card('Imagen', 'image', fImage(`${base}.imagen`, 'Render del mob', { kind: 'wide', name: `mob-${m.id}`, hint: 'Se muestra entera en un rectángulo arriba de la tarjeta. Lo mejor es un PNG con fondo transparente, más ancho que alto (por ejemplo 1200×750). Sin imagen se muestra su huevo de spawn.' }));
+  if (m.soloWeb) {
+    return `${edHead('Mob · solo en la web', m.nombre)}
+    <div class="editor-grid">
+      <div class="workspace-col">${card('', '', `<div class="grid-2">${fText(`${base}.nombre`, 'Nombre', { required: true, maxlength: 60 })}${fSelect(`${base}.etapa`, 'Desde', ETAPAS_MOB)}</div>
+        <div class="grid-3">${fText(`${base}.vida`, 'Vida', { maxlength: 20 })}${fText(`${base}.huevo`, 'Huevo (ícono)', { mono: true, maxlength: 60, hint: 'Ej. zombie_spawn_egg.' })}${fColor(`${base}.color`, 'Color')}</div>
+        ${fText(`${base}.donde`, 'Dónde aparece', { maxlength: 120 })}
+        ${fArea(`${base}.texto`, 'Qué hace', { rows: 4, maxlength: 600 })}`)}</div>
+      <aside class="editor-side">${imagen}${sideCard(base)}</aside>
+    </div>`;
+  }
   return `${edHead(`Mob · ${m.id}`, m.nombre, { canDelete: false })}
   <div class="editor-grid">
-    <div class="workspace-col">${card('Del plugin', 'server', `<p class="card-panel__text">${esc(m.texto)}</p><p class="muted">${esc(m.donde)} · cambio ${esc(m.etapa || '—')}${m.vida ? ` · ${esc(m.vida)} de vida` : ''}</p>`)}</div>
-    <aside class="editor-side">${card('Imagen', 'image', fImage(`${base}.imagen`, 'Imagen o render del mob', { name: `mob-${m.id}`, hint: 'Sin imagen se muestra su huevo de spawn.' }))}${sideCard(base)}</aside>
+    <div class="workspace-col">${card('Del plugin', 'server', `<p class="card-panel__text">${esc(m.texto)}</p><p class="muted">${esc(m.donde)} · cambio ${esc(m.etapa || '—')}${m.vida ? ` · ${esc(m.vida)} de vida` : ''}</p>
+      <p class="muted">El nombre, la vida y el texto salen del plugin. Si este mob no se usa en el servidor, apaga <b>Visible en la web</b>.</p>`)}</div>
+    <aside class="editor-side">${imagen}${sideCard(base)}</aside>
   </div>`;
 }
 

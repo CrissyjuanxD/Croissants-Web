@@ -31,7 +31,7 @@ float noise(vec2 p) {
 float fbm(vec2 p) {
   float v = 0.0;
   float a = 0.5;
-  for (int i = 0; i < 4; i++) {
+  for (int i = 0; i < 3; i++) {
     v += a * noise(p);
     p = p * 2.03 + 17.1;
     a *= 0.5;
@@ -132,8 +132,9 @@ export function startWind(canvas, { intensity = 1 } = {}) {
   }
 
   function resize() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-    const scale = window.innerWidth < 768 ? 0.4 : 0.5;
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.25);
+    // La bruma es borrosa: se dibuja a un tercio de la resolución y el navegador la estira sin que se note
+    const scale = window.innerWidth < 768 ? 0.3 : 0.34;
     const w = Math.max(2, Math.round(window.innerWidth * dpr * scale));
     const h = Math.max(2, Math.round(window.innerHeight * dpr * scale));
     if (canvas.width !== w || canvas.height !== h) {
@@ -146,7 +147,8 @@ export function startWind(canvas, { intensity = 1 } = {}) {
   const speed = reduced ? 0.15 : 1;
   const start = performance.now();
   let last = 0;
-  const minFrame = reduced ? 1000 / 10 : 1000 / 45;
+  // 30 cuadros por segundo alcanzan para un movimiento tan lento y dejan libre la tarjeta de video
+  const minFrame = reduced ? 1000 / 10 : 1000 / 30;
 
   function frame(now) {
     raf = requestAnimationFrame(frame);

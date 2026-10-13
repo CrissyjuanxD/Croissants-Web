@@ -45,9 +45,6 @@
   <div class="bg-shade" aria-hidden="true"></div>
   <canvas id="bg-wind" class="bg-wind" aria-hidden="true"></canvas>
   <div class="fx-layer" aria-hidden="true">
-    <div class="fx-cloud fx-cloud--1"></div>
-    <div class="fx-cloud fx-cloud--2"></div>
-    <div class="fx-cloud fx-cloud--3"></div>
     <div class="fx-vignette"></div>
   </div>
 
@@ -67,10 +64,13 @@
 
   <header class="header" id="header">
     <div class="header__inner">
-      <a class="brand" href="#inicio" data-route="inicio" aria-label="Croissants, ir al inicio">
-        <img class="brand__logo" src="assets/img/logo-croissants-960.png" alt="Croissants" width="960" height="137">
-        <span class="brand__ed" data-bind="general.edicion">Segunda Edición</span>
-      </a>
+      <div class="brand-wrap">
+        <a class="brand" href="#inicio" data-route="inicio" aria-label="Croissants, ir al inicio">
+          <img class="brand__logo" src="assets/img/logo-croissants-960.png" alt="Croissants" width="960" height="137">
+          <span class="brand__ed" data-bind="general.edicion">Segunda Edición</span>
+        </a>
+        <div class="header__socials" id="header-socials"></div>
+      </div>
 
       <nav class="nav" aria-label="Principal">
         <ul class="nav__list">
@@ -84,7 +84,6 @@
       </nav>
 
       <div class="header__right">
-        <div class="header__socials" id="header-socials"></div>
         <a class="nav-launcher" href="#launcher" data-route="launcher" title="Descargar Viciont Studios Launcher"><i data-icon="download"></i><span>Launcher</span></a>
         <button class="ip-btn" type="button" data-open-ip aria-haspopup="dialog">
           <span class="ip-btn__icon"><i data-icon="server"></i></span>
@@ -126,7 +125,7 @@
   <footer class="footer">
     <div class="footer__wordmark" aria-hidden="true">CROISSANTS</div>
     <div class="container">
-      <a class="viciont-band reveal" id="viciont-band" href="https://viciontstudios.pages.dev/" target="_blank" rel="noopener noreferrer">
+      <a class="viciont-band" id="viciont-band" href="https://viciontstudios.pages.dev/" target="_blank" rel="noopener noreferrer">
         <img class="viciont-band__emblem" src="assets/img/viciont-emblem-160.webp" alt="" width="160" height="140">
         <span class="viciont-band__text">
           <small>Un proyecto de</small>

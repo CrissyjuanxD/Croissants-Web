@@ -1,7 +1,6 @@
 import { escapeHtml, icon, md, safeImage, visible, headings, plainText } from '../core.js';
 import { S } from '../store.js';
 import { pageHead, mdCtx } from '../components.js';
-import { breeze } from '../fx.js';
 
 let filter = '';
 
@@ -27,14 +26,15 @@ function navHtml(current) {
     </a>`).join('') : `<p class="guide-nav__empty">Nada coincide con “${escapeHtml(filter)}”.</p>`;
 }
 
+// Las imágenes que todavía no se subieron solo se ven en la vista previa del panel, no en la web publicada
 function galleryHtml(s) {
-  const imgs = s.imagenes.filter((im) => im.src || im.titulo);
+  const imgs = s.imagenes.filter((im) => safeImage(im.src) || (S.preview && im.titulo));
   if (!imgs.length) return '';
   return `<div class="gallery">${imgs.map((im) => {
     const src = safeImage(im.src);
-    return `<figure class="shot reveal">
+    return `<figure class="shot">
       ${src ? `<button class="shot__btn" type="button" data-zoom="${escapeHtml(src)}" data-zoom-title="${escapeHtml(im.titulo)}" aria-label="Ampliar ${escapeHtml(im.titulo || 'imagen')}"><img src="${escapeHtml(src)}" alt="${escapeHtml(im.titulo)}" loading="lazy" decoding="async"><span class="shot__zoom">${icon('eye')}</span></button>`
-        : `<div class="shot__ph">${icon('image')}<span>Imagen pendiente</span><small>Se sube desde el panel de administración</small></div>`}
+        : `<div class="shot__ph">${icon('image')}<span>Imagen pendiente</span><small>Solo se ve en la vista previa. Súbela en el panel.</small></div>`}
       ${im.titulo || im.texto ? `<figcaption><strong>${escapeHtml(im.titulo)}</strong>${im.texto ? `<span>${escapeHtml(im.texto)}</span>` : ''}</figcaption>` : ''}
     </figure>`;
   }).join('')}</div>`;
@@ -43,7 +43,7 @@ function galleryHtml(s) {
 export function render(el, parts, ctx) {
   const g = S.sitio.guia;
   const s = section(parts[0]);
-  if (!s) { el.innerHTML = `<div class="container">${pageHead({ crumbs: ['guía'], title: 'Guía del servidor', intro: g.intro })}</div>`; return; }
+  if (!s) { el.innerHTML = `<div class="container">${pageHead({ crumbs: ['guía'], title: g.titulo, intro: g.intro })}</div>`; return; }
   const list = sections();
   const idx = list.indexOf(s);
   const prev = list[idx - 1];
@@ -52,7 +52,7 @@ export function render(el, parts, ctx) {
   const keepNav = ctx.prev && !ctx.changing;
   const navScroll = keepNav ? el.querySelector('.guide-nav')?.scrollTop || 0 : 0;
   el.innerHTML = `<div class="container">
-    ${pageHead({ crumbs: ['guía', s.titulo.toLowerCase()], title: 'Guía del servidor', intro: g.intro })}
+    ${pageHead({ crumbs: ['guía', s.titulo.toLowerCase()], title: g.titulo, intro: g.intro })}
     <div class="guide">
       <aside class="guide-side">
         <button class="guide-picker" type="button" aria-expanded="false" aria-controls="guide-panel" data-guide-picker>
@@ -66,13 +66,13 @@ export function render(el, parts, ctx) {
         </div>
       </aside>
       <article class="guide-body" id="guia-contenido">
-        <header class="guide-body__head reveal">
+        <header class="guide-body__head">
           <span class="guide-body__icon">${icon(s.icono)}</span>
-          <div><p class="kicker">sección ${idx + 1} de ${list.length}</p><h2 class="guide-body__title" data-breeze-section>${escapeHtml(s.titulo)}</h2></div>
+          <div><p class="kicker">sección ${idx + 1} de ${list.length}</p><h2 class="guide-body__title">${escapeHtml(s.titulo)}</h2></div>
         </header>
-        ${s.resumen ? `<p class="guide-body__lead reveal">${escapeHtml(s.resumen)}</p>` : ''}
-        ${toc.length > 2 ? `<nav class="toc reveal" aria-label="En esta sección">${toc.map((h) => `<a href="#guia/${escapeHtml(s.id)}" data-toc="${escapeHtml(h.id)}">${escapeHtml(h.title)}</a>`).join('')}</nav>` : ''}
-        <div class="md guide-md reveal">${md(s.contenido, mdCtx())}</div>
+        ${s.resumen ? `<p class="guide-body__lead">${escapeHtml(s.resumen)}</p>` : ''}
+        ${toc.length > 2 ? `<nav class="toc" aria-label="En esta sección">${toc.map((h) => `<a href="#guia/${escapeHtml(s.id)}" data-toc="${escapeHtml(h.id)}">${escapeHtml(h.title)}</a>`).join('')}</nav>` : ''}
+        <div class="md guide-md">${md(s.contenido, mdCtx())}</div>
         ${galleryHtml(s)}
         <nav class="pager" aria-label="Otras secciones">
           ${prev ? `<a class="pager__link pager__link--prev" href="#guia/${escapeHtml(prev.id)}" data-route="guia"><small>${icon('arrowLeft')} Anterior</small><strong>${escapeHtml(prev.titulo)}</strong></a>` : '<span></span>'}
@@ -85,8 +85,6 @@ export function render(el, parts, ctx) {
   if (keepNav && ctx.prev?.[0] !== parts[0]) {
     const body = el.querySelector('#guia-contenido');
     body?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    const t = el.querySelector('[data-breeze-section]');
-    if (t) breeze(t, t.textContent);
   }
 }
 
