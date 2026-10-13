@@ -1,9 +1,10 @@
 {
  "meta": {
-  "version": 1,
-  "updatedAt": "",
-  "updatedBy": "",
-  "fuente": "QuasoPlugin 26.2"
+  "version": 2,
+  "updatedAt": "2026-10-13T21:03:43.543Z",
+  "updatedBy": "CrissyjuanxD",
+  "fuente": "QuasoPlugin 26.2",
+  "catalogo": ""
  },
  "items": {
   "doubletotem": {
@@ -492,7 +493,7 @@
    "atributos": [
     {
      "atributo": "block_interaction_range",
-     "valor": 5.0,
+     "valor": 5,
      "operacion": "ADD_NUMBER",
      "ranura": "mainhand"
     }
@@ -2224,13 +2225,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     },
@@ -2242,7 +2243,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     }
@@ -2271,13 +2272,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 9.0,
+     "valor": 9,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
@@ -2289,7 +2290,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     }
@@ -2318,13 +2319,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 7.0,
+     "valor": 7,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     },
@@ -2336,7 +2337,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     }
@@ -2365,13 +2366,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
@@ -2383,7 +2384,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     }
@@ -2413,13 +2414,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 9.0,
+     "valor": 9,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
@@ -2431,7 +2432,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     }
@@ -3502,7 +3503,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 2,
@@ -3533,7 +3537,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 3,
@@ -3571,7 +3578,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 4,
@@ -3602,7 +3612,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 5,
@@ -3634,7 +3647,10 @@
       "n": 10
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 6,
@@ -3666,7 +3682,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 7,
@@ -3703,7 +3722,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 8,
@@ -3825,7 +3847,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 9,
@@ -3861,7 +3886,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 10,
@@ -4019,7 +4047,10 @@
       "n": 25
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 11,
@@ -4056,7 +4087,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 12,
@@ -4093,7 +4127,10 @@
       "n": 10
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 13,
@@ -4125,7 +4162,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 14,
@@ -4166,7 +4206,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 15,
@@ -4232,7 +4275,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 16,
@@ -4264,7 +4310,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 17,
@@ -4300,7 +4349,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 18,
@@ -4331,7 +4383,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 19,
@@ -4364,7 +4419,10 @@
       "n": 20
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 20,
@@ -4396,7 +4454,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 21,
@@ -4442,7 +4503,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 22,
@@ -4473,7 +4537,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 23,
@@ -4504,7 +4571,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 24,
@@ -4540,7 +4610,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 25,
@@ -4572,7 +4645,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 26,
@@ -4603,7 +4679,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 27,
@@ -4639,7 +4718,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 28,
@@ -4675,7 +4757,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 29,
@@ -4711,7 +4796,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 30,
@@ -4747,7 +4835,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 31,
@@ -4778,7 +4869,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 32,
@@ -4811,7 +4905,10 @@
       "n": 20
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 33,
@@ -4842,7 +4939,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 34,
@@ -4874,7 +4974,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 35,
@@ -4906,7 +5009,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 36,
@@ -4938,7 +5044,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 37,
@@ -4970,7 +5079,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 38,
@@ -5002,7 +5114,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 39,
@@ -5043,7 +5158,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 40,
@@ -5074,7 +5192,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 41,
@@ -5105,7 +5226,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 42,
@@ -5137,7 +5261,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 43,
@@ -5168,7 +5295,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 44,
@@ -5200,7 +5330,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 45,
@@ -5242,7 +5375,10 @@
       "n": 15
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 46,
@@ -5274,7 +5410,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 47,
@@ -5310,7 +5449,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 48,
@@ -5351,7 +5493,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 49,
@@ -5384,7 +5529,10 @@
       "n": 12
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 50,
@@ -5419,7 +5567,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 51,
@@ -5476,7 +5627,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 52,
@@ -5510,7 +5664,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 53,
@@ -5546,7 +5703,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 54,
@@ -5577,7 +5737,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 55,
@@ -5608,7 +5771,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 56,
@@ -5639,7 +5805,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 57,
@@ -5675,7 +5844,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 58,
@@ -5708,7 +5880,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 59,
@@ -5755,7 +5930,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 60,
@@ -5786,7 +5964,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 61,
@@ -5823,7 +6004,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 62,
@@ -5865,7 +6049,10 @@
       "n": 15
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 63,
@@ -5896,7 +6083,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 64,
@@ -5962,7 +6152,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 65,
@@ -5993,7 +6186,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 66,
@@ -6030,7 +6226,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 67,
@@ -6066,7 +6265,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 68,
@@ -6098,7 +6300,10 @@
       "n": 64
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 69,
@@ -6129,7 +6334,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 70,
@@ -6171,7 +6379,10 @@
       "n": 15
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 71,
@@ -6218,7 +6429,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 72,
@@ -6249,7 +6463,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 73,
@@ -6280,7 +6497,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 74,
@@ -6313,7 +6533,10 @@
       "n": 64
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 75,
@@ -6345,7 +6568,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 76,
@@ -6377,7 +6603,10 @@
       "n": 64
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 77,
@@ -6408,7 +6637,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 78,
@@ -6440,7 +6672,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 79,
@@ -6479,7 +6714,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 80,
@@ -6510,7 +6748,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 81,
@@ -6541,7 +6782,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 82,
@@ -6572,7 +6816,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 83,
@@ -6603,7 +6850,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 84,
@@ -6635,7 +6885,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 85,
@@ -6666,7 +6919,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 86,
@@ -6702,7 +6958,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 87,
@@ -6734,7 +6993,10 @@
       "n": 64
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 88,
@@ -6796,7 +7058,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 89,
@@ -6827,7 +7092,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 90,
@@ -6858,7 +7126,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 91,
@@ -6895,7 +7166,10 @@
       "n": 10
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 92,
@@ -6941,7 +7215,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 93,
@@ -6978,7 +7255,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 94,
@@ -7020,7 +7300,10 @@
       "n": 50
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 95,
@@ -7052,7 +7335,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 96,
@@ -7084,7 +7370,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 97,
@@ -7117,7 +7406,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 98,
@@ -7163,7 +7455,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 99,
@@ -7196,7 +7491,10 @@
       "n": 20
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 100,
@@ -7228,7 +7526,10 @@
       "n": 60
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 101,
@@ -7264,7 +7565,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 102,
@@ -7303,7 +7607,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 103,
@@ -7342,7 +7649,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 104,
@@ -7380,7 +7690,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 105,
@@ -7413,7 +7726,10 @@
       "n": 5
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 106,
@@ -7451,7 +7767,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 107,
@@ -7484,7 +7803,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 108,
@@ -7521,7 +7843,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 109,
@@ -7558,7 +7883,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 110,
@@ -7596,7 +7924,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 111,
@@ -7633,7 +7964,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 112,
@@ -7680,7 +8014,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 113,
@@ -7751,7 +8088,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 114,
@@ -7790,7 +8130,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 115,
@@ -7822,7 +8165,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 116,
@@ -7853,7 +8199,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 117,
@@ -7886,7 +8235,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 118,
@@ -7919,7 +8271,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 119,
@@ -7950,7 +8305,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 120,
@@ -7988,7 +8346,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 121,
@@ -8021,7 +8382,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 122,
@@ -8059,7 +8423,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 123,
@@ -8097,7 +8464,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 124,
@@ -8130,7 +8500,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 125,
@@ -8163,7 +8536,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 126,
@@ -8196,7 +8572,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 127,
@@ -8229,7 +8608,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 128,
@@ -8271,7 +8653,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 129,
@@ -8304,7 +8689,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 130,
@@ -8341,7 +8729,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 131,
@@ -8374,7 +8765,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 132,
@@ -8407,7 +8801,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 133,
@@ -8440,7 +8837,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 134,
@@ -8473,7 +8873,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 135,
@@ -8511,7 +8914,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 136,
@@ -8544,7 +8950,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 137,
@@ -8577,7 +8986,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 138,
@@ -8610,7 +9022,10 @@
       "n": 64
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 139,
@@ -8643,7 +9058,10 @@
       "n": 4
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 140,
@@ -8681,7 +9099,10 @@
       "n": 32
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 141,
@@ -8719,7 +9140,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 142,
@@ -8752,7 +9176,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 143,
@@ -8789,7 +9216,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 144,
@@ -8827,7 +9257,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 145,
@@ -8865,7 +9298,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 146,
@@ -8902,7 +9338,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 147,
@@ -8939,7 +9378,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 148,
@@ -8977,7 +9419,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 149,
@@ -9014,7 +9459,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 150,
@@ -9051,7 +9499,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 151,
@@ -9089,7 +9540,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 152,
@@ -9122,7 +9576,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 153,
@@ -9159,7 +9616,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 154,
@@ -9193,7 +9653,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 155,
@@ -9231,7 +9694,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 156,
@@ -9268,7 +9734,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 157,
@@ -9305,7 +9774,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 158,
@@ -9343,7 +9815,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 159,
@@ -9380,7 +9855,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 160,
@@ -9417,7 +9895,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 161,
@@ -9455,7 +9936,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 162,
@@ -9488,7 +9972,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 163,
@@ -9525,7 +10012,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 164,
@@ -9563,7 +10053,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 165,
@@ -9601,7 +10094,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 166,
@@ -9638,7 +10134,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 167,
@@ -9675,7 +10174,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 168,
@@ -9713,7 +10215,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 169,
@@ -9750,7 +10255,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 170,
@@ -9787,7 +10295,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 171,
@@ -9820,7 +10331,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 172,
@@ -9853,7 +10367,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 173,
@@ -9891,7 +10408,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 174,
@@ -9924,7 +10444,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 175,
@@ -9957,7 +10480,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 176,
@@ -9990,7 +10516,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 177,
@@ -10023,7 +10552,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 178,
@@ -10056,7 +10588,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 179,
@@ -10093,7 +10628,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 180,
@@ -10126,7 +10664,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 181,
@@ -10164,7 +10705,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 182,
@@ -10197,7 +10741,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 183,
@@ -10230,7 +10777,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 184,
@@ -10268,7 +10818,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 185,
@@ -10301,7 +10854,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 186,
@@ -10338,7 +10894,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 187,
@@ -10371,7 +10930,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 188,
@@ -10409,7 +10971,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 189,
@@ -10442,7 +11007,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 190,
@@ -10479,7 +11047,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 191,
@@ -10517,7 +11088,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 192,
@@ -10550,7 +11124,10 @@
       "n": 16
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 193,
@@ -10587,7 +11164,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 194,
@@ -10625,7 +11205,10 @@
       "n": 3
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 195,
@@ -10662,7 +11245,10 @@
       "n": 8
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 196,
@@ -10695,7 +11281,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 197,
@@ -10733,7 +11322,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 198,
@@ -10766,7 +11358,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 199,
@@ -10804,7 +11399,10 @@
       "n": 1
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   },
   {
    "n": 200,
@@ -10841,7 +11439,10 @@
       "n": 2
      }
     ]
-   ]
+   ],
+   "nota": "",
+   "imagen": "",
+   "oculto": false
   }
  ],
  "recetas": [
@@ -10869,7 +11470,9 @@
      "material": "rotten_flesh",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "fragmento_profundo_cian",
@@ -10883,7 +11486,9 @@
     "id": "mineral_crudo_cian",
     "n": 1
    },
-   "segundos": 240.0
+   "segundos": 240,
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "fragmento_profundo_verde",
@@ -10897,7 +11502,9 @@
     "id": "mineral_crudo_verde",
     "n": 1
    },
-   "segundos": 240.0
+   "segundos": 240,
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "fragmento_profundo_morado",
@@ -10911,7 +11518,9 @@
     "id": "mineral_crudo_morado",
     "n": 1
    },
-   "segundos": 240.0
+   "segundos": 240,
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "fragmento_profundo_gris",
@@ -10925,7 +11534,9 @@
     "id": "mineral_crudo_gris",
     "n": 1
    },
-   "segundos": 240.0
+   "segundos": 240,
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "lingote_profundo",
@@ -10955,7 +11566,9 @@
      "material": "gold_ingot",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "energia_warden",
@@ -10980,7 +11593,9 @@
      "id": "lingote_profundo",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "mejora_casco_warden",
@@ -11017,7 +11632,9 @@
      "id": "lingote_profundo",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "mejora_botas_warden",
@@ -11054,7 +11671,9 @@
      "id": "lingote_profundo",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "mejora_peto_warden",
@@ -11091,7 +11710,9 @@
      "id": "lingote_profundo",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "mejora_pantalon_warden",
@@ -11128,7 +11749,9 @@
      "id": "lingote_profundo",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "casco_warden",
@@ -11150,7 +11773,9 @@
    "adicion": {
     "id": "lingote_profundo",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "peto_warden",
@@ -11172,7 +11797,9 @@
    "adicion": {
     "id": "lingote_profundo",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "pantalon_warden",
@@ -11194,7 +11821,9 @@
    "adicion": {
     "id": "lingote_profundo",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "botas_warden",
@@ -11216,7 +11845,9 @@
    "adicion": {
     "id": "lingote_profundo",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "lingote_celestita",
@@ -11245,7 +11876,9 @@
      "material": "gold_ingot",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "plantilla_celestita",
@@ -11279,7 +11912,9 @@
      "id": "lingote_celestita",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "espada_celestita",
@@ -11301,7 +11936,9 @@
    "adicion": {
     "id": "lingote_celestita",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "hacha_celestita",
@@ -11323,7 +11960,9 @@
    "adicion": {
     "id": "lingote_celestita",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "lanza_celestita",
@@ -11345,7 +11984,9 @@
    "adicion": {
     "id": "lingote_celestita",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "pico_celestita",
@@ -11367,7 +12008,9 @@
    "adicion": {
     "id": "lingote_celestita",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "pala_celestita",
@@ -11389,7 +12032,9 @@
    "adicion": {
     "id": "lingote_celestita",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "azada_celestita",
@@ -11411,7 +12056,9 @@
    "adicion": {
     "id": "lingote_celestita",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "ojo_rey_ender",
@@ -11444,7 +12091,9 @@
      "material": "ender_eye",
      "n": 1
     }
-   }
+   },
+   "nota": "",
+   "oculto": false
   },
   {
    "id": "peto_warden_alado",
@@ -11467,7 +12116,9 @@
     "vanilla": true,
     "material": "elytra",
     "n": 1
-   }
+   },
+   "nota": "",
+   "oculto": false
   }
  ],
  "trabajos": [
@@ -11556,6 +12207,8 @@
   {
    "id": "vitalidad",
    "nombre": "Vitalidad",
+   "icono": "heart",
+   "color": "#ff9db4",
    "niveles": [
     "Otorga +2.5 Corazones permanentes.",
     "Otorga +2.5 Corazones permanentes.",
@@ -11565,13 +12218,13 @@
     "Otorga +4 Corazones permanentes.",
     "Otorga +4 Corazones permanentes.",
     "Otorga +4 Corazones permanentes."
-   ],
-   "icono": "heart",
-   "color": "#ff9db4"
+   ]
   },
   {
    "id": "resistencia",
    "nombre": "Resistencia",
+   "icono": "shield",
+   "color": "#9fd3ff",
    "niveles": [
     "8% prob. bloquear daño directo de proyectiles.",
     "8% prob. bloquear daño directo de monstruos.",
@@ -11581,13 +12234,13 @@
     "14% prob. bloquear daño directo de monstruos.",
     "14% prob. bloquear cualquier daño.",
     "Resistencia II infinita."
-   ],
-   "icono": "shield",
-   "color": "#9fd3ff"
+   ]
   },
   {
    "id": "agilidad",
    "nombre": "Agilidad",
+   "icono": "wind",
+   "color": "#8ff0b8",
    "niveles": [
     "Haste I infinito.",
     "Doble Salto y Gracia del Delfín II infinito.",
@@ -11597,9 +12250,7 @@
     "Salto Alto I infinito.",
     "Velocidad II infinita.",
     "Cuádruple Salto."
-   ],
-   "icono": "wind",
-   "color": "#8ff0b8"
+   ]
   }
  ],
  "costosHabilidad": [
@@ -11666,56 +12317,64 @@
    "nombre": "DinoNugget",
    "color": "#FDCDA0",
    "prefijo": "§7§l[§6§lDinoNugget§7§l]",
-   "como": "El rango de todos al entrar por primera vez."
+   "como": "El rango de todos al entrar por primera vez.",
+   "oculto": false
   },
   {
    "id": "YMiembro",
    "nombre": "DinoNugget+",
    "color": "#F7A1F0",
    "prefijo": "§7§l[§5§lDinoNugget§6§l+§7§l]",
-   "como": "Se consigue al completar 30 misiones."
+   "como": "Se consigue al completar 30 misiones.",
+   "oculto": false
   },
   {
    "id": "XLeyenda",
    "nombre": "DinoLeyenda",
    "color": "#FFD166",
    "prefijo": "§7§l[§x§F§F§D§1§6§6§lDinoLeyenda§7§l]",
-   "como": "Lo da la misión 100, Jugador Experto."
+   "como": "Lo da la misión 100, Jugador Experto.",
+   "oculto": false
   },
   {
    "id": "USub",
    "nombre": "DinoSub",
    "color": "#B57BFF",
    "prefijo": "§7§l[§x§9§1§4§6§F§F§lDinoSub§7§l]",
-   "como": "Para los subs del canal de Crosszy que vincularon su Twitch con /twitch."
+   "como": "Para los subs del canal de Crosszy que vincularon su Twitch con /twitch.",
+   "oculto": false
   },
   {
    "id": "VVip",
    "nombre": "DinoVip",
    "color": "#F58BE0",
    "prefijo": "§7§l[§x§E§0§0§5§B§9§lDinoVip§7§l]",
-   "como": "Para los VIP del canal de Crosszy que vincularon su Twitch."
+   "como": "Para los VIP del canal de Crosszy que vincularon su Twitch.",
+   "oculto": false
   },
   {
    "id": "THelper",
    "nombre": "Helper",
    "color": "#68E3BA",
    "prefijo": "§7§l[§x§0§0§A§A§A§A§lHelper§7§l]",
-   "como": "Staff que ayuda a los jugadores."
+   "como": "Staff que ayuda a los jugadores.",
+   "oculto": false
   },
   {
    "id": "Mod",
    "nombre": "DinoNalgon",
    "color": "#C056E6",
    "prefijo": "§7§l[§d§lDinoNalgon§7§l]",
-   "como": "Los moderadores del servidor."
+   "como": "Los moderadores del servidor.",
+   "oculto": false
   },
   {
    "id": "Admin",
    "nombre": "Prieto",
    "color": "#F89130",
    "prefijo": "§7§l[§8§lPRIETO§7§l]",
-   "como": "Los administradores del servidor."
+   "como": "Los administradores del servidor.",
+   "oculto": false
   },
   {
    "id": "TSurvivor",
@@ -11790,6 +12449,224 @@
    "buena": "2%",
    "perfecta": "5%",
    "cambio": 1
+  }
+ ],
+ "mobs": [
+  {
+   "id": "corruptedzombie",
+   "nombre": "Zombie Floral",
+   "color": "#FF8CC6",
+   "etapa": "uno",
+   "vida": "20",
+   "donde": "Raids · solo desde el día 14",
+   "texto": "Dispara una wind charge con estela floral que da veneno y debilidad. Tiene fuerza, velocidad y 30% de soltar Carne Corrupta.",
+   "huevo": "zombie_spawn_egg",
+   "imagen": "assets/uploads/mob-corruptedzombie-mv764gnbqwz.webp",
+   "oculto": false
+  },
+  {
+   "id": "corruptedspider",
+   "nombre": "Spider Floral",
+   "color": "#F6C945",
+   "etapa": "uno",
+   "vida": "16",
+   "donde": "Raids · sola desde el día 14",
+   "texto": "Araña con velocidad y fuerza permanentes. Si te pega y no te cubres con el escudo, te deja una telaraña en los pies.",
+   "huevo": "spider_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "bombita",
+   "nombre": "Bombita",
+   "color": "#FF5555",
+   "etapa": "uno",
+   "vida": "20",
+   "donde": "Raids · sola desde el día 14",
+   "texto": "Creeper chiquito y rápido que explota casi al instante. Las Bombitas no se dañan entre ellas.",
+   "huevo": "creeper_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "iceologer",
+   "nombre": "Iceologer",
+   "color": "#55FFFF",
+   "etapa": "uno",
+   "vida": "48",
+   "donde": "Raids, desde la 2ª oleada",
+   "texto": "Usa su arco de hielo, colmillos de hielo, una esfera que te congela y una lluvia de bloques de hielo. Sus vex son Ángeles de Hielo. Suelta un Cristal de Hielo y 10% el arco.",
+   "huevo": "evoker_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "corruptedbee",
+   "nombre": "Corrupted Bee",
+   "color": "#AA00AA",
+   "etapa": "uno",
+   "vida": "15",
+   "donde": "Dungeon de la Abeja Floral",
+   "texto": "Abeja siempre enojada que va por el jugador más cercano. Su picadura da Veneno III y no muere al picar.",
+   "huevo": "bee_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "guardianblaze",
+   "nombre": "Guardian Blaze",
+   "color": "#FFAA00",
+   "etapa": "uno",
+   "vida": "40",
+   "donde": "Dungeons y estructuras del server",
+   "texto": "Tira bolas de fuego en fila y un anillo de fuego. Suelta netherite scrap.",
+   "huevo": "blaze_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "guardiancorruptedskeleton",
+   "nombre": "Guardian Corrupted Skeleton",
+   "color": "#AA00AA",
+   "etapa": "uno",
+   "vida": "25",
+   "donde": "Dungeons y estructuras del server",
+   "texto": "Lanza cráneos que dan Wither III si no te cubres con el escudo.",
+   "huevo": "wither_skeleton_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "corruptedinfernalspider",
+   "nombre": "Corrupted Infernal Spider",
+   "color": "#FF5555",
+   "etapa": "uno",
+   "vida": "16",
+   "donde": "Dungeons y estructuras del server",
+   "texto": "Araña de fuego que deja telarañas.",
+   "huevo": "spider_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "wardenzombie",
+   "nombre": "Warden Zombie",
+   "color": "#1f7a86",
+   "etapa": "dos",
+   "vida": "60",
+   "donde": "Los 4 biomas de la Warden Cave",
+   "texto": "Lento pero con mucha vida y armadura. Te escucha si te mueves sin agacharte y su golpe da Oscuridad 4 segundos. 15% de soltar un fragmento resonante.",
+   "huevo": "zombie_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "infestedskeleton",
+   "nombre": "Infested Skeleton",
+   "color": "#00AAAA",
+   "etapa": "dos",
+   "vida": "100",
+   "donde": "Caverna Sculk (cian)",
+   "texto": "Arco con Poder VII y flechas que hacen daño instantáneo; a veces lanza un sonic boom. 7% de soltar su alma (casco de Warden).",
+   "huevo": "skeleton_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "infestedcavespider",
+   "nombre": "Infested Cave Spider",
+   "color": "#00AAAA",
+   "etapa": "dos",
+   "vida": "100",
+   "donde": "Pantano Profundo (verde)",
+   "texto": "Araña de cueva más grande con efectos al azar. 20% de lanzar un sonic boom al pegarte y los proyectiles no le hacen daño. 7% de soltar su alma (botas).",
+   "huevo": "cave_spider_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "infestedghast",
+   "nombre": "Infested Ghast",
+   "color": "#00AAAA",
+   "etapa": "dos",
+   "vida": "100",
+   "donde": "Abismo Flotante (morado)",
+   "texto": "Bolas de fuego más fuertes con rastro de sonic boom; al explotar dan Oscuridad a 25 bloques. 7% de soltar su alma (peto).",
+   "huevo": "ghast_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "infestedcreeper",
+   "nombre": "Infested Creeper",
+   "color": "#00AAAA",
+   "etapa": "dos",
+   "vida": "100",
+   "donde": "Ruinas de Ceniza (gris)",
+   "texto": "Cargado; su explosión no rompe bloques pero da Oscuridad y Veneno a 15 bloques. Con proyectiles no baja de 18 de vida: remátalo cuerpo a cuerpo. 7% de soltar su alma (pantalón).",
+   "huevo": "creeper_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "enderblaze",
+   "nombre": "Ender Blaze",
+   "color": "#FF55FF",
+   "etapa": "tres",
+   "vida": "50",
+   "donde": "Islas de afuera del End",
+   "texto": "Sus bolas de fuego explotan al pegar (sin romper bloques) y se tepea al recibir daño o cada cierto tiempo.",
+   "huevo": "blaze_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "endercreeper",
+   "nombre": "Ender Creeper",
+   "color": "#FF55FF",
+   "etapa": "tres",
+   "vida": "40",
+   "donde": "Islas de afuera del End",
+   "texto": "Cargado, invisible y con Velocidad I. Explota como un creeper cargado normal: con armadura de Warden no mata de un golpe.",
+   "huevo": "creeper_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "enderspider",
+   "nombre": "Ender Spider",
+   "color": "#FF55FF",
+   "etapa": "tres",
+   "vida": "40",
+   "donde": "Islas de afuera del End",
+   "texto": "Velocidad I, el triple de daño de una araña y un proyectil morado que te tepea a 15 bloques de ella.",
+   "huevo": "spider_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "enderinsect",
+   "nombre": "Ender Insect",
+   "color": "#c58cff",
+   "etapa": "tres",
+   "vida": "16",
+   "donde": "Bosque Prismático",
+   "texto": "Endermite grande que los Enderman no atacan. Escupe proyectiles que dan Veneno II y dejan una nube de esporas 30 segundos. Suelta Fragmento Astral (10%).",
+   "huevo": "endermite_spawn_egg",
+   "imagen": "",
+   "oculto": false
+  },
+  {
+   "id": "shulkernegro",
+   "nombre": "Shulker Negro",
+   "color": "#9a8fb0",
+   "etapa": "tres",
+   "vida": "60",
+   "donde": "Santuarios del Páramo Marchito",
+   "texto": "Sus balas pegan el doble y dan Wither II y Ceguera; cada 10 a 14 segundos tira una ráfaga de 6 balas. Suelta 1 o 2 Esencias Marchitas y Fragmento Astral (25%).",
+   "huevo": "shulker_spawn_egg",
+   "imagen": "",
+   "oculto": false
   }
  ],
  "idioma": {
@@ -12183,187 +13060,5 @@
    "offhand": "En la mano secundaria:",
    "saddle": "Al equipar montura:"
   }
- },
- "mobs": [
-  {
-   "id": "corruptedzombie",
-   "nombre": "Zombie Floral",
-   "color": "#FF8CC6",
-   "etapa": "uno",
-   "vida": "20",
-   "donde": "Raids · solo desde el día 14",
-   "texto": "Dispara una wind charge con estela floral que da veneno y debilidad. Tiene fuerza, velocidad y 30% de soltar Carne Corrupta.",
-   "huevo": "zombie_spawn_egg"
-  },
-  {
-   "id": "corruptedspider",
-   "nombre": "Spider Floral",
-   "color": "#F6C945",
-   "etapa": "uno",
-   "vida": "16",
-   "donde": "Raids · sola desde el día 14",
-   "texto": "Araña con velocidad y fuerza permanentes. Si te pega y no te cubres con el escudo, te deja una telaraña en los pies.",
-   "huevo": "spider_spawn_egg"
-  },
-  {
-   "id": "bombita",
-   "nombre": "Bombita",
-   "color": "#FF5555",
-   "etapa": "uno",
-   "vida": "20",
-   "donde": "Raids · sola desde el día 14",
-   "texto": "Creeper chiquito y rápido que explota casi al instante. Las Bombitas no se dañan entre ellas.",
-   "huevo": "creeper_spawn_egg"
-  },
-  {
-   "id": "iceologer",
-   "nombre": "Iceologer",
-   "color": "#55FFFF",
-   "etapa": "uno",
-   "vida": "48",
-   "donde": "Raids, desde la 2ª oleada",
-   "texto": "Usa su arco de hielo, colmillos de hielo, una esfera que te congela y una lluvia de bloques de hielo. Sus vex son Ángeles de Hielo. Suelta un Cristal de Hielo y 10% el arco.",
-   "huevo": "evoker_spawn_egg"
-  },
-  {
-   "id": "corruptedbee",
-   "nombre": "Corrupted Bee",
-   "color": "#AA00AA",
-   "etapa": "uno",
-   "vida": "15",
-   "donde": "Dungeon de la Abeja Floral",
-   "texto": "Abeja siempre enojada que va por el jugador más cercano. Su picadura da Veneno III y no muere al picar.",
-   "huevo": "bee_spawn_egg"
-  },
-  {
-   "id": "guardianblaze",
-   "nombre": "Guardian Blaze",
-   "color": "#FFAA00",
-   "etapa": "uno",
-   "vida": "40",
-   "donde": "Dungeons y estructuras del server",
-   "texto": "Tira bolas de fuego en fila y un anillo de fuego. Suelta netherite scrap.",
-   "huevo": "blaze_spawn_egg"
-  },
-  {
-   "id": "guardiancorruptedskeleton",
-   "nombre": "Guardian Corrupted Skeleton",
-   "color": "#AA00AA",
-   "etapa": "uno",
-   "vida": "25",
-   "donde": "Dungeons y estructuras del server",
-   "texto": "Lanza cráneos que dan Wither III si no te cubres con el escudo.",
-   "huevo": "wither_skeleton_spawn_egg"
-  },
-  {
-   "id": "corruptedinfernalspider",
-   "nombre": "Corrupted Infernal Spider",
-   "color": "#FF5555",
-   "etapa": "uno",
-   "vida": "16",
-   "donde": "Dungeons y estructuras del server",
-   "texto": "Araña de fuego que deja telarañas.",
-   "huevo": "spider_spawn_egg"
-  },
-  {
-   "id": "wardenzombie",
-   "nombre": "Warden Zombie",
-   "color": "#1f7a86",
-   "etapa": "dos",
-   "vida": "60",
-   "donde": "Los 4 biomas de la Warden Cave",
-   "texto": "Lento pero con mucha vida y armadura. Te escucha si te mueves sin agacharte y su golpe da Oscuridad 4 segundos. 15% de soltar un fragmento resonante.",
-   "huevo": "zombie_spawn_egg"
-  },
-  {
-   "id": "infestedskeleton",
-   "nombre": "Infested Skeleton",
-   "color": "#00AAAA",
-   "etapa": "dos",
-   "vida": "100",
-   "donde": "Caverna Sculk (cian)",
-   "texto": "Arco con Poder VII y flechas que hacen daño instantáneo; a veces lanza un sonic boom. 7% de soltar su alma (casco de Warden).",
-   "huevo": "skeleton_spawn_egg"
-  },
-  {
-   "id": "infestedcavespider",
-   "nombre": "Infested Cave Spider",
-   "color": "#00AAAA",
-   "etapa": "dos",
-   "vida": "100",
-   "donde": "Pantano Profundo (verde)",
-   "texto": "Araña de cueva más grande con efectos al azar. 20% de lanzar un sonic boom al pegarte y los proyectiles no le hacen daño. 7% de soltar su alma (botas).",
-   "huevo": "cave_spider_spawn_egg"
-  },
-  {
-   "id": "infestedghast",
-   "nombre": "Infested Ghast",
-   "color": "#00AAAA",
-   "etapa": "dos",
-   "vida": "100",
-   "donde": "Abismo Flotante (morado)",
-   "texto": "Bolas de fuego más fuertes con rastro de sonic boom; al explotar dan Oscuridad a 25 bloques. 7% de soltar su alma (peto).",
-   "huevo": "ghast_spawn_egg"
-  },
-  {
-   "id": "infestedcreeper",
-   "nombre": "Infested Creeper",
-   "color": "#00AAAA",
-   "etapa": "dos",
-   "vida": "100",
-   "donde": "Ruinas de Ceniza (gris)",
-   "texto": "Cargado; su explosión no rompe bloques pero da Oscuridad y Veneno a 15 bloques. Con proyectiles no baja de 18 de vida: remátalo cuerpo a cuerpo. 7% de soltar su alma (pantalón).",
-   "huevo": "creeper_spawn_egg"
-  },
-  {
-   "id": "enderblaze",
-   "nombre": "Ender Blaze",
-   "color": "#FF55FF",
-   "etapa": "tres",
-   "vida": "50",
-   "donde": "Islas de afuera del End",
-   "texto": "Sus bolas de fuego explotan al pegar (sin romper bloques) y se tepea al recibir daño o cada cierto tiempo.",
-   "huevo": "blaze_spawn_egg"
-  },
-  {
-   "id": "endercreeper",
-   "nombre": "Ender Creeper",
-   "color": "#FF55FF",
-   "etapa": "tres",
-   "vida": "40",
-   "donde": "Islas de afuera del End",
-   "texto": "Cargado, invisible y con Velocidad I. Explota como un creeper cargado normal: con armadura de Warden no mata de un golpe.",
-   "huevo": "creeper_spawn_egg"
-  },
-  {
-   "id": "enderspider",
-   "nombre": "Ender Spider",
-   "color": "#FF55FF",
-   "etapa": "tres",
-   "vida": "40",
-   "donde": "Islas de afuera del End",
-   "texto": "Velocidad I, el triple de daño de una araña y un proyectil morado que te tepea a 15 bloques de ella.",
-   "huevo": "spider_spawn_egg"
-  },
-  {
-   "id": "enderinsect",
-   "nombre": "Ender Insect",
-   "color": "#c58cff",
-   "etapa": "tres",
-   "vida": "16",
-   "donde": "Bosque Prismático",
-   "texto": "Endermite grande que los Enderman no atacan. Escupe proyectiles que dan Veneno II y dejan una nube de esporas 30 segundos. Suelta Fragmento Astral (10%).",
-   "huevo": "endermite_spawn_egg"
-  },
-  {
-   "id": "shulkernegro",
-   "nombre": "Shulker Negro",
-   "color": "#9a8fb0",
-   "etapa": "tres",
-   "vida": "60",
-   "donde": "Santuarios del Páramo Marchito",
-   "texto": "Sus balas pegan el doble y dan Wither II y Ceguera; cada 10 a 14 segundos tira una ráfaga de 6 balas. Suelta 1 o 2 Esencias Marchitas y Fragmento Astral (25%).",
-   "huevo": "shulker_spawn_egg"
-  }
- ]
+ }
 }
