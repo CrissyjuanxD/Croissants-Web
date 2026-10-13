@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 2,
-  "updatedAt": "2026-10-13T21:03:43.543Z",
+  "version": 3,
+  "updatedAt": "2026-10-13T21:48:10.235Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -12317,6 +12317,7 @@
    "nombre": "DinoNugget",
    "color": "#FDCDA0",
    "prefijo": "§7§l[§6§lDinoNugget§7§l]",
+   "imagen": "",
    "como": "El rango de todos al entrar por primera vez.",
    "oculto": false
   },
@@ -12325,6 +12326,7 @@
    "nombre": "DinoNugget+",
    "color": "#F7A1F0",
    "prefijo": "§7§l[§5§lDinoNugget§6§l+§7§l]",
+   "imagen": "",
    "como": "Se consigue al completar 30 misiones.",
    "oculto": false
   },
@@ -12333,6 +12335,7 @@
    "nombre": "DinoLeyenda",
    "color": "#FFD166",
    "prefijo": "§7§l[§x§F§F§D§1§6§6§lDinoLeyenda§7§l]",
+   "imagen": "",
    "como": "Lo da la misión 100, Jugador Experto.",
    "oculto": false
   },
@@ -12341,6 +12344,7 @@
    "nombre": "DinoSub",
    "color": "#B57BFF",
    "prefijo": "§7§l[§x§9§1§4§6§F§F§lDinoSub§7§l]",
+   "imagen": "",
    "como": "Para los subs del canal de Crosszy que vincularon su Twitch con /twitch.",
    "oculto": false
   },
@@ -12349,6 +12353,7 @@
    "nombre": "DinoVip",
    "color": "#F58BE0",
    "prefijo": "§7§l[§x§E§0§0§5§B§9§lDinoVip§7§l]",
+   "imagen": "",
    "como": "Para los VIP del canal de Crosszy que vincularon su Twitch.",
    "oculto": false
   },
@@ -12357,6 +12362,7 @@
    "nombre": "Helper",
    "color": "#68E3BA",
    "prefijo": "§7§l[§x§0§0§A§A§A§A§lHelper§7§l]",
+   "imagen": "",
    "como": "Staff que ayuda a los jugadores.",
    "oculto": false
   },
@@ -12365,6 +12371,7 @@
    "nombre": "DinoNalgon",
    "color": "#C056E6",
    "prefijo": "§7§l[§d§lDinoNalgon§7§l]",
+   "imagen": "",
    "como": "Los moderadores del servidor.",
    "oculto": false
   },
@@ -12373,6 +12380,7 @@
    "nombre": "Prieto",
    "color": "#F89130",
    "prefijo": "§7§l[§8§lPRIETO§7§l]",
+   "imagen": "",
    "como": "Los administradores del servidor.",
    "oculto": false
   },
@@ -12381,6 +12389,7 @@
    "nombre": "Survivor",
    "color": "#9455ED",
    "prefijo": "Survivor",
+   "imagen": "",
    "como": "Rango especial.",
    "oculto": true
   },
@@ -12389,6 +12398,7 @@
    "nombre": "Fantasma",
    "color": "#555555",
    "prefijo": "Fantasma",
+   "imagen": "",
    "como": "Rango especial.",
    "oculto": true
   }
@@ -12462,7 +12472,8 @@
    "texto": "Dispara una wind charge con estela floral que da veneno y debilidad. Tiene fuerza, velocidad y 30% de soltar Carne Corrupta.",
    "huevo": "zombie_spawn_egg",
    "imagen": "assets/uploads/mob-corruptedzombie-mv764gnbqwz.webp",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "corruptedspider",
@@ -12474,7 +12485,8 @@
    "texto": "Araña con velocidad y fuerza permanentes. Si te pega y no te cubres con el escudo, te deja una telaraña en los pies.",
    "huevo": "spider_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "bombita",
@@ -12486,7 +12498,8 @@
    "texto": "Creeper chiquito y rápido que explota casi al instante. Las Bombitas no se dañan entre ellas.",
    "huevo": "creeper_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "iceologer",
@@ -12498,7 +12511,8 @@
    "texto": "Usa su arco de hielo, colmillos de hielo, una esfera que te congela y una lluvia de bloques de hielo. Sus vex son Ángeles de Hielo. Suelta un Cristal de Hielo y 10% el arco.",
    "huevo": "evoker_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "corruptedbee",
@@ -12510,7 +12524,8 @@
    "texto": "Abeja siempre enojada que va por el jugador más cercano. Su picadura da Veneno III y no muere al picar.",
    "huevo": "bee_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "guardianblaze",
@@ -12522,7 +12537,8 @@
    "texto": "Tira bolas de fuego en fila y un anillo de fuego. Suelta netherite scrap.",
    "huevo": "blaze_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": true,
+   "soloWeb": false
   },
   {
    "id": "guardiancorruptedskeleton",
@@ -12534,7 +12550,8 @@
    "texto": "Lanza cráneos que dan Wither III si no te cubres con el escudo.",
    "huevo": "wither_skeleton_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": true,
+   "soloWeb": false
   },
   {
    "id": "corruptedinfernalspider",
@@ -12546,7 +12563,8 @@
    "texto": "Araña de fuego que deja telarañas.",
    "huevo": "spider_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": true,
+   "soloWeb": false
   },
   {
    "id": "wardenzombie",
@@ -12558,7 +12576,8 @@
    "texto": "Lento pero con mucha vida y armadura. Te escucha si te mueves sin agacharte y su golpe da Oscuridad 4 segundos. 15% de soltar un fragmento resonante.",
    "huevo": "zombie_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "infestedskeleton",
@@ -12570,7 +12589,8 @@
    "texto": "Arco con Poder VII y flechas que hacen daño instantáneo; a veces lanza un sonic boom. 7% de soltar su alma (casco de Warden).",
    "huevo": "skeleton_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "infestedcavespider",
@@ -12582,7 +12602,8 @@
    "texto": "Araña de cueva más grande con efectos al azar. 20% de lanzar un sonic boom al pegarte y los proyectiles no le hacen daño. 7% de soltar su alma (botas).",
    "huevo": "cave_spider_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "infestedghast",
@@ -12594,7 +12615,8 @@
    "texto": "Bolas de fuego más fuertes con rastro de sonic boom; al explotar dan Oscuridad a 25 bloques. 7% de soltar su alma (peto).",
    "huevo": "ghast_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "infestedcreeper",
@@ -12606,7 +12628,8 @@
    "texto": "Cargado; su explosión no rompe bloques pero da Oscuridad y Veneno a 15 bloques. Con proyectiles no baja de 18 de vida: remátalo cuerpo a cuerpo. 7% de soltar su alma (pantalón).",
    "huevo": "creeper_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "enderblaze",
@@ -12618,7 +12641,8 @@
    "texto": "Sus bolas de fuego explotan al pegar (sin romper bloques) y se tepea al recibir daño o cada cierto tiempo.",
    "huevo": "blaze_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "endercreeper",
@@ -12630,7 +12654,8 @@
    "texto": "Cargado, invisible y con Velocidad I. Explota como un creeper cargado normal: con armadura de Warden no mata de un golpe.",
    "huevo": "creeper_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "enderspider",
@@ -12642,7 +12667,8 @@
    "texto": "Velocidad I, el triple de daño de una araña y un proyectil morado que te tepea a 15 bloques de ella.",
    "huevo": "spider_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "enderinsect",
@@ -12654,7 +12680,8 @@
    "texto": "Endermite grande que los Enderman no atacan. Escupe proyectiles que dan Veneno II y dejan una nube de esporas 30 segundos. Suelta Fragmento Astral (10%).",
    "huevo": "endermite_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   },
   {
    "id": "shulkernegro",
@@ -12666,7 +12693,8 @@
    "texto": "Sus balas pegan el doble y dan Wither II y Ceguera; cada 10 a 14 segundos tira una ráfaga de 6 balas. Suelta 1 o 2 Esencias Marchitas y Fragmento Astral (25%).",
    "huevo": "shulker_spawn_egg",
    "imagen": "",
-   "oculto": false
+   "oculto": false,
+   "soloWeb": false
   }
  ],
  "idioma": {
