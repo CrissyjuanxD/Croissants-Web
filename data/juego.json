@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 3,
-  "updatedAt": "2026-10-13T21:48:10.235Z",
+  "version": 4,
+  "updatedAt": "2026-10-14T10:29:08.842Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -12317,7 +12317,7 @@
    "nombre": "DinoNugget",
    "color": "#FDCDA0",
    "prefijo": "§7§l[§6§lDinoNugget§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-zmiembro-mv7yu8raivx.png",
    "como": "El rango de todos al entrar por primera vez.",
    "oculto": false
   },
@@ -12326,7 +12326,7 @@
    "nombre": "DinoNugget+",
    "color": "#F7A1F0",
    "prefijo": "§7§l[§5§lDinoNugget§6§l+§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-ymiembro-mv7yuvc0q68.png",
    "como": "Se consigue al completar 30 misiones.",
    "oculto": false
   },
@@ -12344,7 +12344,7 @@
    "nombre": "DinoSub",
    "color": "#B57BFF",
    "prefijo": "§7§l[§x§9§1§4§6§F§F§lDinoSub§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-usub-mv7yv4svwb1.png",
    "como": "Para los subs del canal de Crosszy que vincularon su Twitch con /twitch.",
    "oculto": false
   },
@@ -12353,16 +12353,16 @@
    "nombre": "DinoVip",
    "color": "#F58BE0",
    "prefijo": "§7§l[§x§E§0§0§5§B§9§lDinoVip§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-vvip-mv7yvensslz.png",
    "como": "Para los VIP del canal de Crosszy que vincularon su Twitch.",
    "oculto": false
   },
   {
    "id": "THelper",
-   "nombre": "Helper",
+   "nombre": "Viciont",
    "color": "#68E3BA",
    "prefijo": "§7§l[§x§0§0§A§A§A§A§lHelper§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-thelper-mv7yvlso33k.png",
    "como": "Staff que ayuda a los jugadores.",
    "oculto": false
   },
@@ -12371,7 +12371,7 @@
    "nombre": "DinoNalgon",
    "color": "#C056E6",
    "prefijo": "§7§l[§d§lDinoNalgon§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-mod-mv7yw4lxd16.png",
    "como": "Los moderadores del servidor.",
    "oculto": false
   },
@@ -12380,7 +12380,7 @@
    "nombre": "Prieto",
    "color": "#F89130",
    "prefijo": "§7§l[§8§lPRIETO§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-admin-mv7ywc4ps36.png",
    "como": "Los administradores del servidor.",
    "oculto": false
   },
