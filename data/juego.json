@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 4,
-  "updatedAt": "2026-10-14T10:29:08.842Z",
+  "version": 5,
+  "updatedAt": "2026-10-14T22:42:21.081Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -12335,7 +12335,7 @@
    "nombre": "DinoLeyenda",
    "color": "#FFD166",
    "prefijo": "§7§l[§x§F§F§D§1§6§6§lDinoLeyenda§7§l]",
-   "imagen": "",
+   "imagen": "assets/uploads/rango-xleyenda-mv8p3bzoqlr.png",
    "como": "Lo da la misión 100, Jugador Experto.",
    "oculto": false
   },
