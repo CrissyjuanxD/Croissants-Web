@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 2,
-  "updatedAt": "2026-10-16T09:32:51.418Z",
+  "version": 3,
+  "updatedAt": "2026-10-16T20:32:33.415Z",
   "updatedBy": "CrissyjuanxD"
  },
  "categorias": [
@@ -57,6 +57,18 @@
    "portada": "assets/uploads/anuncio-cambios-en-la-web-mvaromekvpy.webp",
    "resumen": "Vista de misiones en tiempo real - Stats de los jugadores en tiempo real - tops - Texturas de los items etc...",
    "contenido": "**Ya se pueden ver todos los cambios en tiempo real de lo que ocurre en el servidor:**\n\n- Cuando se activa una misión saldrán aquí [misiones](#misiones) y podrán ver como se hace la misión, la recompensa y quien la completo\n\n- Ya se pueden ver la lista de cambios que hay desde el día 1 al día 35, con sus respectivos crafteos, items y demas.\n\n- En el apartado de [Jugadores](#jugadores) podrán ver las estadísticas en tiempo real de los jugadores del servidor, ya sean las horas jugadas, dinocoins, trabajos,y además, también cuenta con algunos tops para saber los jugadores con mayor dinocoins o mayor misiones completadas.\n\n\n\n![Tops](assets/uploads/captura-de-pantalla-2026-10-16-042735-mvarpajebrx.webp)\n\n![Misiones](assets/uploads/captura-de-pantalla-2026-10-16-042821-mvarpryya49.webp)\n\n![Items con sus texturas](assets/uploads/captura-de-pantalla-2026-10-16-042916-mvarq63dane.webp)\n\n![Recetas](assets/uploads/captura-de-pantalla-2026-10-16-042954-mvarr0cgs8z.webp)\n\n",
+   "autor": "CrissyjuanxD",
+   "fijado": true,
+   "oculto": false
+  },
+  {
+   "id": "update-del-plugin-de-croissants",
+   "titulo": "Update del Plugin de Croissants",
+   "fecha": "2026-10-16T20:28:39.531Z",
+   "categoria": "cambios",
+   "portada": "",
+   "resumen": "Cambios de Gameplay y economia.",
+   "contenido": "**Esta actualización trae cosas importante:**\n\n- Se agrego el comando /tpa nombre: Lo que hace este comando es poder teletransportarte a otro jugador si este acepta la petición de teletransporte.\n\n- Los jugadores que tengan el /fly en una bloodmoon no podrán usarla y se les desactivara, tampoco se podrá usarlo en el nether\n\n- Se arreglo el Bug de que podías entrar al nether ya esta cerrado hasta el día 4\n\n- Se acaba de actualizar los precios de el libro de habilidades, ya que no estaba balanceado a la economía actual (es mas complicado subirlo)",
    "autor": "CrissyjuanxD",
    "fijado": true,
    "oculto": false
