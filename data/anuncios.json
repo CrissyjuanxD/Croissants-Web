@@ -1,9 +1,41 @@
 {
  "meta": {
-  "version": 1,
-  "updatedAt": "2026-10-08T08:32:11.000Z",
+  "version": 2,
+  "updatedAt": "2026-10-16T09:32:51.418Z",
   "updatedBy": "CrissyjuanxD"
  },
+ "categorias": [
+  {
+   "id": "actualizacion",
+   "nombre": "Actualización",
+   "color": "#9d7bff"
+  },
+  {
+   "id": "cambios",
+   "nombre": "Cambios",
+   "color": "#6c9dff"
+  },
+  {
+   "id": "misiones",
+   "nombre": "Misiones",
+   "color": "#c9a7eb"
+  },
+  {
+   "id": "tienda",
+   "nombre": "Tienda",
+   "color": "#ffd27a"
+  },
+  {
+   "id": "mantenimiento",
+   "nombre": "Mantenimiento",
+   "color": "#ff9db4"
+  },
+  {
+   "id": "nueva-categoria-mvaraipl",
+   "nombre": "Web Cambios",
+   "color": "#6cd5b6"
+  }
+ ],
  "anuncios": [
   {
    "id": "bienvenidos-a-croissants-segunda-edicion",
@@ -12,9 +44,22 @@
    "categoria": "actualizacion",
    "portada": "assets/img/fondos/fondo-1.webp",
    "resumen": "Abrimos la web oficial del servidor: guía, misiones en vivo, crafteos, estadísticas de cada jugador y todos los anuncios.",
+   "contenido": "¡La Segunda Edición de Croissants ya tiene su web! Aquí vas a encontrar todo lo que necesitas para jugar la temporada.\n\n## Qué hay en la web\n\n- **[Guía](#guia):** cómo empezar, las DinoCoins, las misiones, los trabajos, las habilidades y todos los comandos.\n- **[Misiones](#misiones):** las 200 misiones. Se desbloquean solas en cuanto el servidor las activa.\n- **[Cambios y Jugabilidad](#jugabilidad):** qué abre cada cambio, la Warden Cave, el End, los jefes, los mobs, los crafteos y los items con su lore.\n- **[Jugadores](#jugadores):** las estadísticas de cada jugador en vivo.\n- **Anuncios:** como este, para enterarte de cada novedad.\n\n## Cómo entrar\n\nLo más fácil es el [Viciont Studios Launcher](#launcher): abres la instancia de Croissants y entras directo al servidor, sin escribir la IP y con el modpack y las texturas listos. Si juegas sin el launcher, toca **IP del servidor** arriba a la derecha para copiar la IP de Java o Bedrock.\n\n> [!tip] Empieza por la [guía de primeros pasos](#guia/primeros-pasos): en 5 minutos sabes todo lo que tienes que hacer el primer día.\n\n¡Nos vemos en el servidor!",
    "autor": "CrissyjuanxD",
    "fijado": true,
-   "contenido": "¡La Segunda Edición de Croissants ya tiene su web! Aquí vas a encontrar todo lo que necesitas para jugar la temporada.\n\n## Qué hay en la web\n\n- **[Guía](#guia):** cómo empezar, las DinoCoins, las misiones, los trabajos, las habilidades y todos los comandos.\n- **[Misiones](#misiones):** las 200 misiones. Se desbloquean solas en cuanto el servidor las activa.\n- **[Cambios y Jugabilidad](#jugabilidad):** qué abre cada cambio, la Warden Cave, el End, los jefes, los mobs, los crafteos y los items con su lore.\n- **[Jugadores](#jugadores):** las estadísticas de cada jugador en vivo.\n- **Anuncios:** como este, para enterarte de cada novedad.\n\n## Cómo entrar\n\nLo más fácil es el [Viciont Studios Launcher](#launcher): abres la instancia de Croissants y entras directo al servidor, sin escribir la IP y con el modpack y las texturas listos. Si juegas sin el launcher, toca **IP del servidor** arriba a la derecha para copiar la IP de Java o Bedrock.\n\n> [!tip] Empieza por la [guía de primeros pasos](#guia/primeros-pasos): en 5 minutos sabes todo lo que tienes que hacer el primer día.\n\n¡Nos vemos en el servidor!"
+   "oculto": false
+  },
+  {
+   "id": "cambios-en-la-web",
+   "titulo": "Cambios en la Web",
+   "fecha": "2026-10-16T09:19:46.784Z",
+   "categoria": "nueva-categoria-mvaraipl",
+   "portada": "assets/uploads/anuncio-cambios-en-la-web-mvaromekvpy.webp",
+   "resumen": "Vista de misiones en tiempo real - Stats de los jugadores en tiempo real - tops - Texturas de los items etc...",
+   "contenido": "**Ya se pueden ver todos los cambios en tiempo real de lo que ocurre en el servidor:**\n\n- Cuando se activa una misión saldrán aquí [misiones](#misiones) y podrán ver como se hace la misión, la recompensa y quien la completo\n\n- Ya se pueden ver la lista de cambios que hay desde el día 1 al día 35, con sus respectivos crafteos, items y demas.\n\n- En el apartado de [Jugadores](#jugadores) podrán ver las estadísticas en tiempo real de los jugadores del servidor, ya sean las horas jugadas, dinocoins, trabajos,y además, también cuenta con algunos tops para saber los jugadores con mayor dinocoins o mayor misiones completadas.\n\n\n\n![Tops](assets/uploads/captura-de-pantalla-2026-10-16-042735-mvarpajebrx.webp)\n\n![Misiones](assets/uploads/captura-de-pantalla-2026-10-16-042821-mvarpryya49.webp)\n\n![Items con sus texturas](assets/uploads/captura-de-pantalla-2026-10-16-042916-mvarq63dane.webp)\n\n![Recetas](assets/uploads/captura-de-pantalla-2026-10-16-042954-mvarr0cgs8z.webp)\n\n",
+   "autor": "CrissyjuanxD",
+   "fijado": true,
+   "oculto": false
   }
  ]
 }
