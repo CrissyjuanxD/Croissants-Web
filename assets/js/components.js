@@ -86,9 +86,13 @@ export function recipeCard(r) {
 
 // ------------------------------------------------------------------ trabajos
 
+// Las mismas cuentas que TrabajoNiveles del plugin: la XP de cada nivel es la de Guerrero por el ritmo del trabajo;
+// las DinoCoins (1 cada 180 XP, mínimo 2) y el bonus de cada 5 niveles son iguales en los 6
 const XP_NIVEL = (n) => Math.round(25 + 20 * Math.pow(n, 1.15));
-const MONEDAS_NIVEL = (n) => Math.min(5, Math.floor((n - 1) / 20) + 1);
-const BONUS = (n) => (n % 5 === 0 ? Math.round(5 + n / 2) : 0);
+const MONEDAS_NIVEL = (n) => Math.max(2, Math.round(XP_NIVEL(n) / 180));
+const BONUS = (n) => (n % 5 === 0 ? Math.round(10 + XP_NIVEL(n) / 40) : 0);
+const RITMO = { guerrero: 1, mineria: 0.55, lenador: 0.5, granjero: 0.45, pescador: 0.45, constructor: 0.35 };
+const ritmo = (j) => (Number(j.ritmo) > 0 ? Number(j.ritmo) : RITMO[j.id] ?? 1);
 
 export function jobsHtml() {
   const jobs = S.juego?.trabajos || [];
@@ -102,10 +106,11 @@ export function jobsHtml() {
   });
   return `<div class="jobs">
     <div class="jobs__grid">${jobs.map((j) => `<article class="job" style="--c:${escapeHtml(j.color)}">
-      <header class="job__head">${itemHtml({ vanilla: true, material: j.item, n: 1 }, { size: 34, tip: false })}<div><h3>${escapeHtml(j.icono)} ${escapeHtml(j.nombre)}</h3><p>${escapeHtml(j.descripcion)}</p></div></header>
+      <header class="job__head">${itemHtml({ vanilla: true, material: j.item, n: 1 }, { size: 34, tip: false })}<div><h3>${escapeHtml(j.nombre)}</h3><p>${escapeHtml(j.descripcion)}</p></div></header>
       <ul class="job__xp">${j.fuentes.map((f) => `<li>${escapeHtml(f)}</li>`).join('')}</ul>
+      <p class="job__pace">Pide el <b>${Math.round(ritmo(j) * 100)}%</b> de la XP de Guerrero</p>
     </article>`).join('')}</div>
-    <div class="jobs__table md"><div class="table-wrap"><table><thead><tr><th>Nivel</th><th>XP total</th><th>DinoCoins al subir</th></tr></thead><tbody>${milestones.map((m) => `<tr><td>${m.n}</td><td>${fmt(m.xp)}</td><td>${m.coins}${BONUS(m.n) ? ` <small class="muted">(incluye bonus de ${BONUS(m.n)})</small>` : ''}</td></tr>`).join('')}</tbody></table></div>
+    <div class="jobs__table md"><div class="table-wrap"><table><thead><tr><th>Nivel</th><th>XP total (Guerrero)</th><th>DinoCoins al subir</th></tr></thead><tbody>${milestones.map((m) => `<tr><td>${m.n}</td><td>${fmt(m.xp)}</td><td>${m.coins}${BONUS(m.n) ? ` <small class="muted">(incluye bonus de ${BONUS(m.n)})</small>` : ''}</td></tr>`).join('')}</tbody></table></div>
     ${notaTrabajos(totalCoins)}</div>
   </div>`;
 }

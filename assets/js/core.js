@@ -598,7 +598,7 @@ export function normalizeJuego(raw) {
       oculto: bool(m?.oculto),
     })).sort((a, b) => a.n - b.n),
     recetas: list(c.recetas).map((r, i) => ({ ...obj(r), id: str(r?.id) || `receta-${i + 1}`, etapa: str(r?.etapa), nota: str(r?.nota), oculto: bool(r?.oculto) })),
-    trabajos: list(c.trabajos).map((t) => ({ id: str(t?.id), nombre: str(t?.nombre), icono: str(t?.icono), color: str(t?.color, '#c8a27c'), item: str(t?.item, 'iron_pickaxe'), descripcion: str(t?.descripcion), fuentes: list(t?.fuentes).map((f) => str(f)) })),
+    trabajos: list(c.trabajos).map((t) => ({ id: str(t?.id), nombre: str(t?.nombre), icono: str(t?.icono), color: str(t?.color, '#c8a27c'), item: str(t?.item, 'iron_pickaxe'), descripcion: str(t?.descripcion), fuentes: list(t?.fuentes).map((f) => str(f)), ritmo: num(t?.ritmo, 0) })),
     habilidades: list(c.habilidades).map((h) => ({ id: str(h?.id), nombre: str(h?.nombre), icono: str(h?.icono, 'tree'), color: str(h?.color, '#9fd3ff'), niveles: list(h?.niveles).map((n) => str(n)) })),
     costosHabilidad: list(c.costosHabilidad).map((k) => ({ xp: num(k?.xp), bloque: str(k?.bloque), cantidad: num(k?.cantidad), nombre: str(k?.nombre), dinocoins: num(k?.dinocoins) })),
     rangos: list(c.rangos).map((r) => ({ id: str(r?.id), nombre: str(r?.nombre), color: str(r?.color, '#ffffff'), prefijo: str(r?.prefijo), imagen: str(r?.imagen), como: str(r?.como), oculto: bool(r?.oculto) })),

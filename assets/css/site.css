@@ -400,6 +400,8 @@ html:not([data-view="inicio"]) .bg-shade { background: linear-gradient(180deg, r
 .job__head p { font-size: 0.86rem; color: var(--text-2); }
 .job__xp { margin-top: 10px; display: grid; gap: 4px; padding-left: 18px; font-size: 0.84rem; color: var(--text-2); }
 .job__xp li::marker { color: var(--c); }
+.job__pace { margin-top: 10px; font-size: 0.8rem; color: var(--muted); }
+.job__pace b { color: var(--c); }
 .jobs__note { margin-top: 10px; font-size: 0.92rem; }
 .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; }
 .skill { padding: 16px; border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); background: linear-gradient(160deg, color-mix(in srgb, var(--c) 16%, rgba(12, 11, 40, 0.85)), rgba(12, 11, 40, 0.85)); }

@@ -12131,10 +12131,12 @@
    "descripcion": "Defiende el server de los monstruos que lo rondan.",
    "fuentes": [
     "Matar monstruos: 4 a 15 XP",
+    "Mobs Custom: 10 a 30 XP",
+    "Wardens: 40 XP",
     "Monstruos élite: 20 a 60 XP",
-    "Jefes de evento: 250 XP",
-    "Wither y Dragón: 400 y 600 XP"
-   ]
+    "Jefes: de 400 (Wither) a 2.200 XP (Rey Ender)"
+   ],
+   "ritmo": 1.0
   },
   {
    "id": "mineria",
@@ -12147,8 +12149,12 @@
     "Piedra, deepslate y similares: 0,05 XP",
     "Carbón, cobre y redstone: 2 a 5 XP",
     "Hierro, oro y lapislázuli: 5 a 8 XP",
-    "Diamante, esmeralda y debris: 15 a 30 XP"
-   ]
+    "Diamante, esmeralda y debris: 15 a 30 XP",
+    "Minerales de la Warden Cave: 25 XP",
+    "Racimos de amatista del End: 5 XP",
+    "Jefes: la mitad que Guerrero"
+   ],
+   "ritmo": 0.55
   },
   {
    "id": "lenador",
@@ -12160,8 +12166,11 @@
    "fuentes": [
     "Troncos: 1,2 XP",
     "Tallos del Nether: 1,4 XP",
-    "Raíces de manglar: 0,5 XP"
-   ]
+    "Troncos de la Warden Cave y del End: 1,8 XP",
+    "Raíces de manglar: 0,5 XP",
+    "Jefes: la mitad que Guerrero"
+   ],
+   "ritmo": 0.5
   },
   {
    "id": "constructor",
@@ -12173,8 +12182,11 @@
    "fuentes": [
     "Bloques básicos: 0,1 XP",
     "Bloques comunes: 0,3 XP",
-    "Ladrillos, cuarzo, concreto...: 0,5 XP"
-   ]
+    "Ladrillos, cuarzo, concreto...: 0,5 XP",
+    "En la Warden Cave y el End: 50% más",
+    "Jefes: la mitad que Guerrero"
+   ],
+   "ritmo": 0.35
   },
   {
    "id": "granjero",
@@ -12186,8 +12198,11 @@
    "fuentes": [
     "Cultivos maduros: 0,6 a 1,5 XP",
     "Sandías y calabazas: 1 XP",
-    "Criar animales: 4 XP"
-   ]
+    "Criar animales: 4 XP",
+    "Frutas de la Warden Cave: 1,5 a 2 XP",
+    "Jefes: la mitad que Guerrero"
+   ],
+   "ritmo": 0.45
   },
   {
    "id": "pescador",
@@ -12199,8 +12214,10 @@
    "fuentes": [
     "Peces: 6 a 8 XP",
     "Tesoros: 12 XP",
-    "Basura: 3 XP"
-   ]
+    "Basura: 3 XP",
+    "Jefes: la mitad que Guerrero"
+   ],
+   "ritmo": 0.45
   }
  ],
  "habilidades": [
