@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 7,
-  "updatedAt": "2026-10-16T09:16:14.209Z",
+  "version": 8,
+  "updatedAt": "2026-10-16T20:25:12.596Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -290,10 +290,10 @@
    },
    {
     "id": "homes",
-    "titulo": "Homes, spawn y viajes",
+    "titulo": "Homes, spawn y Tpa",
     "icono": "home",
-    "resumen": "Guarda hasta 10 casas y muévete rápido por el mapa.",
-    "contenido": "## Homes\n\n- [[cmd:/sethome nombre]] guarda una casa (hasta **10**).\n- [[cmd:/home nombre]] te lleva.\n- [[cmd:/home list]] o [[cmd:/menu]] → Homes te las muestra todas.\n- [[cmd:/delhome nombre]] la borra.\n\n## Otros viajes\n\n- [[cmd:/spawn]] te lleva al spawn central.\n- [[cmd:/tiendas]] te lleva a las tiendas.\n- [[cmd:/bosstp]] te lleva a la zona del boss (la dungeon de la Abeja Floral).\n- [[cmd:/muertes]] te dice dónde quedó tu tumba.",
+    "resumen": "Guarda hasta 10 casas y muévete rápido por el mapa.\nPuedes teletransportarte a otro jugador si es que acepta la petición",
+    "contenido": "## Homes\n\n- [[cmd:/sethome nombre]] guarda una casa (hasta **10**).\n- [[cmd:/home nombre]] te lleva.\n- [[cmd:/home list]] o [[cmd:/menu]] → Homes te las muestra todas.\n- [[cmd:/delhome nombre]] la borra.\n\n## Tpa\n\n- [[cmd:/tpa nombre]] Envíale una petición de teletransporte a otro jugador, el tendrá que aceptarla o rechazarla, si la acepta te teletransportara en 5 segundos, no tendrás que moverte o recibir daño sino se cancelara el teletransporte.\n\n## Otros viajes\n\n- [[cmd:/spawn]] te lleva al spawn central.\n- [[cmd:/tiendas]] te lleva a las tiendas.\n- [[cmd:/bosstp]] te lleva a la zona del boss (la dungeon de la Abeja Floral).\n- [[cmd:/muertes]] te dice dónde quedó tu tumba.",
     "imagenes": [],
     "oculto": false
    },
