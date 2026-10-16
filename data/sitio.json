@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 9,
-  "updatedAt": "2026-10-16T20:26:39.072Z",
+  "version": 10,
+  "updatedAt": "2026-10-16T21:06:20.051Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -284,7 +284,7 @@
     "titulo": "Habilidades",
     "icono": "tree",
     "resumen": "Vitalidad, Resistencia y Agilidad: 8 niveles cada una.",
-    "contenido": "Las habilidades son mejoras permanentes que compras con DinoCoins, experiencia y bloques.\n\n## Cómo se desbloquean\n\n1. Compra el [[item:libro_habilidades]] en la Biblioteca (al principio cuesta 1 DinoCoin).\n2. Dale clic derecho: el libro se gasta y tu árbol queda desbloqueado en [[cmd:/menu]] → Habilidades.\n3. Sube cada habilidad nivel por nivel (hay que tener el anterior).\n\n[[habilidades]]\n\n> [!tip] Cada habilidad completa cuesta 150 DinoCoins en total y las tres, 450. Un jugador activo junta unas 40 DinoCoins por día, así que las completa en pocas semanas.",
+    "contenido": "Las habilidades son mejoras permanentes que compras con DinoCoins, experiencia y bloques.\n\n## Cómo se desbloquean\n\n1. Compra el [[item:libro_habilidades]] en la Biblioteca (al principio cuesta 1 DinoCoin).\n2. Dale clic derecho: el libro se gasta y tu árbol queda desbloqueado en [[cmd:/menu]] → Habilidades.\n3. Sube cada habilidad nivel por nivel (hay que tener el anterior).\n\n[[habilidades]]\n\n> [!tip] Cada habilidad completa cuesta 570 DinoCoins en total y las tres, 1710.",
     "imagenes": [],
     "oculto": false
    },
