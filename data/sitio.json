@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 6,
-  "updatedAt": "2026-10-16T00:59:06.584Z",
+  "version": 7,
+  "updatedAt": "2026-10-16T09:16:14.209Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -424,12 +424,12 @@
     "id": "extra",
     "titulo": "Cambio Extra",
     "icono": "bolt",
-    "resumen": "Día 14: los mobs florales y las Mini Abejas Florales empiezan a salir solos por el Overworld.",
+    "resumen": "Día 12: los mobs florales y las Mini Abejas Florales empiezan a salir solos por el Overworld.",
     "contenido": "El cambio extra va entre el uno y el dos, el **día 14**. Hasta ese día los mobs florales solo salían en las raids; desde ahora salen **solos por el Overworld**.\n\n| Mob | Sale floral |\n| --- | --- |\n| Zombie (adulto) | 25% pasa a **Zombie Floral** |\n| Araña | 25% pasa a **Spider Floral** |\n| Creeper | 20% pasa a **Creeper Floral** (Bombita) |\n| Zombie, araña, creeper o esqueleto que no salió floral | 10% aparece como **Mini Abeja Floral** |\n\n- Los zombies bebé quedan normales.\n- No pasa en la Warden Cave, que tiene sus propios mobs.\n- Cada uno suelta su drop floral al 40% (de 1 a 2 con Saqueo II y de 1 a 3 con Saqueo III), que va en la **Mejora Floral**. Mira el [Cambio Uno](#jugabilidad/cambios/uno).\n- Las Mini Abejas Florales se van si no queda nadie a 128 bloques.\n\nLa [[mision:17]] pide matar 25 Zombies Florales y 25 Spiders Florales: desde este día ya no hace falta esperar una raid.",
     "imagenes": [],
     "oculto": false,
     "clave": "extra",
-    "dia": 14,
+    "dia": 12,
     "color": "#f7b8d2",
     "imagen": ""
    },
