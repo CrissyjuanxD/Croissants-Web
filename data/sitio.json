@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 5,
-  "updatedAt": "2026-10-16T00:40:56.064Z",
+  "version": 6,
+  "updatedAt": "2026-10-16T00:59:06.584Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -13,7 +13,7 @@
   "ipJava": "croissant.holy.gg",
   "puertoJava": "",
   "versionJava": "26.2",
-  "ipBedrock": "croissant.holy.gg",
+  "ipBedrock": "va31.holy.gg",
   "puertoBedrock": "26030",
   "versionBedrock": "Móvil, consola y Windows",
   "redes": {
