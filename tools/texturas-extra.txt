@@ -86,3 +86,6 @@ charcoal
 barrier
 sunflower
 experience_bottle
+honey_block
+iron_block
+rabbit_hide

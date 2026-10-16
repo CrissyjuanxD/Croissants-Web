@@ -35,6 +35,8 @@
   --font-display: 'Pixelify Sans', 'Segoe UI', system-ui, sans-serif;
   --font-ui: 'Nunito', 'Segoe UI', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  /* Los números van con la fuente de la interfaz: en Pixelify Sans el 5, el 2 y el 0 se confunden con el 8 */
+  --font-num: 'Nunito', 'Segoe UI', system-ui, sans-serif;
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   --header-h: 74px;
   --m-normal: #c9a7eb;
@@ -258,7 +260,7 @@ ul[class], ol[class] { list-style: none; padding: 0; }
   mix-blend-mode: screen; animation: glint 3.2s linear infinite;
 }
 @keyframes glint { from { background-position: 120% 0; } to { background-position: -120% 0; } }
-.mc-item__count { position: absolute; right: -2px; bottom: -4px; font: 700 0.95rem/1 var(--font-display); color: #fff; text-shadow: 2px 2px 0 #3f3f3f; pointer-events: none; }
+.mc-item__count { position: absolute; right: -2px; bottom: -4px; font: 900 0.9rem/1 var(--font-num); font-variant-numeric: tabular-nums; color: #fff; text-shadow: 2px 2px 0 #3f3f3f; pointer-events: none; }
 .mc-item__head { width: 100%; height: 100%; image-rendering: pixelated; }
 
 .mc-slot {
@@ -314,7 +316,7 @@ ul[class], ol[class] { list-style: none; padding: 0; }
 .mc-flame::before { content: ''; position: absolute; inset: 2px 5px 0; border-radius: 50% 50% 40% 40%; background: radial-gradient(circle at 50% 70%, #fff3a0, #ffb32b 45%, #e3541c 75%, transparent 76%); animation: flame 0.9s ease-in-out infinite alternate; }
 @keyframes flame { to { transform: scaleY(1.12) translateY(-1px); filter: brightness(1.15); } }
 .mc-cook { display: grid; justify-items: center; gap: 4px; }
-.mc-cook__time { font: 600 0.82rem/1 var(--font-display); color: #3f3f3f; }
+.mc-cook__time { font: 800 0.82rem/1 var(--font-num); color: #3f3f3f; }
 .mc-smith { display: flex; gap: 4px; }
 .mc-chest__grid { display: grid; grid-template-columns: repeat(9, var(--slot)); gap: 2px; }
 .mc-tooltip--static { position: static; opacity: 1; transform: none; pointer-events: auto; max-width: 420px; }

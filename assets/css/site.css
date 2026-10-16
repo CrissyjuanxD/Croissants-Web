@@ -764,6 +764,13 @@ html:not([data-view="inicio"]) .bg-shade { background: linear-gradient(180deg, r
 .to-top:hover { background: var(--grad-strong); border-color: transparent; transform: translateY(-3px); }
 .noscript { position: relative; z-index: 5; display: grid; gap: 8px; padding: 120px 24px; text-align: center; }
 
+/* ================================================================== números */
+/* Cantidades, puestos y niveles con la fuente de la interfaz y cifras del mismo ancho: en la pixelada el 5 parece un 8 */
+.board__pos, .board__list b, .ptile__num, .mcard__tag, .mcard__coins, .mobjs li b, .skill__lvl, .pjob__lvl, .pskill b, .pstats li b,
+.mmap__cell, .launcher__steps li > span {
+  font-family: var(--font-num); font-weight: 900; font-variant-numeric: tabular-nums; letter-spacing: 0;
+}
+
 /* ================================================================== esquinas pixeladas */
 /* Las cajas de la web pierden el pixel de cada esquina (la regla está en base.css) */
 .status-card, .season, .season__next, .feature, .step-card, .news-card, .ncard, .host-card, .viciont-card, .viciont-band, .panel, .pager__link,
