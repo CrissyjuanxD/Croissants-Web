@@ -1,5 +1,5 @@
 import { escapeHtml, icon, md, fmt, ago, fmtDate, plainText, safeImage, safeUrl, visible } from '../core.js';
-import { S, currentDay, activeMissions, onlineNames, liveReady } from '../store.js';
+import { S, currentDay, activeMissions, onlineNames, liveReady, headUrl } from '../store.js';
 import { mdCtx, calendarHtml, socialLinks, ipValue } from '../components.js';
 import { countUp } from '../fx.js';
 
@@ -8,7 +8,7 @@ export function title() { return ''; }
 function heads(names, max = 14) {
   if (!names.length) return '';
   const shown = names.slice(0, max);
-  return `<div class="heads">${shown.map((n) => `<a class="head" href="#jugadores/${encodeURIComponent(n)}" data-route="jugadores" title="${escapeHtml(n)}"><img src="https://mc-heads.net/avatar/${encodeURIComponent(n)}/48" alt="${escapeHtml(n)}" width="48" height="48" loading="lazy" decoding="async"></a>`).join('')}${names.length > max ? `<span class="head head--more">+${names.length - max}</span>` : ''}</div>`;
+  return `<div class="heads">${shown.map((n) => `<a class="head" href="#jugadores/${encodeURIComponent(n)}" data-route="jugadores" title="${escapeHtml(n)}"><img src="${headUrl(n, 48)}" alt="${escapeHtml(n)}" width="48" height="48" loading="lazy" decoding="async"></a>`).join('')}${names.length > max ? `<span class="head head--more">+${names.length - max}</span>` : ''}</div>`;
 }
 
 function statusHtml() {

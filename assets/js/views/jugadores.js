@@ -1,5 +1,5 @@
 import { escapeHtml, icon, md, fmt, fmt1, ago, fmtDate, hours } from '../core.js';
-import { S, players, onlineNames, liveReady, activeMissions, missionTag } from '../store.js';
+import { S, players, onlineNames, liveReady, activeMissions, missionTag, headUrl, bodyUrl } from '../store.js';
 import { pageHead, mdCtx, rankOf, rankBadge, emptyHTML } from '../components.js';
 import { legacyHtml, itemHtml } from '../mc.js';
 import { countUp } from '../fx.js';
@@ -11,8 +11,8 @@ export function title(parts) {
   return parts[0] ? decodeURIComponent(parts[0]) : '';
 }
 
-const head = (p, size = 64) => `https://mc-heads.net/avatar/${encodeURIComponent(p.uuid && !p.bedrock ? p.uuid : p.nombre)}/${size}`;
-const body = (p) => `https://mc-heads.net/body/${encodeURIComponent(p.uuid && !p.bedrock ? p.uuid : p.nombre)}/240`;
+const head = (p, size = 64) => headUrl(p, size);
+const body = (p) => bodyUrl(p);
 const nMisiones = (p) => (Array.isArray(p.misiones) ? p.misiones.length : 0);
 
 function rankTag(p) {
@@ -85,7 +85,7 @@ function onlineOnlyHtml() {
     <h2>Las estadísticas llegan desde el servidor</h2>
     <p>En cuanto el servidor se conecte con la web vas a ver aquí a todos los que jugaron, con sus misiones, DinoCoins, trabajos, habilidades y horas jugadas, actualizado en vivo.</p>
     ${st?.online ? `<p class="nodata__online"><span class="live-dot"></span> Ahora mismo hay <b>${fmt(st.jugadores)}</b> ${st.jugadores === 1 ? 'jugador conectado' : 'jugadores conectados'}.</p>` : ''}
-    ${names.length ? `<div class="heads">${names.map((n) => `<span class="head" title="${escapeHtml(n)}"><img src="https://mc-heads.net/avatar/${encodeURIComponent(n)}/48" alt="${escapeHtml(n)}" width="48" height="48" loading="lazy"></span>`).join('')}</div>` : ''}
+    ${names.length ? `<div class="heads">${names.map((n) => `<span class="head" title="${escapeHtml(n)}"><img src="${headUrl(n, 48)}" alt="${escapeHtml(n)}" width="48" height="48" loading="lazy"></span>`).join('')}</div>` : ''}
   </div>`;
 }
 
@@ -181,7 +181,7 @@ function profileView(name) {
   if (!p) {
     const online = onlineNames().find((n) => n.toLowerCase() === name.toLowerCase());
     return `<div class="container">${pageHead({ crumbs: ['jugadores', name], title: name })}
-      <div class="nodata">${online ? `<span class="nodata__icon"><img src="https://mc-heads.net/avatar/${encodeURIComponent(online)}/64" alt="" width="64" height="64"></span><h2>${escapeHtml(online)} está conectado</h2><p>Sus estadísticas aparecen cuando el servidor manda la próxima actualización.</p>`
+      <div class="nodata">${online ? `<span class="nodata__icon"><img src="${headUrl(online, 64)}" alt="" width="64" height="64"></span><h2>${escapeHtml(online)} está conectado</h2><p>Sus estadísticas aparecen cuando el servidor manda la próxima actualización.</p>`
         : `<span class="nodata__icon">${icon('user')}</span><h2>No encontramos a “${escapeHtml(name)}”</h2><p>Puede que todavía no haya entrado al servidor o que los datos no hayan llegado.</p>`}
       <a class="btn btn--ghost" href="#jugadores" data-route="jugadores">${icon('arrowLeft')} Volver a jugadores</a></div></div>`;
   }

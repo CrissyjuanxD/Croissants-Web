@@ -1,5 +1,5 @@
 import { escapeHtml, icon, md, fmtDate, plainText, safeImage, visible, ago } from '../core.js';
-import { S } from '../store.js';
+import { S, headUrl } from '../store.js';
 import { pageHead, mdCtx, emptyHTML } from '../components.js';
 import { toast, copyText } from '../ui.js';
 
@@ -70,7 +70,7 @@ function articleHtml(a) {
         <div class="article__meta"><span class="cat-chip">${escapeHtml(c.nombre)}</span><time datetime="${escapeHtml(a.fecha)}">${escapeHtml(fmtDate(a.fecha, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }))}</time><span>· ${readTime(a.contenido)} min de lectura</span></div>
         <h1 class="article__title"><span class="grad-text">${escapeHtml(a.titulo)}</span></h1>
         ${a.resumen ? `<p class="article__lead">${escapeHtml(a.resumen)}</p>` : ''}
-        <div class="article__by">${a.autor ? `<img src="https://mc-heads.net/avatar/${encodeURIComponent(a.autor)}/40" alt="" width="40" height="40"><span>Publicado por <b>${escapeHtml(a.autor)}</b></span>` : ''}<button class="btn btn--sm btn--ghost" type="button" data-share="${escapeHtml(a.id)}">${icon('link')} Copiar enlace</button></div>
+        <div class="article__by">${a.autor ? `<img src="${headUrl(a.autor, 40)}" alt="" width="40" height="40"><span>Publicado por <b>${escapeHtml(a.autor)}</b></span>` : ''}<button class="btn btn--sm btn--ghost" type="button" data-share="${escapeHtml(a.id)}">${icon('link')} Copiar enlace</button></div>
       </header>
       ${img ? `<figure class="article__cover"><img src="${escapeHtml(img)}" alt="" decoding="async"></figure>` : ''}
       <div class="md article__md">${md(a.contenido, mdCtx())}</div>

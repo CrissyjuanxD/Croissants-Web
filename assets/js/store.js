@@ -78,6 +78,25 @@ export function players() {
   return list.map((p) => ({ ...p, online: (!pluginSabe && Boolean(p.online)) || online.has(String(p.nombre || '').toLowerCase()) }));
 }
 
+// La skin de un jugador para mc-heads.net. El server es offline: el UUID no sirve para buscarla, así que se usa el id
+// de la textura que manda el plugin (la que le puso SkinsRestorer o Floodgate). Si todavía no llegó, los de Java se
+// buscan por nombre y los de Bedrock salen como Steve
+export function findPlayer(name) {
+  const n = String(name || '').toLowerCase();
+  return (Array.isArray(S.jugadores?.jugadores) ? S.jugadores.jugadores : []).find((p) => String(p.nombre || '').toLowerCase() === n) || null;
+}
+
+function skinKey(x) {
+  const p = typeof x === 'string' ? (findPlayer(x) || { nombre: x }) : (x || {});
+  if (/^[0-9a-f]{20,80}$/.test(p.skin || '')) return p.skin;
+  const nombre = String(p.nombre || '');
+  if (p.bedrock || nombre.startsWith('.') || !nombre) return 'MHF_Steve';
+  return nombre;
+}
+
+export const headUrl = (x, size = 64) => `https://mc-heads.net/avatar/${encodeURIComponent(skinKey(x))}/${size}`;
+export const bodyUrl = (x, size = 240) => `https://mc-heads.net/body/${encodeURIComponent(skinKey(x))}/${size}`;
+
 export function onlineNames() {
   const fromStatus = (S.status?.lista || []).map((p) => p.nombre).filter(Boolean);
   const fromPlugin = conectadosDelPlugin();

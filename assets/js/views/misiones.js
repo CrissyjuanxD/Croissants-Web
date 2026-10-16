@@ -1,5 +1,5 @@
 import { escapeHtml, icon, md, fmt, ago, visible } from '../core.js';
-import { S, activeMissions, currentDay, mission, missionTag, missionToken, completedBy, players, hasLiveMissions, liveReady } from '../store.js';
+import { S, activeMissions, currentDay, mission, missionTag, missionToken, completedBy, players, hasLiveMissions, liveReady, headUrl } from '../store.js';
 import { pageHead, mdCtx, DIF, TIPO, cmdChip } from '../components.js';
 import { chestHtml, rewardChest, itemHtml } from '../mc.js';
 
@@ -169,7 +169,7 @@ function whoHtml(m) {
   const who = players().filter((p) => Array.isArray(p.misiones) && p.misiones.includes(m.n));
   if (!who.length) return `<p class="mwho__empty">${icon('target')} Todavía nadie la completó. ¡Puedes ser el primero!</p>`;
   return `<div class="mwho"><p class="mwho__title">${icon('check')} Completada por ${who.length} ${who.length === 1 ? 'jugador' : 'jugadores'}</p>
-    <div class="heads heads--sm">${who.slice(0, 24).map((p) => `<a class="head" href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores" data-close title="${escapeHtml(p.nombre)}"><img src="https://mc-heads.net/avatar/${encodeURIComponent(p.uuid || p.nombre)}/40" alt="${escapeHtml(p.nombre)}" width="40" height="40" loading="lazy"></a>`).join('')}${who.length > 24 ? `<span class="head head--more">+${who.length - 24}</span>` : ''}</div></div>`;
+    <div class="heads heads--sm">${who.slice(0, 24).map((p) => `<a class="head" href="#jugadores/${encodeURIComponent(p.nombre)}" data-route="jugadores" data-close title="${escapeHtml(p.nombre)}"><img src="${headUrl(p, 40)}" alt="${escapeHtml(p.nombre)}" width="40" height="40" loading="lazy"></a>`).join('')}${who.length > 24 ? `<span class="head head--more">+${who.length - 24}</span>` : ''}</div></div>`;
 }
 
 export function openMission(modal, n) {
