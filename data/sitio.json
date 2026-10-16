@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 8,
-  "updatedAt": "2026-10-16T20:25:12.596Z",
+  "version": 9,
+  "updatedAt": "2026-10-16T20:26:39.072Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -356,7 +356,7 @@
     "titulo": "Comandos",
     "icono": "terminal",
     "resumen": "Todos los comandos que puedes usar como jugador.",
-    "contenido": "| Comando | Qué hace |\n| --- | --- |\n| [[cmd:/menu]] | Menú principal: misiones, trabajos, habilidades, protecciones y homes |\n| [[cmd:/misiones]] | Menú de misiones |\n| [[cmd:/trabajos]] | Menú de trabajos ([[cmd:/trabajos info]] y [[cmd:/trabajos guia]]) |\n| [[cmd:/proteccion]] | Protecciones de tu base |\n| [[cmd:/sethome nombre]] | Guarda una casa (hasta 10) |\n| [[cmd:/home nombre]] | Te lleva a una casa ([[cmd:/home list]] las muestra) |\n| [[cmd:/delhome nombre]] | Borra una casa |\n| [[cmd:/spawn]] | Te lleva al spawn |\n| [[cmd:/tiendas]] | Te lleva a las tiendas |\n| [[cmd:/bosstp]] | Te lleva a la zona del boss |\n| [[cmd:/muertes]] | Tus tumbas: márcalas para que la barra te lleve |\n| [[cmd:/logros]] | Tus logros |\n| [[cmd:/bloodmoon show]] | Cuándo es la próxima BloodMoon |\n| [[cmd:/twitch]] | Vincula tu Twitch y reclama tu kit |\n| [[cmd:/fly]] | Vuelo para los subs (Overworld y Nether) |\n| [[cmd:/ping]] | Tu ping |",
+    "contenido": "| Comando | Qué hace |\n| --- | --- |\n| [[cmd:/menu]] | Menú principal: misiones, trabajos, habilidades, protecciones y homes |\n| [[cmd:/misiones]] | Menú de misiones |\n| [[cmd:/trabajos]] | Menú de trabajos ([[cmd:/trabajos info]] y [[cmd:/trabajos guia]]) |\n| [[cmd:/proteccion]] | Protecciones de tu base |\n| [[cmd:/sethome nombre]] | Guarda una casa (hasta 10) |\n| [[cmd:/home nombre]] | Te lleva a una casa ([[cmd:/home list]] las muestra) |\n| [[cmd:/delhome nombre]] | Borra una casa |\n| [[cmd:/tpa nombre]] | Envíale una petición de teletransporte a otro jugador para ir con el. |\n| [[cmd:/spawn]] | Te lleva al spawn |\n| [[cmd:/tiendas]] | Te lleva a las tiendas |\n| [[cmd:/bosstp]] | Te lleva a la zona del boss |\n| [[cmd:/muertes]] | Tus tumbas: márcalas para que la barra te lleve |\n| [[cmd:/logros]] | Tus logros |\n| [[cmd:/bloodmoon show]] | Cuándo es la próxima BloodMoon |\n| [[cmd:/twitch]] | Vincula tu Twitch y reclama tu kit |\n| [[cmd:/fly]] | Vuelo para los subs (Overworld y Nether) |\n| [[cmd:/ping]] | Tu ping |",
     "imagenes": [],
     "oculto": false
    }
