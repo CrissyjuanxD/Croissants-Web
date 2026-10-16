@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 5,
-  "updatedAt": "2026-10-14T22:42:21.081Z",
+  "version": 6,
+  "updatedAt": "2026-10-16T08:52:02.146Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -22,7 +22,8 @@
    "custom": true,
    "categoria": "amuletos",
    "descripcion": "Un tótem que te salva dos veces.",
-   "origen": "Misiones · Tienda Utilidad desde el día 20"
+   "origen": "Misiones · Tienda Utilidad desde el día 20",
+   "textura": "assets/uploads/textura-doubletotem-mvaowemldw8.png"
   },
   "corrupted_steak": {
    "material": "cooked_beef",
@@ -46,7 +47,8 @@
    ],
    "modelo": "minecraft:corrupted_steak",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-corrupted-steak-mvaox54slcn.png"
   },
   "corrupted_golden_apple": {
    "material": "golden_apple",
@@ -70,7 +72,8 @@
    ],
    "modelo": "minecraft:corrupted_golden_apple",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-corrupted-golden-apple-mvaoxh0ynzl.png"
   },
   "libro_habilidades": {
    "material": "knowledge_book",
@@ -97,7 +100,8 @@
    "custom": true,
    "categoria": "libros",
    "descripcion": "Se gasta para desbloquear el árbol de habilidades en /menu.",
-   "origen": "Biblioteca (1 DinoCoin)"
+   "origen": "Biblioteca (1 DinoCoin)",
+   "textura": "assets/uploads/textura-libro-habilidades-mvaoxucmgdp.png"
   },
   "dinocoins": {
    "material": "sunflower",
@@ -121,7 +125,8 @@
    "custom": true,
    "categoria": "economia",
    "descripcion": "La moneda oficial del servidor.",
-   "origen": "Misiones, trabajos, bosses, pesca, BloodMoon y eventos"
+   "origen": "Misiones, trabajos, bosses, pesca, BloodMoon y eventos",
+   "textura": "assets/uploads/textura-dinocoins-mvaoy7tluu1.png"
   },
   "dinofichas": {
    "material": "gold_nugget",
@@ -145,7 +150,8 @@
    "custom": true,
    "categoria": "economia",
    "descripcion": "Fichas del casino.",
-   "origen": "Tienda de Cambios: 1 DinoCoin = 5 DinoFichas"
+   "origen": "Tienda de Cambios: 1 DinoCoin = 5 DinoFichas",
+   "textura": "assets/uploads/textura-dinofichas-mvaoykfmv5t.png"
   },
   "monedero": {
    "material": "echo_shard",
@@ -167,7 +173,8 @@
    "custom": true,
    "categoria": "economia",
    "descripcion": "Guarda tus DinoCoins y DinoFichas; es lo único donde se pueden almacenar.",
-   "origen": "Tienda Mercado (5 DinoCoins)"
+   "origen": "Tienda Mercado (5 DinoCoins)",
+   "textura": "assets/uploads/textura-monedero-mvaoyxaiwsb.png"
   },
   "blood_fragment": {
    "material": "copper_nugget",
@@ -190,7 +197,8 @@
    "custom": true,
    "categoria": "economia",
    "descripcion": "Se cambian en la tienda de Cambios: 6 fragmentos = 1 DinoCoin.",
-   "origen": "Monstruos durante la BloodMoon (25%)"
+   "origen": "Monstruos durante la BloodMoon (25%)",
+   "textura": "assets/uploads/textura-blood-fragment-mvaozrfq3bu.png"
   },
   "mochila_nivel_1": {
    "material": "echo_shard",
@@ -211,7 +219,8 @@
    ],
    "modelo": "minecraft:lime_bundle",
    "custom": true,
-   "categoria": "mochilas"
+   "categoria": "mochilas",
+   "textura": "assets/uploads/textura-mochila-nivel-1-mvap0c0cl8o.png"
   },
   "mochila_nivel_2": {
    "material": "echo_shard",
@@ -232,7 +241,8 @@
    ],
    "modelo": "minecraft:blue_bundle",
    "custom": true,
-   "categoria": "mochilas"
+   "categoria": "mochilas",
+   "textura": "assets/uploads/textura-mochila-nivel-2-mvap0o8zqpg.png"
   },
   "mochila_nivel_3": {
    "material": "echo_shard",
@@ -253,7 +263,8 @@
    ],
    "modelo": "minecraft:orange_bundle",
    "custom": true,
-   "categoria": "mochilas"
+   "categoria": "mochilas",
+   "textura": "assets/uploads/textura-mochila-nivel-3-mvap0yx4hnj.png"
   },
   "mochila_nivel_4": {
    "material": "echo_shard",
@@ -274,7 +285,8 @@
    ],
    "modelo": "minecraft:red_bundle",
    "custom": true,
-   "categoria": "mochilas"
+   "categoria": "mochilas",
+   "textura": "assets/uploads/textura-mochila-nivel-4-mvap1ggayvc.png"
   },
   "mochila_nivel_5": {
    "material": "echo_shard",
@@ -295,7 +307,8 @@
    ],
    "modelo": "minecraft:purple_bundle",
    "custom": true,
-   "categoria": "mochilas"
+   "categoria": "mochilas",
+   "textura": "assets/uploads/textura-mochila-nivel-5-mvap1uwobyh.png"
   },
   "enderbag": {
    "material": "endermite_spawn_egg",
@@ -319,7 +332,8 @@
    ],
    "modelo": "minecraft:ender_bag",
    "custom": true,
-   "categoria": "mochilas"
+   "categoria": "mochilas",
+   "textura": "assets/uploads/textura-enderbag-mvap26psad9.png"
   },
   "gancho": {
    "material": "fishing_rod",
@@ -343,7 +357,8 @@
    ],
    "modelo": "minecraft:gancho",
    "custom": true,
-   "categoria": "armas"
+   "categoria": "armas",
+   "textura": "assets/uploads/textura-gancho-mvap2la44mi.png"
   },
   "panic_apple": {
    "material": "apple",
@@ -368,7 +383,8 @@
    ],
    "modelo": "minecraft:panic_apple",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-panic-apple-mvap3jwxw2p.png"
   },
   "artefacto_nivel_1": {
    "material": "skeleton_horse_spawn_egg",
@@ -392,7 +408,8 @@
    ],
    "modelo": "minecraft:rep_hierro",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-artefacto-nivel-1-mvap7pes09t.png"
   },
   "artefacto_nivel_2": {
    "material": "blaze_spawn_egg",
@@ -415,7 +432,8 @@
    ],
    "modelo": "minecraft:rep_oro",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-artefacto-nivel-2-mvap7y285fc.png"
   },
   "misiones": {
    "material": "map",
@@ -458,7 +476,8 @@
    ],
    "modelo": "minecraft:icetotem",
    "custom": true,
-   "categoria": "amuletos"
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-icetotem-mvap8xcsa0t.png"
   },
   "flytotem": {
    "material": "totem_of_undying",
@@ -476,7 +495,8 @@
    ],
    "modelo": "minecraft:flytotem",
    "custom": true,
-   "categoria": "amuletos"
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-flytotem-mvap96o3s6o.png"
   },
   "excavator_pickaxe": {
    "material": "netherite_pickaxe",
@@ -502,7 +522,8 @@
    "custom": true,
    "categoria": "armas",
    "descripcion": "Pico que rompe en área.",
-   "origen": "Misión 8 · Tienda Legendario desde el día 40"
+   "origen": "Misión 8 · Tienda Legendario desde el día 40",
+   "textura": "assets/uploads/textura-excavator-pickaxe-mvap9zlykkn.png"
   },
   "potion_resistance_2": {
    "material": "potion",
@@ -517,7 +538,8 @@
    "color": "#0000ff",
    "modelo": "minecraft:potion_resistance_2",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-potion-resistance-2-mvapa9yefuo.png"
   },
   "splash_resistance_3": {
    "material": "splash_potion",
@@ -532,7 +554,8 @@
    "color": "#0000ff",
    "modelo": "minecraft:splash_resistance_3",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-splash-resistance-3-mvapajwu0qc.png"
   },
   "potion_slow_falling": {
    "material": "potion",
@@ -547,7 +570,8 @@
    "color": "#808080",
    "modelo": "minecraft:potion_slow_falling",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-potion-slow-falling-mvapawx0qcc.png"
   },
   "splash_regeneration_3": {
    "material": "splash_potion",
@@ -562,7 +586,8 @@
    "color": "#ff00ff",
    "modelo": "minecraft:splash_regeneration_3",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-splash-regeneration-3-mvapb5rbjwg.png"
   },
   "potion_haste_3": {
    "material": "potion",
@@ -577,7 +602,8 @@
    "color": "#ffff00",
    "modelo": "minecraft:potion_haste_3",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-potion-haste-3-mvapbjwbl6g.png"
   },
   "potion_haste_2": {
    "material": "potion",
@@ -592,7 +618,8 @@
    "color": "#ffff00",
    "modelo": "minecraft:potion_haste_2",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-potion-haste-2-mvapbsy3tn8.png"
   },
   "splash_absorption_10": {
    "material": "splash_potion",
@@ -607,7 +634,8 @@
    "color": "#ffa500",
    "modelo": "minecraft:splash_absorption_10",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-splash-absorption-10-mvapc1kr52t.png"
   },
   "frasco_de_velocidad": {
    "material": "honey_bottle",
@@ -617,7 +645,8 @@
    ],
    "modelo": "minecraft:frasco_de_velocidad",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-frasco-de-velocidad-mvapca7unh0.png"
   },
   "amulet_bloodmoon": {
    "material": "torchflower_seeds",
@@ -644,7 +673,8 @@
    ],
    "modelo": "minecraft:amulet_bloodmoon",
    "custom": true,
-   "categoria": "amuletos"
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-amulet-bloodmoon-mvapcis06pj.png"
   },
   "amuleto_inmortalidad": {
    "material": "allay_spawn_egg",
@@ -668,7 +698,8 @@
    ],
    "modelo": "minecraft:immunity",
    "custom": true,
-   "categoria": "amuletos"
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-amuleto-inmortalidad-mvapdqm7qcq.png"
   },
   "life_campfire": {
    "material": "campfire",
@@ -700,7 +731,8 @@
    ],
    "modelo": "minecraft:life_campfire",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-life-campfire-mvape4zzlw7.png"
   },
   "fuel_campfire": {
    "material": "torchflower",
@@ -724,7 +756,8 @@
    ],
    "modelo": "minecraft:fuel_campfire",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-fuel-campfire-mvaped3l48m.png"
   },
   "special_totem": {
    "material": "totem_of_undying",
@@ -745,7 +778,8 @@
    ],
    "modelo": "minecraft:special_totem",
    "custom": true,
-   "categoria": "amuletos"
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-special-totem-mvapemx1qx6.png"
   },
   "cristal_hielo": {
    "material": "amethyst_shard",
@@ -761,7 +795,8 @@
    "rareza": "epic",
    "modelo": "minecraft:cristal_hielo",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-cristal-hielo-mvapez0d3sd.png"
   },
   "arco_hielo": {
    "material": "bow",
@@ -783,7 +818,8 @@
    },
    "modelo": "minecraft:arco_hielo",
    "custom": true,
-   "categoria": "armas"
+   "categoria": "armas",
+   "textura": "assets/uploads/textura-arco-hielo-mvapf7mrc8i.png"
   },
   "happy_ghast_enchant": {
    "material": "enchanted_book",
@@ -798,7 +834,9 @@
    ],
    "modelo": "minecraft:happy_ghast_enchant",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-happy-ghast-enchant-mvapfrq5ocw.png",
+   "oculto": true
   },
   "happy_ghast_enchant_2": {
    "material": "enchanted_book",
@@ -813,7 +851,8 @@
    ],
    "modelo": "minecraft:happy_ghast_enchant",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-happy-ghast-enchant-2-mvapg4k23lc.png"
   },
   "perla_infinita": {
    "material": "ender_pearl",
@@ -840,7 +879,8 @@
    "custom": true,
    "categoria": "armas",
    "descripcion": "Tira ender pearls sin gastarse; cada uso puede dar un efecto al azar por 30 segundos.",
-   "origen": "Misión 40 · Tienda Legendario desde el día 50"
+   "origen": "Misión 40 · Tienda Legendario desde el día 50",
+   "textura": "assets/uploads/textura-perla-infinita-mvapgelnoz0.png"
   },
   "retorno_warden": {
    "material": "recovery_compass",
@@ -884,7 +924,8 @@
    ],
    "modelo": "minecraft:tarta_calabaza_mejorada",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-tarta-calabaza-mejorada-mvappbsva7g.png"
   },
   "bar_tequila": {
    "material": "potion",
@@ -923,7 +964,8 @@
    "color": "#dcb432",
    "modelo": "minecraft:bar_tequila",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-tequila-mvappn9pwer.png"
   },
   "bar_margarita": {
    "material": "potion",
@@ -956,7 +998,8 @@
    "color": "#96ff64",
    "modelo": "minecraft:bar_margarita",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-margarita-mvappxfd73f.png"
   },
   "bar_mezcal": {
    "material": "potion",
@@ -995,7 +1038,8 @@
    "color": "#c8c8c8",
    "modelo": "minecraft:bar_mezcal",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-mezcal-mvapq7viqfj.png"
   },
   "bar_pulque": {
    "material": "potion",
@@ -1034,7 +1078,8 @@
    "color": "#fff5e6",
    "modelo": "minecraft:bar_pulque",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-pulque-mvapqjnk2el.png"
   },
   "bar_cerveza": {
    "material": "potion",
@@ -1073,7 +1118,8 @@
    "color": "#663300",
    "modelo": "minecraft:bar_cerveza",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-cerveza-mvapqxnfos9.png"
   },
   "bar_ron": {
    "material": "potion",
@@ -1106,7 +1152,8 @@
    "color": "#8b4513",
    "modelo": "minecraft:bar_ron",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-ron-mvaprgvh4ku.png"
   },
   "bar_vodka": {
    "material": "potion",
@@ -1139,7 +1186,8 @@
    "color": "#dcf0ff",
    "modelo": "minecraft:bar_vodka",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-vodka-mvaprrej0s1.png"
   },
   "bar_whisky": {
    "material": "potion",
@@ -1178,7 +1226,8 @@
    "color": "#cd853f",
    "modelo": "minecraft:bar_whisky",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-whisky-mvaps5old87.png"
   },
   "bar_sake": {
    "material": "potion",
@@ -1217,7 +1266,8 @@
    "color": "#f5ffff",
    "modelo": "minecraft:bar_sake",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-sake-mvapsdsab6m.png"
   },
   "bar_ginebra": {
    "material": "potion",
@@ -1256,7 +1306,8 @@
    "color": "#befff0",
    "modelo": "minecraft:bar_ginebra",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-ginebra-mvapsprhkpe.png"
   },
   "bar_azulito": {
    "material": "potion",
@@ -1295,7 +1346,8 @@
    "color": "#00c8ff",
    "modelo": "minecraft:bar_azulito",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-azulito-mvapszdr06y.png"
   },
   "bar_michelada": {
    "material": "potion",
@@ -1334,7 +1386,8 @@
    "color": "#961e00",
    "modelo": "minecraft:bar_michelada",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-bar-michelada-mvaptcirnmf.png"
   },
   "manzana_vida": {
    "material": "apple",
@@ -1353,7 +1406,8 @@
    ],
    "modelo": "minecraft:manzana_vida",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-manzana-vida-mvaptvm6uxc.png"
   },
   "pluma_levitacion": {
    "material": "feather",
@@ -1373,7 +1427,8 @@
    ],
    "modelo": "minecraft:pluma_levi",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-pluma-levitacion-mvapu4unij6.png"
   },
   "pluma_levitacion_mejorada": {
    "material": "feather",
@@ -1397,7 +1452,8 @@
    ],
    "modelo": "minecraft:pluma_levi_mejorada",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-pluma-levitacion-mejorada-mvapueyfwu0.png"
   },
   "keep_inventory_liquido": {
    "material": "golden_apple",
@@ -1418,7 +1474,8 @@
    ],
    "modelo": "minecraft:keep_inv_liquido",
    "custom": true,
-   "categoria": "consumibles"
+   "categoria": "consumibles",
+   "textura": "assets/uploads/textura-keep-inventory-liquido-mvapupygudl.png"
   },
   "estatua_protectora": {
    "material": "armor_stand",
@@ -1452,7 +1509,8 @@
    ],
    "modelo": "minecraft:statue_pr",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "oculto": true
   },
   "amuleto_ultima_esperanza": {
    "material": "echo_shard",
@@ -1480,7 +1538,8 @@
    ],
    "modelo": "minecraft:amuleto_esperanza",
    "custom": true,
-   "categoria": "amuletos"
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-amuleto-ultima-esperanza-mvapvgongwb.png"
   },
   "corrupted_spider_eye": {
    "material": "spider_eye",
@@ -1502,7 +1561,8 @@
    ],
    "modelo": "minecraft:bloque_oro_apilado",
    "custom": true,
-   "categoria": "utilidad"
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-bloque-oro-apilado-mvapwjppid5.png"
   },
   "arco_hielo_jugador": {
    "material": "bow",
@@ -1554,7 +1614,8 @@
    "custom": true,
    "categoria": "amuletos",
    "descripcion": "Invisibilidad, Regeneración II y Absorción III por 3 minutos, con 2 minutos de espera.",
-   "origen": "Tienda desde el día 30 · Misiones 55 y 75"
+   "origen": "Tienda desde el día 30 · Misiones 55 y 75",
+   "textura": "assets/uploads/textura-amuleto-invisiblidad-mvaq14q3l8h.png"
   },
   "arco_nivel1": {
    "material": "bow",
@@ -1574,7 +1635,8 @@
    "custom": true,
    "categoria": "armas",
    "descripcion": "Flechas espectrales que explotan (explosión 2).",
-   "origen": "Misión 46 · Tienda Legendario desde el día 40"
+   "origen": "Misión 46 · Tienda Legendario desde el día 40",
+   "textura": "assets/uploads/textura-arco-nivel1-mvaq1bzw5fc.png"
   },
   "arco_nivel2": {
    "material": "bow",
@@ -1594,7 +1656,8 @@
    "custom": true,
    "categoria": "armas",
    "descripcion": "Explosión 3, gasta 2 flechas por disparo y no acepta Infinidad.",
-   "origen": "Misión 68 · Tienda Legendario desde el día 50"
+   "origen": "Misión 68 · Tienda Legendario desde el día 50",
+   "textura": "assets/uploads/textura-arco-nivel2-mvaq1maeduc.png"
   },
   "arco_nivel3": {
    "material": "bow",
@@ -1614,7 +1677,8 @@
    "custom": true,
    "categoria": "armas",
    "descripcion": "Explosión 4, gasta 4 flechas por disparo y no acepta Infinidad.",
-   "origen": "Misión 87 · Tienda Legendario el día 100"
+   "origen": "Misión 87 · Tienda Legendario el día 100",
+   "textura": "assets/uploads/textura-arco-nivel3-mvaq1ubjzjw.png"
   },
   "alma_infested_skeleton": {
    "material": "echo_shard",
@@ -3310,7 +3374,8 @@
    },
    "modelo": "minecraft:libro_paso_igneo",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-paso-igneo-1-mvaq2eife65.png"
   },
   "libro_paso_igneo_2": {
    "material": "enchanted_book",
@@ -3324,7 +3389,8 @@
    },
    "modelo": "minecraft:libro_paso_igneo",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-paso-igneo-2-mvaq2nitamn.png"
   },
   "libro_purificacion_1": {
    "material": "enchanted_book",
@@ -3338,7 +3404,8 @@
    },
    "modelo": "minecraft:libro_purificacion",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-purificacion-1-mvaq2xhlmwy.png"
   },
   "libro_purificacion_2": {
    "material": "enchanted_book",
@@ -3352,7 +3419,8 @@
    },
    "modelo": "minecraft:libro_purificacion",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-purificacion-2-mvaq37nt4jz.png"
   },
   "libro_purificacion_3": {
    "material": "enchanted_book",
@@ -3366,7 +3434,8 @@
    },
    "modelo": "minecraft:libro_purificacion",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-purificacion-3-mvaq3gc74co.png"
   },
   "libro_purificacion_4": {
    "material": "enchanted_book",
@@ -3380,7 +3449,8 @@
    },
    "modelo": "minecraft:libro_purificacion",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-purificacion-4-mvaq3odix75.png"
   },
   "libro_purificacion_5": {
    "material": "enchanted_book",
@@ -3394,7 +3464,8 @@
    },
    "modelo": "minecraft:libro_purificacion",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-purificacion-5-mvaq3x84cdk.png"
   },
   "libro_vision_abisal_1": {
    "material": "enchanted_book",
@@ -3408,7 +3479,8 @@
    },
    "modelo": "minecraft:libro_vision_abisal",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-vision-abisal-1-mvaq47wcpvf.png"
   },
   "libro_anclaje_1": {
    "material": "enchanted_book",
@@ -3422,7 +3494,8 @@
    },
    "modelo": "minecraft:libro_anclaje",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-anclaje-1-mvaq4hq04eb.png"
   },
   "libro_anclaje_2": {
    "material": "enchanted_book",
@@ -3436,7 +3509,8 @@
    },
    "modelo": "minecraft:libro_anclaje",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-anclaje-2-mvaq4ps353i.png"
   },
   "libro_retorno_del_vacio_1": {
    "material": "enchanted_book",
@@ -3450,7 +3524,955 @@
    },
    "modelo": "minecraft:libro_retorno_del_vacio",
    "custom": true,
-   "categoria": "libros"
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-retorno-del-vacio-1-mvaq4yva8fi.png"
+  },
+  "sculk_totem": {
+   "material": "totem_of_undying",
+   "nombre": "§x§7§9§D§E§E§0§lSculk Totem",
+   "lore": [
+    "",
+    "§7Al activarse conserva los efectos del tótem.",
+    "§x§7§9§D§E§E§0> Resistencia III §7(0:03)",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:sculk_totem",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-sculk-totem-mvap9gemcao.png"
+  },
+  "ender_totem": {
+   "material": "totem_of_undying",
+   "nombre": "§x§C§9§9§A§E§A§lEnder Totem",
+   "lore": [
+    "",
+    "§7Al activarse otorga:",
+    "§x§C§9§9§A§E§A> Regeneración V §7(1:45)",
+    "§x§C§9§9§A§E§A> Absorción V §7(1:05)",
+    "§x§C§9§9§A§E§A> Resistencia al fuego IV §7(1:40)",
+    "§x§C§9§9§A§E§A> Resistencia V §7(0:05)",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:ender_totem",
+   "custom": true,
+   "categoria": "amuletos",
+   "textura": "assets/uploads/textura-ender-totem-mvap9ot5emc.png"
+  },
+  "carne_podrida_floral": {
+   "material": "rotten_flesh",
+   "nombre": "§x§E§F§9§4§B§6§lCarne Podrida Floral",
+   "lore": [
+    "",
+    "§7Restos de un Zombie Floral."
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:carne_podrida_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-carne-podrida-floral-mvapvslvj2f.png"
+  },
+  "ojo_arana_floral": {
+   "material": "spider_eye",
+   "nombre": "§x§E§F§B§F§6§2§lOjo de Araña Floral",
+   "lore": [
+    "",
+    "§7Restos de un Araña Floral."
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:ojo_arana_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-ojo-arana-floral-mvapw1n4uv2.png"
+  },
+  "polvora_floral": {
+   "material": "gunpowder",
+   "nombre": "§x§A§8§C§8§7§6§lPólvora Floral",
+   "lore": [
+    "",
+    "§7Restos de un Creeper Floral."
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:polvora_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-polvora-floral-mvapwavks2d.png"
+  },
+  "arco_mejorado": {
+   "material": "bow",
+   "nombre": "§x§E§3§C§1§6§F§lArco Mejorado",
+   "lore": [
+    "",
+    "§x§A§A§9§1§5§3Reforzado con hierro, oro",
+    "§x§A§A§9§1§5§3y Netherite.",
+    "",
+    "§7En el yunque:",
+    "§7> §x§F§0§D§D§B§0Acepta Perforación",
+    "§7> §x§F§0§D§D§B§0Poder hasta VI (Poder V + libro V)",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:arco_mejorado",
+   "custom": true,
+   "categoria": "armas",
+   "textura": "assets/uploads/textura-arco-mejorado-mvapwque6a9.png"
+  },
+  "aguijon_floral": {
+   "material": "prismarine_shard",
+   "nombre": "§x§F§7§D§3§6§B§lAguijón Floral",
+   "lore": [
+    "",
+    "§7Restos de una Mini Abeja Floral."
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:aguijon_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-aguijon-floral-mvapwz0tpek.png"
+  },
+  "esencia_floral": {
+   "material": "firework_star",
+   "nombre": "§x§F§F§B§3§D§9§lEsencia Floral",
+   "lore": [
+    "",
+    "§7La suelta la Abeja Floral.",
+    "§7Va en la Mejora Floral."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:esencia_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-esencia-floral-mvapx84zk2e.png"
+  },
+  "mejora_floral": {
+   "material": "netherite_upgrade_smithing_template",
+   "nombre": "§x§F§F§B§3§D§9§lMejora Floral",
+   "lore": [
+    "",
+    "§7En la herrería: la mejora, una pieza",
+    "§7de Netherite (o un escudo) y un",
+    "§7Bloque de Miel. Sirve para una pieza."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:mejora_floral",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mejora-floral-mvapxle98mp.png"
+  },
+  "espada_floral": {
+   "material": "netherite_sword",
+   "nombre": "§x§F§F§B§3§D§9§lEspada Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A9 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A1,6 golpes por segundo",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 8,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:espada_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-espada-floral-mvapxwbvfkq.png"
+  },
+  "hacha_floral": {
+   "material": "netherite_axe",
+   "nombre": "§x§F§F§B§3§D§9§lHacha Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A8 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A1,2 golpes por segundo",
+    " §x§F§F§B§3§D§9⛏ §x§F§F§D§5§E§APica 20% más rápido que Netherite",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§AAtaca más rápido que la de Netherite",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 7,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.8,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.2,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:hacha_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-hacha-floral-mvapy6ivmus.png"
+  },
+  "lanza_floral": {
+   "material": "netherite_spear",
+   "nombre": "§x§F§F§B§3§D§9§lLanza Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A5,5 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A0,9 golpes por segundo",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 4.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.13043475151062,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:lanza_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-lanza-floral-mvapyk97y8z.png"
+  },
+  "pico_floral": {
+   "material": "netherite_pickaxe",
+   "nombre": "§x§F§F§B§3§D§9§lPico Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A6 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A1,3 golpes por segundo",
+    " §x§F§F§B§3§D§9⛏ §x§F§F§D§5§E§APica 20% más rápido que Netherite",
+    " §x§F§F§B§3§D§9⛏ §x§F§F§D§5§E§ARompe los minerales de la Warden Cave",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.7,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.2,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:pico_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-pico-floral-mvapyuvrfbw.png"
+  },
+  "pala_floral": {
+   "material": "netherite_shovel",
+   "nombre": "§x§F§F§B§3§D§9§lPala Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A6,5 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A1,1 golpes por segundo",
+    " §x§F§F§B§3§D§9⛏ §x§F§F§D§5§E§APica 20% más rápido que Netherite",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 5.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.9,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.2,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:pala_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-pala-floral-mvapz3w07xd.png"
+  },
+  "azada_floral": {
+   "material": "netherite_hoe",
+   "nombre": "§x§F§F§B§3§D§9§lAzada Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A1 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A4 golpes por segundo",
+    " §x§F§F§B§3§D§9⛏ §x§F§F§D§5§E§APica 20% más rápido que Netherite",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": 0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.2,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:azada_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-azada-floral-mvapzea9pcp.png"
+  },
+  "escudo_floral": {
+   "material": "shield",
+   "nombre": "§x§F§F§B§3§D§9§lEscudo Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9∞ §x§F§F§D§5§E§AIrrompible",
+    " §x§F§F§B§3§D§9⛨ §x§F§F§D§5§E§ABloquea como un escudo normal",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "irrompible": true,
+   "modelo": "minecraft:escudo_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-escudo-floral-mvapzphb042.png"
+  },
+  "casco_floral": {
+   "material": "netherite_helmet",
+   "nombre": "§x§F§F§B§3§D§9§lCasco Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7Al equiparla:",
+    " §x§F§F§B§3§D§9◆ §x§F§F§D§5§E§A3 de armadura y 4 de dureza",
+    " §x§F§F§B§3§D§9❤ §x§F§F§D§5§E§A+1 corazón",
+    " §x§F§F§B§3§D§9✚ §x§F§F§D§5§E§A15% de no gastarse",
+    " §x§F§F§B§3§D§9⚓ §x§F§F§D§5§E§A10% menos empuje",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 3,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    }
+   ],
+   "modelo": "minecraft:casco_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-casco-floral-mvapzzgxe6t.png"
+  },
+  "peto_floral": {
+   "material": "netherite_chestplate",
+   "nombre": "§x§F§F§B§3§D§9§lPeto Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7Al equiparla:",
+    " §x§F§F§B§3§D§9◆ §x§F§F§D§5§E§A8 de armadura y 4 de dureza",
+    " §x§F§F§B§3§D§9❤ §x§F§F§D§5§E§A+1 corazón",
+    " §x§F§F§B§3§D§9✚ §x§F§F§D§5§E§A15% de no gastarse",
+    " §x§F§F§B§3§D§9⚓ §x§F§F§D§5§E§A10% menos empuje",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 8,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    }
+   ],
+   "modelo": "minecraft:peto_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-peto-floral-mvaq0b6jfb7.png"
+  },
+  "pantalon_floral": {
+   "material": "netherite_leggings",
+   "nombre": "§x§F§F§B§3§D§9§lPantalón Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7Al equiparla:",
+    " §x§F§F§B§3§D§9◆ §x§F§F§D§5§E§A6 de armadura y 4 de dureza",
+    " §x§F§F§B§3§D§9❤ §x§F§F§D§5§E§A+1 corazón",
+    " §x§F§F§B§3§D§9✚ §x§F§F§D§5§E§A15% de no gastarse",
+    " §x§F§F§B§3§D§9⚓ §x§F§F§D§5§E§A10% menos empuje",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 6,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    }
+   ],
+   "modelo": "minecraft:pantalon_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-pantalon-floral-mvaq0kv735c.png"
+  },
+  "botas_floral": {
+   "material": "netherite_boots",
+   "nombre": "§x§F§F§B§3§D§9§lBotas Florales",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Forjada con la esencia de",
+    "§x§B§F§8§6§A§3la Abeja Floral.",
+    "",
+    "§7Al equiparla:",
+    " §x§F§F§B§3§D§9◆ §x§F§F§D§5§E§A3 de armadura y 4 de dureza",
+    " §x§F§F§B§3§D§9❤ §x§F§F§D§5§E§A+1 corazón",
+    " §x§F§F§B§3§D§9✚ §x§F§F§D§5§E§A15% de no gastarse",
+    " §x§F§F§B§3§D§9⚓ §x§F§F§D§5§E§A10% menos empuje",
+    "",
+    "§7Netherite§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 3,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    }
+   ],
+   "modelo": "minecraft:botas_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-botas-floral-mvaq0vy8klp.png"
+  },
+  "libro_talador_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§C§4§A§0§7§6Al talar el tronco de abajo cae el árbol",
+    "§x§C§4§A§0§7§6entero: 24, 64 o 160 troncos por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:talador": 1
+   },
+   "modelo": "minecraft:libro_talador",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-talador-1-mvaq57v158k.png"
+  },
+  "libro_talador_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§C§4§A§0§7§6Al talar el tronco de abajo cae el árbol",
+    "§x§C§4§A§0§7§6entero: 24, 64 o 160 troncos por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:talador": 2
+   },
+   "modelo": "minecraft:libro_talador",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-talador-2-mvaq5hczw4f.png"
+  },
+  "libro_talador_3": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§C§4§A§0§7§6Al talar el tronco de abajo cae el árbol",
+    "§x§C§4§A§0§7§6entero: 24, 64 o 160 troncos por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:talador": 3
+   },
+   "modelo": "minecraft:libro_talador",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-talador-3-mvaq5pmtmzn.png"
+  },
+  "libro_fervor_minero_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§9§B§7§C§6Picas más rápido: +5% de velocidad",
+    "§x§A§9§B§7§C§6de minado por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:fervor_minero": 1
+   },
+   "modelo": "minecraft:libro_fervor_minero",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-fervor-minero-1-mvaq61rl8og.png"
+  },
+  "libro_fervor_minero_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§9§B§7§C§6Picas más rápido: +5% de velocidad",
+    "§x§A§9§B§7§C§6de minado por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:fervor_minero": 2
+   },
+   "modelo": "minecraft:libro_fervor_minero",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-fervor-minero-2-mvaq6abjj6d.png"
+  },
+  "libro_fervor_minero_3": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§9§B§7§C§6Picas más rápido: +5% de velocidad",
+    "§x§A§9§B§7§C§6de minado por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:fervor_minero": 3
+   },
+   "modelo": "minecraft:libro_fervor_minero",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-fervor-minero-3-mvaq6kl3r0o.png"
+  },
+  "libro_veta_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§9§B§7§C§6Rompe la veta entera del mineral: hasta 12",
+    "§x§A§9§B§7§C§6bloques (I) o 32 (II). No va en La Excavadora."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:veta": 1
+   },
+   "modelo": "minecraft:libro_veta",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-veta-1-mvaq6ubrpu5.png"
+  },
+  "libro_veta_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§9§B§7§C§6Rompe la veta entera del mineral: hasta 12",
+    "§x§A§9§B§7§C§6bloques (I) o 32 (II). No va en La Excavadora."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:veta": 2
+   },
+   "modelo": "minecraft:libro_veta",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-veta-2-mvaq71u01bx.png"
+  },
+  "libro_anzuelo_veloz_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§8§F§B§8§C§9Los peces pican antes: 2 segundos menos",
+    "§x§8§F§B§8§C§9de espera por nivel (se suma a Atracción)."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:anzuelo_veloz": 1
+   },
+   "modelo": "minecraft:libro_anzuelo_veloz",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-anzuelo-veloz-1-mvaq7l1qa16.png"
+  },
+  "libro_anzuelo_veloz_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§8§F§B§8§C§9Los peces pican antes: 2 segundos menos",
+    "§x§8§F§B§8§C§9de espera por nivel (se suma a Atracción)."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:anzuelo_veloz": 2
+   },
+   "modelo": "minecraft:libro_anzuelo_veloz",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-anzuelo-veloz-2-mvaq7uue54l.png"
+  },
+  "libro_anzuelo_veloz_3": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§8§F§B§8§C§9Los peces pican antes: 2 segundos menos",
+    "§x§8§F§B§8§C§9de espera por nivel (se suma a Atracción)."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:anzuelo_veloz": 3
+   },
+   "modelo": "minecraft:libro_anzuelo_veloz",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-anzuelo-veloz-3-mvaq82laks6.png"
+  },
+  "libro_cosecha_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§8§C§3§A§0Replanta lo que cosechas. II: cosecha 3x3.",
+    "§x§A§8§C§3§A§0III: cosecha 5x5."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:cosecha": 1
+   },
+   "modelo": "minecraft:libro_cosecha",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-cosecha-1-mvaq8atihwq.png"
+  },
+  "libro_cosecha_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§8§C§3§A§0Replanta lo que cosechas. II: cosecha 3x3.",
+    "§x§A§8§C§3§A§0III: cosecha 5x5."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:cosecha": 2
+   },
+   "modelo": "minecraft:libro_cosecha",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-cosecha-2-mvaq8i7v200.png"
+  },
+  "libro_cosecha_3": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§8§C§3§A§0Replanta lo que cosechas. II: cosecha 3x3.",
+    "§x§A§8§C§3§A§0III: cosecha 5x5."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:cosecha": 3
+   },
+   "modelo": "minecraft:libro_cosecha",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-cosecha-3-mvaq8rvtabn.png"
+  },
+  "libro_alcance_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§C§9§B§7§9§CPones y rompes bloques más lejos:",
+    "§x§C§9§B§7§9§C+1 bloque de alcance por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:alcance": 1
+   },
+   "modelo": "minecraft:libro_alcance",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-alcance-1-mvaq908ojlz.png"
+  },
+  "libro_alcance_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§C§9§B§7§9§CPones y rompes bloques más lejos:",
+    "§x§C§9§B§7§9§C+1 bloque de alcance por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:alcance": 2
+   },
+   "modelo": "minecraft:libro_alcance",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-alcance-2-mvaq97mbmg4.png"
+  },
+  "libro_alcance_3": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§C§9§B§7§9§CPones y rompes bloques más lejos:",
+    "§x§C§9§B§7§9§C+1 bloque de alcance por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:alcance": 3
+   },
+   "modelo": "minecraft:libro_alcance",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-alcance-3-mvaq9ehz4s7.png"
+  },
+  "libro_vigor_de_batalla_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§D§9§8§C§7§AAl matar un monstruo te curas",
+    "§x§D§9§8§C§7§A1 corazón por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:vigor_de_batalla": 1
+   },
+   "modelo": "minecraft:libro_vigor_de_batalla",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-vigor-de-batalla-1-mvaq9nbvgx9.png"
+  },
+  "libro_vigor_de_batalla_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§D§9§8§C§7§AAl matar un monstruo te curas",
+    "§x§D§9§8§C§7§A1 corazón por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:vigor_de_batalla": 2
+   },
+   "modelo": "minecraft:libro_vigor_de_batalla",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-vigor-de-batalla-2-mvaq9witajo.png"
+  },
+  "libro_vigor_de_batalla_3": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§D§9§8§C§7§AAl matar un monstruo te curas",
+    "§x§D§9§8§C§7§A1 corazón por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:vigor_de_batalla": 3
+   },
+   "modelo": "minecraft:libro_vigor_de_batalla",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-vigor-de-batalla-3-mvaqa3scus9.png"
+  },
+  "libro_vuelo_rapido_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§E§E§C§E§FEn el arnés: el Happy Ghast vuela",
+    "§x§A§E§E§C§E§F50% más rápido por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:vuelo_rapido": 1
+   },
+   "modelo": "minecraft:happy_ghast_enchant",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-vuelo-rapido-1-mvaqal30nyt.png"
+  },
+  "libro_vuelo_rapido_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§A§E§E§C§E§FEn el arnés: el Happy Ghast vuela",
+    "§x§A§E§E§C§E§F50% más rápido por nivel."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:vuelo_rapido": 2
+   },
+   "modelo": "minecraft:happy_ghast_enchant",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-vuelo-rapido-2-mvaqatrv9ln.png"
   }
  },
  "misiones": [
@@ -12136,7 +13158,7 @@
     "Monstruos élite: 20 a 60 XP",
     "Jefes: de 400 (Wither) a 2.200 XP (Rey Ender)"
    ],
-   "ritmo": 1.0
+   "ritmo": 1
   },
   {
    "id": "mineria",
