@@ -110,26 +110,29 @@ function catalogoGuardado(hash) {
   }
 }
 
+// Devuelven false si no se pudo bajar el archivo, para volver a intentarlo
 async function loadCatalogo(ref, hash) {
-  if (!hash || hash === state.hashes.catalogo) return;
+  if (!hash || hash === state.hashes.catalogo) return true;
   let datos = catalogoGuardado(hash);
   if (!datos) {
     datos = await getJson(rawUrl(state.cfg.live.repo, ref, 'catalogo.json')).catch(() => null);
-    if (!datos) return;
+    if (!datos) return false;
     try { localStorage.setItem(CACHE_CATALOGO, JSON.stringify({ hash, datos })); } catch {}
   }
   state.hashes.catalogo = hash;
   state.catalogo = datos;
   emit('catalogo', datos);
+  return true;
 }
 
 async function loadJugadores(ref, hash) {
-  if (hash && hash === state.hashes.jugadores) return;
+  if (hash && hash === state.hashes.jugadores) return true;
   const jugadores = await getJson(rawUrl(state.cfg.live.repo, ref, 'jugadores.json')).catch(() => null);
-  if (!jugadores) return;
+  if (!jugadores) return false;
   state.hashes.jugadores = hash || '';
   state.jugadores = jugadores;
   emit('jugadores', jugadores);
+  return true;
 }
 
 async function loadAt(ref, { force = false } = {}) {
@@ -140,16 +143,33 @@ async function loadAt(ref, { force = false } = {}) {
   if (!force && generado && generado < state.generado) return false;
   state.generado = generado || state.generado;
   state.ref = ref;
-  if (/^[0-9a-f]{40}$/.test(ref)) state.sha = ref;
   state.estado = estado;
   emit('estado', estado);
   const archivos = estado.archivos || {};
-  await loadCatalogo(ref, archivos.catalogo);
+  const okCatalogo = await loadCatalogo(ref, archivos.catalogo);
   // Los jugadores pesan más: solo se bajan en las páginas que los muestran
-  if (state.quierenJugadores) await loadJugadores(ref, archivos.jugadores);
+  const okJugadores = state.quierenJugadores ? await loadJugadores(ref, archivos.jugadores) : true;
   state.ultimo = Date.now();
   emit('sync', { generado: state.generado, conectado: state.conectado });
+  if (!okCatalogo || !okJugadores) throw new Error('faltan archivos');
+  // Solo cuenta como cargado si bajó todo: así un aviso repetido o volver a la pestaña lo intentan de nuevo
+  if (/^[0-9a-f]{40}$/.test(ref)) state.sha = ref;
   return true;
+}
+
+// Justo después del aviso, raw.githubusercontent.com a veces todavía no tiene el commit nuevo (da 404 unos segundos).
+// Sin reintentos la página se quedaba con lo viejo hasta la siguiente subida del plugin, que puede tardar minutos
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+async function loadRetrying(ref, esperas, { force = false, sigue = () => true } = {}) {
+  for (const ms of esperas) {
+    if (ms) await sleep(ms);
+    if (!sigue()) return false;
+    try {
+      await loadAt(ref, { force });
+      return true;
+    } catch {}
+  }
+  return false;
 }
 
 // La página de jugadores o la de misiones los piden: se bajan si todavía no están o si cambiaron
@@ -204,7 +224,8 @@ async function onPing(sha) {
   setTimeout(async () => {
     if (pending !== sha) return;
     lastFetch = Date.now();
-    try { await loadAt(sha); } catch {}
+    // Si mientras tanto llega un aviso más nuevo, se deja de insistir con este
+    await loadRetrying(sha, [0, 2000, 5000, 10000, 20000], { sigue: () => pending === sha });
   }, wait);
 }
 
@@ -242,10 +263,7 @@ export async function start(cfg) {
 
   if (!cfg.live?.repo) { emit('sync', { generado: 0, conectado: false, sinConfigurar: true }); return; }
   const sha = await latestSha();
-  try {
-    if (sha) await loadAt(sha, { force: true });
-    else await loadAt(cfg.live.rama || 'main', { force: true });
-  } catch {
+  if (!(await loadRetrying(sha || cfg.live.rama || 'main', [0, 2000, 5000], { force: true }))) {
     try { await pollBranch(); } catch {}
     if (!state.estado) emit('sync', { generado: 0, conectado: false, sinDatos: true });
   }

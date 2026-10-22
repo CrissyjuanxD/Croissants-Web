@@ -535,7 +535,7 @@ function edMob(e) {
   if (!m) return `${edHead('Mob', 'No existe', { canDelete: false, route: false, undo: false })}`;
   const idx = (S.draft.juego.mobs || []).findIndex((x) => x.id === e.id);
   const base = `juego:mobs.${idx}`;
-  const imagen = card('Imagen', 'image', fImage(`${base}.imagen`, 'Render del mob', { kind: 'wide', name: `mob-${m.id}`, hint: 'Se muestra entera en un rectángulo arriba de la tarjeta. Lo mejor es un PNG con fondo transparente, más ancho que alto (por ejemplo 1200×750). Sin imagen se muestra su huevo de spawn.' }));
+  const imagen = card('Imagen', 'image', fImage(`${base}.imagen`, 'Render del mob', { name: `mob-${m.id}`, hint: 'Se muestra entera a la izquierda de la tarjeta, en un rectángulo vertical. Lo mejor es un PNG con fondo transparente, más alto que ancho (por ejemplo 600×1100). Sin imagen se muestra su huevo de spawn.' }));
   if (m.soloWeb) {
     return `${edHead('Mob · solo en la web', m.nombre)}
     <div class="editor-grid">

@@ -38,7 +38,10 @@ bindTooltips(document);
 bindChrome();
 $('#year').textContent = String(new Date().getFullYear());
 
-const stamps = { sitio: '', juego: '', anuncios: '' };
+// Cada archivo tal como se aplicó: así se nota cualquier cambio, también los que no pasan por el panel (que es el único
+// que actualiza meta.updatedAt)
+const firmas = { sitio: '', juego: '', anuncios: '' };
+const firma = (doc) => (doc ? JSON.stringify(doc) : '');
 
 if (S.preview) startPreview();
 else load({ live: true });
@@ -66,9 +69,9 @@ async function load({ live: liveMode }) {
 }
 
 function apply({ sitio, juego, anuncios: ans }, { quiet = false } = {}) {
-  if (sitio) { S.sitio = normalizeSitio(sitio); stamps.sitio = S.sitio.meta.updatedAt; }
-  if (juego) { S.juegoRaw = juego; rebuildJuego(); stamps.juego = S.juego.meta.updatedAt; }
-  if (ans) { S.anuncios = normalizeAnuncios(ans); stamps.anuncios = S.anuncios.meta.updatedAt; }
+  if (sitio) { firmas.sitio = firma(sitio); S.sitio = normalizeSitio(sitio); }
+  if (juego) { firmas.juego = firma(juego); S.juegoRaw = juego; rebuildJuego(); }
+  if (ans) { firmas.anuncios = firma(ans); S.anuncios = normalizeAnuncios(ans); }
   renderChrome();
   if (!S.route.view) route({ initial: true });
   else rerender(quiet);
@@ -87,7 +90,7 @@ function startContentUpdates() {
     last = Date.now();
     try {
       const [sitio, juego, ans] = await Promise.all([fetchDoc(CONFIG.docs.sitio), fetchDoc(CONFIG.docs.juego), fetchDoc(CONFIG.docs.anuncios)]);
-      const changed = (sitio?.meta?.updatedAt || '') !== stamps.sitio || (juego?.meta?.updatedAt || '') !== stamps.juego || (ans?.meta?.updatedAt || '') !== stamps.anuncios;
+      const changed = firma(sitio) !== firmas.sitio || firma(juego) !== firmas.juego || firma(ans) !== firmas.anuncios;
       if (changed) {
         apply({ sitio, juego, anuncios: ans }, { quiet: true });
         toast('La web se actualizó con contenido nuevo', { type: 'success' });
