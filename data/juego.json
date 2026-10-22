@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 6,
-  "updatedAt": "2026-10-16T08:52:02.146Z",
+  "version": 7,
+  "updatedAt": "2026-10-22T18:49:29.245Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -4473,6 +4473,165 @@
    "custom": true,
    "categoria": "libros",
    "textura": "assets/uploads/textura-libro-vuelo-rapido-2-mvaqatrv9ln.png"
+  },
+  "lingote_bloodmoon": {
+   "material": "copper_ingot",
+   "nombre": "§x§E§0§5§A§5§A§lLingote de BloodMoon",
+   "lore": [
+    "",
+    "§7Se hace con 9 Fragmentos de",
+    "§7BloodMoon. Va en la herrería con la",
+    "§7Mejora de BloodMoon."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_bloodmoon",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-lingote-bloodmoon-mvjw8219lzq.png"
+  },
+  "mejora_bloodmoon": {
+   "material": "netherite_upgrade_smithing_template",
+   "nombre": "§x§E§0§5§A§5§A§lMejora de BloodMoon",
+   "lore": [
+    "",
+    "§7En la herrería: la mejora, una espada,",
+    "§7hacha o lanza de Netherite (o un arco)",
+    "§7y un Lingote de BloodMoon."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:mejora_bloodmoon",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mejora-bloodmoon-mvjw8ekidrp.png"
+  },
+  "espada_sangre": {
+   "material": "netherite_sword",
+   "nombre": "§x§E§0§5§A§5§A§lEspada de Sangre",
+   "lore": [
+    "",
+    "§x§A§8§4§4§4§4Forjada con la sangre de",
+    "§x§A§8§4§4§4§4la BloodMoon.",
+    "",
+    "§7En la mano:",
+    " §x§E§0§5§A§5§A⚔ §x§E§E§A§4§A§49 de daño",
+    " §x§E§0§5§A§5§A⚡ §x§E§E§A§4§A§41,6 golpes por segundo",
+    " §x§E§0§5§A§5§A☠ §x§E§E§A§4§A§4Más daño a los mobs Florales",
+    ""
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 8,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:espada_sangre",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-espada-sangre-mvjw942cxo6.png"
+  },
+  "hacha_sangre": {
+   "material": "netherite_axe",
+   "nombre": "§x§E§0§5§A§5§A§lHacha de Sangre",
+   "lore": [
+    "",
+    "§x§A§8§4§4§4§4Forjada con la sangre de",
+    "§x§A§8§4§4§4§4la BloodMoon.",
+    "",
+    "§7En la mano:",
+    " §x§E§0§5§A§5§A⚔ §x§E§E§A§4§A§48 de daño",
+    " §x§E§0§5§A§5§A⚡ §x§E§E§A§4§A§41,2 golpes por segundo",
+    " §x§E§0§5§A§5§A☠ §x§E§E§A§4§A§4Más daño a los mobs Florales",
+    ""
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 7,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.8,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:hacha_sangre",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-hacha-sangre-mvjw9l9leyi.png"
+  },
+  "lanza_sangre": {
+   "material": "netherite_spear",
+   "nombre": "§x§E§0§5§A§5§A§lLanza de Sangre",
+   "lore": [
+    "",
+    "§x§A§8§4§4§4§4Forjada con la sangre de",
+    "§x§A§8§4§4§4§4la BloodMoon.",
+    "",
+    "§7En la mano:",
+    " §x§E§0§5§A§5§A⚔ §x§E§E§A§4§A§45,5 de daño",
+    " §x§E§0§5§A§5§A⚡ §x§E§E§A§4§A§40,9 golpes por segundo",
+    " §x§E§0§5§A§5§A☠ §x§E§E§A§4§A§4Más daño a los mobs Florales",
+    ""
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 4.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.13043475151062,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:lanza_sangre",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-lanza-sangre-mvjwa34j4nx.png"
+  },
+  "arco_sangre": {
+   "material": "bow",
+   "nombre": "§x§E§0§5§A§5§A§lArco de Sangre",
+   "lore": [
+    "",
+    "§x§A§8§4§4§4§4Tensado con la sangre de",
+    "§x§A§8§4§4§4§4la BloodMoon.",
+    "",
+    "§7En la mano:",
+    " §x§E§0§5§A§5§A☠ §x§E§E§A§4§A§4Mejor contra los mobs Florales",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:arco_sangre",
+   "custom": true,
+   "categoria": "armas",
+   "textura": "assets/uploads/textura-arco-sangre-mvjwafq7es1.png"
   }
  },
  "misiones": [
