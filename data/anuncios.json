@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 5,
-  "updatedAt": "2026-10-22T08:15:20.211Z",
+  "version": 6,
+  "updatedAt": "2026-10-22T08:20:39.407Z",
   "updatedBy": "CrissyjuanxD"
  },
  "categorias": [
@@ -80,7 +80,7 @@
    "categoria": "cambios",
    "portada": "assets/uploads/anuncio-nuevo-anuncio-mvj9mmv0l1f.webp",
    "resumen": "Nuevos cambios en el gameplay y balanceos.",
-   "contenido": "- Balanceo de Habilidades: Las habilidades de vitalidad están reducido a Nivel 1,2,3,4 +1 Corazones Extra y nivel 5,6,7,8 +2 Corazones Extras\n\n- La bloodmoon pasa de dificultad Fácil a Normal, ahora los mobs hacen mas daño y spawnean mas mobs de bloodmoon.\n\n- Nuevo set de Armas: Espada de Sangre, Hacha de Sangre, Arco de Sangre y Lanza de Sangre, Hará mas daño estas armas a los Mobs Florales\n\n- Los mobs Florales no reciben tanto daño de las herramientas normales, solo de las Armas de Sangre.\n\n- Se ha balanceado el Sistema de Trabajos.\n\n",
+   "contenido": "- Balanceo de Habilidades: Las habilidades de vitalidad están reducido a Nivel 1,2,3,4 +1 Corazones Extra y nivel 5,6,7,8 +2 Corazones Extras\n\n- La bloodmoon pasa de dificultad Fácil a Normal, ahora los mobs hacen mas daño y spawnean mas mobs de bloodmoon.\n\n- Nuevo set de Armas: Espada de Sangre, Hacha de Sangre, Arco de Sangre y Lanza de Sangre, Hará mas daño estas armas a los Mobs Florales\n\n- Los mobs Florales no reciben tanto daño de las herramientas normales, solo de las Armas de Sangre.\n\n- Se ha balanceado el Sistema de Trabajos.\n\n- Nuevo comando /rtp, te teletransporta a una zona aleatoria en el mundo.\n",
    "autor": "CrissyjuanxD",
    "fijado": true,
    "oculto": false
