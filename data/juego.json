@@ -5341,7 +5341,7 @@
    "n": 17,
    "tipo": "normal",
    "nombre": "Cazador Floral",
-   "descripcion": "Mata 25 Zombies Florales y 25 Spiders Florales. Salen en las raids y, desde el día 14, solos por el mundo.",
+   "descripcion": "Mata 25 Zombies Florales y 25 Spiders Florales. Salen en las raids y, desde el día 12, solos por el mundo.",
    "dificultad": "dificil",
    "dinocoins": 18,
    "dia": 17,
@@ -13176,7 +13176,7 @@
     "Racimos de amatista del End: 5 XP",
     "Jefes: la mitad que Guerrero"
    ],
-   "ritmo": 0.55
+   "ritmo": 1
   },
   {
    "id": "lenador",
@@ -13192,7 +13192,7 @@
     "Raíces de manglar: 0,5 XP",
     "Jefes: la mitad que Guerrero"
    ],
-   "ritmo": 0.5
+   "ritmo": 1
   },
   {
    "id": "constructor",
@@ -13208,7 +13208,7 @@
     "En la Warden Cave y el End: 50% más",
     "Jefes: la mitad que Guerrero"
    ],
-   "ritmo": 0.35
+   "ritmo": 1
   },
   {
    "id": "granjero",
@@ -13224,7 +13224,7 @@
     "Frutas de la Warden Cave: 1,5 a 2 XP",
     "Jefes: la mitad que Guerrero"
    ],
-   "ritmo": 0.45
+   "ritmo": 1
   },
   {
    "id": "pescador",
@@ -13239,7 +13239,7 @@
     "Basura: 3 XP",
     "Jefes: la mitad que Guerrero"
    ],
-   "ritmo": 0.45
+   "ritmo": 1
   }
  ],
  "habilidades": [
@@ -13507,7 +13507,7 @@
    "color": "#FF8CC6",
    "etapa": "uno",
    "vida": "20",
-   "donde": "Raids · solo desde el día 14",
+   "donde": "Raids · solo desde el día 12",
    "texto": "Dispara una wind charge con estela floral que da veneno y debilidad. Tiene fuerza, velocidad y 30% de soltar Carne Corrupta.",
    "huevo": "zombie_spawn_egg",
    "imagen": "assets/uploads/mob-corruptedzombie-mv764gnbqwz.webp",
@@ -13520,7 +13520,7 @@
    "color": "#F6C945",
    "etapa": "uno",
    "vida": "16",
-   "donde": "Raids · sola desde el día 14",
+   "donde": "Raids · sola desde el día 12",
    "texto": "Araña con velocidad y fuerza permanentes. Si te pega y no te cubres con el escudo, te deja una telaraña en los pies.",
    "huevo": "spider_spawn_egg",
    "imagen": "",
@@ -13533,7 +13533,7 @@
    "color": "#FF5555",
    "etapa": "uno",
    "vida": "20",
-   "donde": "Raids · sola desde el día 14",
+   "donde": "Raids · sola desde el día 12",
    "texto": "Creeper chiquito y rápido que explota casi al instante. Las Bombitas no se dañan entre ellas.",
    "huevo": "creeper_spawn_egg",
    "imagen": "",
