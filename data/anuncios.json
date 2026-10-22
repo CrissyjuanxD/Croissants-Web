@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 4,
-  "updatedAt": "2026-10-16T20:35:38.189Z",
+  "version": 5,
+  "updatedAt": "2026-10-22T08:15:20.211Z",
   "updatedBy": "CrissyjuanxD"
  },
  "categorias": [
@@ -69,6 +69,18 @@
    "portada": "assets/uploads/anuncio-update-del-plugin-de-croissants-mvbfg3zwft2.webp",
    "resumen": "Cambios de Gameplay y economia.",
    "contenido": "**Esta actualización trae cosas importante:**\n\n- Se agrego el comando /tpa nombre: Lo que hace este comando es poder teletransportarte a otro jugador si este acepta la petición de teletransporte.\n\n- Los jugadores que tengan el /fly en una bloodmoon no podrán usarla y se les desactivara, tampoco se podrá usarlo en el nether\n\n- Se arreglo el Bug de que podías entrar al nether ya esta cerrado hasta el día 4\n\n- Se acaba de actualizar los precios de el libro de habilidades, ya que no estaba balanceado a la economía actual (es mas complicado subirlo)",
+   "autor": "CrissyjuanxD",
+   "fijado": true,
+   "oculto": false
+  },
+  {
+   "id": "cambios-de-gameplay-y-balanceos",
+   "titulo": "Cambios de Gameplay y Balanceos",
+   "fecha": "2026-10-22T08:05:28.920Z",
+   "categoria": "cambios",
+   "portada": "assets/uploads/anuncio-nuevo-anuncio-mvj9mmv0l1f.webp",
+   "resumen": "Nuevos cambios en el gameplay y balanceos.",
+   "contenido": "- Balanceo de Habilidades: Las habilidades de vitalidad están reducido a Nivel 1,2,3,4 +1 Corazones Extra y nivel 5,6,7,8 +2 Corazones Extras\n\n- La bloodmoon pasa de dificultad Fácil a Normal, ahora los mobs hacen mas daño y spawnean mas mobs de bloodmoon.\n\n- Nuevo set de Armas: Espada de Sangre, Hacha de Sangre, Arco de Sangre y Lanza de Sangre, Hará mas daño estas armas a los Mobs Florales\n\n- Los mobs Florales no reciben tanto daño de las herramientas normales, solo de las Armas de Sangre.\n\n- Se ha balanceado el Sistema de Trabajos.\n\n",
    "autor": "CrissyjuanxD",
    "fijado": true,
    "oculto": false
