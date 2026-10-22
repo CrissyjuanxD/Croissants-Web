@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 7,
-  "updatedAt": "2026-10-22T18:49:29.245Z",
+  "version": 8,
+  "updatedAt": "2026-10-22T18:51:55.230Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -13891,6 +13891,19 @@
    "texto": "Sus balas pegan el doble y dan Wither II y Ceguera; cada 10 a 14 segundos tira una ráfaga de 6 balas. Suelta 1 o 2 Esencias Marchitas y Fragmento Astral (25%).",
    "huevo": "shulker_spawn_egg",
    "imagen": "",
+   "oculto": false,
+   "soloWeb": false
+  },
+  {
+   "id": "zombiefloral",
+   "nombre": "Zombie Floral",
+   "color": "#FF8CC6",
+   "etapa": "uno",
+   "vida": "20",
+   "donde": "Raids · solo desde el día 12",
+   "texto": "Dispara una wind charge con estela floral que da veneno y debilidad. Tiene fuerza, velocidad y 30% de soltar Carne Podrida Floral.",
+   "huevo": "zombie_spawn_egg",
+   "imagen": "assets/uploads/mob-zombiefloral-mvjwdo5iy49.webp",
    "oculto": false,
    "soloWeb": false
   }
