@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 11,
-  "updatedAt": "2026-10-22T18:43:42.172Z",
+  "version": 12,
+  "updatedAt": "2026-10-22T19:42:57.825Z",
   "updatedBy": "CrissyjuanxD"
  },
  "general": {
@@ -418,7 +418,7 @@
     "clave": "uno",
     "dia": 1,
     "color": "#c9a7eb",
-    "imagen": ""
+    "imagen": "assets/uploads/etapas-uno-mvjy675b1zj.webp"
    },
    {
     "id": "extra",
@@ -444,7 +444,7 @@
     "clave": "dos",
     "dia": 20,
     "color": "#2fd3c4",
-    "imagen": ""
+    "imagen": "assets/uploads/etapas-dos-mvjy74k1189.webp"
    },
    {
     "id": "tres",
