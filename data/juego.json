@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 8,
-  "updatedAt": "2026-10-22T18:51:55.230Z",
+  "version": 9,
+  "updatedAt": "2026-10-27T10:09:20.757Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -1694,7 +1694,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Una por mejora de armadura de Warden.",
-   "origen": "7% del mob infestado del bioma Cian"
+   "origen": "7% del mob infestado del bioma Cian",
+   "textura": "assets/uploads/textura-alma-infested-skeleton-mvqi4autixf.png"
   },
   "alma_infested_ghast": {
    "material": "echo_shard",
@@ -1710,7 +1711,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Una por mejora de armadura de Warden.",
-   "origen": "7% del mob infestado del bioma Morado"
+   "origen": "7% del mob infestado del bioma Morado",
+   "textura": "assets/uploads/textura-alma-infested-ghast-mvqi4o2oaal.png"
   },
   "alma_infested_creeper": {
    "material": "echo_shard",
@@ -1726,7 +1728,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Una por mejora de armadura de Warden.",
-   "origen": "7% del mob infestado del bioma Gris"
+   "origen": "7% del mob infestado del bioma Gris",
+   "textura": "assets/uploads/textura-alma-infested-creeper-mvqi4xz7du0.png"
   },
   "alma_infested_cave_spider": {
    "material": "echo_shard",
@@ -1742,7 +1745,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Una por mejora de armadura de Warden.",
-   "origen": "7% del mob infestado del bioma Verde"
+   "origen": "7% del mob infestado del bioma Verde",
+   "textura": "assets/uploads/textura-alma-infested-cave-spider-mvqi5auzcb8.png"
   },
   "energia_warden": {
    "material": "echo_shard",
@@ -1760,7 +1764,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Munición de la Warden Gun e ingrediente de las mejoras de la armadura de Warden.",
-   "origen": "Mesa de crafteo, o el Ultra Warden"
+   "origen": "Mesa de crafteo, o el Ultra Warden",
+   "textura": "assets/uploads/textura-energia-warden-mvqi5mbzpfh.png"
   },
   "mineral_crudo_cian": {
    "material": "prismarine_shard",
@@ -1778,7 +1783,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Cian.",
-   "origen": "Minerales Profundos del bioma Cian de la Warden Cave"
+   "origen": "Minerales Profundos del bioma Cian de la Warden Cave",
+   "textura": "assets/uploads/textura-mineral-crudo-cian-mvqi6aewdbn.png"
   },
   "mineral_crudo_verde": {
    "material": "prismarine_shard",
@@ -1796,7 +1802,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Verde.",
-   "origen": "Minerales Profundos del bioma Verde de la Warden Cave"
+   "origen": "Minerales Profundos del bioma Verde de la Warden Cave",
+   "textura": "assets/uploads/textura-mineral-crudo-verde-mvqi6ksgmur.png"
   },
   "mineral_crudo_morado": {
    "material": "prismarine_shard",
@@ -1814,7 +1821,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Morado.",
-   "origen": "Minerales Profundos del bioma Morado de la Warden Cave"
+   "origen": "Minerales Profundos del bioma Morado de la Warden Cave",
+   "textura": "assets/uploads/textura-mineral-crudo-morado-mvqi6wbpxt6.png"
   },
   "mineral_crudo_gris": {
    "material": "prismarine_shard",
@@ -1832,7 +1840,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Gris.",
-   "origen": "Minerales Profundos del bioma Gris de la Warden Cave"
+   "origen": "Minerales Profundos del bioma Gris de la Warden Cave",
+   "textura": "assets/uploads/textura-mineral-crudo-gris-mvqi75qvojw.png"
   },
   "fragmento_profundo_cian": {
    "material": "copper_nugget",
@@ -1851,7 +1860,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "4 van en la mejora de el casco; cualquier color sirve para el Lingote Profundo.",
-   "origen": "Alto horno"
+   "origen": "Alto horno",
+   "textura": "assets/uploads/textura-fragmento-profundo-cian-mvqi7hkb636.png"
   },
   "fragmento_profundo_verde": {
    "material": "copper_nugget",
@@ -1870,7 +1880,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "4 van en la mejora de las botas; cualquier color sirve para el Lingote Profundo.",
-   "origen": "Alto horno"
+   "origen": "Alto horno",
+   "textura": "assets/uploads/textura-fragmento-profundo-verde-mvqi7u5ogqu.png"
   },
   "fragmento_profundo_morado": {
    "material": "copper_nugget",
@@ -1889,7 +1900,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "4 van en la mejora de el peto; cualquier color sirve para el Lingote Profundo.",
-   "origen": "Alto horno"
+   "origen": "Alto horno",
+   "textura": "assets/uploads/textura-fragmento-profundo-morado-mvqi8567j8v.png"
   },
   "fragmento_profundo_gris": {
    "material": "copper_nugget",
@@ -1908,7 +1920,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "4 van en la mejora de el pantalón; cualquier color sirve para el Lingote Profundo.",
-   "origen": "Alto horno"
+   "origen": "Alto horno",
+   "textura": "assets/uploads/textura-fragmento-profundo-gris-mvqi8fm8ee4.png"
   },
   "lingote_profundo": {
    "material": "copper_ingot",
@@ -1926,7 +1939,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Material de la armadura de Warden y del Lingote de Celestita.",
-   "origen": "Mesa de crafteo con Fragmentos Profundos"
+   "origen": "Mesa de crafteo con Fragmentos Profundos",
+   "textura": "assets/uploads/textura-lingote-profundo-mvqi8u62val.png"
   },
   "corazon_warden_boss": {
    "material": "heart_of_the_sea",
@@ -1947,7 +1961,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Invoca al Ultra Warden en el altar del templo de la Warden Cave.",
-   "origen": "Infested Warden Boss (2 a 4)"
+   "origen": "Infested Warden Boss (2 a 4)",
+   "textura": "assets/uploads/textura-corazon-warden-boss-mvqiatz1yhy.png"
   },
   "baya_sculk": {
    "material": "sweet_berries",
@@ -1960,7 +1975,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Visión Nocturna por 3 minutos.",
-   "origen": "Árboles de la Caverna Sculk (Warden Cave)"
+   "origen": "Árboles de la Caverna Sculk (Warden Cave)",
+   "textura": "assets/uploads/textura-baya-sculk-mvqib3uyazp.png"
   },
   "fruta_abisal": {
    "material": "beetroot",
@@ -1973,7 +1989,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Quita la Oscuridad por 1 minuto y medio.",
-   "origen": "Árboles del Abismo Flotante (Warden Cave)"
+   "origen": "Árboles del Abismo Flotante (Warden Cave)",
+   "textura": "assets/uploads/textura-fruta-abisal-mvqibe9ettr.png"
   },
   "baya_luminosa": {
    "material": "glow_berries",
@@ -1986,7 +2003,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Regeneración II por 5 segundos.",
-   "origen": "Árboles del Pantano Profundo (Warden Cave)"
+   "origen": "Árboles del Pantano Profundo (Warden Cave)",
+   "textura": "assets/uploads/textura-baya-luminosa-mvqibnlf5ry.png"
   },
   "cristal_celestita": {
    "material": "prismarine_crystals",
@@ -2000,7 +2018,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Material del Lingote de Celestita.",
-   "origen": "Racimos de amatista del Bosque Prismático (12%, 18% con pico de Celestita)"
+   "origen": "Racimos de amatista del Bosque Prismático (12%, 18% con pico de Celestita)",
+   "textura": "assets/uploads/textura-cristal-celestita-mvqibyv3no1.png"
   },
   "fragmento_astral": {
    "material": "firework_star",
@@ -2014,7 +2033,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Ingrediente de la Plantilla de Celestita y del Ojo del Rey Ender.",
-   "origen": "Mobs del End"
+   "origen": "Mobs del End",
+   "textura": "assets/uploads/textura-fragmento-astral-mvqicbgklvs.png"
   },
   "esencia_marchita": {
    "material": "black_dye",
@@ -2028,7 +2048,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Ingrediente del Ojo del Rey Ender.",
-   "origen": "Shulkers Negros y Wither Skeletons del Páramo Marchito"
+   "origen": "Shulkers Negros y Wither Skeletons del Páramo Marchito",
+   "textura": "assets/uploads/textura-esencia-marchita-mvqicln7k0b.png"
   },
   "ojo_rey_ender": {
    "material": "ender_eye",
@@ -2042,7 +2063,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Invoca al Rey Ender en el altar de un Santuario Marchito. No se puede tirar ni poner en un portal.",
-   "origen": "Mesa de crafteo"
+   "origen": "Mesa de crafteo",
+   "textura": "assets/uploads/textura-ojo-rey-ender-mvqicv3m1xc.png"
   },
   "lingote_celestita": {
    "material": "copper_ingot",
@@ -2056,7 +2078,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Mejora una herramienta de Netherite a Celestita junto con la plantilla.",
-   "origen": "Mesa de crafteo"
+   "origen": "Mesa de crafteo",
+   "textura": "assets/uploads/textura-lingote-celestita-mvqid4s448q.png"
   },
   "plantilla_celestita": {
    "material": "netherite_upgrade_smithing_template",
@@ -2071,7 +2094,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Se usa en la mesa de herrería para hacer las herramientas de Celestita.",
-   "origen": "Mesa de crafteo"
+   "origen": "Mesa de crafteo",
+   "textura": "assets/uploads/textura-plantilla-celestita-mvqidfpfa1u.png"
   },
   "enderking_pearl": {
    "material": "heart_of_the_sea",
@@ -2087,7 +2111,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Craftea el Peto de Warden Alado.",
-   "origen": "Rey Ender"
+   "origen": "Rey Ender",
+   "textura": "assets/uploads/textura-enderking-pearl-mvqidqr63zt.png"
   },
   "espada_celestita": {
    "material": "netherite_sword",
@@ -2107,7 +2132,8 @@
    "origen": "Mesa de herrería (End)",
    "ocultar": [
     "atributos"
-   ]
+   ],
+   "textura": "assets/uploads/textura-espada-celestita-mvqie2mbswa.png"
   },
   "hacha_celestita": {
    "material": "netherite_axe",
@@ -2127,7 +2153,8 @@
    "origen": "Mesa de herrería (End)",
    "ocultar": [
     "atributos"
-   ]
+   ],
+   "textura": "assets/uploads/textura-hacha-celestita-mvqiegy9s0s.png"
   },
   "lanza_celestita": {
    "material": "netherite_spear",
@@ -2147,7 +2174,8 @@
    "origen": "Mesa de herrería (End)",
    "ocultar": [
     "atributos"
-   ]
+   ],
+   "textura": "assets/uploads/textura-lanza-celestita-mvqiesy395l.png"
   },
   "pico_celestita": {
    "material": "netherite_pickaxe",
@@ -2167,7 +2195,8 @@
    "origen": "Mesa de herrería (End)",
    "ocultar": [
     "atributos"
-   ]
+   ],
+   "textura": "assets/uploads/textura-pico-celestita-mvqif3iwt79.png"
   },
   "pala_celestita": {
    "material": "netherite_shovel",
@@ -2186,7 +2215,8 @@
    "origen": "Mesa de herrería (End)",
    "ocultar": [
     "atributos"
-   ]
+   ],
+   "textura": "assets/uploads/textura-pala-celestita-mvqifeh25j5.png"
   },
   "azada_celestita": {
    "material": "netherite_hoe",
@@ -2205,7 +2235,8 @@
    "origen": "Mesa de herrería (End)",
    "ocultar": [
     "atributos"
-   ]
+   ],
+   "textura": "assets/uploads/textura-azada-celestita-mvqifrymxqy.png"
   },
   "mejora_casco_warden": {
    "material": "echo_shard",
@@ -2221,7 +2252,8 @@
    "rareza": "epic",
    "modelo": "minecraft:mejora_casco_warden",
    "custom": true,
-   "categoria": "warden"
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mejora-casco-warden-mvqig6kngfn.png"
   },
   "mejora_peto_warden": {
    "material": "echo_shard",
@@ -2237,7 +2269,8 @@
    "rareza": "epic",
    "modelo": "minecraft:mejora_peto_warden",
    "custom": true,
-   "categoria": "warden"
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mejora-peto-warden-mvqigmn3996.png"
   },
   "mejora_pantalon_warden": {
    "material": "echo_shard",
@@ -2253,7 +2286,8 @@
    "rareza": "epic",
    "modelo": "minecraft:mejora_pantalon_warden",
    "custom": true,
-   "categoria": "warden"
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mejora-pantalon-warden-mvqigyehp1d.png"
   },
   "mejora_bota_warden": {
    "material": "echo_shard",
@@ -2269,7 +2303,8 @@
    "rareza": "epic",
    "modelo": "minecraft:mejora_bota_warden",
    "custom": true,
-   "categoria": "warden"
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mejora-bota-warden-mvqih8zgkey.png"
   },
   "casco_warden": {
    "material": "netherite_helmet",
@@ -2316,7 +2351,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)"
+   "origen": "Mesa de herrería (Warden Cave)",
+   "textura": "assets/uploads/textura-casco-warden-mvqihobv2xx.png"
   },
   "peto_warden": {
    "material": "netherite_chestplate",
@@ -2363,7 +2399,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)"
+   "origen": "Mesa de herrería (Warden Cave)",
+   "textura": "assets/uploads/textura-peto-warden-mvqii0d0o51.png"
   },
   "pantalon_warden": {
    "material": "netherite_leggings",
@@ -2410,7 +2447,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)"
+   "origen": "Mesa de herrería (Warden Cave)",
+   "textura": "assets/uploads/textura-pantalon-warden-mvqiidv1k7i.png"
   },
   "bota_warden": {
    "material": "netherite_boots",
@@ -2457,7 +2495,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)"
+   "origen": "Mesa de herrería (Warden Cave)",
+   "textura": "assets/uploads/textura-bota-warden-mvqiisfgih3.png"
   },
   "peto_warden_alado": {
    "material": "netherite_chestplate",
@@ -2506,7 +2545,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "El Peto de Warden, pero planea como unas Elytras.",
-   "origen": "Mesa de herrería"
+   "origen": "Mesa de herrería",
+   "textura": "assets/uploads/textura-peto-warden-alado-mvqij7xnyda.png"
   },
   "chatarra": {
    "material": "iron_nugget",
@@ -2522,7 +2562,8 @@
    "rareza": "common",
    "modelo": "minecraft:chatarra",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-chatarra-mvqikjamd1j.png"
   },
   "manzana_podrida": {
    "material": "iron_nugget",
@@ -2538,7 +2579,8 @@
    "rareza": "common",
    "modelo": "minecraft:manzana_podrida",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-manzana-podrida-mvqiksn8hlq.png"
   },
   "zanahoria_encantada": {
    "material": "iron_nugget",
@@ -2561,7 +2603,8 @@
    ],
    "modelo": "minecraft:zanahoria_encantada",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-zanahoria-encantada-mvqil453h2n.png"
   },
   "pepitas_hierro_oxidadas": {
    "material": "iron_nugget",
@@ -2585,7 +2628,8 @@
    ],
    "modelo": "minecraft:pepitas_hierro_oxidadas",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-pepitas-hierro-oxidadas-mvqilf8h9wn.png"
   },
   "pepitas_diamante": {
    "material": "iron_nugget",
@@ -2608,7 +2652,8 @@
    ],
    "modelo": "minecraft:pepitas_diamante",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-pepitas-diamante-mvqilpdfy3y.png"
   },
   "fragmentos_ambar": {
    "material": "iron_nugget",
@@ -2632,7 +2677,8 @@
    ],
    "modelo": "minecraft:fragmentos_ambar",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-fragmentos-ambar-mvqim1mewed.png"
   },
   "fosiles_pequenos": {
    "material": "iron_nugget",
@@ -2656,7 +2702,8 @@
    ],
    "modelo": "minecraft:fosiles_pequenos",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-fosiles-pequenos-mvqimbamaj4.png"
   },
   "lingote_platino": {
    "material": "iron_nugget",
@@ -2680,7 +2727,8 @@
    ],
    "modelo": "minecraft:lingote_platino",
    "custom": true,
-   "categoria": "pesca"
+   "categoria": "pesca",
+   "textura": "assets/uploads/textura-lingote-platino-mvqimlv16d2.png"
   },
   "iman_botin": {
    "material": "iron_nugget",
@@ -2700,7 +2748,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "En la mano secundaria atrae los items del suelo a 8 bloques (no toca lo que tiró otro jugador).",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-iman-botin-mvqimxhw10l.png"
   },
   "red_animales": {
    "material": "phantom_membrane",
@@ -2721,7 +2770,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Atrapa un animal con clic derecho y lo suelta en otro lugar; se reusa.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-red-animales-mvqin7glwp7.png"
   },
   "abono_concentrado": {
    "material": "glowstone_dust",
@@ -2741,7 +2791,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Hace crecer los cultivos y árboles en 5x5.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-abono-concentrado-mvqinji2i4o.png"
   },
   "brujula_explorador": {
    "material": "compass",
@@ -2764,7 +2815,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Busca la aldea, fortaleza o ciudad del End más cercana y apunta ahí; 3 usos.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-brujula-explorador-mvqinuc8khm.png"
   },
   "racion_viaje": {
    "material": "bread",
@@ -2783,7 +2835,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Llena el hambre y la saturación y da Regeneración I 10 s.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-racion-viaje-mvqio2kmrev.png"
   },
   "bomba_humo": {
    "material": "snowball",
@@ -2802,7 +2855,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Al tirarla te da Invisibilidad y Velocidad II 6 s; donde cae, los mobs te pierden y quedan ciegos.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-bomba-humo-mvqiob1wthi.png"
   },
   "incienso_ahuyentador": {
    "material": "blaze_powder",
@@ -2822,7 +2876,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "10 minutos sin mobs hostiles que aparezcan solos a 24 bloques.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-incienso-ahuyentador-mvqiojqdzre.png"
   },
   "elixir_minero": {
    "material": "potion",
@@ -2854,7 +2909,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Visión Nocturna 8 min y Prisa I 4 min.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-elixir-minero-mvqiotqk03f.png"
   },
   "elixir_igneo": {
    "material": "potion",
@@ -2886,7 +2942,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Resistencia al Fuego 6 min y Resistencia I 2 min.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-elixir-igneo-mvqip4huvh2.png"
   },
   "galleta_fortuna": {
    "material": "cookie",
@@ -2904,7 +2961,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Un mensaje de la suerte y un efecto bueno al azar por 1 minuto.",
-   "origen": "Tienda Novedades desde el día 1"
+   "origen": "Tienda Novedades desde el día 1",
+   "textura": "assets/uploads/textura-galleta-fortuna-mvqipep1e59.png"
   },
   "bengala_sculk": {
    "material": "snowball",
@@ -2922,7 +2980,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Hace brillar a los mobs a 16 bloques por 15 s.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-bengala-sculk-mvqiponvu5y.png"
   },
   "polvo_silencioso": {
    "material": "flint",
@@ -2943,7 +3002,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "3 minutos en los que sensores, chilladores y Wardens no te oyen.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-polvo-silencioso-mvqipyq8l9v.png"
   },
   "elixir_abisal": {
    "material": "potion",
@@ -2973,7 +3033,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Visión Nocturna y sin Oscuridad 5 min.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-elixir-abisal-mvqiqbgamoc.png"
   },
   "botiquin": {
    "material": "paper",
@@ -2994,7 +3055,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Cura 5 corazones y quita veneno, wither, hambre, debilidad, lentitud, fatiga, náusea, ceguera y oscuridad; 20 s de espera.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-botiquin-mvqiqlmdhd2.png"
   },
   "granada_sonica": {
    "material": "snowball",
@@ -3012,7 +3074,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "8 de daño y empuje a los monstruos a 5 bloques.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-granada-sonica-mvqiqzw0nq7.png"
   },
   "radar_minerales": {
    "material": "clock",
@@ -3034,7 +3097,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Marca los minerales a 8 bloques por 10 s a través de las paredes (también los Minerales Profundos); 3 usos.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-radar-minerales-mvqiravc0kp.png"
   },
   "cristal_eco": {
    "material": "amethyst_shard",
@@ -3055,7 +3119,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Guarda un lugar con shift + clic y te lleva de vuelta tras 3 s quieto, en la misma dimensión.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-cristal-eco-mvqirjmtaz6.png"
   },
   "elixir_agilidad": {
    "material": "potion",
@@ -3087,7 +3152,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Velocidad II y Salto II 3 min.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-elixir-agilidad-mvqirshpl3l.png"
   },
   "caldo_profundo": {
    "material": "mushroom_stew",
@@ -3107,7 +3173,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Llena 8 de hambre, Absorción II 2 min y Resistencia I 1 min.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-caldo-profundo-mvqis0oxpnm.png"
   },
   "linterna_almas": {
    "material": "soul_lantern",
@@ -3127,7 +3194,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "En la mano secundaria da Visión Nocturna; no se puede poner.",
-   "origen": "Tienda Novedades desde el día 20"
+   "origen": "Tienda Novedades desde el día 20",
+   "textura": "assets/uploads/textura-linterna-almas-mvqis9023to.png"
   },
   "elixir_coloso": {
    "material": "potion",
@@ -3159,7 +3227,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Vida Extra II (+4 corazones) y Resistencia I 5 min.",
-   "origen": "Tienda Novedades desde el día 30"
+   "origen": "Tienda Novedades desde el día 30",
+   "textura": "assets/uploads/textura-elixir-coloso-mvqisj2xzvp.png"
   },
   "elixir_furia": {
    "material": "potion",
@@ -3191,7 +3260,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Fuerza II y Velocidad I 2 min.",
-   "origen": "Tienda Novedades desde el día 30"
+   "origen": "Tienda Novedades desde el día 30",
+   "textura": "assets/uploads/textura-elixir-furia-mvqisrs56ju.png"
   },
   "tonico_antilevitacion": {
    "material": "potion",
@@ -3213,7 +3283,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "4 minutos inmune a la Levitación de los shulkers.",
-   "origen": "Tienda Novedades desde el día 30"
+   "origen": "Tienda Novedades desde el día 30",
+   "textura": "assets/uploads/textura-tonico-antilevitacion-mvqit2982d8.png"
   },
   "antidoto": {
    "material": "potion",
@@ -3233,7 +3304,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Quita solo los efectos malos.",
-   "origen": "Tienda Novedades desde el día 30"
+   "origen": "Tienda Novedades desde el día 30",
+   "textura": "assets/uploads/textura-antidoto-mvqitbvx49y.png"
   },
   "frasco_sabiduria": {
    "material": "potion",
@@ -3253,7 +3325,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "10 minutos de doble experiencia.",
-   "origen": "Tienda Novedades desde el día 30"
+   "origen": "Tienda Novedades desde el día 30",
+   "textura": "assets/uploads/textura-frasco-sabiduria-mvqitkwcuxm.png"
   },
   "propulsor_estelar": {
    "material": "firework_rocket",
@@ -3275,7 +3348,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Impulso fuerte mientras planeas con Elytra; 5 cargas.",
-   "origen": "Tienda Novedades desde el día 40"
+   "origen": "Tienda Novedades desde el día 40",
+   "textura": "assets/uploads/textura-propulsor-estelar-mvqitxakhz8.png"
   },
   "estandarte_guerra": {
    "material": "red_banner",
@@ -3297,7 +3371,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Fuerza I y Resistencia I 60 s a todos los jugadores a 12 bloques.",
-   "origen": "Tienda Novedades desde el día 40"
+   "origen": "Tienda Novedades desde el día 40",
+   "textura": "assets/uploads/textura-estandarte-guerra-mvqiua9rqkb.png"
   },
   "talisman_botin": {
    "material": "nautilus_shell",
@@ -3318,7 +3393,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "10 minutos: los monstruos sueltan hasta el doble y 50% más de experiencia (no cuenta jefes, spawners ni items custom).",
-   "origen": "Tienda Novedades desde el día 40"
+   "origen": "Tienda Novedades desde el día 40",
+   "textura": "assets/uploads/textura-talisman-botin-mvqiukt1nqw.png"
   },
   "pluma_vacio": {
    "material": "feather",
@@ -3339,7 +3415,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Si caes al vacío del End te devuelve al último suelo firme; se gasta.",
-   "origen": "Tienda Novedades desde el día 40"
+   "origen": "Tienda Novedades desde el día 40",
+   "textura": "assets/uploads/textura-pluma-vacio-mvqiuur2yde.png"
   },
   "caja_misteriosa": {
    "material": "chest",
@@ -3360,7 +3437,8 @@
    "custom": true,
    "categoria": "utilidad",
    "descripcion": "Un premio al azar: comida, elixires, tótems y a veces diamantes, netherite o una Mochila Nivel 3.",
-   "origen": "Tienda Novedades desde el día 50"
+   "origen": "Tienda Novedades desde el día 50",
+   "textura": "assets/uploads/textura-caja-misteriosa-mvqivvlvhdd.png"
   },
   "libro_paso_igneo_1": {
    "material": "enchanted_book",
@@ -4539,7 +4617,7 @@
    "modelo": "minecraft:espada_sangre",
    "custom": true,
    "categoria": "utilidad",
-   "textura": "assets/uploads/textura-espada-sangre-mvjw942cxo6.png"
+   "textura": "assets/uploads/textura-espada-sangre-mvqi2c4rkoi.png"
   },
   "hacha_sangre": {
    "material": "netherite_axe",
@@ -4576,7 +4654,7 @@
    "modelo": "minecraft:hacha_sangre",
    "custom": true,
    "categoria": "utilidad",
-   "textura": "assets/uploads/textura-hacha-sangre-mvjw9l9leyi.png"
+   "textura": "assets/uploads/textura-hacha-sangre-mvqi2o9srub.png"
   },
   "lanza_sangre": {
    "material": "netherite_spear",
@@ -4613,7 +4691,7 @@
    "modelo": "minecraft:lanza_sangre",
    "custom": true,
    "categoria": "utilidad",
-   "textura": "assets/uploads/textura-lanza-sangre-mvjwa34j4nx.png"
+   "textura": "assets/uploads/textura-lanza-sangre-mvqi33a5jda.png"
   },
   "arco_sangre": {
    "material": "bow",
@@ -4631,7 +4709,253 @@
    "modelo": "minecraft:arco_sangre",
    "custom": true,
    "categoria": "armas",
-   "textura": "assets/uploads/textura-arco-sangre-mvjwafq7es1.png"
+   "textura": "assets/uploads/textura-arco-sangre-mvqi3ps8hdr.png"
+  },
+  "lingote_profundo_cian": {
+   "material": "copper_ingot",
+   "nombre": "§x§3§A§D§4§D§4§lLingote Profundo Cian",
+   "lore": [
+    "",
+    "§7Forjado con los fragmentos",
+    "§x§3§A§D§4§D§4de la Caverna Sculk§7.",
+    "",
+    "§7Va en la mejora de:",
+    "§x§3§A§D§4§D§4> Casco de Warden",
+    "§7Y en el §fLingote de Celestita§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_profundo_cian",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-lingote-profundo-cian-mvqi94hjadj.png"
+  },
+  "lingote_profundo_verde": {
+   "material": "copper_ingot",
+   "nombre": "§x§5§F§D§1§6§A§lLingote Profundo Verde",
+   "lore": [
+    "",
+    "§7Forjado con los fragmentos",
+    "§x§5§F§D§1§6§Adel Pantano Profundo§7.",
+    "",
+    "§7Va en la mejora de:",
+    "§x§5§F§D§1§6§A> Botas de Warden",
+    "§7Y en el §fLingote de Celestita§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_profundo_verde",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-lingote-profundo-verde-mvqi9gnmyk3.png"
+  },
+  "lingote_profundo_morado": {
+   "material": "copper_ingot",
+   "nombre": "§x§B§4§6§B§E§0§lLingote Profundo Morado",
+   "lore": [
+    "",
+    "§7Forjado con los fragmentos",
+    "§x§B§4§6§B§E§0del Abismo Flotante§7.",
+    "",
+    "§7Va en la mejora de:",
+    "§x§B§4§6§B§E§0> Peto de Warden",
+    "§7Y en el §fLingote de Celestita§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_profundo_morado",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-lingote-profundo-morado-mvqi9qmjk99.png"
+  },
+  "lingote_profundo_gris": {
+   "material": "copper_ingot",
+   "nombre": "§x§A§7§A§7§B§0§lLingote Profundo Gris",
+   "lore": [
+    "",
+    "§7Forjado con los fragmentos",
+    "§x§A§7§A§7§B§0de las Ruinas de Ceniza§7.",
+    "",
+    "§7Va en la mejora de:",
+    "§x§A§7§A§7§B§0> Pantalón de Warden",
+    "§7Y en el §fLingote de Celestita§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_profundo_gris",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-lingote-profundo-gris-mvqi9zy73pr.png"
+  },
+  "tejido_sculk": {
+   "material": "rabbit_hide",
+   "nombre": "§x§1§F§A§3§A§3§lTejido Sculk",
+   "lore": [
+    "",
+    "§x§1§4§7§A§7§ARestos de sculk que dejan",
+    "§x§1§4§7§A§7§Alos mobs de la Warden Cave.",
+    "",
+    "§7Va en la §x§0§0§F§F§F§FEnergía de Warden§7.",
+    ""
+   ],
+   "rareza": "uncommon",
+   "modelo": "minecraft:tejido_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-tejido-sculk-mvqia95hmbl.png"
+  },
+  "nucleo_sonico": {
+   "material": "nether_star",
+   "nombre": "§x§2§9§D§F§E§B§lNúcleo Sónico",
+   "lore": [
+    "",
+    "§x§0§B§B§5§B§5El eco que todavía late",
+    "§x§0§B§B§5§B§5en el pecho del Ultra Warden.",
+    "",
+    "§7Va en:",
+    "§x§2§9§D§F§E§B> §x§B§8§F§4§F§7Las mejoras de la armadura de Warden",
+    "§x§2§9§D§F§E§B> §x§B§8§F§4§F§7La Warden Gun",
+    "§x§2§9§D§F§E§B> §x§B§8§F§4§F§7El Arco de Sculk",
+    "§x§2§9§D§F§E§B> §x§B§8§F§4§F§7Las Botas de Warden Escaladoras",
+    ""
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:nucleo_sonico",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-nucleo-sonico-mvqiajtleko.png"
+  },
+  "warden_gun": {
+   "material": "echo_shard",
+   "nombre": "§x§0§0§F§F§F§F§lWarden Gun",
+   "lore": [
+    "",
+    "§x§0§0§8§B§8§BUn cañón que guarda el rugido",
+    "§x§0§0§8§B§8§Bsónico del Ultra Warden.",
+    "",
+    "§x§0§0§6§6§6§6Daño: §f10§x§0§0§6§6§6§6 a los mobs, §f5§x§0§0§6§6§6§6 a los jugadores",
+    "§x§0§0§6§6§6§6Alcance: §f16 bloques§x§0§0§6§6§6§6, hasta 3 en línea",
+    "§x§0§0§6§6§6§6Aturde: §fLentitud I 3 segundos",
+    "§x§0§0§6§6§6§6Recarga: §f5 segundos",
+    "",
+    "§7Uso:",
+    "§7> §fClick derecho",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:warden_gun",
+   "maxStack": 1,
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-warden-gun-mvqijik9hci.png"
+  },
+  "botas_warden_escaladoras": {
+   "material": "netherite_boots",
+   "nombre": "§x§5§F§D§1§6§A§lBotas de Warden Escaladoras",
+   "lore": [
+    "",
+    "§x§4§7§9§D§5§0Forjada en la profunda oscuridad,",
+    "§x§4§7§9§D§5§0resuena con las almas del abismo.",
+    "§x§4§7§9§D§5§0Pieza del Pantano Profundo.",
+    "",
+    "§7Al equiparla:",
+    " §x§5§F§D§1§6§A◆ §x§A§7§E§6§A§D4 de armadura y 4 de dureza",
+    " §x§5§F§D§1§6§A❤ §x§A§7§E§6§A§D+2 corazones",
+    " §x§5§F§D§1§6§A✚ §x§A§7§E§6§A§D30% de no gastarse",
+    " §x§5§F§D§1§6§A⚓ §x§A§7§E§6§A§D10% menos empuje",
+    " §x§5§F§D§1§6§A⇈ §x§A§7§E§6§A§DSe pega a las paredes",
+    " §x§5§F§D§1§6§A⇈ §x§A§7§E§6§A§DSalta de pared en pared",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§3§A§D§4§D§4§lWarden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    }
+   ],
+   "modelo": "minecraft:botas_warden_escaladoras",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-botas-warden-escaladoras-mvqijtphn2o.png"
+  },
+  "arco_sculk": {
+   "material": "bow",
+   "nombre": "§x§2§9§D§F§E§B§lArco de Sculk",
+   "lore": [
+    "",
+    "§x§1§F§A§7§B§0Tensado con el eco del",
+    "§x§1§F§A§7§B§0Ultra Warden.",
+    "",
+    "§7Las flechas:",
+    "§7> §x§8§9§E§D§F§4+4 de daño sónico",
+    "§7> §x§8§9§E§D§F§4Los Endermen no las esquivan",
+    "",
+    "§7En el yunque:",
+    "§7> §x§8§9§E§D§F§4Acepta Perforación",
+    "§7> §x§8§9§E§D§F§4Poder hasta VI (Poder V + libro V)",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:arco_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-arco-sculk-mvqik64jc96.png"
+  },
+  "libro_sabiduria_1": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§8§F§B§8§C§9La experiencia que ganas con esta herramienta",
+    "§x§8§F§B§8§C§9al minar, pescar o matar: x2 (I) o x3 (II)."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:sabiduria": 1
+   },
+   "modelo": "minecraft:libro_sabiduria",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-sabiduria-1-mvqiwh43ndn.png"
+  },
+  "libro_sabiduria_2": {
+   "material": "enchanted_book",
+   "lore": [
+    "§x§8§F§B§8§C§9La experiencia que ganas con esta herramienta",
+    "§x§8§F§B§8§C§9al minar, pescar o matar: x2 (I) o x3 (II)."
+   ],
+   "brillo": true,
+   "guardados": {
+    "quaso:sabiduria": 2
+   },
+   "modelo": "minecraft:libro_sabiduria",
+   "custom": true,
+   "categoria": "libros",
+   "textura": "assets/uploads/textura-libro-sabiduria-2-mvqiwqazhbx.png"
   }
  },
  "misiones": [
