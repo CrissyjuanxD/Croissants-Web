@@ -89,3 +89,7 @@ experience_bottle
 honey_block
 iron_block
 rabbit_hide
+blaze_rod
+breeze_rod
+flint_and_steel
+blue_ice

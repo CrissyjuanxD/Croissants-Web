@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 9,
-  "updatedAt": "2026-10-27T10:09:20.757Z",
+  "version": 10,
+  "updatedAt": "2026-11-04T21:56:56.000Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -1764,7 +1764,7 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Munición de la Warden Gun e ingrediente de las mejoras de la armadura de Warden.",
-   "origen": "Mesa de crafteo, o el Ultra Warden",
+   "origen": "Mesa de crafteo: un Fragmento Profundo de cada color, 4 Tejidos Sculk y 1 Fragmento de Eco",
    "textura": "assets/uploads/textura-energia-warden-mvqi5mbzpfh.png"
   },
   "mineral_crudo_cian": {
@@ -1859,7 +1859,7 @@
    "modelo": "minecraft:fragmento_profundo_cian",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "4 van en la mejora de el casco; cualquier color sirve para el Lingote Profundo.",
+   "descripcion": "8 del mismo color y 1 lingote de oro hacen el Lingote Profundo cian, que va en el casco de Warden. 1 de cada color va en la Energía de Warden.",
    "origen": "Alto horno",
    "textura": "assets/uploads/textura-fragmento-profundo-cian-mvqi7hkb636.png"
   },
@@ -1879,7 +1879,7 @@
    "modelo": "minecraft:fragmento_profundo_verde",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "4 van en la mejora de las botas; cualquier color sirve para el Lingote Profundo.",
+   "descripcion": "8 del mismo color y 1 lingote de oro hacen el Lingote Profundo verde, que va en las botas de Warden. 1 de cada color va en la Energía de Warden.",
    "origen": "Alto horno",
    "textura": "assets/uploads/textura-fragmento-profundo-verde-mvqi7u5ogqu.png"
   },
@@ -1899,7 +1899,7 @@
    "modelo": "minecraft:fragmento_profundo_morado",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "4 van en la mejora de el peto; cualquier color sirve para el Lingote Profundo.",
+   "descripcion": "8 del mismo color y 1 lingote de oro hacen el Lingote Profundo morado, que va en el peto de Warden. 1 de cada color va en la Energía de Warden.",
    "origen": "Alto horno",
    "textura": "assets/uploads/textura-fragmento-profundo-morado-mvqi8567j8v.png"
   },
@@ -1919,7 +1919,7 @@
    "modelo": "minecraft:fragmento_profundo_gris",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "4 van en la mejora de el pantalón; cualquier color sirve para el Lingote Profundo.",
+   "descripcion": "8 del mismo color y 1 lingote de oro hacen el Lingote Profundo gris, que va en el pantalón de Warden. 1 de cada color va en la Energía de Warden.",
    "origen": "Alto horno",
    "textura": "assets/uploads/textura-fragmento-profundo-gris-mvqi8fm8ee4.png"
   },
@@ -1938,7 +1938,7 @@
    "modelo": "minecraft:lingote_profundo",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "Material de la armadura de Warden y del Lingote de Celestita.",
+   "descripcion": "Lingote de la Warden Cave sin color: la armadura de Warden usa los Lingotes Profundos de cada color.",
    "origen": "Mesa de crafteo con Fragmentos Profundos",
    "textura": "assets/uploads/textura-lingote-profundo-mvqi8u62val.png"
   },
@@ -1960,7 +1960,7 @@
    "modelo": "minecraft:corazon_warden_boss",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "Invoca al Ultra Warden en el altar del templo de la Warden Cave.",
+   "descripcion": "Va en las mejoras de la armadura de Warden (1 por pieza) e invoca al Ultra Warden en su altar.",
    "origen": "Infested Warden Boss (2 a 4)",
    "textura": "assets/uploads/textura-corazon-warden-boss-mvqiatz1yhy.png"
   },
@@ -2017,8 +2017,8 @@
    "modelo": "minecraft:cristal_celestita",
    "custom": true,
    "categoria": "end",
-   "descripcion": "Material del Lingote de Celestita.",
-   "origen": "Racimos de amatista del Bosque Prismático (12%, 18% con pico de Celestita)",
+   "descripcion": "Va en el Lingote de Celestita y es la carga del Cetro Estelar y el Paso Astral.",
+   "origen": "Racimos de amatista del End de siempre y del Bosque Prismático (20%, 30% con pico de Celestita)",
    "textura": "assets/uploads/textura-cristal-celestita-mvqibyv3no1.png"
   },
   "fragmento_astral": {
@@ -2032,7 +2032,7 @@
    "modelo": "minecraft:fragmento_astral",
    "custom": true,
    "categoria": "end",
-   "descripcion": "Ingrediente de la Plantilla de Celestita y del Ojo del Rey Ender.",
+   "descripcion": "Ingrediente de la Plantilla de Celestita, el Ojo del Rey Ender, el Paso Astral y el Prisma Refractor.",
    "origen": "Mobs del End",
    "textura": "assets/uploads/textura-fragmento-astral-mvqicbgklvs.png"
   },
@@ -2077,7 +2077,7 @@
    "modelo": "minecraft:lingote_celestita",
    "custom": true,
    "categoria": "end",
-   "descripcion": "Mejora una herramienta de Netherite a Celestita junto con la plantilla.",
+   "descripcion": "Mejora una herramienta floral a Celestita junto con la plantilla y va en los ítems de poder.",
    "origen": "Mesa de crafteo",
    "textura": "assets/uploads/textura-lingote-celestita-mvqid4s448q.png"
   },
@@ -2350,8 +2350,8 @@
    "modelo": "minecraft:casco_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-casco-warden-mvqihobv2xx.png"
   },
   "peto_warden": {
@@ -2398,8 +2398,8 @@
    "modelo": "minecraft:peto_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-peto-warden-mvqii0d0o51.png"
   },
   "pantalon_warden": {
@@ -2446,8 +2446,8 @@
    "modelo": "minecraft:pantalon_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-pantalon-warden-mvqiidv1k7i.png"
   },
   "bota_warden": {
@@ -2494,8 +2494,8 @@
    "modelo": "minecraft:bota_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite y 2 corazones extra.",
-   "origen": "Mesa de herrería (Warden Cave)",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-bota-warden-mvqiisfgih3.png"
   },
   "peto_warden_alado": {
@@ -4956,6 +4956,423 @@
    "custom": true,
    "categoria": "libros",
    "textura": "assets/uploads/textura-libro-sabiduria-2-mvqiwqazhbx.png"
+  },
+  "encendedor_sculk": {
+   "material": "flint_and_steel",
+   "nombre": "§x§2§9§D§F§E§B§lEncendedor de Sculk",
+   "lore": [
+    "",
+    "§x§0§B§B§5§B§5Una chispa de eco que despierta",
+    "§x§0§B§B§5§B§5los portales dormidos de las ciudades antiguas.",
+    "",
+    "§7Click derecho en el §x§B§8§F§4§F§7marco de deepslate reforzado",
+    "§7del centro de una §x§B§8§F§4§F§7Ancient City§7 para encender",
+    "§7el portal a la §x§2§9§D§F§E§BWarden Cave§7 (y de vuelta).",
+    ""
+   ],
+   "rareza": "rare",
+   "modelo": "minecraft:encendedor_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Enciende el portal de Sculk: clic derecho al marco de deepslate reforzado del centro de una Ancient City. 64 usos; no prende fuego.",
+   "origen": "Mesa de crafteo o inventario: un mechero y un fragmento de eco"
+  },
+  "casco_warden_sin_energia": {
+   "material": "netherite_helmet",
+   "nombre": "§x§3§A§D§4§D§4§lCasco de Warden sin Energía",
+   "lore": [
+    "",
+    "§x§2§C§9§F§9§FForjada con el corazón del",
+    "§x§2§C§9§F§9§FInfested Warden; le falta",
+    "§x§2§C§9§F§9§Fel eco del Ultra Warden.",
+    "§x§2§C§9§F§9§FPieza de la Caverna Sculk.",
+    "",
+    "§7Al equiparla:",
+    " §x§3§A§D§4§D§4◆ §x§9§3§E§7§E§73 de armadura y 4 de dureza",
+    " §x§3§A§D§4§D§4❤ §x§9§3§E§7§E§7+1 corazón",
+    " §x§3§A§D§4§D§4✚ §x§9§3§E§7§E§730% de no gastarse",
+    " §x§3§A§D§4§D§4⚓ §x§9§3§E§7§E§710% menos empuje",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza + §x§3§A§D§4§D§4Lingote Cian",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§6§F§9§A§9§A§lSin Energía§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 3.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    }
+   ],
+   "modelo": "minecraft:casco_warden_sin_energia",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+  },
+  "peto_warden_sin_energia": {
+   "material": "netherite_chestplate",
+   "nombre": "§x§B§4§6§B§E§0§lPeto de Warden sin Energía",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada con el corazón del",
+    "§x§8§7§5§0§A§8Infested Warden; le falta",
+    "§x§8§7§5§0§A§8el eco del Ultra Warden.",
+    "§x§8§7§5§0§A§8Pieza del Abismo Flotante.",
+    "",
+    "§7Al equiparla:",
+    " §x§B§4§6§B§E§0◆ §x§D§6§A§E§E§E8 de armadura y 4 de dureza",
+    " §x§B§4§6§B§E§0❤ §x§D§6§A§E§E§E+1 corazón",
+    " §x§B§4§6§B§E§0✚ §x§D§6§A§E§E§E30% de no gastarse",
+    " §x§B§4§6§B§E§0⚓ §x§D§6§A§E§E§E10% menos empuje",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza + §x§B§4§6§B§E§0Lingote Morado",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§6§F§9§A§9§A§lSin Energía§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 8.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    }
+   ],
+   "modelo": "minecraft:peto_warden_sin_energia",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+  },
+  "pantalon_warden_sin_energia": {
+   "material": "netherite_leggings",
+   "nombre": "§x§A§7§A§7§B§0§lPantalón de Warden sin Energía",
+   "lore": [
+    "",
+    "§x§7§D§7§D§8§4Forjada con el corazón del",
+    "§x§7§D§7§D§8§4Infested Warden; le falta",
+    "§x§7§D§7§D§8§4el eco del Ultra Warden.",
+    "§x§7§D§7§D§8§4Pieza de las Ruinas de Ceniza.",
+    "",
+    "§7Al equiparla:",
+    " §x§A§7§A§7§B§0◆ §x§C§F§C§F§D§46 de armadura y 4 de dureza",
+    " §x§A§7§A§7§B§0❤ §x§C§F§C§F§D§4+1 corazón",
+    " §x§A§7§A§7§B§0✚ §x§C§F§C§F§D§430% de no gastarse",
+    " §x§A§7§A§7§B§0⚓ §x§C§F§C§F§D§410% menos empuje",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza + §x§A§7§A§7§B§0Lingote Gris",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§6§F§9§A§9§A§lSin Energía§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 6.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    }
+   ],
+   "modelo": "minecraft:pantalon_warden_sin_energia",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+  },
+  "botas_warden_sin_energia": {
+   "material": "netherite_boots",
+   "nombre": "§x§5§F§D§1§6§A§lBotas de Warden sin Energía",
+   "lore": [
+    "",
+    "§x§4§7§9§D§5§0Forjada con el corazón del",
+    "§x§4§7§9§D§5§0Infested Warden; le falta",
+    "§x§4§7§9§D§5§0el eco del Ultra Warden.",
+    "§x§4§7§9§D§5§0Pieza del Pantano Profundo.",
+    "",
+    "§7Al equiparla:",
+    " §x§5§F§D§1§6§A◆ §x§A§7§E§6§A§D3 de armadura y 4 de dureza",
+    " §x§5§F§D§1§6§A❤ §x§A§7§E§6§A§D+1 corazón",
+    " §x§5§F§D§1§6§A✚ §x§A§7§E§6§A§D30% de no gastarse",
+    " §x§5§F§D§1§6§A⚓ §x§A§7§E§6§A§D10% menos empuje",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza + §x§5§F§D§1§6§ALingote Verde",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§6§F§9§A§9§A§lSin Energía§8 » §8Warden"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 3.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 2.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    }
+   ],
+   "modelo": "minecraft:botas_warden_sin_energia",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+  },
+  "cristal_oscuro": {
+   "material": "prismarine_crystals",
+   "nombre": "§x§7§A§4§F§A§3Cristal Oscuro",
+   "lore": [
+    "§7Sale de los racimos de las geodas",
+    "§7del Páramo Marchito.",
+    "§7Va en el Lingote de Celestita y",
+    "§7es la carga del Orbe del Vacío.",
+    "§7Llevarlo te protege del marchitamiento."
+   ],
+   "rareza": "rare",
+   "modelo": "minecraft:cristal_oscuro",
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Llevarlo protege del marchitamiento del Páramo Marchito. Va en el Lingote de Celestita y es la carga del Orbe del Vacío.",
+   "origen": "Racimos de amatista de las geodas del Páramo Marchito (20%, 30% con pico de Celestita)"
+  },
+  "cristal_helado": {
+   "material": "prismarine_crystals",
+   "nombre": "§x§A§8§E§6§F§FCristal Helado",
+   "lore": [
+    "§7Sale de los racimos de las geodas",
+    "§7de los Picos Helados.",
+    "§7Va en el Lingote de Celestita y",
+    "§7es la carga de la Lanza de Escarcha.",
+    "§7Llevarlo te protege del frío."
+   ],
+   "rareza": "rare",
+   "modelo": "minecraft:cristal_helado",
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Llevarlo protege del frío de los Picos Helados. Va en el Lingote de Celestita y es la carga de la Lanza de Escarcha.",
+   "origen": "Racimos de amatista de las geodas de los Picos Helados (20%, 30% con pico de Celestita)"
+  },
+  "esquirla_rey": {
+   "material": "amethyst_shard",
+   "nombre": "§x§D§3§6§B§F§FEsquirla del Rey",
+   "lore": [
+    "§7La suelta el Centinela",
+    "§7de las End Cities.",
+    "§7Va en el Ojo del Rey Ender."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:esquirla_rey",
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Van 2 en el Ojo del Rey Ender.",
+   "origen": "Centinela del End (2, uno por End City)"
+  },
+  "cetro_estelar": {
+   "material": "blaze_rod",
+   "nombre": "§x§8§F§D§3§F§F§lCetro Estelar",
+   "lore": [
+    "",
+    "§x§B§1§E§0§F§FUna estrella cae donde miras:",
+    "§x§B§1§E§0§F§F14 de daño a 3 bloques.",
+    "",
+    "§7Carga: §f1 Cristal de Celestita§7 por uso",
+    "§7Recarga: §f8 segundos",
+    "§7> §fClick derecho",
+    ""
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:cetro_estelar",
+   "maxStack": 1,
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Cae una estrella donde miras: 14 de daño en 3 bloques. Gasta 1 Cristal de Celestita; 8 s de recarga.",
+   "origen": "Mesa de crafteo (End)"
+  },
+  "orbe_vacio": {
+   "material": "heart_of_the_sea",
+   "nombre": "§x§7§A§4§F§A§3§lOrbe del Vacío",
+   "lore": [
+    "",
+    "§x§A§2§8§4§B§FAbre un agujero negro 3 segundos",
+    "§x§A§2§8§4§B§Fque jala a los monstruos a 6 bloques,",
+    "§x§A§2§8§4§B§Fles da Wither y al final revienta (6).",
+    "",
+    "§7Carga: §f1 Cristal Oscuro§7 por uso",
+    "§7Recarga: §f20 segundos",
+    "§7> §fClick derecho",
+    ""
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:orbe_vacio",
+   "maxStack": 1,
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Agujero negro de 3 segundos que jala a los monstruos, les da Wither y revienta. Gasta 1 Cristal Oscuro; 20 s de recarga.",
+   "origen": "Mesa de crafteo (End)"
+  },
+  "lanza_escarcha": {
+   "material": "breeze_rod",
+   "nombre": "§x§A§8§E§6§F§F§lLanza de Escarcha",
+   "lore": [
+    "",
+    "§x§C§2§E§E§F§FDispara 3 carámbanos en abanico:",
+    "§x§C§2§E§E§F§F6 de daño, Lentitud II y congela.",
+    "",
+    "§7Carga: §f1 Cristal Helado§7 por uso",
+    "§7Recarga: §f6 segundos",
+    "§7> §fClick derecho",
+    ""
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:lanza_escarcha",
+   "maxStack": 1,
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "3 carámbanos en abanico: 6 de daño, Lentitud II y congela. Gasta 1 Cristal Helado; 6 s de recarga.",
+   "origen": "Mesa de crafteo (End)"
+  },
+  "paso_astral": {
+   "material": "phantom_membrane",
+   "nombre": "§x§C§5§8§C§F§F§lPaso Astral",
+   "lore": [
+    "",
+    "§x§D§6§A§F§F§FTe lleva 8 bloques hacia donde",
+    "§x§D§6§A§F§F§Fmiras y no recibes daño de caída.",
+    "",
+    "§7Carga: §f1 Cristal de Celestita§7 por uso",
+    "§7Recarga: §f6 segundos",
+    "§7> §fClick derecho",
+    ""
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:paso_astral",
+   "maxStack": 1,
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Te lleva hasta 8 bloques hacia donde miras y 3 segundos sin daño de caída. Gasta 1 Cristal de Celestita; 6 s de recarga.",
+   "origen": "Mesa de crafteo (End)"
+  },
+  "prisma_refractor": {
+   "material": "shield",
+   "nombre": "§x§E§0§C§8§F§F§lPrisma Refractor",
+   "lore": [
+    "",
+    "§x§E§0§C§8§F§FUn escudo de los tres cristales.",
+    "",
+    "§7Al bloquear de frente devuelve",
+    "§7balas de shulker, flechas y bolas",
+    "§7de fuego a quien las tiró.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:prisma_refractor",
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Escudo que, al bloquear de frente, devuelve balas de shulker, flechas y bolas de fuego a quien las tiró.",
+   "origen": "Mesa de crafteo (End)"
+  },
+  "bola_hielo": {
+   "material": "snowball",
+   "nombre": "§x§A§8§E§6§F§FBola de Hielo",
+   "lore": [
+    "",
+    "§7La suelta el Zombie Helado.",
+    "",
+    "§7Al tirarla: §f1 de daño§7 y mucho empuje",
+    ""
+   ],
+   "modelo": "minecraft:bola_hielo",
+   "custom": true,
+   "categoria": "end",
+   "descripcion": "Se tira como una bola de nieve: 1 de daño y mucho empuje (1 s de recarga).",
+   "origen": "Zombie Helado (1 o 2)"
   }
  },
  "misiones": [

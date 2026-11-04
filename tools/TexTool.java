@@ -159,6 +159,7 @@ public class TexTool {
         if (mat.equals("player_head")) return head(out.resolve(mat + ".png"));
         if (mat.endsWith("_banner")) return banner(mat, out.resolve(mat + ".png"));
         if (mat.equals("chest")) return chest(out.resolve(mat + ".png"));
+        if (mat.equals("shield")) return shield(out.resolve(mat + ".png"));
         if (generated || tx.containsKey("layer0")) {
             List<BufferedImage> layers = new ArrayList<>();
             for (int i = 0; i < 4; i++) {
@@ -283,6 +284,24 @@ public class TexTool {
         g.setColor(new Color(0x8A6A43));
         g.fillRect(6, 1, 20, 2);
         g.drawImage(cloth, 8, 3, 16, 27, null);
+        g.dispose();
+        ImageIO.write(o, "png", dest.toFile());
+        return true;
+    }
+
+    // El escudo también es un modelo especial (sin textura de item): se usa el frente de la placa de
+    // entity/shield/shield_base_nopattern (12x22 desde 1,1), centrado en un cuadrado de 24x24 para que no se estire
+    static boolean shield(Path dest) throws IOException {
+        BufferedImage t;
+        try (InputStream in = jar.getInputStream(jar.getEntry("assets/minecraft/textures/entity/shield/shield_base_nopattern.png"))) {
+            t = toArgb(ImageIO.read(in));
+        }
+        int k = t.getWidth() / 64;
+        BufferedImage placa = t.getSubimage(k, k, 12 * k, 22 * k);
+        BufferedImage o = new BufferedImage(24, 24, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = o.createGraphics();
+        g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_NEAREST_NEIGHBOR);
+        g.drawImage(placa, 6, 1, 12, 22, null);
         g.dispose();
         ImageIO.write(o, "png", dest.toFile());
         return true;
