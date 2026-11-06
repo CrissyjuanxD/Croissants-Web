@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 12,
-  "updatedAt": "2026-11-06T02:30:06.897Z",
+  "version": 13,
+  "updatedAt": "2026-11-06T02:32:49.515Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -2352,7 +2352,7 @@
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
-   "textura": "assets/uploads/textura-casco-warden-mvqihobv2xx.png"
+   "textura": "assets/uploads/textura-casco-warden-mw4cytgslv8.png"
   },
   "peto_warden": {
    "material": "netherite_chestplate",
@@ -2400,7 +2400,7 @@
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
-   "textura": "assets/uploads/textura-peto-warden-mvqii0d0o51.png"
+   "textura": "assets/uploads/textura-peto-warden-mw4cz3gnyvw.png"
   },
   "pantalon_warden": {
    "material": "netherite_leggings",
@@ -2448,7 +2448,7 @@
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
-   "textura": "assets/uploads/textura-pantalon-warden-mvqiidv1k7i.png"
+   "textura": "assets/uploads/textura-pantalon-warden-mw4czgvs480.png"
   },
   "bota_warden": {
    "material": "netherite_boots",
@@ -2496,7 +2496,7 @@
    "categoria": "warden",
    "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
-   "textura": "assets/uploads/textura-bota-warden-mvqiisfgih3.png"
+   "textura": "assets/uploads/textura-bota-warden-mw4czwgx41a.png"
   },
   "peto_warden_alado": {
    "material": "netherite_chestplate",
