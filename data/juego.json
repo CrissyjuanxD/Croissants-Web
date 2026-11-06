@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 13,
-  "updatedAt": "2026-11-06T02:32:49.515Z",
+  "version": 14,
+  "updatedAt": "2026-11-06T04:52:17.355Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -4902,7 +4902,7 @@
    "modelo": "minecraft:botas_warden_escaladoras",
    "custom": true,
    "categoria": "warden",
-   "textura": "assets/uploads/textura-botas-warden-escaladoras-mvqijtphn2o.png"
+   "textura": "assets/uploads/textura-botas-warden-escaladoras-mw4hztf6qiu.png"
   },
   "arco_sculk": {
    "material": "bow",
