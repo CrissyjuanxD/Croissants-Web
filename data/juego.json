@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 11,
-  "updatedAt": "2026-11-06T01:12:51Z",
+  "version": 12,
+  "updatedAt": "2026-11-06T02:30:06.897Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -4975,7 +4975,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Enciende el portal de Sculk: clic derecho al marco de deepslate reforzado del centro de una Ancient City. 64 usos; no prende fuego.",
-   "origen": "Mesa de crafteo o inventario: un mechero y un fragmento de eco"
+   "origen": "Mesa de crafteo o inventario: un mechero y un fragmento de eco",
+   "textura": "assets/uploads/textura-encendedor-sculk-mw4crye4itp.png"
   },
   "casco_warden_sin_energia": {
    "material": "netherite_helmet",
@@ -5004,13 +5005,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 3.0,
+     "valor": 3,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     },
@@ -5022,7 +5023,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 2.0,
+     "valor": 2,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     }
@@ -5031,7 +5032,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
-   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color",
+   "textura": "assets/uploads/textura-casco-warden-sin-energia-mw4cvlxmri3.png"
   },
   "peto_warden_sin_energia": {
    "material": "netherite_chestplate",
@@ -5060,13 +5062,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 8.0,
+     "valor": 8,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
@@ -5078,7 +5080,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 2.0,
+     "valor": 2,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     }
@@ -5087,7 +5089,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
-   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color",
+   "textura": "assets/uploads/textura-peto-warden-sin-energia-mw4cvxm4yl4.png"
   },
   "pantalon_warden_sin_energia": {
    "material": "netherite_leggings",
@@ -5116,13 +5119,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 6.0,
+     "valor": 6,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     },
@@ -5134,7 +5137,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 2.0,
+     "valor": 2,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     }
@@ -5143,7 +5146,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
-   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color",
+   "textura": "assets/uploads/textura-pantalon-warden-sin-energia-mw4cwazlk1f.png"
   },
   "botas_warden_sin_energia": {
    "material": "netherite_boots",
@@ -5172,13 +5176,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 3.0,
+     "valor": 3,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
@@ -5190,7 +5194,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 2.0,
+     "valor": 2,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     }
@@ -5199,7 +5203,8 @@
    "custom": true,
    "categoria": "warden",
    "descripcion": "Como la floral (+1 corazón y 10% menos empuje) con 30% de no gastarse. Con un Núcleo Sónico se carga y pasa a ser de Warden.",
-   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color"
+   "origen": "Mesa de herrería: la mejora de Warden, la pieza floral y un Lingote Profundo de su color",
+   "textura": "assets/uploads/textura-botas-warden-sin-energia-mw4cwnezg46.png"
   },
   "cristal_oscuro": {
    "material": "prismarine_crystals",
@@ -5216,7 +5221,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Llevarlo protege del marchitamiento del Páramo Marchito. Va en el Lingote de Celestita y es la carga del Orbe del Vacío.",
-   "origen": "Racimos de amatista de las geodas del Páramo Marchito (20%, 30% con pico de Celestita)"
+   "origen": "Racimos de amatista de las geodas del Páramo Marchito (20%, 30% con pico de Celestita)",
+   "textura": "assets/uploads/textura-cristal-oscuro-mw4csesl6bl.png"
   },
   "cristal_helado": {
    "material": "prismarine_crystals",
@@ -5233,7 +5239,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Llevarlo protege del frío de los Picos Helados. Va en el Lingote de Celestita y es la carga de la Lanza de Escarcha.",
-   "origen": "Racimos de amatista de las geodas de los Picos Helados (20%, 30% con pico de Celestita)"
+   "origen": "Racimos de amatista de las geodas de los Picos Helados (20%, 30% con pico de Celestita)",
+   "textura": "assets/uploads/textura-cristal-helado-mw4csrub3re.png"
   },
   "esquirla_rey": {
    "material": "amethyst_shard",
@@ -5248,7 +5255,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Van 2 en el Ojo del Rey Ender.",
-   "origen": "Centinela del End (2, uno por End City)"
+   "origen": "Centinela del End (2, uno por End City)",
+   "textura": "assets/uploads/textura-esquirla-rey-mw4ctlw55jg.png"
   },
   "cetro_estelar": {
    "material": "blaze_rod",
@@ -5270,7 +5278,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Cae una estrella donde miras: 14 de daño en 3 bloques. Gasta 1 Cristal de Celestita; 8 s de recarga.",
-   "origen": "Mesa de crafteo (End)"
+   "origen": "Mesa de crafteo (End)",
+   "textura": "assets/uploads/textura-cetro-estelar-mw4ctwdb5b2.png"
   },
   "orbe_vacio": {
    "material": "heart_of_the_sea",
@@ -5293,7 +5302,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Agujero negro de 3 segundos que jala a los monstruos, les da Wither y revienta. Gasta 1 Cristal Oscuro; 20 s de recarga.",
-   "origen": "Mesa de crafteo (End)"
+   "origen": "Mesa de crafteo (End)",
+   "textura": "assets/uploads/textura-orbe-vacio-mw4cu90ruj3.png"
   },
   "lanza_escarcha": {
    "material": "breeze_rod",
@@ -5315,7 +5325,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "3 carámbanos en abanico: 6 de daño, Lentitud II y congela. Gasta 1 Cristal Helado; 6 s de recarga.",
-   "origen": "Mesa de crafteo (End)"
+   "origen": "Mesa de crafteo (End)",
+   "textura": "assets/uploads/textura-lanza-escarcha-mw4cuj1irmo.png"
   },
   "paso_astral": {
    "material": "phantom_membrane",
@@ -5337,7 +5348,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Te lleva hasta 8 bloques hacia donde miras y 3 segundos sin daño de caída. Gasta 1 Cristal de Celestita; 6 s de recarga.",
-   "origen": "Mesa de crafteo (End)"
+   "origen": "Mesa de crafteo (End)",
+   "textura": "assets/uploads/textura-paso-astral-mw4curv6qia.png"
   },
   "prisma_refractor": {
    "material": "shield",
@@ -5356,7 +5368,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Escudo que, al bloquear de frente, devuelve balas de shulker, flechas y bolas de fuego a quien las tiró.",
-   "origen": "Mesa de crafteo (End)"
+   "origen": "Mesa de crafteo (End)",
+   "textura": "assets/uploads/textura-prisma-refractor-mw4cv0qayho.png"
   },
   "bola_hielo": {
    "material": "snowball",
@@ -5372,7 +5385,8 @@
    "custom": true,
    "categoria": "end",
    "descripcion": "Se tira como una bola de nieve: 1 de daño y mucho empuje (1 s de recarga).",
-   "origen": "Zombie Helado (1 o 2)"
+   "origen": "Zombie Helado (1 o 2)",
+   "textura": "assets/uploads/textura-bola-hielo-mw4cva5tsxe.png"
   },
   "alma_reforzada_cian": {
    "material": "echo_shard",
