@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 10,
-  "updatedAt": "2026-11-04T21:56:56.000Z",
+  "version": 11,
+  "updatedAt": "2026-11-06T01:12:51Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -2350,7 +2350,7 @@
    "modelo": "minecraft:casco_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-casco-warden-mvqihobv2xx.png"
   },
@@ -2398,7 +2398,7 @@
    "modelo": "minecraft:peto_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-peto-warden-mvqii0d0o51.png"
   },
@@ -2446,7 +2446,7 @@
    "modelo": "minecraft:pantalon_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-pantalon-warden-mvqiidv1k7i.png"
   },
@@ -2494,7 +2494,7 @@
    "modelo": "minecraft:bota_warden",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 30% de no gastarse.",
+   "descripcion": "+1 de armadura y dureza sobre Netherite, 2 corazones extra y 60% de no gastarse.",
    "origen": "Mesa de herrería: un Núcleo Sónico, la pieza sin Energía y un Lingote Profundo de su color",
    "textura": "assets/uploads/textura-bota-warden-mvqiisfgih3.png"
   },
@@ -5373,6 +5373,162 @@
    "categoria": "end",
    "descripcion": "Se tira como una bola de nieve: 1 de daño y mucho empuje (1 s de recarga).",
    "origen": "Zombie Helado (1 o 2)"
+  },
+  "alma_reforzada_cian": {
+   "material": "echo_shard",
+   "nombre": "§x§3§A§D§4§D§4§lAlma Reforzada Cian",
+   "lore": [
+    "",
+    "§7Un alma §x§3§A§D§4§D§4de la Caverna Sculk",
+    "§7atada con §x§2§9§D§F§E§B4 Energías de Warden§7.",
+    "",
+    "§7Va en el §x§3§A§D§4§D§4Lingote Reforzado Cian§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:alma_reforzada_cian",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Va en el Lingote Reforzado Cian.",
+   "origen": "Mesa de crafteo: 4 Energías de Warden y el alma del Infested Skeleton en el centro",
+   "textura": "assets/uploads/textura-alma-reforzada-cian.png"
+  },
+  "lingote_reforzado_cian": {
+   "material": "copper_ingot",
+   "nombre": "§x§3§A§D§4§D§4§lLingote Reforzado Cian",
+   "lore": [
+    "",
+    "§78 Lingotes Profundos fundidos",
+    "§7alrededor de un §x§3§A§D§4§D§4Alma Reforzada§7.",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza sin energía",
+    "§x§3§A§D§4§D§4> Casco de Warden",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_reforzado_cian",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Carga el Casco de Warden sin Energía en la herrería, con un Núcleo Sónico.",
+   "origen": "Mesa de crafteo: 8 Lingotes Profundos Cian y el Alma Reforzada Cian en el centro",
+   "textura": "assets/uploads/textura-lingote-reforzado-cian.png"
+  },
+  "alma_reforzada_verde": {
+   "material": "echo_shard",
+   "nombre": "§x§5§F§D§1§6§A§lAlma Reforzada Verde",
+   "lore": [
+    "",
+    "§7Un alma §x§5§F§D§1§6§Adel Pantano Profundo",
+    "§7atada con §x§2§9§D§F§E§B4 Energías de Warden§7.",
+    "",
+    "§7Va en el §x§5§F§D§1§6§ALingote Reforzado Verde§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:alma_reforzada_verde",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Va en el Lingote Reforzado Verde.",
+   "origen": "Mesa de crafteo: 4 Energías de Warden y el alma del Infested Cave Spider en el centro",
+   "textura": "assets/uploads/textura-alma-reforzada-verde.png"
+  },
+  "lingote_reforzado_verde": {
+   "material": "copper_ingot",
+   "nombre": "§x§5§F§D§1§6§A§lLingote Reforzado Verde",
+   "lore": [
+    "",
+    "§78 Lingotes Profundos fundidos",
+    "§7alrededor de un §x§5§F§D§1§6§AAlma Reforzada§7.",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza sin energía",
+    "§x§5§F§D§1§6§A> Botas de Warden",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_reforzado_verde",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Carga el Botas de Warden sin Energía en la herrería, con un Núcleo Sónico.",
+   "origen": "Mesa de crafteo: 8 Lingotes Profundos Verde y el Alma Reforzada Verde en el centro",
+   "textura": "assets/uploads/textura-lingote-reforzado-verde.png"
+  },
+  "alma_reforzada_morado": {
+   "material": "echo_shard",
+   "nombre": "§x§B§4§6§B§E§0§lAlma Reforzada Morado",
+   "lore": [
+    "",
+    "§7Un alma §x§B§4§6§B§E§0del Abismo Flotante",
+    "§7atada con §x§2§9§D§F§E§B4 Energías de Warden§7.",
+    "",
+    "§7Va en el §x§B§4§6§B§E§0Lingote Reforzado Morado§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:alma_reforzada_morado",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Va en el Lingote Reforzado Morado.",
+   "origen": "Mesa de crafteo: 4 Energías de Warden y el alma del Infested Ghast en el centro",
+   "textura": "assets/uploads/textura-alma-reforzada-morado.png"
+  },
+  "lingote_reforzado_morado": {
+   "material": "copper_ingot",
+   "nombre": "§x§B§4§6§B§E§0§lLingote Reforzado Morado",
+   "lore": [
+    "",
+    "§78 Lingotes Profundos fundidos",
+    "§7alrededor de un §x§B§4§6§B§E§0Alma Reforzada§7.",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza sin energía",
+    "§x§B§4§6§B§E§0> Peto de Warden",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_reforzado_morado",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Carga el Peto de Warden sin Energía en la herrería, con un Núcleo Sónico.",
+   "origen": "Mesa de crafteo: 8 Lingotes Profundos Morado y el Alma Reforzada Morado en el centro",
+   "textura": "assets/uploads/textura-lingote-reforzado-morado.png"
+  },
+  "alma_reforzada_gris": {
+   "material": "echo_shard",
+   "nombre": "§x§A§7§A§7§B§0§lAlma Reforzada Gris",
+   "lore": [
+    "",
+    "§7Un alma §x§A§7§A§7§B§0de las Ruinas de Ceniza",
+    "§7atada con §x§2§9§D§F§E§B4 Energías de Warden§7.",
+    "",
+    "§7Va en el §x§A§7§A§7§B§0Lingote Reforzado Gris§7.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:alma_reforzada_gris",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Va en el Lingote Reforzado Gris.",
+   "origen": "Mesa de crafteo: 4 Energías de Warden y el alma del Infested Creeper en el centro",
+   "textura": "assets/uploads/textura-alma-reforzada-gris.png"
+  },
+  "lingote_reforzado_gris": {
+   "material": "copper_ingot",
+   "nombre": "§x§A§7§A§7§B§0§lLingote Reforzado Gris",
+   "lore": [
+    "",
+    "§78 Lingotes Profundos fundidos",
+    "§7alrededor de un §x§A§7§A§7§B§0Alma Reforzada§7.",
+    "",
+    "§7Herrería: §x§2§9§D§F§E§BNúcleo Sónico§7 + pieza sin energía",
+    "§x§A§7§A§7§B§0> Pantalón de Warden",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_reforzado_gris",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Carga el Pantalón de Warden sin Energía en la herrería, con un Núcleo Sónico.",
+   "origen": "Mesa de crafteo: 8 Lingotes Profundos Gris y el Alma Reforzada Gris en el centro",
+   "textura": "assets/uploads/textura-lingote-reforzado-gris.png"
   }
  },
  "misiones": [
