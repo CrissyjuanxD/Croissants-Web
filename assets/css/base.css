@@ -76,6 +76,10 @@ body {
   overflow-x: hidden;
 }
 
+/* Pixelify Sans une "fi" en un solo signo que se lee como una A ("PuriAcador"). Va con !important porque el atajo
+   "font:" de cada regla vuelve a prender las ligaduras */
+*, *::before, *::after { font-variant-ligatures: none !important; }
+
 img, svg, video, canvas { display: block; max-width: 100%; }
 img { height: auto; }
 button, input, select, textarea { font: inherit; color: inherit; }

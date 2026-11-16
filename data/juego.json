@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 14,
-  "updatedAt": "2026-11-06T04:52:17.355Z",
+  "version": 15,
+  "updatedAt": "2026-11-16T17:50:57.000Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -5543,6 +5543,700 @@
    "descripcion": "Carga el Pantalón de Warden sin Energía en la herrería, con un Núcleo Sónico.",
    "origen": "Mesa de crafteo: 8 Lingotes Profundos Gris y el Alma Reforzada Gris en el centro",
    "textura": "assets/uploads/textura-lingote-reforzado-gris.png"
+  },
+  "fruto_purificador": {
+   "material": "glow_berries",
+   "nombre": "§x§F§7§C§8§4§3Fruto Purificador",
+   "lore": [
+    "§7Purificado por 5 minutos: los mobs de",
+    "§7la Warden Cave te hacen 25% menos",
+    "§7de daño (los jefes no).",
+    "",
+    "§7Cuelga de los árboles y crece en los",
+    "§7arbustos del Bosque Purificador."
+   ],
+   "rareza": "rare",
+   "modelo": "minecraft:fruto_purificador",
+   "custom": true,
+   "categoria": "consumibles",
+   "origen": "Las enredaderas y los arbustos de bayas del Bosque Purificador.",
+   "textura": "assets/uploads/textura-fruto-purificador-bp264.png"
+  },
+  "esencia_purificadora": {
+   "material": "prismarine_crystals",
+   "nombre": "§x§F§7§C§8§4§3§lEsencia Purificadora",
+   "lore": [
+    "§7Se carga en la Estatua Purificadora",
+    "§7del Bosque Purificador.",
+    "",
+    "§7Va en el Lingote Purificado (5)."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:esencia_purificadora",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "Cargando la Estatua Purificadora del Bosque Purificador (40 segundos).",
+   "textura": "assets/uploads/textura-esencia-purificadora-bp264.png"
+  },
+  "restos_purificadores": {
+   "material": "flint",
+   "nombre": "§x§E§3§C§4§7§7Restos Purificadores",
+   "lore": [
+    "§7Los sueltan el Creeper y el Dragón",
+    "§7Purificador.",
+    "",
+    "§7Van en el Lingote Purificado (4)."
+   ],
+   "rareza": "rare",
+   "modelo": "minecraft:restos_purificadores",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El Creeper y el Dragón Purificador (50%, si los mata un jugador).",
+   "textura": "assets/uploads/textura-restos-purificadores-bp264.png"
+  },
+  "lingote_purificado": {
+   "material": "copper_ingot",
+   "nombre": "§x§F§7§C§8§4§3§lLingote Purificado",
+   "lore": [
+    "§75 Esencias y 4 Restos Purificadores.",
+    "",
+    "§7En un caldero con agua del bosque, con",
+    "§7la pieza, una Mejora de Netherita y",
+    "§7un Golden Dandelion: la purifica."
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:lingote_purificado",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "Mesa de crafteo: 5 Esencias y 4 Restos Purificadores.",
+   "textura": "assets/uploads/textura-lingote-purificado-bp264.png"
+  },
+  "localizador_purificacion": {
+   "material": "compass",
+   "nombre": "§x§F§7§C§8§4§3§lLocalizador de Purificación",
+   "lore": [
+    "§7Una brújula bañada en luz dorada.",
+    "§7Apunta al Bosque Purificador.",
+    "",
+    "§x§F§7§C§8§4§3➤ Click derecho: §x§F§F§F§1§B§8viajas al bosque",
+    "§x§F§7§C§8§4§3➤ Usos: §x§F§F§E§2§7§A●●§x§F§F§F§1§B§8 2/2"
+   ],
+   "rareza": "epic",
+   "brillo": false,
+   "modelo": "minecraft:localizador_purificacion",
+   "maxStack": 1,
+   "custom": true,
+   "categoria": "utilidad",
+   "origen": "Lo da el staff. Sirve 2 veces.",
+   "textura": "assets/uploads/textura-localizador-purificacion-bp264.png"
+  },
+  "casco_warden_purificado": {
+   "material": "netherite_helmet",
+   "nombre": "§x§F§7§C§8§4§3§lCasco de Warden Purificado",
+   "lore": [
+    "",
+    "§x§2§C§9§F§9§FForjada en la profunda oscuridad,",
+    "§x§2§C§9§F§9§Fresuena con las almas del abismo.",
+    "§x§2§C§9§F§9§FPieza de la Caverna Sculk.",
+    "",
+    "§7Al equiparla:",
+    " §x§3§A§D§4§D§4◆ §x§9§3§E§7§E§74 de armadura y 4 de dureza",
+    " §x§3§A§D§4§D§4❤ §x§9§3§E§7§E§7+2 corazones",
+    " §x§3§A§D§4§D§4✚ §x§9§3§E§7§E§760% de no gastarse",
+    " §x§3§A§D§4§D§4⚓ §x§9§3§E§7§E§710% menos empuje",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "head"
+    }
+   ],
+   "modelo": "minecraft:casco_warden_purificado",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-casco-warden-purificado-bp264.png"
+  },
+  "peto_warden_purificado": {
+   "material": "netherite_chestplate",
+   "nombre": "§x§F§7§C§8§4§3§lPeto de Warden Purificado",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada en la profunda oscuridad,",
+    "§x§8§7§5§0§A§8resuena con las almas del abismo.",
+    "§x§8§7§5§0§A§8Pieza del Abismo Flotante.",
+    "",
+    "§7Al equiparla:",
+    " §x§B§4§6§B§E§0◆ §x§D§6§A§E§E§E9 de armadura y 4 de dureza",
+    " §x§B§4§6§B§E§0❤ §x§D§6§A§E§E§E+2 corazones",
+    " §x§B§4§6§B§E§0✚ §x§D§6§A§E§E§E60% de no gastarse",
+    " §x§B§4§6§B§E§0⚓ §x§D§6§A§E§E§E10% menos empuje",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 9.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    }
+   ],
+   "modelo": "minecraft:peto_warden_purificado",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-peto-warden-purificado-bp264.png"
+  },
+  "peto_warden_alado_purificado": {
+   "material": "netherite_chestplate",
+   "nombre": "§x§F§7§C§8§4§3§lPeto de Warden Alado Purificado",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada en la profunda oscuridad,",
+    "§x§8§7§5§0§A§8resuena con las almas del abismo.",
+    "§x§8§7§5§0§A§8Pieza del Abismo Flotante.",
+    "",
+    "§7Al equiparla:",
+    " §x§B§4§6§B§E§0◆ §x§D§6§A§E§E§E9 de armadura y 4 de dureza",
+    " §x§B§4§6§B§E§0❤ §x§D§6§A§E§E§E+2 corazones",
+    " §x§B§4§6§B§E§0✚ §x§D§6§A§E§E§E60% de no gastarse",
+    " §x§B§4§6§B§E§0⚓ §x§D§6§A§E§E§E10% menos empuje",
+    " §x§B§4§6§B§E§0✈ §x§D§6§A§E§E§EPlanea como unas Elytras",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 9.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "chest"
+    }
+   ],
+   "planeador": true,
+   "modelo": "minecraft:peto_warden_alado_purificado",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-peto-warden-alado-purificado-bp264.png"
+  },
+  "pantalon_warden_purificado": {
+   "material": "netherite_leggings",
+   "nombre": "§x§F§7§C§8§4§3§lPantalón de Warden Purificado",
+   "lore": [
+    "",
+    "§x§7§D§7§D§8§4Forjada en la profunda oscuridad,",
+    "§x§7§D§7§D§8§4resuena con las almas del abismo.",
+    "§x§7§D§7§D§8§4Pieza de las Ruinas de Ceniza.",
+    "",
+    "§7Al equiparla:",
+    " §x§A§7§A§7§B§0◆ §x§C§F§C§F§D§47 de armadura y 4 de dureza",
+    " §x§A§7§A§7§B§0❤ §x§C§F§C§F§D§4+2 corazones",
+    " §x§A§7§A§7§B§0✚ §x§C§F§C§F§D§460% de no gastarse",
+    " §x§A§7§A§7§B§0⚓ §x§C§F§C§F§D§410% menos empuje",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 7.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "legs"
+    }
+   ],
+   "modelo": "minecraft:pantalon_warden_purificado",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-pantalon-warden-purificado-bp264.png"
+  },
+  "bota_warden_purificada": {
+   "material": "netherite_boots",
+   "nombre": "§x§F§7§C§8§4§3§lBotas de Warden Purificadas",
+   "lore": [
+    "",
+    "§x§4§7§9§D§5§0Forjada en la profunda oscuridad,",
+    "§x§4§7§9§D§5§0resuena con las almas del abismo.",
+    "§x§4§7§9§D§5§0Pieza del Pantano Profundo.",
+    "",
+    "§7Al equiparla:",
+    " §x§5§F§D§1§6§A◆ §x§A§7§E§6§A§D4 de armadura y 4 de dureza",
+    " §x§5§F§D§1§6§A❤ §x§A§7§E§6§A§D+2 corazones",
+    " §x§5§F§D§1§6§A✚ §x§A§7§E§6§A§D60% de no gastarse",
+    " §x§5§F§D§1§6§A⚓ §x§A§7§E§6§A§D10% menos empuje",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    }
+   ],
+   "modelo": "minecraft:bota_warden_purificada",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-bota-warden-purificada-bp264.png"
+  },
+  "botas_warden_escaladoras_purificadas": {
+   "material": "netherite_boots",
+   "nombre": "§x§F§7§C§8§4§3§lBotas de Warden Escaladoras Purificadas",
+   "lore": [
+    "",
+    "§x§4§7§9§D§5§0Forjada en la profunda oscuridad,",
+    "§x§4§7§9§D§5§0resuena con las almas del abismo.",
+    "§x§4§7§9§D§5§0Pieza del Pantano Profundo.",
+    "",
+    "§7Al equiparla:",
+    " §x§5§F§D§1§6§A◆ §x§A§7§E§6§A§D4 de armadura y 4 de dureza",
+    " §x§5§F§D§1§6§A❤ §x§A§7§E§6§A§D+2 corazones",
+    " §x§5§F§D§1§6§A✚ §x§A§7§E§6§A§D60% de no gastarse",
+    " §x§5§F§D§1§6§A⚓ §x§A§7§E§6§A§D10% menos empuje",
+    " §x§5§F§D§1§6§A⇈ §x§A§7§E§6§A§DSe pega a las paredes",
+    " §x§5§F§D§1§6§A⇈ §x§A§7§E§6§A§DTrepa mirando la pared",
+    " §x§5§F§D§1§6§A⇈ §x§A§7§E§6§A§DSalta de pared en pared",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden",
+    "§7Botas escaladoras: §x§5§F§D§1§6§Aactivadas§8 (agachado + click derecho)",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "armor",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "armor_toughness",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "knockback_resistance",
+     "valor": 0.1,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    },
+    {
+     "atributo": "max_health",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "feet"
+    }
+   ],
+   "modelo": "minecraft:botas_warden_escaladoras_purificadas",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-botas-warden-escaladoras-purificadas-bp264.png"
+  },
+  "espada_sculk_purificada": {
+   "material": "netherite_sword",
+   "nombre": "§x§F§7§C§8§4§3§lEspada de Sculk Purificada",
+   "lore": [
+    "",
+    "§x§2§C§9§F§9§FForjada con el sculk reforzado",
+    "§x§2§C§9§F§9§Fde la Caverna Sculk.",
+    "",
+    "§7En la mano:",
+    " §x§3§A§D§4§D§4⚔ §x§9§3§E§7§E§711,5 de daño",
+    " §x§3§A§D§4§D§4⚡ §x§9§3§E§7§E§71,6 golpes por segundo",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 10.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:espada_sculk_purificada",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-espada-sculk-purificada-bp264.png"
+  },
+  "hacha_sculk_purificada": {
+   "material": "netherite_axe",
+   "nombre": "§x§F§7§C§8§4§3§lHacha de Sculk Purificada",
+   "lore": [
+    "",
+    "§x§7§D§7§D§8§4Forjada con el sculk reforzado",
+    "§x§7§D§7§D§8§4de las Ruinas de Ceniza.",
+    "",
+    "§7En la mano:",
+    " §x§A§7§A§7§B§0⚔ §x§C§F§C§F§D§410 de daño",
+    " §x§A§7§A§7§B§0⚡ §x§C§F§C§F§D§41,25 golpes por segundo",
+    " §x§A§7§A§7§B§0⛏ §x§C§F§C§F§D§4Pica 30% más rápido que Netherite",
+    " §x§A§7§A§7§B§0⚡ §x§C§F§C§F§D§4Ataca más rápido que la floral",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 9.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.75,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:hacha_sculk_purificada",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-hacha-sculk-purificada-bp264.png"
+  },
+  "lanza_sculk_purificada": {
+   "material": "netherite_spear",
+   "nombre": "§x§F§7§C§8§4§3§lLanza de Sculk Purificada",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada con el sculk reforzado",
+    "§x§8§7§5§0§A§8del Abismo Flotante.",
+    "",
+    "§7En la mano:",
+    " §x§B§4§6§B§E§0⚔ §x§D§6§A§E§E§E7 de daño",
+    " §x§B§4§6§B§E§0⚡ §x§D§6§A§E§E§E0,87 golpes por segundo",
+    " §x§B§4§6§B§E§0↔ §x§D§6§A§E§E§EPega hasta a 5,5 bloques (la normal, 4,5)",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.13043475151062,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:lanza_sculk_purificada",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-lanza-sculk-purificada-bp264.png"
+  },
+  "pico_sculk_purificado": {
+   "material": "netherite_pickaxe",
+   "nombre": "§x§F§7§C§8§4§3§lPico de Sculk Purificado",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada con el sculk reforzado",
+    "§x§8§7§5§0§A§8del Abismo Flotante.",
+    "",
+    "§7En la mano:",
+    " §x§B§4§6§B§E§0⚔ §x§D§6§A§E§E§E7 de daño",
+    " §x§B§4§6§B§E§0⚡ §x§D§6§A§E§E§E1,35 golpes por segundo",
+    " §x§B§4§6§B§E§0⛏ §x§D§6§A§E§E§EPica 30% más rápido que Netherite",
+    " §x§B§4§6§B§E§0⛏ §x§D§6§A§E§E§ERompe los minerales de la Warden Cave",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.65,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:pico_sculk_purificado",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-pico-sculk-purificado-bp264.png"
+  },
+  "pala_sculk_purificada": {
+   "material": "netherite_shovel",
+   "nombre": "§x§F§7§C§8§4§3§lPala de Sculk Purificada",
+   "lore": [
+    "",
+    "§x§4§7§9§D§5§0Forjada con el sculk reforzado",
+    "§x§4§7§9§D§5§0del Pantano Profundo.",
+    "",
+    "§7En la mano:",
+    " §x§5§F§D§1§6§A⚔ §x§A§7§E§6§A§D7,5 de daño",
+    " §x§5§F§D§1§6§A⚡ §x§A§7§E§6§A§D1,15 golpes por segundo",
+    " §x§5§F§D§1§6§A⛏ §x§A§7§E§6§A§DPica 30% más rápido que Netherite",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.85,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:pala_sculk_purificada",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-pala-sculk-purificada-bp264.png"
+  },
+  "azada_sculk_purificada": {
+   "material": "netherite_hoe",
+   "nombre": "§x§F§7§C§8§4§3§lAzada de Sculk Purificada",
+   "lore": [
+    "",
+    "§x§7§D§7§D§8§4Forjada con el sculk reforzado",
+    "§x§7§D§7§D§8§4de las Ruinas de Ceniza.",
+    "",
+    "§7En la mano:",
+    " §x§A§7§A§7§B§0⚔ §x§C§F§C§F§D§45 de daño",
+    " §x§A§7§A§7§B§0⚡ §x§C§F§C§F§D§44 golpes por segundo",
+    " §x§A§7§A§7§B§0⛏ §x§C§F§C§F§D§4Pica 30% más rápido que Netherite",
+    " §x§A§7§A§7§B§0↔ §x§C§F§C§F§D§4Pega hasta a 6 bloques (el doble)",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita",
+    "",
+    "§x§F§7§C§8§4§3☀ Purificada en el Bosque Purificador"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 4.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": 0.0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:azada_sculk_purificada",
+   "custom": true,
+   "categoria": "warden",
+   "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
+   "textura": "assets/uploads/textura-azada-sculk-purificada-bp264.png"
   }
  },
  "misiones": [
@@ -14741,6 +15435,32 @@
    "soloWeb": false
   },
   {
+   "id": "creeperpurificador",
+   "nombre": "Creeper Purificador",
+   "color": "#F7C843",
+   "etapa": "dos",
+   "vida": "100",
+   "donde": "Bosque Purificador (opcional, Overworld)",
+   "texto": "Creeper dorado con flores, Velocidad II y mecha de 3 segundos con un anillo de partículas: explota con radio de 15 (hasta 40 de daño en el centro) sin romper bloques. También sale a defender la Estatua Purificadora. 50% de soltar Restos Purificadores si lo mata un jugador.",
+   "huevo": "creeper_spawn_egg",
+   "imagen": "assets/uploads/mob-creeperpurificador-bp264.webp",
+   "oculto": false,
+   "soloWeb": true
+  },
+  {
+   "id": "dragonpurificador",
+   "nombre": "Dragón Purificador",
+   "color": "#F7C843",
+   "etapa": "dos",
+   "vida": "100",
+   "donde": "Bosque Purificador (opcional, Overworld)",
+   "texto": "Dragón dorado que vuela y se tira en picada como un phantom, no se quema con el sol y cada 5 segundos tira una bola de fuego (radio 5, hasta 12 de daño) sin romper bloques. 50% de soltar Restos Purificadores si lo mata un jugador.",
+   "huevo": "phantom_spawn_egg",
+   "imagen": "assets/uploads/mob-dragonpurificador-bp264.webp",
+   "oculto": false,
+   "soloWeb": true
+  },
+  {
    "id": "enderblaze",
    "nombre": "Ender Blaze",
    "color": "#FF55FF",
@@ -14958,7 +15678,8 @@
    "torchflower_seeds": "Semillas de plantorcha",
    "totem_of_undying": "Tótem de inmortalidad",
    "trident": "Tridente",
-   "wheat": "Trigo"
+   "wheat": "Trigo",
+   "golden_dandelion": "Golden Dandelion"
   },
   "encantamientos": {
    "aqua_affinity": "Afinidad acuática",
