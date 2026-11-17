@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 15,
-  "updatedAt": "2026-11-16T17:50:57.000Z",
+  "version": 16,
+  "updatedAt": "2026-11-17T00:49:08.295Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -5656,13 +5656,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     },
@@ -5674,7 +5674,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "head"
     }
@@ -5711,13 +5711,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 9.0,
+     "valor": 9,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
@@ -5729,7 +5729,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     }
@@ -5767,13 +5767,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 9.0,
+     "valor": 9,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     },
@@ -5785,7 +5785,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "chest"
     }
@@ -5823,13 +5823,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 7.0,
+     "valor": 7,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     },
@@ -5841,7 +5841,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "legs"
     }
@@ -5878,13 +5878,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
@@ -5896,7 +5896,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     }
@@ -5937,13 +5937,13 @@
    "atributos": [
     {
      "atributo": "armor",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
     {
      "atributo": "armor_toughness",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     },
@@ -5955,7 +5955,7 @@
     },
     {
      "atributo": "max_health",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "feet"
     }
@@ -6031,7 +6031,7 @@
    "atributos": [
     {
      "atributo": "attack_damage",
-     "valor": 9.0,
+     "valor": 9,
      "operacion": "ADD_NUMBER",
      "ranura": "mainhand"
     },
@@ -6078,7 +6078,7 @@
    "atributos": [
     {
      "atributo": "attack_damage",
-     "valor": 6.0,
+     "valor": 6,
      "operacion": "ADD_NUMBER",
      "ranura": "mainhand"
     },
@@ -6120,7 +6120,7 @@
    "atributos": [
     {
      "atributo": "attack_damage",
-     "valor": 6.0,
+     "valor": 6,
      "operacion": "ADD_NUMBER",
      "ranura": "mainhand"
     },
@@ -6215,13 +6215,13 @@
    "atributos": [
     {
      "atributo": "attack_damage",
-     "valor": 4.0,
+     "valor": 4,
      "operacion": "ADD_NUMBER",
      "ranura": "mainhand"
     },
     {
      "atributo": "attack_speed",
-     "valor": 0.0,
+     "valor": 0,
      "operacion": "ADD_NUMBER",
      "ranura": "mainhand"
     },
@@ -6237,6 +6237,381 @@
    "categoria": "warden",
    "origen": "El caldero del Bosque Purificador: la pieza con Energía (o la herramienta de Sculk), 1 Lingote Purificado, 1 Mejora de Netherita y 1 Golden Dandelion.",
    "textura": "assets/uploads/textura-azada-sculk-purificada-bp264.png"
+  },
+  "espada_sculk": {
+   "material": "netherite_sword",
+   "nombre": "§x§3§A§D§4§D§4§lEspada de Sculk",
+   "lore": [
+    "",
+    "§x§2§C§9§F§9§FForjada con el sculk reforzado",
+    "§x§2§C§9§F§9§Fde la Caverna Sculk.",
+    "",
+    "§7En la mano:",
+    " §x§3§A§D§4§D§4⚔ §x§9§3§E§7§E§711,5 de daño",
+    " §x§3§A§D§4§D§4⚡ §x§9§3§E§7§E§71,6 golpes por segundo",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 10.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:espada_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-espada-sculk-mwjz2lue4bq.png"
+  },
+  "hacha_sculk": {
+   "material": "netherite_axe",
+   "nombre": "§x§A§7§A§7§B§0§lHacha de Sculk",
+   "lore": [
+    "",
+    "§x§7§D§7§D§8§4Forjada con el sculk reforzado",
+    "§x§7§D§7§D§8§4de las Ruinas de Ceniza.",
+    "",
+    "§7En la mano:",
+    " §x§A§7§A§7§B§0⚔ §x§C§F§C§F§D§410 de daño",
+    " §x§A§7§A§7§B§0⚡ §x§C§F§C§F§D§41,25 golpes por segundo",
+    " §x§A§7§A§7§B§0⛏ §x§C§F§C§F§D§4Pica 30% más rápido que Netherite",
+    " §x§A§7§A§7§B§0⚡ §x§C§F§C§F§D§4Ataca más rápido que la floral",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 9,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.75,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:hacha_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-hacha-sculk-mwjz2ynzm7h.png"
+  },
+  "lanza_sculk": {
+   "material": "netherite_spear",
+   "nombre": "§x§B§4§6§B§E§0§lLanza de Sculk",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada con el sculk reforzado",
+    "§x§8§7§5§0§A§8del Abismo Flotante.",
+    "",
+    "§7En la mano:",
+    " §x§B§4§6§B§E§0⚔ §x§D§6§A§E§E§E7 de daño",
+    " §x§B§4§6§B§E§0⚡ §x§D§6§A§E§E§E0,87 golpes por segundo",
+    " §x§B§4§6§B§E§0↔ §x§D§6§A§E§E§EPega hasta a 5,5 bloques (la normal, 4,5)",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.13043475151062,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:lanza_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-lanza-sculk-mwjz38k94pf.png"
+  },
+  "pico_sculk": {
+   "material": "netherite_pickaxe",
+   "nombre": "§x§B§4§6§B§E§0§lPico de Sculk",
+   "lore": [
+    "",
+    "§x§8§7§5§0§A§8Forjada con el sculk reforzado",
+    "§x§8§7§5§0§A§8del Abismo Flotante.",
+    "",
+    "§7En la mano:",
+    " §x§B§4§6§B§E§0⚔ §x§D§6§A§E§E§E7 de daño",
+    " §x§B§4§6§B§E§0⚡ §x§D§6§A§E§E§E1,35 golpes por segundo",
+    " §x§B§4§6§B§E§0⛏ §x§D§6§A§E§E§EPica 30% más rápido que Netherite",
+    " §x§B§4§6§B§E§0⛏ §x§D§6§A§E§E§ERompe los minerales de la Warden Cave",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.65,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:pico_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-pico-sculk-mwjz3js3rcf.png"
+  },
+  "pala_sculk": {
+   "material": "netherite_shovel",
+   "nombre": "§x§5§F§D§1§6§A§lPala de Sculk",
+   "lore": [
+    "",
+    "§x§4§7§9§D§5§0Forjada con el sculk reforzado",
+    "§x§4§7§9§D§5§0del Pantano Profundo.",
+    "",
+    "§7En la mano:",
+    " §x§5§F§D§1§6§A⚔ §x§A§7§E§6§A§D7,5 de daño",
+    " §x§5§F§D§1§6§A⚡ §x§A§7§E§6§A§D1,15 golpes por segundo",
+    " §x§5§F§D§1§6§A⛏ §x§A§7§E§6§A§DPica 30% más rápido que Netherite",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6.5,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -2.85,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:pala_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-pala-sculk-mwjz3rhegne.png"
+  },
+  "azada_sculk": {
+   "material": "netherite_hoe",
+   "nombre": "§x§A§7§A§7§B§0§lAzada de Sculk",
+   "lore": [
+    "",
+    "§x§7§D§7§D§8§4Forjada con el sculk reforzado",
+    "§x§7§D§7§D§8§4de las Ruinas de Ceniza.",
+    "",
+    "§7En la mano:",
+    " §x§A§7§A§7§B§0⚔ §x§C§F§C§F§D§45 de daño",
+    " §x§A§7§A§7§B§0⚡ §x§C§F§C§F§D§44 golpes por segundo",
+    " §x§A§7§A§7§B§0⛏ §x§C§F§C§F§D§4Pica 30% más rápido que Netherite",
+    " §x§A§7§A§7§B§0↔ §x§C§F§C§F§D§4Pega hasta a 6 bloques (el doble)",
+    "",
+    "§7Netherite§8 » §7Floral§8 » §x§2§9§D§F§E§B§lSculk§8 » §8Celestita"
+   ],
+   "rareza": "epic",
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 4,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": 0,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "block_break_speed",
+     "valor": 0.3,
+     "operacion": "ADD_SCALAR",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:azada_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-azada-sculk-mwjz40l4nel.png"
+  },
+  "mazo_floral": {
+   "material": "mace",
+   "nombre": "§x§F§F§B§3§D§9§lMazo Floral",
+   "lore": [
+    "",
+    "§x§B§F§8§6§A§3Una maza envuelta en las raíces",
+    "§x§B§F§8§6§A§3y el polen de la Abeja Floral.",
+    "",
+    "§7En la mano:",
+    " §x§F§F§B§3§D§9⚔ §x§F§F§D§5§E§A7 de daño",
+    " §x§F§F§B§3§D§9⚡ §x§F§F§D§5§E§A0,6 golpes por segundo",
+    " §x§F§F§B§3§D§9☣ §x§F§F§D§5§E§AGolpe tras caer 8 bloques o más:",
+    " §x§F§F§B§3§D§9☣ §x§F§F§D§5§E§AVeneno III por 10 segundos",
+    "",
+    "§7Maza§8 » §x§F§F§B§3§D§9§lFloral§8 » §8Sin Energía§8 » §8Warden"
+   ],
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 6,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:mazo_floral",
+   "custom": true,
+   "categoria": "utilidad",
+   "textura": "assets/uploads/textura-mazo-floral-mwjz4i2vfrs.png"
+  },
+  "mazo_warden_sin_energia": {
+   "material": "mace",
+   "nombre": "§x§6§F§9§A§9§A§lMazo de Warden sin Energía",
+   "lore": [
+    "",
+    "§x§5§3§7§4§7§4El sculk se tragó sus flores,",
+    "§x§5§3§7§4§7§4pero todavía no despierta.",
+    "",
+    "§7En la mano:",
+    " §x§6§F§9§A§9§A⚔ §x§B§0§C§7§C§78 de daño",
+    " §x§6§F§9§A§9§A⚡ §x§B§0§C§7§C§70,6 golpes por segundo",
+    " §x§6§F§9§A§9§A➶ §x§B§0§C§7§C§7Click derecho: te impulsa hacia donde miras",
+    " §x§6§F§9§A§9§A➶ §x§B§0§C§7§C§7Recarga de 5 segundos",
+    "",
+    "§7Maza§8 » §7Floral§8 » §x§6§F§9§A§9§A§lSin Energía§8 » §8Warden"
+   ],
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 7,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:mazo_warden_sin_energia",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mazo-warden-sin-energia-mwjz4pyvqp9.png"
+  },
+  "mazo_warden": {
+   "material": "mace",
+   "nombre": "§x§2§9§D§F§E§B§lMazo de Warden",
+   "lore": [
+    "",
+    "§x§1§F§A§7§B§0Late con el eco",
+    "§x§1§F§A§7§B§0del Ultra Warden.",
+    "",
+    "§7En la mano:",
+    " §x§2§9§D§F§E§B⚔ §x§8§9§E§D§F§410 de daño",
+    " §x§2§9§D§F§E§B⚡ §x§8§9§E§D§F§40,6 golpes por segundo",
+    " §x§2§9§D§F§E§B➶ §x§8§9§E§D§F§4Impulso: click derecho te impulsa fuerte",
+    " §x§2§9§D§F§E§B➶ §x§8§9§E§D§F§4hacia donde miras (recarga de 3 segundos)",
+    " §x§2§9§D§F§E§B◎ §x§8§9§E§D§F§4Impulso Sónico: golpe tras caer 20 bloques o más:",
+    " §x§2§9§D§F§E§B◎ §x§8§9§E§D§F§4sonic boom de 25 a los monstruos en 15 bloques",
+    " §x§2§9§D§F§E§B◎ §x§8§9§E§D§F§4y click derecho: tira una carga de viento",
+    " §x§2§9§D§F§E§B✖ §x§8§9§E§D§F§4Te devuelve el 50% del daño que le haces a un jugador",
+    "",
+    "§7Modo: §x§2§9§D§F§E§B§lImpulso",
+    "§8Agachado + click derecho para cambiarlo",
+    "",
+    "§7Maza§8 » §7Floral§8 » §7Sin Energía§8 » §x§3§A§D§4§D§4§lWarden"
+   ],
+   "ocultar": [
+    "atributos"
+   ],
+   "atributos": [
+    {
+     "atributo": "attack_damage",
+     "valor": 9,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    },
+    {
+     "atributo": "attack_speed",
+     "valor": -3.4000000953674316,
+     "operacion": "ADD_NUMBER",
+     "ranura": "mainhand"
+    }
+   ],
+   "modelo": "minecraft:mazo_warden",
+   "custom": true,
+   "categoria": "warden",
+   "textura": "assets/uploads/textura-mazo-warden-mwjz4y901n5.png"
   }
  },
  "misiones": [
