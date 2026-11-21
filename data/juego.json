@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": 16,
-  "updatedAt": "2026-11-17T00:49:08.295Z",
+  "version": 17,
+  "updatedAt": "2026-11-21T01:55:44.000Z",
   "updatedBy": "CrissyjuanxD",
   "fuente": "QuasoPlugin 26.2",
   "catalogo": ""
@@ -1782,7 +1782,7 @@
    "modelo": "minecraft:mineral_crudo_cian",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Cian.",
+   "descripcion": "Se funde en el alto horno (3 min) o en el Horno de Sculk (1 min) y da el Fragmento Profundo Cian.",
    "origen": "Minerales Profundos del bioma Cian de la Warden Cave",
    "textura": "assets/uploads/textura-mineral-crudo-cian-mvqi6aewdbn.png"
   },
@@ -1801,7 +1801,7 @@
    "modelo": "minecraft:mineral_crudo_verde",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Verde.",
+   "descripcion": "Se funde en el alto horno (3 min) o en el Horno de Sculk (1 min) y da el Fragmento Profundo Verde.",
    "origen": "Minerales Profundos del bioma Verde de la Warden Cave",
    "textura": "assets/uploads/textura-mineral-crudo-verde-mvqi6ksgmur.png"
   },
@@ -1820,7 +1820,7 @@
    "modelo": "minecraft:mineral_crudo_morado",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Morado.",
+   "descripcion": "Se funde en el alto horno (3 min) o en el Horno de Sculk (1 min) y da el Fragmento Profundo Morado.",
    "origen": "Minerales Profundos del bioma Morado de la Warden Cave",
    "textura": "assets/uploads/textura-mineral-crudo-morado-mvqi6wbpxt6.png"
   },
@@ -1839,9 +1839,30 @@
    "modelo": "minecraft:mineral_crudo_gris",
    "custom": true,
    "categoria": "warden",
-   "descripcion": "Se funde en alto horno (4 min) y da el Fragmento Profundo Gris.",
+   "descripcion": "Se funde en el alto horno (3 min) o en el Horno de Sculk (1 min) y da el Fragmento Profundo Gris.",
    "origen": "Minerales Profundos del bioma Gris de la Warden Cave",
    "textura": "assets/uploads/textura-mineral-crudo-gris-mvqi75qvojw.png"
+  },
+  "horno_sculk": {
+   "material": "blast_furnace",
+   "nombre": "§x§2§9§D§F§E§B§lHorno de Sculk",
+   "lore": [
+    "",
+    "§x§0§0§8§B§8§BUn alto horno cargado con",
+    "§x§0§0§8§B§8§Bla energía de las profundidades.",
+    "",
+    "§7Funde los §fMinerales Crudos§7 de la",
+    "§7Warden Cave en §f1 minuto§7 (no en 3).",
+    "§7Lo demás, como un alto horno.",
+    ""
+   ],
+   "rareza": "epic",
+   "modelo": "minecraft:horno_sculk",
+   "custom": true,
+   "categoria": "warden",
+   "descripcion": "Un alto horno que funde los Minerales Crudos de la Warden Cave en 1 minuto (en el alto horno son 3). Lo demás lo funde como un alto horno normal.",
+   "origen": "Mesa de crafteo: 4 Energías de Warden en las esquinas y un alto horno al centro",
+   "textura": "assets/uploads/textura-horno-sculk-mxeqibp21o1.png"
   },
   "fragmento_profundo_cian": {
    "material": "copper_nugget",
@@ -3096,7 +3117,7 @@
    "modelo": "minecraft:radar_minerales",
    "custom": true,
    "categoria": "utilidad",
-   "descripcion": "Marca los minerales a 8 bloques por 10 s a través de las paredes (también los Minerales Profundos); 3 usos.",
+   "descripcion": "Marca los minerales a 16 bloques por 10 s a través de las paredes (también los Minerales Profundos); 12 usos y no gasta el uso si no encuentra ninguno.",
    "origen": "Tienda Novedades desde el día 20",
    "textura": "assets/uploads/textura-radar-minerales-mvqiravc0kp.png"
   },
